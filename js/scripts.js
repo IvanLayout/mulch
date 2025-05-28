@@ -219,15 +219,11 @@ $(() => {
 					spaceBetween: 20,
 					slidesPerView: 'auto'
 				},
-				'1025': {
+				'1024': {
 					spaceBetween: 16,
 					slidesPerView: 4,
 				},
 				'1200': {
-					spaceBetween: 16,
-					slidesPerView: 4,
-				},
-				'1400': {
 					spaceBetween: 20,
 					slidesPerView: 3,
 				}
@@ -275,7 +271,7 @@ $(() => {
 					spaceBetween: 16,
 					slidesPerView: 'auto'
 				},
-				'1025': {
+				'1024': {
 					spaceBetween: 20,
 					slidesPerView: 'auto'
 				}
@@ -289,6 +285,35 @@ $(() => {
 	}
 
 
+	
+	if ($('.product__thumb').length) {
+		new Swiper(".product__thumb", {
+			loop: false,
+			spaceBetween: 0,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			nested: true,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			}
+		})
+	}
+
+
 	if ($('.products__slider').length) {
 		new Swiper('.products__slider', {
 			loop: false,
@@ -297,7 +322,7 @@ $(() => {
 			spaceBetween: 20,
 			slidesPerView: 'auto',
 			preloadImages: false,
-			slideToClickedSlide: true,
+			nested: true,
 			lazy: {
 				loadPrevNext: true,
 				elementClass: 'lazyload',
@@ -323,21 +348,27 @@ $(() => {
 					spaceBetween: 20,
 					slidesPerView: 3
 				},
-				'1025': {
+				'1024': {
 					spaceBetween: 20,
 					slidesPerView: 4
 				},
-				'1200': {
-					spaceBetween: 16,
-					slidesPerView: 4
+				'1320': {
+					spaceBetween: 20,
+					slidesPerView: 5
 				},
 				'1400': {
+					spaceBetween: 20,
+					slidesPerView: 5
+				},
+				'1760': {
 					spaceBetween: 20,
 					slidesPerView: 6
 				}
 			},
 			on: {
 				init: function (swiper) {
+					console.log(swiper.el)
+
 					$(swiper.el).find('.product__name, .product__box, .product__info, .product__prices').height('auto')
 
 					setTimeout(function(){
@@ -350,40 +381,11 @@ $(() => {
 				resize: function (swiper) {
 					$(swiper.el).find('.product__name, .product__box, .product__info, .product__prices').height('auto')
 
-					setTimeout(function(){
 						setHeight( $(swiper.el).find('.product__name') )
 						setHeight( $(swiper.el).find('.product__box') )
 						setHeight( $(swiper.el).find('.product__info') )
 						setHeight( $(swiper.el).find('.product__prices') )
-					}, 200)
 				},
-			}
-		})
-	}
-
-	
-	if ($('.product__thumb').length) {
-		new Swiper(".product__thumb", {
-			loop: true,
-			spaceBetween: 0,
-			slidesPerView: 1,
-			watchSlidesProgress: true,
-			watchOverflow: true,
-			preloadImages: false,
-			lazy: {
-				loadPrevNext: true,
-				elementClass: 'lazyload',
-				enabled: true,
-				loadedClass: 'loaded',
-				checkInView: true,
-				loadOnTransitionStart: true
-			},
-			pagination: {
-				bulletActiveClass: 'slider-dot_active',
-				bulletClass: 'slider-dot',
-				clickableClass: 'slider-pagination-clickable',
-				el: '.slider-pagination',
-				clickable: true
 			}
 		})
 	}
@@ -442,7 +444,7 @@ $(() => {
 						stretch: 150,
 					}
 				},
-				'1025': {
+				'1024': {
 					coverflowEffect: {
 						stretch: 100,
 					}
@@ -620,7 +622,7 @@ function productsHeight(context, step) {
 
 
 function productSmallSlider(){
-	if ( $(window).width() < 1025 && !$('.products-small').hasClass('swiper-initialized') ) {
+	if ( $(window).width() < 1024 && !$('.products-small').hasClass('swiper-initialized') ) {
 		$('.products-small').addClass('swiper')
 		$('.products-small__items').addClass('swiper-wrapper')
 		$('.products-small__item').addClass('swiper-slide')
@@ -670,7 +672,7 @@ function productSmallSlider(){
 			}
 		})
 	}
-	else if ($(window).width() > 1024 && $('.products-small').hasClass('swiper-initialized')) {
+	else if ($(window).width() > 1023 && $('.products-small').hasClass('swiper-initialized')) {
 		if ($('.products-small').length === 1 && $('.products-small').hasClass('swiper-initialized')) {
 			productSmallSwiper.destroy(true, true)
 		} else if ($('.products-small').length >= 2 && $('.products-small').hasClass('swiper-initialized')) {

@@ -295,9 +295,9 @@ button
     position: relative;
 
     width: 100%;
-    max-width: 1920px;
+    max-width: 1840px;
     margin: 0 auto;
-    padding: 0 80px;
+    padding: 0 40px;
 }
 
 
@@ -1123,7 +1123,7 @@ button
     width: 29.68%;
     height: 100%;
 
-    border-right: 1px solid rgba(0, 0, 0, .1);
+    /* border-right: 1px solid rgba(0, 0, 0, .1); */
 }
 
 .header-menu__item + .header-menu__item
@@ -1149,6 +1149,7 @@ button
 	align-content: flex-start;
 	flex-wrap: nowrap;
 	transition: background .2s linear, color .2s linear;
+	max-width: 434px;
 }
 
 .header-menu__link-icon{
@@ -1231,6 +1232,7 @@ button
 	max-width: 1114px;
     height: 100%;
     padding-left: 60px;
+	padding-right: 10px;
 
     opacity: 0;
 
@@ -1369,6 +1371,10 @@ button
 	fill: currentColor;
 
 	display: block;
+}
+
+.header-submenu__sub-more._active svg{
+	transform: rotate(180deg);
 }
 
 .header-submenu__sub-item ul{
@@ -2796,6 +2802,7 @@ input[type=checkbox]:disabled + .checkbox-bord__text{
 	display: block;
 	position: relative;
 	padding-bottom: 27.986%;
+	min-height: 100%;
 }
 
 .main-slider__img img{
@@ -3124,10 +3131,6 @@ input[type=checkbox]:disabled + .checkbox-bord__text{
 
 .products__slider{
 	overflow: visible;
-}
-
-.products__slider .swiper-wrapper{
-	pointer-events: none;
 }
 
 .products__slider .slider-button-prev{
@@ -3967,6 +3970,53 @@ input[type=checkbox]:disabled + .checkbox-bord__text{
 }
 
 
-@media (max-width: 1739px){
+@media (max-width: 1759px){
+	.cont{
+		max-width: 1516px;
+	}
+
+
+	.header__search{
+		max-width: 692px;
+	}
+
+
+	.main-slider__title{
+		font-size: 20px;
+	}
+
+	.advantages__items-flex{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
 	
+	.main-news__slider .swiper-slide {
+		width: calc(26.59% - 40px / 3);
+	}
+
+	.main-news__slider .swiper-slide._big {
+		width: calc(46.82% - 40px / 3);
+	}
+
+	.main-news__img {
+		padding-bottom: 75.45%;
+	}
+
+
+	.footer-menu{
+		width: 474px;
+		margin-top: -30px;
+	}
+
+	.footer-menu__col{
+		width: calc(50%  - 15px);
+		max-width: 218px;
+		margin-top: 30px;
+	}
+
+
+	.footer__bot{
+		margin-top: 63px;
+	}
 }

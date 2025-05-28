@@ -278,7 +278,7 @@ $(() => {
 	})
 
 	// Наведение на пункты меню
-	if ( $(window).width() > 1024 ) {
+	if ( $(window).width() > 1023 ) {
 		$('body').on('mouseover', '.header-menu__item', function (e) {
 			e.preventDefault()
 	
