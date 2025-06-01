@@ -1,5 +1,35 @@
 @media (max-width: 1319px)
 {
+    body{
+        font-size: 13px;
+    }
+
+    .text-block h1{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .text-block h2{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .text-block + h2{
+        margin-top: 16px;
+    }
+
+    .text-block h3{
+        font-size: 18px;
+    }
+
+    .text-block + h3{
+        margin-top: 16px;
+    }
+
+    .text-block p{
+        margin-bottom: 16px;
+    }
+
     .section-top_marg
     {
         margin-bottom: 16px;
@@ -34,19 +64,19 @@
         margin-left: 20px;
     }
 
-    .open-catalog
+    .header-catalog__open
     {
         font-size: 14px;
 
         padding: 0 15px 0 39px;
     }
 
-    .open-catalog::before
+    .header-catalog__open::before
     {
         left: 12px;
     }
 
-    .open-catalog::after
+    .header-catalog__open::after
     {
         left: 12px;
     }

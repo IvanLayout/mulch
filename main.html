@@ -124,12 +124,6 @@
 
 					<div class="header__info">
 						<div class="cont _flex">
-							<button type="button" class="mob-menu-btn">
-								<span></span>
-								<span></span>
-								<span></span>
-							</button>
-
 							<div class="header__logo">
 								<a href="/">
 									<picture>
@@ -140,7 +134,7 @@
 							</div>
 
 							<div class="header-catalog">
-								<button type="button" class="open-catalog">
+								<button type="button" class="header-catalog__open open-catalog">
 									Каталог
 								</button>
 
@@ -1444,6 +1438,97 @@
 						</div>
 					</div>
 				</header>
+
+				<div class="header-mob">
+					<div class="header-mob__top">
+						<div class="cont _flex">
+							<div class="header-mob__logo">
+								<a href="/">
+									<img src="images/logo_mob.png" alt="">
+								</a>
+							</div>
+
+							<button type="button" data-content="#modal-addres" class="header-mob__adres modal-btn">
+								<svg class="header-mob__adres-marker">
+									<use xlink:href="images/sprite.svg#marker"></use>
+								</svg>
+								Москва
+							</button>
+
+							<div class="header-mob__contact _flex">
+								<a href="mailto:info@mulcha.online" class="header-mob__mail"></a>
+								<a href="tel:+74997046510" class="header-mob__phone"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="header-mob__bot">
+						<div class="cont _flex">
+							<button type="button" class="mob-menu-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+
+							<div class="header-mob__search">
+								<form action="" class="header-mob__search-form">
+									<input type="text" placeholder="Поиск по сайту…" class="header-mob__search-input">
+
+									<button class="header-mob__search-btn"></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="fix-btns">
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu1"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Главная</span>
+					</a>
+					<button type="button" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu2"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Каталог</span>
+					</button>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu3"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Корзина</span>
+					</a>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu4"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Избранное</span>
+					</a>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu5"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Профиль</span>
+					</a>
+				</div>
 
 				<div class="overlay-catalog"></div>
 				<!-- End Шапка -->

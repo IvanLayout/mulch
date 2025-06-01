@@ -67,8 +67,8 @@ $(() => {
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		}
 
-		if ( !e.target.closest('.header-catalog') && !e.target.closest('.open-catalog') ) {
-			$('.open-catalog').removeClass('_active')
+		if ( !e.target.closest('.header-catalog') && !e.target.closest('.header-catalog__open') ) {
+			$('.header-catalog__open').removeClass('_active')
 			$('.header-catalog__block').removeClass('_show')
 			$('.overlay-catalog').removeClass('_show')
 		}
@@ -267,7 +267,7 @@ $(() => {
 		}
 	})
 
-	$('body').on('click', '.open-catalog', function (e) {
+	$('body').on('click', '.header-catalog__open', function (e) {
 		e.preventDefault()
 
 		if ($(this).hasClass('_active')) {

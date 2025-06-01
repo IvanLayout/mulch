@@ -1,5 +1,10 @@
 @media (max-width: 767px)
 {
+    .wrap{
+        padding-bottom: 58px;
+    }
+
+
     .cont
     {
         padding-right: 20px;
@@ -33,6 +38,166 @@
     .header
     {
         display: none;
+    }
+
+    .header-mob{
+        display: block;
+        padding: 13px 0 10px;
+        box-shadow: 0 4px 4px 0 rgba(212, 212, 212, 0.25);
+    }
+
+    .header-mob__top .cont{
+        align-items: center;
+        align-content: center;
+    }
+
+    .header-mob__logo a,
+    .header-mob__logo img{
+        display: block;
+        max-width: 20px;
+    }
+
+    .header-mob__adres{
+        font-weight: 500;
+        font-size: 12px;
+        color: #8c8c8c;
+        padding-left: 17px;
+        position: relative;
+        margin-left: 15px;
+    }
+
+    .header-mob__adres-marker{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 12px;
+        height: 13px;
+        margin-top: -6.5px;
+        display: block;
+        stroke: currentColor;
+        fill: none;
+    }
+
+    .header-mob__contact{
+        margin-left: auto;
+    }
+
+    .header-mob__mail{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url(../images/ic_mail.svg) 50% no-repeat;
+    }
+
+    .header-mob__phone{
+        margin-left: 16px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url(../images/ic_phone.svg) 50% no-repeat;
+    }
+
+    .header-mob__bot .cont{
+        flex-wrap: nowrap;
+    }
+    
+    .header-mob__bot{
+        margin-top: 11px;
+    }
+    
+    .mob-menu-btn
+    {
+        display: block;
+    
+        width: 44px;
+        height: 44px;
+    
+        cursor: pointer;
+    
+        border: none;
+        background: #007657 url(../images/burger.svg) 50% no-repeat;
+        border-radius: 5px;
+        flex-shrink: 0;
+        margin-right: 10px;
+    }
+
+    .header-mob__search{
+        width: 100%;
+    }
+    
+    .header-mob__search-form{
+        position: relative;
+    }
+
+    .header-mob__search-input{
+        display: block;
+        width: 100%;
+        height: 44px;
+        padding: 0 68px 0 5px;
+
+        font: 13px var(--font-family);
+        color: #d2d2d2;
+        border: 1px solid #007657;
+        border-radius: 5px;
+    }
+
+    .header-mob__search-btn{
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        border-radius: 3px;
+        width: 58px;
+        height: 38px;
+        background: #007657 url(../images/ic_lupa.svg) 50% no-repeat;
+    }
+
+    .fix-btns{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background: #fff;
+        box-shadow: 0 -4px 4px 0 rgba(212, 212, 212, 0.25);
+        z-index: 70;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .fix-btns__btn{
+        display: block;
+        padding: 8px 0 10px;
+
+        font-weight: 500;
+        font-size: 12px;
+        color: rgba(40, 40, 40, 0.4);
+        text-decoration: none;
+        transition: color .2s linear;
+    }
+
+    .fix-btns__btn._active{
+        color: #007657;
+    }
+
+    .fix-btns__btn-icon{
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .fix-btns__btn-icon svg{
+        width: 24px;
+        height: 24px;
+        display: block;
+        fill: currentColor;
+        stroke: currentColor;
     }
 
 
