@@ -243,6 +243,18 @@ $(() => {
 		}
 	})
 
+	$('body').on('click', '.footer-menu__title-arrow', function (e) {
+		e.preventDefault()
+
+		if ($(this).closest('.footer-menu__title').hasClass('_active')) {
+			$(this).closest('.footer-menu__title').removeClass('_active')
+			$(this).closest('.footer-menu__col').find('.footer-menu__list').removeClass('_show')
+		} else {
+			$(this).closest('.footer-menu__title').addClass('_active')
+			$(this).closest('.footer-menu__col').find('.footer-menu__list').addClass('_show')
+		}
+	})
+
 	$('body').on('click', '.header__list-more', function (e) {
 		e.preventDefault()
 

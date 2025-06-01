@@ -337,7 +337,7 @@ $(() => {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
-			spaceBetween: 20,
+			spaceBetween: 16,
 			slidesPerView: 'auto',
 			preloadImages: false,
 			nested: true,
@@ -359,12 +359,12 @@ $(() => {
       		},
 			breakpoints: {
 				'320': {
-					spaceBetween: 10,
-					slidesPerView: 2
+					spaceBetween: 16,
+					slidesPerView: 'auto'
 				},
 				'480': {
-					spaceBetween: 20,
-					slidesPerView: 2
+					spaceBetween: 16,
+					slidesPerView: 'auto'
 				},
 				'768': {
 					spaceBetween: 16,
@@ -654,6 +654,7 @@ function advantagesSlider(){
 			spaceBetween: 20,
 			slidesPerView: 'auto',
 			preloadImages: false,
+			freeMode: true,
 			lazy: {
 				loadPrevNext: true,
 				elementClass: 'lazyload',
