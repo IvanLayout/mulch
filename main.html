@@ -32,7 +32,7 @@
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1599.css" media="(max-width: 1599px)">
-		<link rel="stylesheet" href="css/response_1399.css" media="(max-width: 1399px)">
+		<link rel="stylesheet" href="css/response_1319.css" media="(max-width: 1319px)">
 		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
 		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
@@ -64,6 +64,12 @@
 								<div class="header__list-item">
 									<a href="/">О компании</a>
 								</div>
+								<button class="header__list-more">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<div class="header__list-box"></div>
 							</div>
 
 							<div class="header__contacts _flex">
@@ -126,7 +132,10 @@
 
 							<div class="header__logo">
 								<a href="/">
-									<img src="images/logo.png" alt="">
+									<picture>
+										<source data-srcset="images/logo_mob.png" type="image/png"  media="(max-width: 1023px)" class="lazyload">
+										<img data-src="images/logo.png" src="images/img_plug.png" alt="" class="lazyload">
+									</picture>
 								</a>
 							</div>
 
@@ -1455,7 +1464,8 @@
 
 									<div class="main-slider__img">
 										<picture>
-											<source data-srcset="images/tmp/main_slide_img.png" type="image/png" class="lazyload">
+											<source data-srcset="images/tmp/main_slide_img_mob.png" type="image/png"  media="(max-width: 479px)" class="lazyload">
+											<source data-srcset="images/tmp/main_slide_img_tablet.png" type="image/png"  media="(max-width: 1023px)" class="lazyload">
 											<img data-src="images/tmp/main_slide_img.png" src="images/img_plug.png" alt="" class="lazyload">
 										</picture>
 									</div>
@@ -1514,47 +1524,51 @@
 				<section class="advantages">
 					<div class="cont">
 						<div class="advantages__items">
-							<div class="advantages__items-flex _flex">
-								<div class="advantages__item _flex">
-									<div class="advantages__item-icon">
-										<img data-src="images/ic_adv1.svg" src="images/img_plug.png" alt="" class="lazyload">
+							<div class="advantages__items-wrap">
+								<div class="advantages__items-flex _flex">
+									<div class="advantages__item advantages__item-small _flex">
+										<div class="advantages__item-icon">
+											<img data-src="images/ic_adv1.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+										<div class="advantages__item-box">
+											<div class="advantages__item-title">Большой ассортимент</div>
+											<div class="advantages__item-desc">товаров всегда <br>в наличии</div>
+										</div>
 									</div>
-									<div class="advantages__item-box">
-										<div class="advantages__item-title">Большой ассортимент</div>
-										<div class="advantages__item-desc">товаров всегда <br>в наличии</div>
+									<div class="advantages__sep"></div>
+									<div class="advantages__item _flex">
+										<div class="advantages__item-icon">
+											<img data-src="images/ic_adv2.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+										<div class="advantages__item-box">
+											<div class="advantages__item-title">Быстрая доставка</div>
+											<div class="advantages__item-desc">в течении четырёх часов <br>или в любое удобное время</div>
+										</div>
 									</div>
-								</div>
-								<div class="advantages__sep"></div>
-								<div class="advantages__item _flex">
-									<div class="advantages__item-icon">
-										<img data-src="images/ic_adv2.svg" src="images/img_plug.png" alt="" class="lazyload">
+									<div class="advantages__sep"></div>
+									<div class="advantages__item _flex">
+										<div class="advantages__item-icon">
+											<img data-src="images/ic_adv3.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+										<div class="advantages__item-box">
+											<div class="advantages__item-title">Простой возврат товаров</div>
+											<div class="advantages__item-desc">которые не пригодились <br>в течении 360 дней</div>
+										</div>
 									</div>
-									<div class="advantages__item-box">
-										<div class="advantages__item-title">Быстрая доставка</div>
-										<div class="advantages__item-desc">в течении четырёх часов <br>или в любое удобное время</div>
-									</div>
-								</div>
-								<div class="advantages__sep"></div>
-								<div class="advantages__item _flex">
-									<div class="advantages__item-icon">
-										<img data-src="images/ic_adv3.svg" src="images/img_plug.png" alt="" class="lazyload">
-									</div>
-									<div class="advantages__item-box">
-										<div class="advantages__item-title">Простой возврат товаров</div>
-										<div class="advantages__item-desc">которые не пригодились <br>в течении 360 дней</div>
-									</div>
-								</div>
-								<div class="advantages__sep"></div>
-								<div class="advantages__item _flex">
-									<div class="advantages__item-icon">
-										<img data-src="images/ic_adv4.svg" src="images/img_plug.png" alt="" class="lazyload">
-									</div>
-									<div class="advantages__item-box">
-										<div class="advantages__item-title">Управления качеством</div>
-										<div class="advantages__item-desc">Многоуровневая система управления качеством по стандарту</div>
+									<div class="advantages__sep"></div>
+									<div class="advantages__item _flex">
+										<div class="advantages__item-icon">
+											<img data-src="images/ic_adv4.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+										<div class="advantages__item-box">
+											<div class="advantages__item-title">Управления качеством</div>
+											<div class="advantages__item-desc">Многоуровневая система управления качеством по стандарту</div>
+										</div>
 									</div>
 								</div>
 							</div>
+
+							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
 				</section>
@@ -1578,13 +1592,13 @@
 									
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -1660,7 +1674,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -1769,7 +1783,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -1791,13 +1805,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -1873,7 +1887,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -1895,13 +1909,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -1977,7 +1991,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -1999,13 +2013,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -2081,7 +2095,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -2103,13 +2117,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -2185,7 +2199,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -2207,13 +2221,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -2289,7 +2303,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -2311,13 +2325,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -2393,7 +2407,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -2424,6 +2438,8 @@
 									<use xlink:href="images/sprite.svg#arrow2"></use>
 								</svg>
 							</button>
+
+							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
 				</section>
@@ -2447,13 +2463,13 @@
 									
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -2529,7 +2545,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -2638,7 +2654,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -2660,13 +2676,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -2742,7 +2758,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -2764,13 +2780,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -2846,7 +2862,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -2868,13 +2884,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -2950,7 +2966,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -2972,13 +2988,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -3054,7 +3070,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -3076,13 +3092,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -3158,7 +3174,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -3180,13 +3196,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -3262,7 +3278,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -3293,6 +3309,8 @@
 									<use xlink:href="images/sprite.svg#arrow2"></use>
 								</svg>
 							</button>
+
+							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
 				</section>
@@ -3316,13 +3334,13 @@
 									
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -3398,7 +3416,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -3507,7 +3525,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -3529,13 +3547,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -3611,7 +3629,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -3633,13 +3651,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -3715,7 +3733,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -3737,13 +3755,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -3819,7 +3837,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -3841,13 +3859,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -3923,7 +3941,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -3945,13 +3963,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -4027,7 +4045,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -4049,13 +4067,13 @@
 								<div class="swiper-slide product">
 									<div class="product__btns _flex">
 										<button type="button" class="product__btns-btn product-compare">
-											<svg width="16" height="22">
+											<svg>
 												<use xlink:href="images/sprite.svg#compare2"></use>
 											</svg>
 										</button>
 
 										<button type="button" class="product__btns-btn product-favorite">
-											<svg width="19" height="17">
+											<svg>
 												<use xlink:href="images/sprite.svg#favorite2"></use>
 											</svg>
 										</button>
@@ -4131,7 +4149,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Купить в 1 клик</a>
+												<a href="/">Быстрая покупка</a>
 											</div>
 										</div>
 
@@ -4162,6 +4180,8 @@
 									<use xlink:href="images/sprite.svg#arrow2"></use>
 								</svg>
 							</button>
+
+							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
 				</section>
@@ -4275,7 +4295,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -4384,7 +4404,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -4488,7 +4508,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -4592,7 +4612,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -4696,7 +4716,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -4800,7 +4820,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -4904,7 +4924,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -5008,7 +5028,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -5039,6 +5059,8 @@
 											<use xlink:href="images/sprite.svg#arrow2"></use>
 										</svg>
 									</button>
+
+									<div class="swiper-scrollbar"></div>
 								</div>
 							</div>
 
@@ -5136,7 +5158,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -5245,7 +5267,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -5349,7 +5371,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -5453,7 +5475,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -5557,7 +5579,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -5661,7 +5683,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -5765,7 +5787,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -5869,7 +5891,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -5900,6 +5922,8 @@
 											<use xlink:href="images/sprite.svg#arrow2"></use>
 										</svg>
 									</button>
+
+									<div class="swiper-scrollbar"></div>
 								</div>
 							</div>
 
@@ -5996,7 +6020,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -6105,7 +6129,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -6209,7 +6233,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -6313,7 +6337,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -6417,7 +6441,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -6521,7 +6545,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -6625,7 +6649,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -6729,7 +6753,7 @@
 														В корзину
 													</button>
 													<div class="product__buy">
-														<a href="/">Купить в 1 клик</a>
+														<a href="/">Быстрая покупка</a>
 													</div>
 												</div>
 
@@ -6760,6 +6784,8 @@
 											<use xlink:href="images/sprite.svg#arrow2"></use>
 										</svg>
 									</button>
+
+									<div class="swiper-scrollbar"></div>
 								</div>
 							</div>
 						</div>
@@ -6806,6 +6832,8 @@
 									<use xlink:href="images/sprite.svg#arrow2"></use>
 								</svg>
 							</button>
+
+							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
 				</section>
@@ -6827,7 +6855,7 @@
 									<a href="/" class="news-big">
 										<img data-src="images/tmp/news_img1.jpg" src="images/img_plug.png" alt="" class="lazyload news-big__img">
 
-										<span class="news-big__time">3 мин</span>
+										<span class="main-news__time">3 мин</span>
 
 										<span class="news-big__flex _flex">
 											<span class="news-big__box">
@@ -6890,6 +6918,8 @@
 									<use xlink:href="images/sprite.svg#arrow2"></use>
 								</svg>
 							</button>
+
+							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
 				</section>
@@ -7057,7 +7087,7 @@
 				</div>
 				<div class="footer__bot">
 					<div class="cont _flex">
-						<div class="footer__copy">&copy; 2024 Компания «Мульча.рф». Все права защищены и охраняются законом.</div>
+						<div class="footer__copy">&copy; 2024 Компания «Мульча.рф». <span>Все права защищены и охраняются законом.</span></div>
 
 						<div class="footer__links _flex">
 							<div class="footer__link">

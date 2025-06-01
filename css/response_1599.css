@@ -20,6 +20,10 @@
 		margin-left: 25px;
 	}
 
+	.header__search-submit{
+		width: 58px;
+	}
+
 
 	.header-catalog__block{
 		padding: 33px 0;
@@ -143,7 +147,7 @@
 	}
 
 	.product__btn {
-		width: 45.315%;
+		width: 43.315%;
 		font-size: 14px;
 	}
 

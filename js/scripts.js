@@ -65,7 +65,7 @@ $(() => {
 	if ($('.main-slider').length) {
 		new Swiper(".main-slider", {
 			loop: true,
-			spaceBetween: 0,
+			spaceBetween: 16,
 			slidesPerView: 1,
 			speed: 800,
 			watchSlidesProgress: true,
@@ -159,7 +159,7 @@ $(() => {
 	if ($('.header__cats').length) {
 		new Swiper(".header__cats", {
 			loop: false,
-			spaceBetween: 20,
+			spaceBetween: 15,
 			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -175,6 +175,20 @@ $(() => {
 			navigation: {
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+				},
+				'480': {
+					spaceBetween: 15,
+				},
+				'768': {
+					spaceBetween: 15,
+				},
+				'1024': {
+					spaceBetween: 20,
+				}
 			},
 			on: {
 				init: function (swiper) {
@@ -206,24 +220,24 @@ $(() => {
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
 			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
 			breakpoints: {
 				'320': {
-					spaceBetween: 20,
+					spaceBetween: 16,
 					slidesPerView: 'auto'
 				},
 				'480': {
-					spaceBetween: 20,
+					spaceBetween: 16,
 					slidesPerView: 'auto'
 				},
 				'768': {
-					spaceBetween: 20,
+					spaceBetween: 16,
 					slidesPerView: 'auto'
 				},
 				'1024': {
-					spaceBetween: 16,
-					slidesPerView: 4,
-				},
-				'1200': {
 					spaceBetween: 20,
 					slidesPerView: 3,
 				}
@@ -258,6 +272,10 @@ $(() => {
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
 			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
 			breakpoints: {
 				'320': {
 					spaceBetween: 16,
@@ -335,6 +353,10 @@ $(() => {
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
 			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
 			breakpoints: {
 				'320': {
 					spaceBetween: 10,
@@ -345,12 +367,12 @@ $(() => {
 					slidesPerView: 2
 				},
 				'768': {
-					spaceBetween: 20,
-					slidesPerView: 3
+					spaceBetween: 16,
+					slidesPerView: 4
 				},
 				'1024': {
 					spaceBetween: 20,
-					slidesPerView: 4
+					slidesPerView: 5
 				},
 				'1320': {
 					spaceBetween: 20,
@@ -367,8 +389,6 @@ $(() => {
 			},
 			on: {
 				init: function (swiper) {
-					console.log(swiper.el)
-
 					$(swiper.el).find('.product__name, .product__box, .product__info, .product__prices').height('auto')
 
 					setTimeout(function(){
@@ -533,8 +553,8 @@ $(window).on('load', () => {
 	}
 
 
-	if ($('.products-small').length){
-		productSmallSlider()
+	if ($('.advantages__items').length){
+		advantagesSlider()
 	}
 
 	if ($('.wholesale__img').length){
@@ -584,8 +604,8 @@ $(window).on('resize', () => {
 		}
 	}
 
-	if ($('.products-small').length){
-		productSmallSlider()
+	if ($('.advantages__items').length){
+		advantagesSlider()
 	}
 
 	if ($('.wholesale__line').length){
@@ -621,13 +641,13 @@ function productsHeight(context, step) {
 }
 
 
-function productSmallSlider(){
-	if ( $(window).width() < 1024 && !$('.products-small').hasClass('swiper-initialized') ) {
-		$('.products-small').addClass('swiper')
-		$('.products-small__items').addClass('swiper-wrapper')
-		$('.products-small__item').addClass('swiper-slide')
+function advantagesSlider(){
+	if ( $(window).width() < 1024 && !$('.advantages__items').hasClass('swiper-initialized') ) {
+		$('.advantages__items').addClass('swiper')
+		$('.advantages__items-wrap').addClass('swiper-wrapper')
+		$('.advantages__items-flex').addClass('swiper-slide')
 
-		productSmallSwiper = new Swiper('.products-small', {
+		advantagesSwiper = new Swiper('.advantages__items', {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -642,66 +662,23 @@ function productSmallSlider(){
 				checkInView: true,
 				loadOnTransitionStart: true
 			},
-			navigation: {
-				nextEl: '.slider-button-next',
-				prevEl: '.slider-button-prev'
-			},
-			on: {
-				init: function (swiper) {
-					let posNav = $(swiper.el).find('.products-small__item-thumb').height()
-
-					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posNav/2)
-
-					$(swiper.el).find('.products-small__item-name').height('auto')
-
-					setTimeout(function(){
-						setHeight( $(swiper.el).find('.products-small__item-name') )
-					}, 200)
-				},
-				resize: function (swiper) {
-					let posNav = $(swiper.el).find('.products-small__item-thumb').height()
-
-					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posNav/2)
-
-					$(swiper.el).find('.products-small__item-name').height('auto')
-
-					setTimeout(function(){
-						setHeight( $(swiper.el).find('.prodproducts-small__item-nameuct__name') )
-					}, 200)
-				}
-			}
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
 		})
 	}
-	else if ($(window).width() > 1023 && $('.products-small').hasClass('swiper-initialized')) {
-		if ($('.products-small').length === 1 && $('.products-small').hasClass('swiper-initialized')) {
-			productSmallSwiper.destroy(true, true)
-		} else if ($('.products-small').length >= 2 && $('.products-small').hasClass('swiper-initialized')) {
-			productSmallSwiper.forEach(function (element) {
+	else if ($(window).width() > 1023 && $('.advantages__items').hasClass('swiper-initialized')) {
+		if ($('.advantages__items').length === 1 && $('.advantages__items').hasClass('swiper-initialized')) {
+			advantagesSwiper.destroy(true, true)
+		} else if ($('.advantages__items').length >= 2 && $('.advantages__items').hasClass('swiper-initialized')) {
+			advantagesSwiper.forEach(function (element) {
 				element.destroy(true, true)
 			})
 		}
 
-		$('.products-small').removeClass('swiper')
-		$('.products-small__item').removeClass('swiper-wrapper')
-		$('.products-small__item').removeClass('swiper-slide')
+		$('.advantages__items').removeClass('swiper')
+		$('.advantages__items-wrap').removeClass('swiper-wrapper')
+		$('.advantages__items-flex').removeClass('swiper-slide')
 	}
 }
-
-function wholesaleImg(){
-	let heigWholesale = $('.wholesale__img').height();
-
-	$('.wholesale__line').height(heigWholesale);
-}
-
-function productInfoImg(){
-	let heigInfoImg = $('.product-info__slider').height();
-
-	$('.product-info__line').height(heigInfoImg);
-}
-
-function sectionLkImg(){
-	let heigLkImg = $('.section-lk__thumb').height();
-
-	$('.section-lk__line').height(heigLkImg);
-}
-
