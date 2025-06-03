@@ -10,20 +10,6 @@ if (document.body.clientWidth < 375) {
 }
 
 $(() => {
-	$('body').on('click', '.mob-menu-btn', function (e) {
-		e.preventDefault()
-
-		if ($('.mob-menu-btn').hasClass('_active')) {
-			$('.mob-menu-btn').removeClass('_active')
-			$('.header').removeClass('_show')
-			$('body').removeClass('_menu-open')
-		} else {
-			$('.mob-menu-btn').addClass('_active')
-			$('.header').addClass('_show')
-			$('body').addClass('_menu-open')
-		}
-	})
-
 	// favorite
 	$('body').on('click', '.product-favorite:not(.product-favorite_delete)', function (e) {
 		e.preventDefault()

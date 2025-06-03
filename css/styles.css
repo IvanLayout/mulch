@@ -738,6 +738,7 @@ button
     display: block;
     overflow: hidden;
 
+    width: 100%;
     padding: 0 18px 0 12px;
 
     cursor: pointer;
@@ -1400,7 +1401,7 @@ button
     opacity: 1;
 }
 
-.header-catalog__top
+.catalog-head
 {
     display: none;
 }
@@ -1519,9 +1520,7 @@ button
 
     .header-menu__item._active-pc .header-menu__link-icon
     {
-        color: #007657;
-
-        background: rgba(0, 118, 87, .1);
+        background: #F9F9F9;
     }
 
     .header-menu__item._active-pc .header-submenu
@@ -1565,6 +1564,12 @@ button
     font-size: 26px;
     font-weight: 500;
     line-height: 1.3;
+}
+
+.header-submenu__all,
+.header-submenu__sub-all
+{
+    display: none;
 }
 
 .header-submenu__flex
