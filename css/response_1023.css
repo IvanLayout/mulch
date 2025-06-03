@@ -66,6 +66,34 @@
     }
 
 
+    .mini-modal__modal-select
+    {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .header-cats
+    {
+        column-gap: 0;
+        columns: 1;
+    }
+
+    .header__search-all
+    {
+        font-size: 13px;
+    }
+
+    .header-cats__link-icon
+    {
+        margin-right: 10px;
+    }
+
+    .header-cats__link
+    {
+        font-size: 13px;
+    }
+
+
     .btn-green
     {
         line-height: 40px;

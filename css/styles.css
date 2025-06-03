@@ -707,6 +707,8 @@ button
 
 .header__search
 {
+    position: relative;
+
     flex-grow: 1;
     flex-wrap: nowrap;
 
@@ -721,6 +723,8 @@ button
 
 .mini-modal__select
 {
+    position: static;
+
     flex-shrink: 0;
 
     width: 78px;
@@ -834,11 +838,18 @@ button
 
 .mini-modal__modal-select
 {
+    top: calc(100% + 1px);
     left: 0;
 
+    overflow: hidden;
+    overflow-y: auto;
+
     width: 721px;
+    max-width: 100%;
+    max-height: calc(100vh - 120px);
     padding: 50px 20px 42px;
 
+    border-radius: 10px;
     background: #FFF;
     box-shadow: 0 4px 4px 0 rgba(212, 212, 212, .25);
 }
@@ -5390,6 +5401,17 @@ input[type=checkbox]:disabled + .checkbox-bord__text
     .header__search
     {
         max-width: 692px;
+    }
+
+
+    .header-cats__link
+    {
+        font-size: 14px;
+    }
+
+    .header__search-all
+    {
+        font-size: 14px;
     }
 
 

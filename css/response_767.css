@@ -193,7 +193,6 @@
         overflow: hidden;
 
         padding: 0 36px;
-;
 
         text-align: center;
         white-space: nowrap;
@@ -720,7 +719,7 @@
         position: relative;
     }
 
-    .header-mob__search-input
+    .header-mob__search .header-mob__search-input
     {
         color: #D2D2D2;
         font: 13px var(--font-family);
