@@ -271,10 +271,24 @@
 
 
 
-    /* .breadcrumbs
+    .breadcrumbs
     {
-        font-size: 14px;
-    } */
+        overflow: hidden;
+        overflow-x: auto;
+
+        width: calc(100% + 80px);
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-right: 40px;
+        padding-left: 40px;
+
+        white-space: nowrap;
+    }
+
+    .breadcrumbs::-webkit-scrollbar
+    {
+        display: none;
+    }
 
 
     .categories__item

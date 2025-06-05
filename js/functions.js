@@ -391,6 +391,57 @@ $(() => {
 	})
 
 
+	$('body').on('click', '.open-user-info', function (e) {
+		e.preventDefault()
+
+		if ( $(this).hasClass('_active') ) {
+			$(this).removeClass('_active') 
+
+			$('.user-info').removeClass('_show')
+			$('body').removeClass('_lock')
+		} else{
+			$(this).addClass('_active') 
+
+			$('.user-info').addClass('_show')
+			$('body').addClass('_lock')
+		}
+	})
+
+
+	$('body').on('click', '.user-info__links-link._sub', function (e) {
+		e.preventDefault()
+
+		if ( $(this).hasClass('_active') ) {
+			$(this).removeClass('_active') 
+
+			$(this).next().removeClass('_show')
+		} else{
+			$(this).addClass('_active') 
+
+			$(this).next().addClass('_show')
+		}
+	})
+
+
+	$('body').on('focus', '.header-mob__search-input', function(e) {
+		e.preventDefault()
+
+		$('.header-mob__search').addClass('_show')
+
+		$('body').addClass('_lock')
+	})
+
+	$('body').on('click', '.header-mob__search-close', function(e) {
+		e.preventDefault()
+
+		$('#header-mob__search-input').val('')
+
+		$('.header-mob__search').removeClass('_show')
+
+		$('body').removeClass('_lock')
+	})
+
+
 	$('body').on('click', '.product__btn', function (e) {
 		e.preventDefault()
 		
