@@ -48,6 +48,51 @@ $(() => {
 	})
 
 
+	$('body').on('click', '.filter-use__link', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.filter-use__item').remove()
+
+		if ($(window).width() < 1024 && $(this).closest('.filter-use').hasClass('swiper-initialized')) {
+			filterUseSwiper.update()
+		}
+	})
+
+	$('body').on('click', '.filter-use__clear', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.filter-use').remove()
+	})
+
+
+	//Ползунки
+	$priceRange = $("#price_range").ionRangeSlider({
+		type     : 'double',
+		min      : 11,
+		max      : 123000,
+		from     : 80000,
+		to       : 123000,
+		step     : 1,
+		onChange : function (data) {
+			$('.price_range input.ot').val( data.from.toLocaleString('ru-RU') )
+			$('.price_range input.do').val( data.to.toLocaleString('ru-RU') )
+		}
+	}).data("ionRangeSlider")
+
+	$('.price_range .range__input').keyup(function() {
+		$priceRange.update({
+			from : $('.price_range input.ot').val().replace(/\s/g,''),
+			to : $('.price_range input.do').val().replace(/\s/g,'')
+		})
+	})
+
+	$('.reset-btn').click(function(){
+		if ( $('.price_range').length ) {
+			$priceRange.reset()
+		}
+	})
+
+
 	if ($('.main-slider').length) {
 		new Swiper(".main-slider", {
 			loop: true,
@@ -144,6 +189,49 @@ $(() => {
 
 	if ($('.header__cats').length) {
 		new Swiper(".header__cats", {
+			loop: false,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+				},
+				'480': {
+					spaceBetween: 15,
+				},
+				'768': {
+					spaceBetween: 15,
+				},
+				'1024': {
+					spaceBetween: 20,
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				},
+			}
+		})
+	}
+
+
+	if ($('.catalog-cats').length) {
+		new Swiper(".catalog-cats", {
 			loop: false,
 			spaceBetween: 15,
 			slidesPerView: 'auto',
@@ -396,6 +484,82 @@ $(() => {
 		})
 	}
 
+	if ($('.products-small__slider').length) {
+		new Swiper('.products-small__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			nested: true,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1320': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1400': {
+					spaceBetween: 20,
+					slidesPerView: 5
+				},
+				'1760': {
+					spaceBetween: 20,
+					slidesPerView: 6
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.product-small__name, .product-small__box, .product-small__prices').height('auto')
+
+					setTimeout(function(){
+						setHeight( $(swiper.el).find('.product-small__name') )
+						setHeight( $(swiper.el).find('.product-small__box') )
+						setHeight( $(swiper.el).find('.product-small__prices') )
+					}, 200)
+				},
+				resize: function (swiper) {
+					$(swiper.el).find('.product-small__name, .product-small__box, .product-small__prices').height('auto')
+
+					setHeight( $(swiper.el).find('.product-small__name') )
+					setHeight( $(swiper.el).find('.product-small__box') )
+					setHeight( $(swiper.el).find('.product-small__prices') )
+				},
+			}
+		})
+	}
+
 
 	if ($('.product-info__slider').length) {
 		new Swiper(".product-info__slider", {
@@ -543,16 +707,8 @@ $(window).on('load', () => {
 		advantagesSlider()
 	}
 
-	if ($('.wholesale__img').length){
-		wholesaleImg()
-	}
-
-	if ($('.product-info__line').length){
-		productInfoImg()
-	}
-
-	if ($('.section-lk__line').length){
-		sectionLkImg()
+	if ($('.filter-use_slider').length){
+		filterUse()
 	}
 });
 
@@ -594,16 +750,8 @@ $(window).on('resize', () => {
 		advantagesSlider()
 	}
 
-	if ($('.wholesale__line').length){
-		wholesaleImg()
-	}
-
-	if ($('.product-info__line').length){
-		productInfoImg()
-	}
-
-	if ($('.section-lk__line').length){
-		sectionLkImg()
+	if ($('.filter-use_slider').length){
+		filterUse()
 	}
 });
 
@@ -614,12 +762,16 @@ function productsHeight(context, step) {
 	let finish   = step
 	let products = context.find('.product')
 
-	products.find('.product__bord').height('auto')
 	products.find('.product__name').height('auto')
+	products.find('.product__box').height('auto')
+	products.find('.product__info').height('auto')
+	products.find('.product__prices').height('auto')
 
 	for (let i = 0; i < products.length; i++) {
-		setHeight(products.slice(start, finish).find('.product__bord'))
 		setHeight(products.slice(start, finish).find('.product__name'))
+		setHeight(products.slice(start, finish).find('.product__box'))
+		setHeight(products.slice(start, finish).find('.product__info'))
+		setHeight(products.slice(start, finish).find('.product__prices'))
 
 		start  = start + step
 		finish = finish + step
@@ -667,5 +819,42 @@ function advantagesSlider(){
 		$('.advantages__items').removeClass('swiper')
 		$('.advantages__items-wrap').removeClass('swiper-wrapper')
 		$('.advantages__items-flex').removeClass('swiper-slide')
+	}
+}
+
+function filterUse(){
+	if ( $(window).width() < 1024 && !$('.filter-use_slider').hasClass('swiper-initialized') ) {
+		$('.filter-use_slider').addClass('swiper')
+		$('.filter-use_slider .filter-use__flex').addClass('swiper-wrapper').removeClass('_flex')
+		$('.filter-use_slider .filter-use__item').addClass('swiper-slide')
+
+		filterUseSwiper = new Swiper('.filter-use_slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			freeMode: true,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
+		})
+	}
+	else if ($(window).width() > 1023 && $('.filter-use_slider').hasClass('swiper-initialized')) {
+		filterUseSwiper.destroy(true, true)
+
+		$('..filter-use_slider').removeClass('swiper')
+		$('.filter-use_slider .filter-use__flex').removeClass('swiper-wrapper').addClass('_flex')
+		$('.filter-use_slider .filter-use__item').removeClass('swiper-slide')
 	}
 }

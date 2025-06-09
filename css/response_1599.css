@@ -234,6 +234,47 @@
     }
 
 
+    .checkbox-slider__text
+    {
+        padding-right: 60px;
+    }
+
+
+    .inner-banner__coll
+    {
+        padding-right: 20px;
+        padding-left: 30px;
+    }
+
+    .inner-banner__img
+    {
+        width: 54.74%;
+    }
+
+    .inner-banner__img picture
+    {
+        padding-bottom: 28.5%;
+    }
+
+
+    .products__list .product__pad
+    {
+        width: calc(100% - 260px);
+    }
+
+
+    .product-about .main-news__slider
+    {
+        margin-top: 22px;
+    }
+
+    .product-about .main-news__img
+    {
+        min-height: 246px;
+        padding-bottom: 66.94%;
+    }
+
+
     .footer__colr
     {
         width: 502px;

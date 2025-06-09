@@ -1,3 +1,137 @@
 @media (max-width: 1199px)
 {
+    .main-news__grid
+    {
+        display: flex;
+        justify-content: space-between;
+        align-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .main-news__grid .news-big
+    {
+        width: calc(50% - 10px);
+        padding-bottom: 24.365%;
+    }
+
+    .main-news__grid .news-big:nth-child(1),
+    .main-news__grid .news-big:nth-child(3n + 1)
+    {
+        width: 100%;
+        padding-bottom: 36.547%;
+    }
+
+    .main-news__grid .news-big__date
+    {
+        font-size: 13px;
+    }
+
+    .main-news__grid .news-big__name
+    {
+        font-size: 16px;
+
+        max-width: none;
+        margin-top: 6px;
+    }
+
+    .main-news__grid .main-news__time
+    {
+        top: 20px;
+        left: 20px;
+    }
+
+    .main-news__flex
+    {
+        margin-top: -50px;
+    }
+
+    .main-news__flex .main-news__item
+    {
+        margin-top: 50px;
+    }
+
+    .main-news__flex .main-news__img
+    {
+        padding-bottom: 71%;
+    }
+
+    .main-news__flex .main-news__time
+    {
+        top: 20px;
+        left: 20px;
+    }
+
+    .main-news__flex .main-news__date
+    {
+        font-size: 13px;
+
+        margin-top: 10px;
+    }
+
+    .main-news__flex .main-news__name
+    {
+        margin-top: 12px;
+    }
+
+    .main-news__flex .main-news__desc
+    {
+        font-size: 13px;
+
+        margin-top: 10px;
+    }
+
+    .main-news__cats
+    {
+        margin: 15px 0 0 -10px;
+    }
+
+    .main-news__cats-link
+    {
+        font-size: 13px;
+        line-height: 25px;
+
+        min-width: 76px;
+    }
+
+
+    .categories-btns
+    {
+        margin-bottom: 9px;
+    }
+
+    .categories-btns__btn
+    {
+        font-size: 13px;
+        line-height: 36px;
+
+        padding: 0 17px;
+    }
+
+    .amount
+    {
+        min-width: 96px;
+    }
+
+    .amount__btn
+    {
+        width: 32px;
+    }
+
+    .amount .amount__input
+    {
+        width: calc(100% - 64px);
+    }
+
+
+    .product-small__thumb
+    {
+        width: 32%;
+    }
+
+
+    .self-pickup__text
+    {
+        margin-bottom: 20px;
+    }
 }

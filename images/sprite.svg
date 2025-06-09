@@ -88,4 +88,24 @@
 		<path d="M11.9658 14.25C15.4265 14.2501 17.3356 16.0063 18.4521 17.1191C14.9485 20.6099 9.02831 20.6285 5.50293 17.1455C7.26983 15.1634 9.56111 14.25 11.9658 14.25Z" fill="none" stroke-width="1.5"/>
 		<path d="M12 4.25C13.5303 4.25 14.75 5.46695 14.75 6.92871V8.07129C14.75 9.53305 13.5303 10.75 12 10.75C10.4696 10.75 9.25 9.53307 9.25 8.07129V6.92871C9.25 5.46693 10.4696 4.25 12 4.25Z" fill="none" stroke-width="1.5"/>
 	</symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" id="view_list" viewBox="0 0 20 20">
+		<path d="M4.5 6H18.5" stroke-linecap="round"/>
+		<path d="M1.5 6H2.5" stroke-linecap="round"/>
+		<path d="M4.5 10H18.5" stroke-linecap="round"/>
+		<path d="M1.5 10H2.5" stroke-linecap="round"/>
+		<path d="M4.5 14H18.5" stroke-linecap="round"/>
+		<path d="M1.5 14H2.5" stroke-linecap="round"/>
+	</symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" id="view_grid" viewBox="0 0 20 20">
+		<rect x="3.5" y="3.5" width="5.41665" height="5.41665" rx="0.5"/>
+		<rect x="3.5" y="11.0781" width="5.41665" height="5.41665" rx="0.5"/>
+		<rect x="11.0859" y="3.5" width="5.41665" height="5.41665" rx="0.5"/>
+		<rect x="11.0859" y="11.0781" width="5.41665" height="5.41665" rx="0.5"/>
+	</symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" id="all_filter" viewBox="0 0 20 18">
+		<path d="M18.3307 1.5H1.66406L8.33073 9.38333V14.8333L11.6641 16.5V9.38333L18.3307 1.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 </svg>

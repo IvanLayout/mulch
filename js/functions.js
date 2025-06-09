@@ -448,6 +448,65 @@ $(() => {
 		$(this).closest('.product__bot').addClass('_hide')
 		$(this).closest('.product').find('.product__added').addClass('_show')
 	})
+
+
+	$('body').on('click', '.filter-open', function (e) {
+		e.preventDefault()
+
+		console.log('ad')
+
+		$('.aside-filter').addClass('_show')
+	})
+
+	$('body').on('click', '.filter-head', function (e) {
+		e.preventDefault()
+
+		$('.aside-filter').removeClass('_show')
+	})
+
+	$('body').on('click', '.filter__title', function (e) {
+		e.preventDefault()
+
+		if ( $(this).closest('.filter__item').hasClass('_active') ) {
+			$(this).closest('.filter__item').removeClass('_active') 
+		} else{
+			$(this).closest('.filter__item').addClass('_active') 
+		}
+	})
+
+
+	$('body').on('click', '.categories-small__more', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.categories-small').find('.categories-small__item').addClass('_show')
+		$(this).hide()
+	})
+
+
+	$('.filter input:not(.filter__search-input)').change(function() {
+		const $input = $(this);
+		let heigh = $input.height()
+		let inputOffsetTop = 0;
+		if ( $input.attr('type') === 'checkbox' || $input.attr('type') === 'radio' ) {
+			inputOffsetTop = $input.closest('label').offset().top;
+
+			heigh = $input.closest('label').height()
+		} else {
+			inputOffsetTop = $input.offset().top;
+		}
+		
+		const containerOffsetTop = $input.closest('.filter').offset().top;
+
+		const relativeOffset = inputOffsetTop - containerOffsetTop;
+
+		console.log(relativeOffset)
+
+		if( !$('.filter-filter').hasClass('_show') ){
+			$('.filter-filter').addClass('_show')
+		}
+
+		$('.filter-filter').css('top', relativeOffset + heigh/2)
+	})
 })
 
 
