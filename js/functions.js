@@ -453,15 +453,17 @@ $(() => {
 	$('body').on('click', '.filter-open', function (e) {
 		e.preventDefault()
 
-		console.log('ad')
-
 		$('.aside-filter').addClass('_show')
+
+		$('body').addClass('_filter-open-mob')
 	})
 
 	$('body').on('click', '.filter-head', function (e) {
 		e.preventDefault()
 
 		$('.aside-filter').removeClass('_show')
+
+		$('body').removeClass('_filter-open-mob')
 	})
 
 	$('body').on('click', '.filter__title', function (e) {
@@ -506,6 +508,22 @@ $(() => {
 		}
 
 		$('.filter-filter').css('top', relativeOffset + heigh/2)
+	})
+
+	$('body').on('click', '.filter__all', function (e) {
+		e.preventDefault()
+
+		$('.filter-big').addClass('_show')
+
+		$('body').addClass('_filter-open')
+	})
+
+	$('body').on('click', '.filter-big__overlay, .filter-big__close', function (e) {
+		e.preventDefault()
+
+		$('.filter-big').removeClass('_show')
+
+		$('body').removeClass('_filter-open')
 	})
 })
 

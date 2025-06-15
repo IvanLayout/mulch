@@ -127,53 +127,53 @@
     }
 
 
-    .filter__item + .filter__item
+    .filter:not(.filter-big__wrap) .filter__item + .filter__item
     {
         margin-top: 20px;
         padding-top: 19px;
     }
 
-    .filter__title
+    .filter:not(.filter-big__wrap) .filter__title
     {
         font-size: 14px;
     }
 
-    .checkbox-slider__text
+    .filter:not(.filter-big__wrap) .checkbox-slider__text
     {
         font-size: 14px;
     }
 
-    .checkbox-slider__text-dot
+    .filter:not(.filter-big__wrap) .checkbox-slider__text-dot
     {
         width: 37px;
         height: 18px;
     }
 
-    .checkbox-slider__text-dot:after
+    .filter:not(.filter-big__wrap) .checkbox-slider__text-dot:after
     {
         width: 14px;
         height: 14px;
     }
 
-    .filter__bot
+    .filter:not(.filter-big__wrap) .filter__bot
     {
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
-    .filter-use_scroll
+    .filter:not(.filter-big__wrap) .filter-use_scroll
     {
         margin-bottom: 15px;
     }
 
-    .filter__submit.btn-green
+    .filter:not(.filter-big__wrap) .filter__submit.btn-green
     {
         font-size: 13px;
 
         width: calc(50% - 6px);
     }
 
-    .filter__reset
+    .filter:not(.filter-big__wrap) .filter__reset
     {
         font-size: 13px;
 

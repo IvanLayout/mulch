@@ -1599,7 +1599,7 @@
         width: 200px;
     }
 
-    .filter-btns
+    .filter:not(.filter-big__wrap) .filter-btns
     {
         overflow: hidden;
         overflow-x: auto;
@@ -1613,12 +1613,12 @@
         padding-left: 10px;
     }
 
-    .filter-btns::-webkit-scrollbar
+    .filter:not(.filter-big__wrap) .filter-btns::-webkit-scrollbar
     {
         display: none;
     }
 
-    .filter-btns__btn
+    .filter:not(.filter-big__wrap) .filter-btns__btn
     {
         flex-shrink: 0;
 

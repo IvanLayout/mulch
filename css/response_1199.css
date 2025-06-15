@@ -134,4 +134,15 @@
     {
         margin-bottom: 20px;
     }
+
+
+    .filter.filter-big__wrap
+    {
+        padding-left: 40px;
+    }
+
+    .filter-big__wrap-box
+    {
+        max-width: none;
+    }
 }

@@ -275,6 +275,27 @@
     }
 
 
+    .filter-big__title
+    {
+        font-size: 22px;
+    }
+
+    .filter.filter-big__wrap
+    {
+        width: 100%;
+    }
+
+    .filter-big__close
+    {
+        left: calc(100% - 55px);
+    }
+
+    .filter-big__wrap-box
+    {
+        max-width: none;
+    }
+
+
     .footer__colr
     {
         width: 502px;
