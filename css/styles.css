@@ -6896,6 +6896,38 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 
+.about-search{
+    margin-bottom: 20px;
+}
+
+.about-search__text{
+    font-size: 16px;
+    line-height: 130%;
+    color: rgba(0, 118, 87, 0.5);
+}
+
+.about-search__text a{
+    display: inline-block;
+    text-decoration: none;
+    color: #282828;
+    padding-left: 21px;
+    position: relative;
+    margin-left: 15px;
+}
+
+.about-search__text a svg{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+
+    display: block;
+    fill: #007657;
+}
+
+
 
 /*------------
     footer

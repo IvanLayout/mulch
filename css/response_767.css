@@ -1643,6 +1643,12 @@
     }
 
 
+    .about-search__text a{
+        display: block;
+        margin: 10px 0 0;
+    }
+
+
     .footer
     {
         padding: 22px 0;
