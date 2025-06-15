@@ -1643,9 +1643,57 @@
     }
 
 
-    .about-search__text a{
+    .about-search__text a
+    {
         display: block;
+
         margin: 10px 0 0;
+    }
+
+
+    .products__list .product__added
+    {
+        flex-wrap: nowrap;
+    }
+
+    .products__list .product__amount
+    {
+        order: 0;
+
+        width: calc(50%  - 5px);
+        margin: 0 5px 0 0;
+    }
+
+    .products__list .product__added-check
+    {
+        width: calc(50%  - 5px);
+    }
+
+
+    .info-brand__img
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .info-brand .page-title span
+    {
+        display: block;
+
+        margin: 10px 0 0;
+    }
+
+
+    .brand-items__item
+    {
+        width: calc(100%/1 - 16px);
+    }
+
+
+    .stock-banner__bg
+    {
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
 

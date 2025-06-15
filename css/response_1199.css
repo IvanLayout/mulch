@@ -145,4 +145,23 @@
     {
         max-width: none;
     }
+
+
+    .brand-items
+    {
+        margin: -16px 0 30px -16px;
+    }
+
+    .brand-items__item
+    {
+        width: calc(100% / 3 - 16px);
+        margin: 16px 0 0 16px;
+        padding: 16px;
+    }
+
+    .brand-items__icon
+    {
+        width: 54px;
+        height: 54px;
+    }
 }

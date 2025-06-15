@@ -380,6 +380,36 @@
     }
 
 
+    .stock-banner__bg
+    {
+        padding: 0;
+    }
+
+    .stock-banner__desc
+    {
+        margin-top: 16px;
+    }
+
+
+    .empty-section__bord
+    {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .info-save__btn.btn-bord
+    {
+        font-size: 12px;
+        line-height: 42px;
+    }
+
+
+    .products__bord .products__grid
+    {
+        margin-top: -40px;
+    }
+
+
     .footer__coll
     {
         width: 100%;

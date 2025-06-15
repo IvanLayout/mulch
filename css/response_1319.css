@@ -1221,6 +1221,59 @@
 
 
 
+    .brand-items__item
+    {
+        padding: 20px;
+    }
+
+    .brand-items__icon
+    {
+        width: 60px;
+        height: 60px;
+        margin-right: 12px;
+    }
+
+
+
+    .empty-section__text
+    {
+        font-size: 22px;
+    }
+
+    .info-save__btn.btn-bord
+    {
+        line-height: 42px;
+    }
+
+    .info-save__desc
+    {
+        font-size: 12px;
+    }
+
+    .info-save__btns
+    {
+        margin-top: 10px;
+    }
+
+
+    .products__bord
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .products__bord .products__grid
+    {
+        margin-top: -16px;
+    }
+
+    .sorting_marg
+    {
+        margin-bottom: 24px;
+    }
+
+
+
     .footer__colr
     {
         width: 375px;
