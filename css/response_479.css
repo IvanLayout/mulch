@@ -410,6 +410,23 @@
     }
 
 
+    .section-stock__grid
+    {
+        margin-top: -30px;
+    }
+
+    .section-stock__item
+    {
+        width: calc(100% - 16px);
+        margin-top: 30px;
+    }
+
+    .section-stock__item .btn-bord
+    {
+        width: 100%;
+    }
+
+
     .footer__coll
     {
         width: 100%;

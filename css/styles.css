@@ -4580,11 +4580,16 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .tabs
 {
+    position: relative;
+    z-index: 1;
+
     margin: 0 0 25px -20px;
 }
 
 .tabs__text
 {
+    position: relative;
+
     color: rgba(97, 97, 97, .4);
     font-size: 16px;
     font-weight: 500;
@@ -4592,9 +4597,16 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
     margin: 0 0 10px 20px;
 
+    transition: color .2s linear;
+}
+
+.tabs__text span
+{
+    display: inline-block;
+
     border-bottom: 1px dashed transparent;
 
-    transition: color .2s linear, border .2s linear;
+    transition: border .2s linear;
 }
 
 @media (any-hover: hover)
@@ -4608,7 +4620,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .tabs__text._active
 {
     color: #007657;
+}
 
+.tabs__text._active span
+{
     border-bottom-color: #007657;
 }
 
@@ -7218,6 +7233,131 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .products__grid_favorite
 {
     --products_count: 6;
+}
+
+
+.section-stock__grid
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin: -70px 0 0 -20px;
+}
+
+.section-stock__item
+{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100%/3 - 20px);
+    margin: 70px 0 0 20px;
+}
+
+.section-stock__img
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    width: 100%;
+    padding-bottom: 68%;
+
+    border-radius: 8px;
+}
+
+.section-stock__img img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    transition: transform .4s linear, opacity .5s linear;
+
+    object-fit: cover;
+}
+
+@media (any-hover: hover)
+{
+    .section-stock__img:not(._old):hover img
+    {
+        transform: scale(1.05);
+    }
+}
+
+.section-stock__img._old img
+{
+    filter: grayscale(100%);
+}
+
+.section-stock__img._old::after
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: .8;
+    background: #FFF;
+}
+
+.section-stock__date
+{
+    font-size: 18px;
+
+    width: 100%;
+    margin-top: 12px;
+
+    opacity: .5;
+}
+
+.section-stock__name
+{
+    font-size: 20px;
+    font-weight: 500;
+
+    width: 100%;
+    margin-top: 16px;
+}
+
+.section-stock__name a
+{
+    color: #282828;
+
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .section-stock__name a:hover
+    {
+        color: #007657;
+    }
+}
+
+.section-stock__desc
+{
+    margin-top: 6px;
+
+    opacity: .5;
+}
+
+.section-stock__btn
+{
+    width: 100%;
+    margin-top: auto;
+    padding-top: 20px;
 }
 
 

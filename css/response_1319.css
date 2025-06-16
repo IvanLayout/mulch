@@ -1273,6 +1273,27 @@
     }
 
 
+    .section-stock__grid
+    {
+        margin-top: -40px;
+    }
+
+    .section-stock__item
+    {
+        margin-top: 40px;
+    }
+
+    .section-stock__date
+    {
+        font-size: 14px;
+    }
+
+    .section-stock__name
+    {
+        font-size: 16px;
+    }
+
+
 
     .footer__colr
     {

@@ -1076,6 +1076,18 @@
     }
 
 
+    .section-stock__grid
+    {
+        margin-left: -16px;
+    }
+
+    .section-stock__item
+    {
+        width: calc(100% / 2 - 16px);
+        margin-left: 16px;
+    }
+
+
     .footer__coll
     {
         width: 176px;
