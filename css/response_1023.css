@@ -101,6 +101,14 @@
         padding: 0 22px;
     }
 
+    .btn-green_small
+    {
+        font-size: 14px;
+        line-height: 44px;
+
+        padding: 0 21px;
+    }
+
 
     .main-slider
     {
@@ -885,17 +893,22 @@
         display: none;
     }
 
-    .product-about .tabs
+    .tabs_scroll
     {
         max-width: none;
     }
 
-    .product-about .tabs__text
+    .tabs__btn
     {
         padding-bottom: 20px;
     }
 
-    .product-about .main-news__slider .swiper-slide
+    .main-news__slider_middle
+    {
+        margin-top: 4px;
+    }
+
+    .main-news__slider_middle .swiper-slide
     {
         width: 277px;
         min-width: calc(100% / 3 - 32px / 3);
@@ -1085,6 +1098,57 @@
     {
         width: calc(100% / 2 - 16px);
         margin-left: 16px;
+    }
+
+
+    .contacts__wrap-colr
+    {
+        margin-left: 10px;
+    }
+
+
+    .contacts__cols
+    {
+        margin-top: 20px;
+    }
+
+    .contacts__colr
+    {
+        width: 100%;
+    }
+
+    .contacts__coll
+    {
+        order: 1;
+
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .contacts__video
+    {
+        min-height: 221px;
+        padding-bottom: 45.35%;
+    }
+
+
+    .section-props__table td
+    {
+        width: auto;
+        height: 43px;
+    }
+
+    .section-props__table .section-props__table-name
+    {
+        font-size: 12px;
+
+        width: 34.2%;
+    }
+
+
+    .categories-btns_marg
+    {
+        margin-top: 16px;
     }
 
 

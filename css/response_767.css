@@ -1578,15 +1578,15 @@
         background: #F9F9F9;
     }
 
-    .product-about .tabs
+    .tabs_scroll
     {
         overflow: visible;
 
         margin-bottom: 20px;
-        padding-right: 0;
+        padding-right: 20px;
     }
 
-    .product-about .tabs__text
+    .tabs__btn
     {
         width: auto;
         min-width: 111px;
@@ -1694,6 +1694,69 @@
     {
         padding-right: 30px;
         padding-left: 30px;
+    }
+
+
+    .contacts__wrap
+    {
+        flex-wrap: wrap;
+
+        margin-top: 8px;
+    }
+
+    .contacts__map
+    {
+        height: 271px;
+    }
+
+    .contacts__wrap-colr
+    {
+        width: 100%;
+        margin: 10px 0 0;
+    }
+
+    .contacts__btn-green
+    {
+        display: block;
+
+        margin-top: 10px;
+    }
+
+    .contacts__code
+    {
+        display: none;
+    }
+
+
+    .section-props__table .section-props__table-name
+    {
+        width: 44%;
+    }
+
+
+    .contacts__item
+    {
+        flex-wrap: wrap;
+
+        padding: 15px 10px 26px;
+    }
+
+    .contacts__item-name
+    {
+        font-size: 15px;
+
+        width: 100%;
+        margin-bottom: 14px;
+    }
+
+    .contacts__item-val
+    {
+        margin-left: -30px;
+    }
+
+    .contacts__item-col
+    {
+        margin-left: 30px;
     }
 
 

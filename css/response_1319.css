@@ -80,6 +80,21 @@
         padding: 0 12px;
     }
 
+    .btn-green_small
+    {
+        font-size: 14px;
+        line-height: 44px;
+
+        padding: 0 16px;
+    }
+
+    .btn-share
+    {
+        font-size: 14px;
+
+        padding-left: 11px;
+    }
+
 
     .header__list
     {
@@ -1132,18 +1147,18 @@
         font-size: 18px;
     }
 
-    .product-about .main-news__slider
+    .product-about .main-news__slider_middle
     {
         margin-top: 12px;
     }
 
 
-    .product-about .tabs
+    .tabs_scroll
     {
         max-width: 634px;
     }
 
-    .product-about .tabs__text
+    .tabs__btn
     {
         font-size: 13px;
 
@@ -1293,6 +1308,101 @@
         font-size: 16px;
     }
 
+
+    .section-props__table td
+    {
+        font-size: 13px;
+
+        padding: 9px 19px;
+    }
+
+    .section-props__table .section-props__table-name
+    {
+        font-size: 18px;
+    }
+
+
+    .contacts__wrap
+    {
+        margin-top: 10px;
+    }
+
+    .contacts__wrap-colr
+    {
+        width: 269px;
+    }
+
+    .route-plan
+    {
+        padding-top: 21px;
+        padding-bottom: 13px;
+    }
+
+    .route-plan__title
+    {
+        font-size: 18px;
+    }
+
+    .contacts__code img
+    {
+        width: 145px;
+    }
+
+    .contacts__map
+    {
+        height: 331px;
+    }
+
+
+    .contacts__cols
+    {
+        margin-top: 24px;
+    }
+
+    .contacts__coll
+    {
+        width: 48.94%;
+    }
+
+    .contacts__colr
+    {
+        width: calc(51.06% - 20px);
+    }
+
+
+    .video::after
+    {
+        background-size: 66px auto;
+    }
+
+    .section-props__table
+    {
+        margin-top: 16px;
+    }
+
+
+    .contacts__item
+    {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .contacts__item-name
+    {
+        font-size: 18px;
+
+        width: 138px;
+    }
+
+    .contacts__item-val
+    {
+        padding-bottom: 3px;
+    }
+
+    .contacts__item-subtitle
+    {
+        margin-bottom: 8px;
+    }
 
 
     .footer__colr

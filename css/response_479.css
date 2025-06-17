@@ -33,6 +33,12 @@
         padding: 0 18px;
     }
 
+    .btn-green_small
+    {
+        font-size: 14px;
+        line-height: 44px;
+    }
+
 
     .categories__item
     {
@@ -332,7 +338,7 @@
         font-size: 13px;
     }
 
-    .product-about .main-news__slider .swiper-slide
+    .main-news__slider_middle .swiper-slide
     {
         width: 251px;
         min-width: calc(100% / 2 - 16px / 2);
@@ -424,6 +430,61 @@
     .section-stock__item .btn-bord
     {
         width: 100%;
+    }
+
+
+    .video::after
+    {
+        background-size: 48px auto;
+    }
+
+
+    .contacts__cols
+    {
+        margin-top: 30px;
+    }
+
+
+    .section-props__table
+    {
+        display: block;
+
+        border: 1px solid rgba(97, 97, 97, .2);
+        border-radius: 10px;
+    }
+
+    .section-props__table tr
+    {
+        display: block;
+
+        padding: 19px;
+    }
+
+    .section-props__table tr + tr
+    {
+        border-top: 1px solid rgba(97, 97, 97, .2);
+    }
+
+    .section-props__table td
+    {
+        display: block;
+
+        width: 100%;
+        height: auto;
+        padding: 0;
+
+        border: none;
+        border-radius: 0;
+    }
+
+    .section-props__table .section-props__table-name
+    {
+        width: 100%;
+    }
+
+    .section-props__table td + td
+    {
+        padding-top: 9px;
     }
 
 

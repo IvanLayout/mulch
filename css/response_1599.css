@@ -263,15 +263,20 @@
     }
 
 
-    .product-about .main-news__slider
+    .product-about .main-news__slider_middle
     {
         margin-top: 22px;
     }
 
-    .product-about .main-news__img
+    .main-news__slider_middle .main-news__img
     {
         min-height: 246px;
         padding-bottom: 66.94%;
+    }
+
+    .categories-btns_marg
+    {
+        margin-top: 20px;
     }
 
 
@@ -293,6 +298,23 @@
     .filter-big__wrap-box
     {
         max-width: none;
+    }
+
+
+    .contacts__coll
+    {
+        width: 45.6%;
+    }
+
+    .contacts__colr
+    {
+        width: calc(54.4% - 90px);
+    }
+
+
+    .video::after
+    {
+        background-size: 87px auto;
     }
 
 
