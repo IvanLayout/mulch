@@ -338,7 +338,7 @@
         font-size: 13px;
     }
 
-    .main-news__slider_middle .swiper-slide
+    .main-news__slider._middle .swiper-slide
     {
         width: 251px;
         min-width: calc(100% / 2 - 16px / 2);

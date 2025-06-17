@@ -263,12 +263,12 @@
     }
 
 
-    .product-about .main-news__slider_middle
+    .product-about .main-news__slider._middle
     {
         margin-top: 22px;
     }
 
-    .main-news__slider_middle .main-news__img
+    .main-news__slider._middle .main-news__img
     {
         min-height: 246px;
         padding-bottom: 66.94%;
