@@ -508,6 +508,86 @@ $(() => {
 		})
 	}
 
+	if ($('.compare-products__slider').length) {
+		productsCompare = new Swiper('.compare-products__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			nested: true,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 1
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 2
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 3
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1320': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1400': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1760': {
+					spaceBetween: 20,
+					slidesPerView: 5
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.product, .product__name, .product__box, .product__info, .product__prices').height('auto')
+
+					setHeight( $(swiper.el).find('.product') )
+					setHeight( $(swiper.el).find('.product__name') )
+					setHeight( $(swiper.el).find('.product__box') )
+					setHeight( $(swiper.el).find('.product__info') )
+					setHeight( $(swiper.el).find('.product__prices') )
+				},
+				resize: function (swiper) {
+					$(swiper.el).find('.product, .product__name, .product__box, .product__info, .product__prices').height('auto')
+
+					setTimeout(function(){
+						setHeight( $(swiper.el).find('.product') )
+						setHeight( $(swiper.el).find('.product__name') )
+						setHeight( $(swiper.el).find('.product__box') )
+						setHeight( $(swiper.el).find('.product__info') )
+						setHeight( $(swiper.el).find('.product__prices') )
+					}, 200)
+				},
+			}
+		})
+	}
+
 	if ($('.products-small__slider').length) {
 		new Swiper('.products-small__slider', {
 			loop: false,
@@ -881,4 +961,30 @@ function filterUse(){
 		$('.filter-use_slider .filter-use__flex').removeClass('swiper-wrapper').addClass('_flex')
 		$('.filter-use_slider .filter-use__item').removeClass('swiper-slide')
 	}
+}
+
+// Выравнивание в сравнении
+function compareHeight() {
+  $('.products__feature-item').height('auto')
+
+  let productFeatures = $('.products__feature'),
+    featuresSizes = new Object()
+
+  productFeatures.each(function () {
+    $(this).find('> *').each(function () {
+      if (featuresSizes[$(this).index()]) {
+        if ($(this).outerHeight() > featuresSizes[$(this).index()]) {
+          featuresSizes[$(this).index()] = $(this).outerHeight()
+        }
+      } else {
+        featuresSizes[$(this).index()] = $(this).outerHeight()
+      }
+    })
+  })
+
+  $.each(featuresSizes, (key, data) => {
+    productFeatures.each(function () {
+      $(this).find('> *:eq(' + key + ')').innerHeight(data)
+    })
+  })
 }

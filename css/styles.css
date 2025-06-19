@@ -4196,6 +4196,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     transition: color .2s linear;
 }
 
+.product__btns-btn.product-compare_delete{
+    width: 21px;
+}
+
 .product__btns-btn + .product__btns-btn
 {
     margin-left: 8px;
@@ -4215,6 +4219,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     height: 22px;
 }
 
+.product__btns-btn.product-compare_delete svg{
+    width: 21px;
+}
+
 .product__btns-btn.product-favorite svg
 {
     width: 19px;
@@ -4232,6 +4240,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     .product__btns-btn:hover
     {
         color: #616161;
+    }
+
+    .product__btns-btn.product-compare_delete:hover{
+        color: #CC1525;
     }
 }
 
@@ -8249,6 +8261,65 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 
+.compare-section__top{
+    margin-left: -20px;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.compare-section__top-left{
+    width: calc(100%/6 - 20px);
+    margin-left: 20px;
+    position: relative;
+    background: #fff;
+    z-index: 12;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.compare-section__top-clear{
+    padding-top: 30px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.compare-section__clear{
+    position: relative;
+    padding-left: 22px;
+    color: #007657;
+    text-decoration: none;
+    transition: color .2s linear;
+    text-align: left;
+}
+
+@media (any-hover: hover){
+    .compare-section__clear:hover{
+        color:#CC1525;
+    }
+}
+
+.compare-section__clear svg{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    fill: currentColor;
+}
+
+.compare-section__clear span{
+    border-bottom: 1px dashed;
+}
+
+.compare-products{
+    width: calc((100%/6) * 5 - 20px);
+    margin-left: 20px;
+}
+
+
 
 /*------------
     footer
@@ -8886,6 +8957,14 @@ input[type=checkbox]:checked + .checkbox-btn__text
     .news-text__creator-name
     {
         font-size: 16px;
+    }
+
+    .compare-section__top-left {
+        width: calc(100% / 5 - 20px);
+    }
+
+    .compare-products {
+        width: calc((100% / 5)* 4 - 20px);
     }
 
     .footer-menu
