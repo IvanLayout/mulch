@@ -317,6 +317,29 @@
         background-size: 87px auto;
     }
 
+    .gallery-grid
+    {
+        margin-top: 20px;
+    }
+
+
+    .news-text__coll
+    {
+        width: calc(100% - 485px);
+    }
+
+    .news-text__colr
+    {
+        width: 465px;
+    }
+
+
+    .text-block blockquote
+    {
+        padding-right: 0;
+        padding-left: 24px;
+    }
+
 
     .footer__colr
     {

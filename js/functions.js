@@ -525,6 +525,22 @@ $(() => {
 
 		$('body').removeClass('_filter-open')
 	})
+
+	$('body').on('click', '.news-text__cats-more', function (e) {
+		e.preventDefault()
+
+		$(this).hide()
+
+		$(this).closest('.news-text__cats').find('.news-text__cats-link').addClass('_show')
+	})
+
+	$('body').on('click', '.news-small__more', function (e) {
+		e.preventDefault()
+
+		$(this).hide()
+
+		$(this).closest('.news-small').find('.news-small__item').addClass('_show')
+	})
 })
 
 
