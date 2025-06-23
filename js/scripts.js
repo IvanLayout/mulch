@@ -489,20 +489,20 @@ $(() => {
 				init: function (swiper) {
 					$(swiper.el).find('.product__name, .product__box, .product__info, .product__prices').height('auto')
 
-					setTimeout(function(){
-						setHeight( $(swiper.el).find('.product__name') )
-						setHeight( $(swiper.el).find('.product__box') )
-						setHeight( $(swiper.el).find('.product__info') )
-						setHeight( $(swiper.el).find('.product__prices') )
-					}, 200)
+					setHeight( $(swiper.el).find('.product__name') )
+					setHeight( $(swiper.el).find('.product__box') )
+					setHeight( $(swiper.el).find('.product__info') )
+					setHeight( $(swiper.el).find('.product__prices') )
 				},
 				resize: function (swiper) {
 					$(swiper.el).find('.product__name, .product__box, .product__info, .product__prices').height('auto')
 
+					// setTimeout(function(){
 						setHeight( $(swiper.el).find('.product__name') )
 						setHeight( $(swiper.el).find('.product__box') )
 						setHeight( $(swiper.el).find('.product__info') )
 						setHeight( $(swiper.el).find('.product__prices') )
+					// }, 200)
 				},
 			}
 		})
@@ -536,11 +536,11 @@ $(() => {
 			breakpoints: {
 				'320': {
 					spaceBetween: 16,
-					slidesPerView: 1
+					slidesPerView: 'auto'
 				},
 				'480': {
 					spaceBetween: 16,
-					slidesPerView: 2
+					slidesPerView: 'auto'
 				},
 				'768': {
 					spaceBetween: 16,
@@ -576,16 +576,75 @@ $(() => {
 				resize: function (swiper) {
 					$(swiper.el).find('.product, .product__name, .product__box, .product__info, .product__prices').height('auto')
 
-					setTimeout(function(){
+					// setTimeout(function(){
 						setHeight( $(swiper.el).find('.product') )
 						setHeight( $(swiper.el).find('.product__name') )
 						setHeight( $(swiper.el).find('.product__box') )
 						setHeight( $(swiper.el).find('.product__info') )
 						setHeight( $(swiper.el).find('.product__prices') )
-					}, 200)
+					// }, 200)
 				},
 			}
 		})
+
+		compareFeatureSlider = new Swiper('.compare-section__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			nested: true,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 3
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1320': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1400': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				},
+				'1760': {
+					spaceBetween: 20,
+					slidesPerView: 5
+				}
+			},
+			on: {
+				init: function (swiper) {
+					compareHeight()
+				},
+				resize: function (swiper) {
+					compareHeight()
+				},
+			}
+		})
+
+		productsCompare.controller.control = compareFeatureSlider;
+		compareFeatureSlider.controller.control = productsCompare;
 	}
 
 	if ($('.products-small__slider').length) {
@@ -647,11 +706,9 @@ $(() => {
 				init: function (swiper) {
 					$(swiper.el).find('.product-small__name, .product-small__box, .product-small__prices').height('auto')
 
-					setTimeout(function(){
-						setHeight( $(swiper.el).find('.product-small__name') )
-						setHeight( $(swiper.el).find('.product-small__box') )
-						setHeight( $(swiper.el).find('.product-small__prices') )
-					}, 200)
+					setHeight( $(swiper.el).find('.product-small__name') )
+					setHeight( $(swiper.el).find('.product-small__box') )
+					setHeight( $(swiper.el).find('.product-small__prices') )
 				},
 				resize: function (swiper) {
 					$(swiper.el).find('.product-small__name, .product-small__box, .product-small__prices').height('auto')
@@ -965,9 +1022,9 @@ function filterUse(){
 
 // Выравнивание в сравнении
 function compareHeight() {
-  $('.products__feature-item').height('auto')
+  $('.compare-feature__item').height('auto')
 
-  let productFeatures = $('.products__feature'),
+  let productFeatures = $('.compare-feature__items'),
     featuresSizes = new Object()
 
   productFeatures.each(function () {

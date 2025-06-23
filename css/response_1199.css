@@ -164,4 +164,17 @@
         width: 54px;
         height: 54px;
     }
+
+
+    .compare-section__radios
+    {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+
+    .radio__text
+    {
+        font-size: 13px;
+    }
 }

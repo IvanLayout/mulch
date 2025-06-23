@@ -340,6 +340,22 @@
         padding-left: 24px;
     }
 
+    .compare-feature__item + .compare-feature__item
+    {
+        margin-top: 40px;
+    }
+
+
+    .compare-cats__bord
+    {
+        padding-bottom: 32px;
+    }
+
+    .compare-section_marg
+    {
+        margin-top: 40px;
+    }
+
 
     .footer__colr
     {

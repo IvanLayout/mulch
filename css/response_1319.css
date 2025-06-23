@@ -1230,7 +1230,26 @@
     }
 
 
+    .compare-feature__main-title
+    {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 
+    .compare-feature
+    {
+        margin-top: 30px;
+    }
+
+    .compare-feature__flex
+    {
+        margin-top: 20px;
+    }
+
+    .compare-feature__item + .compare-feature__item
+    {
+        margin-top: 30px;
+    }
 
 
     .features
@@ -1469,6 +1488,23 @@
     .contacts__item-subtitle
     {
         margin-bottom: 8px;
+    }
+
+
+    .compare-cats__item
+    {
+        font-size: 13px;
+        line-height: 28px;
+    }
+
+    .compare-cats__bord
+    {
+        padding-bottom: 20px;
+    }
+
+    .compare-section_marg
+    {
+        margin-top: 30px;
     }
 
 

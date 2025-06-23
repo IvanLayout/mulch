@@ -656,6 +656,37 @@
     }
 
 
+    .compare-products__slider .swiper-slide
+    {
+        width: 160px;
+    }
+
+    .compare-section__slider .swiper-slide
+    {
+        width: 160px;
+    }
+
+    .compare-section__top-left
+    {
+        width: calc(50% - 16px);
+    }
+
+    .compare-products
+    {
+        width: calc(50% - 16px);
+    }
+
+    .compare-feature__coll
+    {
+        width: calc(50% - 16px);
+    }
+
+    .compare-section__slider
+    {
+        width: calc(50% + 4px);
+    }
+
+
     .footer__coll
     {
         width: 100%;
