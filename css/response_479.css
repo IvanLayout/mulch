@@ -889,4 +889,10 @@
     {
         columns: 2;
     }
+
+
+    .banner-cooperation__title{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
