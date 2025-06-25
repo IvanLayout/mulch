@@ -722,15 +722,14 @@ $(() => {
 	}
 
 
-	if ($('.product-info__slider').length) {
-		new Swiper(".product-info__slider", {
+	if ($('.revirew-photo__slider').length) {
+		new Swiper('.revirew-photo__slider', {
 			loop: false,
-			spaceBetween: 0,
-			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
+			spaceBetween: 10,
+			slidesPerView: 'auto',
 			preloadImages: false,
-			initialSlide: 1,
 			lazy: {
 				loadPrevNext: true,
 				elementClass: 'lazyload',
@@ -739,53 +738,28 @@ $(() => {
 				checkInView: true,
 				loadOnTransitionStart: true
 			},
-			effect: "coverflow",
-			coverflowEffect: {
-				rotate: 0,
-				stretch: 175,
-				depth: 0,
-				modifier: 1,
-				scale: .89,
-				slideShadows: false,
-			},
-			navigation: {
-				nextEl: '.slider-button-next',
-				prevEl: '.slider-button-prev'
-			},
-			pagination: {
-				bulletActiveClass: 'slider-dot_active',
-				bulletClass: 'slider-dot',
-				clickableClass: 'slider-pagination-clickable',
-				el: '.slider-pagination',
-				clickable: true
-			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
 			breakpoints: {
 				'320': {
-					coverflowEffect: {
-						stretch: 70,
-					}
+					spaceBetween: 10,
+					slidesPerView: 'auto'
 				},
 				'480': {
-					coverflowEffect: {
-						stretch: 90,
-					}
+					spaceBetween: 10,
+					slidesPerView: 'auto'
 				},
 				'768': {
-					coverflowEffect: {
-						stretch: 150,
-					}
+					spaceBetween: 10,
+					slidesPerView: 'auto'
 				},
-				'1024': {
-					coverflowEffect: {
-						stretch: 100,
-					}
-				},
-				'1500': {
-					coverflowEffect: {
-						stretch: 175,
-					},
+				'1025': {
+					spaceBetween: 10,
+					slidesPerView: 10
 				}
-			},
+			}
 		})
 	}
 
