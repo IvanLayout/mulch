@@ -1972,4 +1972,17 @@
         top: 26px;
         right: 20px;
     }
+
+
+    .banner-cooperation__coll{
+        padding-right: 20px;
+    }
+
+    .banner-cooperation__text{
+        padding-right: 0;
+    }
+
+    .banner-cooperation__colr{
+        display: none;
+    }
 }

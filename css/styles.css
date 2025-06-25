@@ -8913,6 +8913,113 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 
 
+.banner-cooperation__bg{
+    background-color: #007657;
+    border-radius: 10px;
+    position: relative;
+
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.banner-cooperation__coll{
+    align-self: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    width: 100%;
+}
+
+.banner-cooperation__box{
+    margin-left: auto;
+    max-width: 799px;
+}
+
+.banner-cooperation__title{
+    font-weight: 500;
+    font-size: 40px;
+    color: #007657;
+    position: relative;
+    text-align: center;
+    padding: 26px 30px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.banner-cooperation__title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background: #fff;
+    border: 5px solid #ffa800;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    transform: skewX(-25deg);
+
+}
+
+.banner-cooperation__title span{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+.banner-cooperation__text{
+    margin-top: 86px;
+    color: #fff;
+    max-width: 610px;
+    padding-right: 20px;
+}
+
+.banner-cooperation__text > :last-child{
+    margin-bottom: 0 !important;
+}
+
+.banner-cooperation__text ul{
+    list-style: none;
+}
+
+.banner-cooperation__text ul li{
+    display: block;
+    padding-left: 21px;
+    position: relative;
+}
+
+.banner-cooperation__text ul li + li{
+    margin-top: 14px;
+}
+
+.banner-cooperation__text ul li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #F87740;
+}
+
+
+.banner-cooperation__colr{
+    width: 50.85%;
+    flex-shrink: 0;
+}
+
+.banner-cooperation__colr img{
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+}
+
+
 /*------------
     Modal
 ------------*/
@@ -9248,6 +9355,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
     {
         width: calc((100% / 5)* 4 - 20px);
     }
+
+
+    .banner-cooperation__title{
+        font-size: 34px;
+    }
+
+    .banner-cooperation__text{margin-top: 50px;}
 
 
     .footer-menu
