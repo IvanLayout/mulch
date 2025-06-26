@@ -1853,6 +1853,12 @@
     }
 
 
+    .banner-cooperation__bg::before
+    {
+        display: none;
+    }
+
+
     .footer
     {
         padding: 22px 0;
@@ -1974,15 +1980,18 @@
     }
 
 
-    .banner-cooperation__coll{
+    .banner-cooperation__coll
+    {
         padding-right: 20px;
     }
 
-    .banner-cooperation__text{
+    .banner-cooperation__text
+    {
         padding-right: 0;
     }
 
-    .banner-cooperation__colr{
+    .banner-cooperation__colr
+    {
         display: none;
     }
 }
