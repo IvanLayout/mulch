@@ -8603,6 +8603,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .cooperation__grid
 {
     margin-left: -20px;
+    align-content: stretch;
+    align-items: stretch;
 }
 
 .cooperation__item
@@ -8706,36 +8708,38 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
     align-self: flex-end;
 
-    width: 48%;
+    width: 50.6%;
     max-width: 252px;
+    flex-shrink: 0;
 }
 
 .cooperation__img2
 {
-    width: 33%;
+    width: 35%;
     max-width: 172px;
 }
 
 .cooperation__img3
 {
-    width: 44%;
+    width: 38.6%;
+    max-width: 195px;
 }
 
 .cooperation__img4
 {
-    width: 52%;
+    width: 53.5%;
     max-width: 271px;
 }
 
 .cooperation__img5
 {
-    width: 38%;
+    width: 40.7%;
     max-width: 199px;
 }
 
 .cooperation__img6
 {
-    width: 31%;
+    width: 32%;
     max-width: 162px;
 }
 

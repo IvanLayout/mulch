@@ -1859,6 +1859,47 @@
     }
 
 
+    .cooperation__wrap.swiper{
+        margin-top: 16px;
+        overflow: visible;
+    }
+
+    .cooperation__grid{
+        margin: 0;
+    }
+
+    .cooperation__item{
+        width: 315px;
+        margin: 0;
+        height: auto;
+    }
+
+    .cooperation__img{
+        width: 60%;
+    }
+
+    .cooperation__img2{
+        width: 44%;
+    }
+
+    .cooperation__img3{
+        width: 48%;
+    }
+
+    .cooperation__img4{
+        width: 62%;
+        margin-right: -8px;
+    }
+
+    .cooperation__img5{
+        width: 52%;
+    }
+
+    .cooperation__img6{
+        width: 42%;
+    }
+
+
     .footer
     {
         padding: 22px 0;

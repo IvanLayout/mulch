@@ -1422,6 +1422,10 @@
     }
 
 
+    .cooperation__item{
+        width: calc(100%/2 - 16px);
+    }
+
 
     .footer__coll
     {

@@ -187,4 +187,47 @@
     .banner-cooperation__text ul li + li{
         margin-top: 10px;
     }
+
+
+    .cooperation__grid{
+        margin-left: -16px;
+    }
+    
+    .cooperation__item{
+        margin: 16px 0 0 16px;
+        width: calc(100%/3 - 16px);
+    }
+
+    .cooperation__title{
+        font-size: 15px;
+    }
+
+    .cooperation__desc{
+        margin-top: 10px;
+    }
+
+    .cooperation__img{
+        width: 53%;
+    }
+
+    .cooperation__img2{
+        width: 41%;
+    }
+
+    .cooperation__img3{
+        width: 45%;
+    }
+
+    .cooperation__img4{
+        width: 62%;
+        margin-right: -8px;
+    }
+
+    .cooperation__img5{
+        width: 50%;
+    }
+
+    .cooperation__img6{
+        width: 41%;
+    }
 }

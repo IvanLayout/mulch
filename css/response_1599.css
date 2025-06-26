@@ -366,4 +366,54 @@
     .banner-cooperation__title{
         font-size: 30px;
     }
+
+
+    .cooperation__item{
+        padding-left: 16px;
+        padding-right: 12px;
+    }
+
+    .cooperation__title{
+        font-size: 16px;
+        padding-bottom: 11px;
+    }
+
+    .cooperation__desc{
+        font-size: 12px;
+        margin-top: 16px;
+    }
+
+    .cooperation__arrow{
+        width: 30px;
+        height: 30px;
+    }
+
+    .cooperation__arrow svg{
+        width: 11px;
+        height: 11px;
+    }
+
+    .cooperation__img{
+        width: 44%;
+    }
+
+    .cooperation__img2{
+        width: 34%;
+    }
+
+    .cooperation__img3{
+        width: 37%;
+    }
+
+    .cooperation__img4{
+        width: 51.4%;
+    }
+
+    .cooperation__img5{
+        width: 36.5%;
+    }
+
+    .cooperation__img6{
+        width: 31%;
+    }
 }

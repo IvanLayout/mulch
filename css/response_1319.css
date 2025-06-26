@@ -1640,4 +1640,10 @@
     .banner-cooperation__text{
         margin-top: 30px
     }
+
+
+    .cooperation__coll{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
