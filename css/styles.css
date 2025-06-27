@@ -8751,6 +8751,45 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 
+.reviews__cols{
+    overflow: hidden;
+}
+
+.reviews__coll{
+    margin-top: 30px;
+    width: 65%;
+    max-width: 932px;
+}
+
+.reviews__coll_bord{
+    margin-top: 0;
+    padding-bottom: 19px;
+    border-bottom: 1px solid rgba(97, 97, 97, 0.2);
+}
+
+.reviews__colr{
+    width: calc(35% - 30px);
+    max-width: 417px;
+}
+
+.revirew-photo__img{
+    display: block;
+    padding-bottom: 100%;
+    background: #F9F9F9;
+    border-radius: 2px;
+}
+
+.revirew-photo__img img{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: block;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+
 
 /*------------
     footer

@@ -757,7 +757,7 @@ $(() => {
 				},
 				'1025': {
 					spaceBetween: 10,
-					slidesPerView: 10
+					slidesPerView: 11
 				}
 			}
 		})
