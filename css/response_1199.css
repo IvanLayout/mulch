@@ -178,56 +178,236 @@
         font-size: 13px;
     }
 
-    .banner-cooperation__title {
+    .banner-cooperation__title
+    {
         font-size: 22px;
 
         padding: 18px 24px;
     }
 
-    .banner-cooperation__text ul li + li{
+    .banner-cooperation__text ul li + li
+    {
         margin-top: 10px;
     }
 
 
-    .cooperation__grid{
+    .cooperation__grid
+    {
         margin-left: -16px;
     }
-    
-    .cooperation__item{
-        margin: 16px 0 0 16px;
+
+    .cooperation__item
+    {
         width: calc(100%/3 - 16px);
+        margin: 16px 0 0 16px;
     }
 
-    .cooperation__title{
+    .cooperation__title
+    {
         font-size: 15px;
     }
 
-    .cooperation__desc{
+    .cooperation__desc
+    {
         margin-top: 10px;
     }
 
-    .cooperation__img{
+    .cooperation__img
+    {
         width: 53%;
     }
 
-    .cooperation__img2{
+    .cooperation__img2
+    {
         width: 41%;
     }
 
-    .cooperation__img3{
+    .cooperation__img3
+    {
         width: 45%;
     }
 
-    .cooperation__img4{
+    .cooperation__img4
+    {
         width: 62%;
         margin-right: -8px;
     }
 
-    .cooperation__img5{
+    .cooperation__img5
+    {
         width: 50%;
     }
 
-    .cooperation__img6{
+    .cooperation__img6
+    {
         width: 41%;
+    }
+
+
+    .about-payments__item
+    {
+        padding: 20px;
+    }
+
+    .about-payments__desc br
+    {
+        display: none;
+    }
+
+    .about-payments__contacts-box
+    {
+        width: 49%;
+    }
+
+    .about-payments__contacts-cols
+    {
+        margin-left: 0;
+    }
+
+    .about-payments__contacts-col
+    {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+    }
+
+    .about-payments__contacts-col + .about-payments__contacts-col
+    {
+        margin-top: 16px;
+    }
+
+
+    .payments-methods__name
+    {
+        font-size: 16px;
+
+        min-height: 42px;
+    }
+
+
+    .production__items
+    {
+        margin: 14px 0 0 -16px;
+    }
+
+    .production__item
+    {
+        width: calc(100% / 4 - 16px);
+        margin: 16px 0 0 16px;
+    }
+
+    .production__title
+    {
+        font-size: 24px;
+    }
+
+    .production__desc
+    {
+        margin-top: 60px;
+    }
+
+
+    .approach__grid
+    {
+        margin: 4px 0 0 -16px;
+
+        --approach_count: 2;
+    }
+
+    .approach__item
+    {
+        width: calc(100% / var(--approach_count) - 16px);
+        margin: 16px 0 0 16px;
+    }
+
+    .approach__desc
+    {
+        margin-top: 14px;
+    }
+
+    .approach__item-colr
+    {
+        height: 248px;
+        padding-top: 44px;
+    }
+
+    .approach-block
+    {
+        width: calc(100% - 16px);
+        margin: 16px 0 0 16px;
+    }
+
+    .approach-block__coll
+    {
+        min-width: 365px;
+    }
+
+    .approach-block__img
+    {
+        padding-bottom: 91.781%;
+    }
+
+    .approach-block__colr
+    {
+        padding-left: 30px;
+    }
+
+
+    .videos__video
+    {
+        width: calc(50% - 8px);
+        margin-top: 16px;
+    }
+
+
+    .production-photos__grid
+    {
+        margin-top: 20px;
+
+        gap: 16px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .production-photos__photo:nth-child(4),
+    .production-photos__photo:nth-child(6),
+    .production-photos__photo:nth-child(7)
+    {
+        display: none;
+    }
+
+
+    .production-process__flex
+    {
+        margin-top: 20px;
+    }
+
+
+    .have-questions__bg
+    {
+        padding-right: 40px;
+        padding-left: 40px;
+
+        background-size: 84% auto;
+    }
+
+
+    .production-process__colr
+    {
+        width: 100%;
+    }
+
+    .production-process__coll
+    {
+        order: 2;
+
+        width: 100%;
+        max-width: none;
+        margin-top: 20px;
+    }
+
+    .production-process__item
+    {
+        padding-top: 19px;
+        padding-bottom: 19px;
     }
 }

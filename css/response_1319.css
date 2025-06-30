@@ -1508,6 +1508,203 @@
     }
 
 
+    .about-payments__title
+    {
+        font-size: 18px;
+    }
+
+    .about-payments__contacts-time
+    {
+        line-height: 23px;
+    }
+
+    .about-payments__contacts-phone a
+    {
+        line-height: 23px;
+    }
+
+    .payments-text h2
+    {
+        margin-bottom: 5px;
+    }
+
+
+    .payments-methods__item
+    {
+        padding: 20px;
+    }
+
+    .payments-methods__icon
+    {
+        width: 200px;
+        height: 200px;
+        padding: 26px;
+    }
+
+    .payments-methods__name
+    {
+        font-size: 18px;
+
+        min-height: 47px;
+        margin-top: 30px;
+    }
+
+    .about-payments__sticker
+    {
+        top: -26px;
+        left: 20px;
+
+        font-size: 12px;
+        line-height: 26px;
+
+        padding: 0 10px;
+    }
+
+    .about-payments__cols
+    {
+        padding-top: 16px;
+    }
+
+
+    .brands__item
+    {
+        height: 100px;
+    }
+
+
+    .all-brands__item
+    {
+        min-height: 1px;
+        padding: 19px;
+    }
+
+    .all-brands__letter
+    {
+        font-size: 38px;
+        line-height: 28px;
+    }
+
+    .all-brands__list
+    {
+        margin-top: 20px;
+    }
+
+
+    .video-banner__img
+    {
+        height: 536px;
+    }
+
+    .video-banner__name
+    {
+        font-size: 18px;
+    }
+
+    .video-banner__time
+    {
+        font-size: 13px;
+    }
+
+
+    .videos__video-coll
+    {
+        padding-right: 40px;
+    }
+
+    .videos__video-title
+    {
+        font-size: 18px;
+    }
+
+    .videos__video-desc
+    {
+        margin-top: 10px;
+    }
+
+    .videos__video-flex
+    {
+        padding: 10px;
+    }
+
+    .videos__video-arrow
+    {
+        width: 46px;
+        height: 46px;
+
+        background-size: 16px auto;
+    }
+
+    .videos__video-info
+    {
+        max-width: calc(100% - 46px);
+        padding: 5px 20px 5px 10px;
+    }
+
+    .videos__video-name
+    {
+        font-size: 13px;
+    }
+
+    .videos-name
+    {
+        font-size: 14px;
+    }
+
+    .videos__video-colr
+    {
+        width: calc(46.44% + 14px);
+        margin-left: -14px;
+        padding: 18px 0;
+    }
+
+
+    .production-process__flex
+    {
+        padding: 40px;
+    }
+
+    .production-process__coll
+    {
+        width: calc(45.783% + 8px);
+    }
+
+    .production-process__name
+    {
+        font-size: 18px;
+    }
+
+    .production-process__desc
+    {
+        margin-top: 5px;
+    }
+
+
+    .approach-block__title
+    {
+        font-size: 18px;
+    }
+
+    .approach-block__subtitle
+    {
+        font-size: 18px;
+    }
+
+    .approach-block__list
+    {
+        font-size: 13px;
+
+        margin: 12px 0 0 20px;
+    }
+
+    .btn-bord_icon
+    {
+        font-size: 14px;
+        line-height: 42px;
+
+        padding: 0 28px;
+    }
+
+
     .footer__colr
     {
         width: 375px;
@@ -1628,21 +1825,25 @@
         margin-left: 13px;
     }
 
-    .banner-cooperation__coll{
-        padding-left: 24px;
+    .banner-cooperation__coll
+    {
         padding-bottom: 40px;
+        padding-left: 24px;
     }
 
-    .banner-cooperation__title{
+    .banner-cooperation__title
+    {
         font-size: 26px;
     }
 
-    .banner-cooperation__text{
-        margin-top: 30px
+    .banner-cooperation__text
+    {
+        margin-top: 30px;
     }
 
 
-    .cooperation__coll{
+    .cooperation__coll
+    {
         padding-top: 15px;
         padding-bottom: 15px;
     }

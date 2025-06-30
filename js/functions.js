@@ -541,6 +541,27 @@ $(() => {
 
 		$(this).closest('.news-small').find('.news-small__item').addClass('_show')
 	})
+
+
+	$('.form__input-anim').each(function(){
+		let value = $(this).val()
+
+		if ( value != '' ) {
+			$(this).closest('.form__field').addClass('_full')
+		} else {
+			$(this).closest('.form__field').removeClass('_full')
+		}
+	})
+
+	$('.form__input-anim').change(function() {
+		let value = $(this).val()
+
+		if ( value != '' ) {
+			$(this).closest('.form__field').addClass('_full')
+		} else {
+			$(this).closest('.form__field').removeClass('_full')
+		}
+	})
 })
 
 

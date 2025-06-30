@@ -1859,44 +1859,89 @@
     }
 
 
-    .cooperation__wrap.swiper{
-        margin-top: 16px;
+    .cooperation__wrap.swiper
+    {
         overflow: visible;
+
+        margin-top: 16px;
     }
 
-    .cooperation__grid{
+    .cooperation__grid
+    {
         margin: 0;
     }
 
-    .cooperation__item{
+    .cooperation__item
+    {
         width: 315px;
-        margin: 0;
         height: auto;
+        margin: 0;
     }
 
-    .cooperation__img{
+    .cooperation__img
+    {
         width: 60%;
     }
 
-    .cooperation__img2{
+    .cooperation__img2
+    {
         width: 44%;
     }
 
-    .cooperation__img3{
+    .cooperation__img3
+    {
         width: 48%;
     }
 
-    .cooperation__img4{
+    .cooperation__img4
+    {
         width: 62%;
         margin-right: -8px;
     }
 
-    .cooperation__img5{
+    .cooperation__img5
+    {
         width: 52%;
     }
 
-    .cooperation__img6{
+    .cooperation__img6
+    {
         width: 42%;
+    }
+
+
+    .about-payments__contacts
+    {
+        flex-wrap: wrap;
+    }
+
+    .about-payments__contacts-coll
+    {
+        max-width: none;
+        margin-right: 0;
+    }
+
+    .about-payments__contacts-box
+    {
+        width: 100%;
+        max-width: none;
+        margin-top: 16px;
+    }
+
+
+    .payments-methods__item
+    {
+        width: calc(100% / 2 - 16px);
+    }
+
+    .payments-methods__name
+    {
+        margin-top: 20px;
+    }
+
+    .all-brands__item
+    {
+        width: calc(100% / 2 - 16px);
     }
 
 

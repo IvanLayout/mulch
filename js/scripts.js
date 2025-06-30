@@ -849,6 +849,60 @@ $(window).on('load', () => {
 	if ($('.cooperation__wrap').length){
 		cooperationSlider()
 	}
+
+
+	$('body').on('click', '.approach__open', function (e) {
+		e.preventDefault()
+
+		if ( !$(this).hasClass('_active') ) {
+			$('.approach-block').remove();
+			$('.approach__open').removeClass('_active')
+
+			const $items = $('.approach__item');
+			const $clickedItem = $(this).closest('.approach__item');
+			const clickedIndex = $items.index($clickedItem);
+			const dataFile = $(this).data('file')
+
+			const approachCount = parseInt($(this).parent().css('--approach_count'));
+			const blockIndex = Math.floor(clickedIndex / approachCount);
+			const insertAfterIndex = (blockIndex + 1) * approachCount - 1;
+
+			let $insertAfter = $items.eq(insertAfterIndex);
+
+			if ($insertAfter.length === 0) {
+				$insertAfter = $items.last();
+			}
+
+			$(this).addClass('_active')
+
+			$.get(dataFile, function(data) {
+				const $bigBlock = $('<div class="approach-block"></div>').html(data);
+				$insertAfter.after($bigBlock);
+
+				const approachBlockSlider = new Swiper('.approach-block__slider', {
+					loop: false,
+					watchSlidesProgress: true,
+					watchOverflow: true,
+					spaceBetween: 20,
+					slidesPerView: 1,
+					navigation: {
+						nextEl: '.slider-button-next',
+						prevEl: '.slider-button-prev'
+					},
+					on: {
+						init: function (swiper) {
+							$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+						},
+					}
+				})
+
+				approachBlockSlider.slideTo(clickedIndex, 0)
+			});
+		} else{
+			$('.approach-block').remove();
+			$('.approach__open').removeClass('_active')
+		}
+	});
 });
 
 

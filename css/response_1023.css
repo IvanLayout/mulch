@@ -1422,8 +1422,107 @@
     }
 
 
-    .cooperation__item{
+    .cooperation__item
+    {
         width: calc(100%/2 - 16px);
+    }
+
+
+    .about-payments__cols
+    {
+        display: block;
+    }
+
+    .about-payments__coll
+    {
+        width: 100%;
+    }
+
+    .about-payments__colr
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .about-payments__item + .about-payments__item
+    {
+        margin-top: 16px;
+    }
+
+    .about-payments__contacts-cols
+    {
+        margin-left: -16px;
+    }
+
+    .about-payments__contacts-col
+    {
+        width: calc(50% - 16px);
+        max-width: 178px;
+        margin-left: 16px;
+    }
+
+    .about-payments__contacts-col + .about-payments__contacts-col
+    {
+        margin-top: 0;
+    }
+
+
+    .payments-methods__grid
+    {
+        margin: -6px 0 0 -16px;
+    }
+
+    .payments-methods__item
+    {
+        width: calc(100% / 3 - 16px);
+        margin: 16px 0 0 16px;
+        padding: 16px;
+    }
+
+    .payments-methods__icon
+    {
+        width: 180px;
+        height: 180px;
+        padding: 22px;
+    }
+
+    .payments-methods__name
+    {
+        min-height: 1px;
+    }
+
+
+    .brands__grid
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .brands__item
+    {
+        height: 90px;
+    }
+
+    .brands__item a
+    {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+
+
+    .all-brands__grid
+    {
+        margin-left: -16px;
+    }
+
+    .all-brands__item
+    {
+        width: calc(100% /4 - 16px);
+        margin: 16px 0 0 16px;
+    }
+
+    .all-brands__letter
+    {
+        font-size: 32px;
     }
 
 
@@ -1534,28 +1633,34 @@
     }
 
 
-    .banner-cooperation__coll{
+    .banner-cooperation__coll
+    {
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 20px;
     }
 
-    .banner-cooperation__title {
+    .banner-cooperation__title
+    {
         font-size: 16px;
-        padding: 16px 14px;
-        margin-left: 13px;
+
         margin-right: 13px;
+        margin-left: 13px;
+        padding: 16px 14px;
     }
 
-    .banner-cooperation__text{
+    .banner-cooperation__text
+    {
         margin-top: 20px;
     }
 
-    .banner-cooperation__text ul li + li{
+    .banner-cooperation__text ul li + li
+    {
         margin-top: 6px;
     }
 
-    .banner-cooperation__colr{
+    .banner-cooperation__colr
+    {
         margin-right: -6%;
     }
 }

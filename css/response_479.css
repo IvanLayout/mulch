@@ -687,6 +687,30 @@
     }
 
 
+    .payments-methods__item
+    {
+        width: calc(100% - 16px);
+    }
+
+    .brands__item
+    {
+        height: 70px;
+    }
+
+    .brands__item a
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .all-brands__item
+    {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+
     .footer__coll
     {
         width: 100%;
@@ -891,8 +915,9 @@
     }
 
 
-    .banner-cooperation__title{
-        padding-left: 10px;
+    .banner-cooperation__title
+    {
         padding-right: 10px;
+        padding-left: 10px;
     }
 }
