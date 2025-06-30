@@ -412,19 +412,29 @@
     }
 
 
-    .form .form__input{
+    .form .form__input
+    {
         font-size: 13px;
     }
 
-    .form .form__textarea{
+    .form .form__textarea
+    {
         font-size: 13px;
     }
 
-    .form__label{
+    .form__label
+    {
         font-size: 13px;
     }
 
-    .btn-white{
+    .btn-white
+    {
         font-size: 14px;
+    }
+
+
+    .comment .form .form__textarea
+    {
+        font-size: 16px;
     }
 }

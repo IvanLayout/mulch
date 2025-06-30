@@ -534,6 +534,22 @@
     }
 
 
+    .reviews__coll
+    {
+        max-width: 763px;
+    }
+
+    .product-about .tabs
+    {
+        margin-bottom: 20px;
+    }
+
+    .revirew-photo__number
+    {
+        font-size: 16px;
+    }
+
+
     .footer__colr
     {
         width: 502px;

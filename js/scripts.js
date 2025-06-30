@@ -738,6 +738,10 @@ $(() => {
 				checkInView: true,
 				loadOnTransitionStart: true
 			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
 			scrollbar: {
 				el: ".swiper-scrollbar",
 				hide: false,
@@ -745,20 +749,29 @@ $(() => {
 			breakpoints: {
 				'320': {
 					spaceBetween: 10,
-					slidesPerView: 'auto'
+					slidesPerView: 5
 				},
 				'480': {
 					spaceBetween: 10,
-					slidesPerView: 'auto'
+					slidesPerView: 7
 				},
 				'768': {
 					spaceBetween: 10,
-					slidesPerView: 'auto'
+					slidesPerView: 10
 				},
 				'1025': {
 					spaceBetween: 10,
+					slidesPerView: 9
+				},
+				'1760': {
+					spaceBetween: 10,
 					slidesPerView: 11
 				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				},
 			}
 		})
 	}
