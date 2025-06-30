@@ -410,4 +410,21 @@
         padding-top: 19px;
         padding-bottom: 19px;
     }
+
+
+    .form .form__input{
+        font-size: 13px;
+    }
+
+    .form .form__textarea{
+        font-size: 13px;
+    }
+
+    .form__label{
+        font-size: 13px;
+    }
+
+    .btn-white{
+        font-size: 14px;
+    }
 }

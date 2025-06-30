@@ -850,6 +850,10 @@ $(window).on('load', () => {
 		cooperationSlider()
 	}
 
+	if ($('.approach__wrap').length){
+		approachSlider()
+	}
+
 
 	$('body').on('click', '.approach__open', function (e) {
 		e.preventDefault()
@@ -867,10 +871,16 @@ $(window).on('load', () => {
 			const blockIndex = Math.floor(clickedIndex / approachCount);
 			const insertAfterIndex = (blockIndex + 1) * approachCount - 1;
 
-			let $insertAfter = $items.eq(insertAfterIndex);
+			let $insertAfter = 0;
 
-			if ($insertAfter.length === 0) {
-				$insertAfter = $items.last();
+			if ( $(window).width() > 767 ) {
+				$insertAfter = $items.eq(insertAfterIndex);
+
+				if ($insertAfter.length === 0) {
+					$insertAfter = $items.last();
+				}
+			} else {
+				$insertAfter = $items.closest('.approach');
 			}
 
 			$(this).addClass('_active')
@@ -903,6 +913,13 @@ $(window).on('load', () => {
 			$('.approach__open').removeClass('_active')
 		}
 	});
+
+	$('body').on('click', '.approach-block__close', function (e) {
+		e.preventDefault()
+
+		$('.approach-block').remove();
+		$('.approach__open').removeClass('_active')
+	})
 });
 
 
@@ -949,6 +966,10 @@ $(window).on('resize', () => {
 
 	if ($('.cooperation__wrap').length){
 		cooperationSlider()
+	}
+
+	if ($('.approach__wrap').length){
+		approachSlider()
 	}
 });
 
@@ -1046,8 +1067,7 @@ function filterUse(){
 				hide: false,
       		},
 		})
-	}
-	else if ($(window).width() > 1023 && $('.filter-use_slider').hasClass('swiper-initialized')) {
+	} else if ($(window).width() > 1023 && $('.filter-use_slider').hasClass('swiper-initialized')) {
 		filterUseSwiper.destroy(true, true)
 
 		$('..filter-use_slider').removeClass('swiper')
@@ -1056,33 +1076,32 @@ function filterUse(){
 	}
 }
 
+
 // Выравнивание в сравнении
 function compareHeight() {
-  $('.compare-feature__item').height('auto')
+	$('.compare-feature__item').height('auto')
 
-  let productFeatures = $('.compare-feature__items'),
-    featuresSizes = new Object()
+	let productFeatures = $('.compare-feature__items'),
+	featuresSizes = new Object()
 
-  productFeatures.each(function () {
-    $(this).find('> *').each(function () {
-      if (featuresSizes[$(this).index()]) {
-        if ($(this).outerHeight() > featuresSizes[$(this).index()]) {
-          featuresSizes[$(this).index()] = $(this).outerHeight()
-        }
-      } else {
-        featuresSizes[$(this).index()] = $(this).outerHeight()
-      }
-    })
-  })
+	productFeatures.each(function () {
+		$(this).find('> *').each(function () {
+			if (featuresSizes[$(this).index()]) {
+				if ($(this).outerHeight() > featuresSizes[$(this).index()]) {
+					featuresSizes[$(this).index()] = $(this).outerHeight()
+				}
+			} else {
+				featuresSizes[$(this).index()] = $(this).outerHeight()
+			}
+		})
+	})
 
-  $.each(featuresSizes, (key, data) => {
-    productFeatures.each(function () {
-      $(this).find('> *:eq(' + key + ')').innerHeight(data)
-    })
-  })
+	$.each(featuresSizes, (key, data) => {
+		productFeatures.each(function () {
+			$(this).find('> *:eq(' + key + ')').innerHeight(data)
+		})
+	})
 }
-
-
 
 
 function cooperationSlider(){
@@ -1098,7 +1117,6 @@ function cooperationSlider(){
 			spaceBetween: 16,
 			slidesPerView: 'auto',
 			preloadImages: false,
-			freeMode: true,
 			lazy: {
 				loadPrevNext: true,
 				elementClass: 'lazyload',
@@ -1112,12 +1130,47 @@ function cooperationSlider(){
 				hide: false,
       		},
 		})
-	}
-	else if ($(window).width() > 767 && $('.cooperation__wrap').hasClass('swiper-initialized')) {
+	} else if ($(window).width() > 767 && $('.cooperation__wrap').hasClass('swiper-initialized')) {
 		cooperationSwiper.destroy(true, true)
 
 		$('.cooperation__wrap').removeClass('swiper')
 		$('.cooperation__grid').removeClass('swiper-wrapper').addClass('_flex')
 		$('.cooperation__item').removeClass('swiper-slide')
+	}
+}
+
+
+function approachSlider(){
+	if ( $(window).width() < 768 && !$('.approach__wrap').hasClass('swiper-initialized') ) {
+		$('.approach__wrap').addClass('swiper')
+		$('.approach__grid').addClass('swiper-wrapper').removeClass('_flex')
+		$('.approach__item').addClass('swiper-slide')
+
+		approachSwiper = new Swiper('.approach__wrap', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
+		})
+	} else if ($(window).width() > 767 && $('.approach__wrap').hasClass('swiper-initialized')) {
+		approachSwiper.destroy(true, true)
+
+		$('.approach__wrap').removeClass('swiper')
+		$('.approach__grid').removeClass('swiper-wrapper').addClass('_flex')
+		$('.approach__item').removeClass('swiper-slide')
 	}
 }
