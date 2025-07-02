@@ -777,6 +777,58 @@ $(() => {
 	}
 
 
+	if ($('.product-info').length) {
+		var galleryThumbs = new Swiper('.product-thumbs', {
+			spaceBetween: 9,
+			slidesPerView: 8,
+			direction: 'vertical',
+			loop: false,
+			speed: 500,
+			watchOverflow: true,
+			watchSlidesProgress: true,
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'768': {
+					spaceBetween: 9,
+					slidesPerView: 8
+				},
+				'1025': {
+					spaceBetween: 9,
+					slidesPerView: 8
+				},
+				'1200': {
+					spaceBetween: 9,
+					slidesPerView: 8
+				},
+				'1440': {
+					spaceBetween: 10,
+					slidesPerView: 5
+				}
+			}
+		})
+
+		new Swiper('.product-images__slider', {
+			spaceBetween: 10,
+			loop: false,
+			speed: 500,
+			watchOverflow: true,
+			thumbs: {
+				swiper: galleryThumbs
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true,
+			}
+		})
+	}
+
+
 	//
 	$('body').on('click', '.amount__btn_minus', function (e) {
 		e.preventDefault()
