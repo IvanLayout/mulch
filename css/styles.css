@@ -11366,6 +11366,121 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 
+.socials-section__bg{
+    padding: 30px 40px 60px;
+    background: #F9F9F9;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.socials-section__coll{
+    width: 428px;
+}
+
+.socials-section__desc{
+    color: rgba(40, 40, 40, 0.8);
+    margin-top: 12px;
+}
+
+.socials-section__colr{
+    margin-left: 20px;
+    width: 36%;
+    max-width: 508px;
+    padding-top: 9px;
+}
+
+.socials-section__socials-flex{
+    margin: 11px 0 0 -5px;
+}
+
+.socials-section__socials-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    margin: 5px 0 0 5px;
+}
+
+.socials-section__socials-item img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.activity-management__grid{
+    margin: 4px 0 0 -20px;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.activity-management__item{
+    margin: 20px 0 0 20px;
+    width: calc(100%/3 - 20px);
+    flex-wrap: nowrap;
+
+    background: rgba(249, 249, 249, 0.8);
+
+    border-radius: 10px;
+    padding: 28px 26px;
+}
+
+.activity-management__icon{
+    width: 65px;
+    height: 65px;
+    margin-right: 14px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    padding: 10px;
+    background: rgba(0, 118, 87, 0.08);
+}
+
+.activity-management__icon{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.activity-management__box{
+    width: 100%;
+    align-self: center;
+}
+
+.activity-management__name{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.activity-management__desc{
+    color: rgba(40, 40, 40, 0.8);
+    margin-top: 6px;
+}
+
+
+.fast-buy{
+    margin-top: 11px;
+    text-align: center;
+}
+
+.fast-buy__btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.37;
+    color: #616161;
+}
+
+
 
 /*------------
     footer
