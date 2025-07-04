@@ -68,9 +68,9 @@ $(() => {
 	//Ползунки
 	$priceRange = $("#price_range").ionRangeSlider({
 		type     : 'double',
-		min      : 11,
+		min      : 0,
 		max      : 123000,
-		from     : 80000,
+		from     : 11,
 		to       : 123000,
 		step     : 1,
 		onChange : function (data) {
@@ -86,11 +86,11 @@ $(() => {
 		})
 	})
 
-	$priceRange = $("#price_range2").ionRangeSlider({
+	$priceRange2 = $("#price_range2").ionRangeSlider({
 		type     : 'double',
-		min      : 11,
+		min      : 0,
 		max      : 123000,
-		from     : 80000,
+		from     : 11,
 		to       : 123000,
 		step     : 1,
 		onChange : function (data) {
@@ -100,7 +100,7 @@ $(() => {
 	}).data("ionRangeSlider")
 
 	$('.price_range2 .range__input').keyup(function() {
-		$priceRange.update({
+		$priceRange2.update({
 			from : $('.price_range2 input.ot').val().replace(/\s/g,''),
 			to : $('.price_range2 input.do').val().replace(/\s/g,'')
 		})
@@ -120,7 +120,7 @@ $(() => {
 	if ($('.main-slider').length) {
 		new Swiper(".main-slider", {
 			loop: true,
-			spaceBetween: 16,
+			spaceBetween: 10,
 			slidesPerView: 1,
 			speed: 800,
 			watchSlidesProgress: true,
@@ -344,6 +344,15 @@ $(() => {
 				init: function (swiper) {
 					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
 				},
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
 			}
 		})
 	}
@@ -396,6 +405,15 @@ $(() => {
 				init: function (swiper) {
 					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
 				},
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
 			}
 		})
 	}
@@ -504,6 +522,15 @@ $(() => {
 						setHeight( $(swiper.el).find('.product__prices') )
 					// }, 200)
 				},
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
 			}
 		})
 	}
@@ -584,6 +611,15 @@ $(() => {
 						setHeight( $(swiper.el).find('.product__prices') )
 					// }, 200)
 				},
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
 			}
 		})
 
@@ -717,6 +753,15 @@ $(() => {
 					setHeight( $(swiper.el).find('.product-small__box') )
 					setHeight( $(swiper.el).find('.product-small__prices') )
 				},
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
 			}
 		})
 	}
@@ -772,6 +817,15 @@ $(() => {
 				init: function (swiper) {
 					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
 				},
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
 			}
 		})
 	}
@@ -846,7 +900,16 @@ $(() => {
 		}
 
 		if (inputVal-1 == minimum) {
-			$(this).prop("disabled", true)
+			if ( !parent.hasClass('product__amount') ){
+				$(this).prop("disabled", true)
+			}
+		}
+
+		if (inputVal == minimum) {
+			if ( parent.hasClass('product__amount') ){
+				$(this).closest('.product').find('.product__added').removeClass('_show')
+				$(this).closest('.product').find('.product__bot').removeClass('_hide')
+			}
 		}
 	})
 	
@@ -1088,6 +1151,17 @@ function advantagesSlider(){
 				el: ".swiper-scrollbar",
 				hide: false,
       		},
+			on: {
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
+			}
 		})
 	}
 	else if ($(window).width() > 1023 && $('.advantages__items').hasClass('swiper-initialized')) {
@@ -1131,6 +1205,17 @@ function filterUse(){
 				el: ".swiper-scrollbar",
 				hide: false,
       		},
+			on: {
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
+			}
 		})
 	} else if ($(window).width() > 1023 && $('.filter-use_slider').hasClass('swiper-initialized')) {
 		filterUseSwiper.destroy(true, true)
@@ -1194,6 +1279,17 @@ function cooperationSlider(){
 				el: ".swiper-scrollbar",
 				hide: false,
       		},
+			on: {
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
+			}
 		})
 	} else if ($(window).width() > 767 && $('.cooperation__wrap').hasClass('swiper-initialized')) {
 		cooperationSwiper.destroy(true, true)
@@ -1230,6 +1326,17 @@ function approachSlider(){
 				el: ".swiper-scrollbar",
 				hide: false,
       		},
+			on: {
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
+			}
 		})
 	} else if ($(window).width() > 767 && $('.approach__wrap').hasClass('swiper-initialized')) {
 		approachSwiper.destroy(true, true)

@@ -142,8 +142,8 @@
 							<div class="header__logo">
 								<a href="/">
 									<picture>
-										<source data-srcset="images/logo_mob.png" type="image/png"  media="(max-width: 1023px)" class="lazyload">
-										<img data-src="images/logo.png" src="images/img_plug.png" alt="" class="lazyload">
+										<source srcset="images/logo_mob.png" type="image/png"  media="(max-width: 1023px)">
+										<img src="images/logo.png" alt="">
 									</picture>
 								</a>
 							</div>
@@ -2710,11 +2710,17 @@
 								</div>
 
 								<div class="header__search-field _flex">
-									<input type="text" value="" placeholder="Поиск по сайту…" class="header__search-input">
+									<input type="text" value="" placeholder="Поиск по сайту…" id="header__search-input" class="header__search-input">
 
 									<button type="submit" class="header__search-submit">
 										<svg>
 											<use xlink:href="images/sprite.svg#lupa"></use>
+										</svg>
+									</button>
+
+									<button type="button" class="header__search-clear">
+										<svg>
+											<use xlink:href="images/sprite.svg#close"></use>
 										</svg>
 									</button>
 								</div>
@@ -3140,15 +3146,6 @@
 
 						<span class="fix-btns__btn-name">Корзина</span>
 					</a>
-					<a href="/" class="fix-btns__btn">
-						<span class="fix-btns__btn-icon">
-							<svg>
-								<use xlink:href="images/sprite.svg#ic_menu4"></use>
-							</svg>
-						</span>
-
-						<span class="fix-btns__btn-name">Избранное</span>
-					</a>
 					<button type="button" class="fix-btns__btn open-user-info">
 						<span class="fix-btns__btn-icon">
 							<svg>
@@ -3158,6 +3155,17 @@
 
 						<span class="fix-btns__btn-name">Профиль</span>
 					</button>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu4"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-number">100</span>
+
+						<span class="fix-btns__btn-name">Избранное</span>
+					</a>
 				</div>
 
 				<div class="user-info">
@@ -3245,14 +3253,14 @@
 				
 				<section class="contacts">
 					<div class="cont">
-						<div class="contacts__subtitle">Ответим на воросы, поможем с выбором, подскажем как проехать.</div>
+						<div class="contacts__subtitle">Ответим на воросы, поможем с выбором, подскажем как проехать.</div>
 
 						<div class="tabs-container">
 							<div class="tabs _flex">
-								<button type="button" data-content="#tab1" data-level="level1" class="tabs__text tabs__button_js _active">
+								<button type="button" data-content="#tab1" data-level="level1" class="tabs__text tabs__text_big tabs__button_js _active">
 									<span>Москва</span>
 								</button>
-								<button type="button" data-content="#tab2" data-level="level1" class="tabs__text tabs__button_js">
+								<button type="button" data-content="#tab2" data-level="level1" class="tabs__text tabs__text_big tabs__button_js">
 									<span>Хабаровск</span>
 								</button>
 							</div>
@@ -3269,7 +3277,7 @@
 												<div class="contacts__item-text">
 													<div class="contacts__item-link _flex">
 														<a href="tel:+74997046510">
-															<span>+7 499 704-65-10</span>
+															<span>+7 499 704-65-10</span>
 														</a>
 
 														<button type="button" class="contacts__item-copy">
@@ -3283,7 +3291,7 @@
 												<div class="contacts__item-text">
 													<div class="contacts__item-link _flex">
 														<a href="tel:+74993220782">
-															<span>+7 499 322-07-82</span>
+															<span>+7 499 322-07-82</span>
 														</a>
 
 														<button type="button" class="contacts__item-copy">
@@ -3301,7 +3309,7 @@
 												<div class="contacts__item-text">
 													<div class="contacts__item-link _flex">
 														<a href="tel:88003339439">
-															<span>8 800 333-94-39</span>
+															<span>8 800 333-94-39</span>
 														</a>
 
 														<button type="button" class="contacts__item-copy">
@@ -3319,12 +3327,10 @@
 
 										<div class="contacts__item-val _flex">
 											<div class="contacts__item-col">
-												<div class="contacts__item-subtitle"></div>
-
 												<div class="contacts__item-text">
 													<div class="contacts__item-link _flex">
 														<a href="/">
-															<span>117587, Москва, Варшавское шоссе, д. 125, корп. 3</span>
+															<span>117587, Москва, Варшавское шоссе, д. 125, к<em>орп</em>. 3</span>
 														</a>
 
 														<button type="button" class="contacts__item-copy">
@@ -3376,7 +3382,7 @@
 												</div>
 											</div>
 											<div class="contacts__item-col">
-												<div class="contacts__item-subtitle">Сервис и поддержка</div>
+												<div class="contacts__item-subtitle">Сервис и поддержка</div>
 
 												<div class="contacts__item-text">
 													<div class="contacts__item-link _flex">
@@ -3418,7 +3424,7 @@
 								</div>
 
 								<div class="_marg">
-									<div class="main-title contacts__main-title">Как добраться</div>
+									<div class="main-title contacts__main-title">Как добраться</div>
 
 									<div class="tabs-container">
 										<div class="tabs tabs_scroll tabs_small _flex">
@@ -3428,7 +3434,7 @@
 														<use xlink:href="images/sprite.svg#walk"></use>
 													</svg>
 												</span>
-												<span>Как пройти пешком</span>
+												<span>Как пройти пешком</span>
 											</button>
 											<button type="button" data-content="#tab4" data-level="level2" class="tabs__btn tabs__button_js _flex">
 												<span class="tabs__btn-icon">
@@ -3436,12 +3442,12 @@
 														<use xlink:href="images/sprite.svg#car"></use>
 													</svg>
 												</span>
-												<span>Как проехать</span>
+												<span>Как проехать</span>
 											</button>
 										</div>
 
 										<div class="tab-content level2 _active" id="tab3">
-											<div class="small-title">Как пройти пешком</div>
+											<div class="small-title">Как пройти пешком</div>
 
 											<div class="contacts__wrap _flex">
 												<div class="contacts__wrap-coll">
@@ -3459,10 +3465,10 @@
 															<span>Южная</span>
 														</div>
 
-														<div class="route-plan__adres">117587, Москва, Варшавское <br>шоссе, д. 125, корп. 3</div>
+														<div class="route-plan__adres">117587, Москва, Варшавское <br>шоссе, д. 125, корп. 3</div>
 													</div>
 
-													<a href="/" class="btn-green contacts__btn-green">Открыть на яндекс картах</a>
+													<a href="/" class="btn-green contacts__btn-green">Открыть на яндекс картах</a>
 
 													<div class="contacts__code">
 														<img src="images/tmp/code.png" alt="">
@@ -3474,7 +3480,7 @@
 												<div class="contacts__coll">
 													<div class="text-block">
 														<p>
-															м. Южная, последний вагон из центра, из стеклянных дверей в сторону Варшавского шоссе, идёте к шоссе, пересекаете его по подземному переходу, и далее мимо заправки «Лукойл» 150 м по ул. Сумская от Варшавки. Слева увидите зеленые ворота с надписью «Варшавское ш., д. 125 корп. 3». Вы на месте! Заходите в здание «ИТМиВТ им. С.А. Лебедева» (НЕ длинный дом, расположенный вдоль Варшавского Шоссе), берите пропуск на проходной и поднимайтесь в офис № 201П.
+															м. Южная, последний вагон из центра, из стеклянных дверей в сторону Варшавского шоссе, идёте к шоссе, пересекаете его по подземному переходу, и далее мимо заправки «Лукойл» 150 м по ул. Сумская от Варшавки. Слева увидите зеленые ворота с надписью «Варшавское ш., д. 125 корп. 3». Вы на месте! Заходите в здание «ИТМиВТ им. С.А. Лебедева» (НЕ длинный дом, расположенный вдоль Варшавского Шоссе), берите пропуск на проходной и поднимайтесь в офис № 201П.
 														</p>
 													</div>
 
@@ -3503,7 +3509,7 @@
 										</div>
 
 										<div class="tab-content level2" id="tab4">
-											<div class="small-title">Как проехать</div>
+											<div class="small-title">Как проехать</div>
 
 											<div class="contacts__wrap _flex">
 												<div class="contacts__wrap-coll">
@@ -3521,10 +3527,10 @@
 															<span>Южная</span>
 														</div>
 
-														<div class="route-plan__adres">117587, Москва, Варшавское <br>шоссе, д. 125, корп. 3</div>
+														<div class="route-plan__adres">117587, Москва, Варшавское <br>шоссе, д. 125, корп. 3</div>
 													</div>
 
-													<a href="/" class="btn-green contacts__btn-green">Открыть на яндекс картах</a>
+													<a href="/" class="btn-green contacts__btn-green">Открыть на яндекс картах</a>
 
 													<div class="contacts__code">
 														<img src="images/tmp/code.png" alt="">
@@ -3536,7 +3542,7 @@
 												<div class="contacts__coll">
 													<div class="text-block">
 														<p>
-															Двигайтесь от главного входа в сторону Варшавского ш. около 170 м, после забора направо во второй въезд. В конце подъёма направо. Перед вами небольшое кирпичное здание — КПП № 5. Адрес КПП — Варшавское шоссе д. 125 Ж. Говорите охране, что вы приехали в компанию «Наш Кедр» и проезжаете дальше. Через 70 м поворачиваете направо. На следующем КПП берете пластиковый пропуск, прикладываете к турникету и заезжаете на грузовую территорию. Пропуск сразу возвращаете охране. Далее сразу налево, проезжаете 50 м и паркуетесь у любого белого ангара. Вход в офис через грузовой пандус.
+															Двигайтесь от главного входа в сторону Варшавского ш. около 170 м, после забора направо во второй въезд. В конце подъёма направо. Перед вами небольшое кирпичное здание — КПП № 5. Адрес КПП — Варшавское шоссе д. 125 Ж. Говорите охране, что вы приехали в компанию «Наш Кедр» и проезжаете дальше. Через 70 м поворачиваете направо. На следующем КПП берете пластиковый пропуск, прикладываете к турникету и заезжаете на грузовую территорию. Пропуск сразу возвращаете охране. Далее сразу налево, проезжаете 50 м и паркуетесь у любого белого ангара. Вход в офис через грузовой пандус.
 														</p>
 													</div>
 
@@ -3579,7 +3585,7 @@
 												<div class="contacts__item-text">
 													<div class="contacts__item-link _flex">
 														<a href="tel:+74997046510">
-															<span>+7 499 704-65-10</span>
+															<span>+7 499 704-65-10</span>
 														</a>
 
 														<button type="button" class="contacts__item-copy">
@@ -3593,7 +3599,7 @@
 												<div class="contacts__item-text">
 													<div class="contacts__item-link _flex">
 														<a href="tel:+74993220782">
-															<span>+7 499 322-07-82</span>
+															<span>+7 499 322-07-82</span>
 														</a>
 
 														<button type="button" class="contacts__item-copy">
@@ -3611,7 +3617,7 @@
 												<div class="contacts__item-text">
 													<div class="contacts__item-link _flex">
 														<a href="tel:88003339439">
-															<span>8 800 333-94-39</span>
+															<span>8 800 333-94-39</span>
 														</a>
 
 														<button type="button" class="contacts__item-copy">
@@ -3629,12 +3635,10 @@
 
 										<div class="contacts__item-val _flex">
 											<div class="contacts__item-col">
-												<div class="contacts__item-subtitle"></div>
-
 												<div class="contacts__item-text">
 													<div class="contacts__item-link _flex">
 														<a href="/">
-															<span>117587, Москва, Варшавское шоссе, д. 125, корп. 3</span>
+															<span>117587, Москва, Варшавское шоссе, д. 125, к<em>орп</em>. 3</span>
 														</a>
 
 														<button type="button" class="contacts__item-copy">
@@ -3686,7 +3690,7 @@
 												</div>
 											</div>
 											<div class="contacts__item-col">
-												<div class="contacts__item-subtitle">Сервис и поддержка</div>
+												<div class="contacts__item-subtitle">Сервис и поддержка</div>
 
 												<div class="contacts__item-text">
 													<div class="contacts__item-link _flex">
@@ -3728,7 +3732,7 @@
 								</div>
 
 								<div class="_marg">
-									<div class="main-title contacts__main-title">Как добраться</div>
+									<div class="main-title contacts__main-title">Как добраться</div>
 
 									<div class="tabs-container">
 										<div class="tabs tabs_scroll tabs_small _flex">
@@ -3738,7 +3742,7 @@
 														<use xlink:href="images/sprite.svg#walk"></use>
 													</svg>
 												</span>
-												<span>Как пройти пешком</span>
+												<span>Как пройти пешком</span>
 											</button>
 											<button type="button" data-content="#tab6" data-level="level2" class="tabs__btn tabs__button_js _flex">
 												<span class="tabs__btn-icon">
@@ -3746,12 +3750,12 @@
 														<use xlink:href="images/sprite.svg#car"></use>
 													</svg>
 												</span>
-												<span>Как проехать</span>
+												<span>Как проехать</span>
 											</button>
 										</div>
 
 										<div class="tab-content level2 _active" id="tab5">
-											<div class="small-title">Как пройти пешком</div>
+											<div class="small-title">Как пройти пешком</div>
 
 											<div class="contacts__wrap _flex">
 												<div class="contacts__wrap-coll">
@@ -3769,10 +3773,10 @@
 															<span>Южная</span>
 														</div>
 
-														<div class="route-plan__adres">117587, Москва, Варшавское <br>шоссе, д. 125, корп. 3</div>
+														<div class="route-plan__adres">117587, Москва, Варшавское <br>шоссе, д. 125, корп. 3</div>
 													</div>
 
-													<a href="/" class="btn-green contacts__btn-green">Открыть на яндекс картах</a>
+													<a href="/" class="btn-green contacts__btn-green">Открыть на яндекс картах</a>
 
 													<div class="contacts__code">
 														<img src="images/tmp/code.png" alt="">
@@ -3784,7 +3788,7 @@
 												<div class="contacts__coll">
 													<div class="text-block">
 														<p>
-															м. Южная, последний вагон из центра, из стеклянных дверей в сторону Варшавского шоссе, идёте к шоссе, пересекаете его по подземному переходу, и далее мимо заправки «Лукойл» 150 м по ул. Сумская от Варшавки. Слева увидите зеленые ворота с надписью «Варшавское ш., д. 125 корп. 3». Вы на месте! Заходите в здание «ИТМиВТ им. С.А. Лебедева» (НЕ длинный дом, расположенный вдоль Варшавского Шоссе), берите пропуск на проходной и поднимайтесь в офис № 201П.
+															м. Южная, последний вагон из центра, из стеклянных дверей в сторону Варшавского шоссе, идёте к шоссе, пересекаете его по подземному переходу, и далее мимо заправки «Лукойл» 150 м по ул. Сумская от Варшавки. Слева увидите зеленые ворота с надписью «Варшавское ш., д. 125 корп. 3». Вы на месте! Заходите в здание «ИТМиВТ им. С.А. Лебедева» (НЕ длинный дом, расположенный вдоль Варшавского Шоссе), берите пропуск на проходной и поднимайтесь в офис № 201П.
 														</p>
 													</div>
 
@@ -3813,7 +3817,7 @@
 										</div>
 
 										<div class="tab-content level2 _active" id="tab6">
-											<div class="small-title">Как проехать</div>
+											<div class="small-title">Как проехать</div>
 
 											<div class="contacts__wrap _flex">
 												<div class="contacts__wrap-coll">
@@ -3831,10 +3835,10 @@
 															<span>Южная</span>
 														</div>
 
-														<div class="route-plan__adres">117587, Москва, Варшавское <br>шоссе, д. 125, корп. 3</div>
+														<div class="route-plan__adres">117587, Москва, Варшавское <br>шоссе, д. 125, корп. 3</div>
 													</div>
 
-													<a href="/" class="btn-green contacts__btn-green">Открыть на яндекс картах</a>
+													<a href="/" class="btn-green contacts__btn-green">Открыть на яндекс картах</a>
 
 													<div class="contacts__code">
 														<img src="images/tmp/code.png" alt="">
@@ -3846,7 +3850,7 @@
 												<div class="contacts__coll">
 													<div class="text-block">
 														<p>
-															Двигайтесь от главного входа в сторону Варшавского ш. около 170 м, после забора направо во второй въезд. В конце подъёма направо. Перед вами небольшое кирпичное здание — КПП № 5. Адрес КПП — Варшавское шоссе д. 125 Ж. Говорите охране, что вы приехали в компанию «Наш Кедр» и проезжаете дальше. Через 70 м поворачиваете направо. На следующем КПП берете пластиковый пропуск, прикладываете к турникету и заезжаете на грузовую территорию. Пропуск сразу возвращаете охране. Далее сразу налево, проезжаете 50 м и паркуетесь у любого белого ангара. Вход в офис через грузовой пандус.
+															Двигайтесь от главного входа в сторону Варшавского ш. около 170 м, после забора направо во второй въезд. В конце подъёма направо. Перед вами небольшое кирпичное здание — КПП № 5. Адрес КПП — Варшавское шоссе д. 125 Ж. Говорите охране, что вы приехали в компанию «Наш Кедр» и проезжаете дальше. Через 70 м поворачиваете направо. На следующем КПП берете пластиковый пропуск, прикладываете к турникету и заезжаете на грузовую территорию. Пропуск сразу возвращаете охране. Далее сразу налево, проезжаете 50 м и паркуетесь у любого белого ангара. Вход в офис через грузовой пандус.
 														</p>
 													</div>
 
@@ -3889,7 +3893,7 @@
 							<tbody>
 								<tr>
 									<td class="section-props__table-name">Наименование юридического лица</td>
-									<td>Общество с ограниченной ответственностью «Наш Кедр»</td>
+									<td>Общество с ограниченной ответственностью «Наш Кедр»</td>
 								</tr>
 								<tr>
 									<td class="section-props__table-name">ИНН</td>
@@ -3917,7 +3921,7 @@
 								</tr>
 								<tr>
 									<td class="section-props__table-name">Банк</td>
-									<td>ОАО «Промсвязьбанк»</td>
+									<td>ОАО «Промсвязьбанк»</td>
 								</tr>
 								<tr>
 									<td class="section-props__table-name">БИК</td>
@@ -3925,19 +3929,19 @@
 								</tr>
 								<tr>
 									<td class="section-props__table-name">К/счёт</td>
-									<td>30101810400000000555 в ОПЕРУ Московского ГТУ банка России</td>
+									<td>30101810400000000555 в ОПЕРУ Московского ГТУ банка России</td>
 								</tr>
 								<tr>
 									<td class="section-props__table-name">Юридический адрес</td>
-									<td>117587, Москва, Варшавское шоссе, д. 125, корп. 3, оф. 216</td>
+									<td>117587, Москва, Варшавское шоссе, д. 125, корп. 3, оф. 216</td>
 								</tr>
 								<tr>
 									<td class="section-props__table-name">Фактический адрес</td>
-									<td>117587, Москва, Варшавское шоссе, д. 125, корп. 3, офис 201П</td>
+									<td>117587, Москва, Варшавское шоссе, д. 125, корп. 3, офис 201П</td>
 								</tr>
 								<tr>
 									<td class="section-props__table-name">Телефоны</td>
-									<td>+7 499 322-07-82; +7 499 704-65-10</td>
+									<td>+7 499 322-07-82; +7 499 704-65-10</td>
 								</tr>
 								<tr>
 									<td class="section-props__table-name">Email</td>
@@ -4135,7 +4139,7 @@
 				</div>
 				<div class="footer__bot">
 					<div class="cont _flex">
-						<div class="footer__copy">&copy; 2024 Компания «Мульча.рф». <span>Все права защищены и охраняются законом.</span></div>
+						<div class="footer__copy">&copy; 2025 Компания «Мульча.рф». <span>Все права защищены и охраняются законом.</span></div>
 
 						<div class="footer__links _flex">
 							<div class="footer__link">

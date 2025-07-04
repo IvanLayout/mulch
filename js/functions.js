@@ -562,6 +562,34 @@ $(() => {
 			$(this).closest('.form__field').removeClass('_full')
 		}
 	})
+
+	$('#header__search-input').keydown(function() {
+		setTimeout(() => {
+			let value = $(this).val()
+
+			if ( value != '' ) {
+				$(this).closest('.header__search-field').addClass('_full')
+			} else {
+				$(this).closest('.header__search-field').removeClass('_full')
+			}
+		})
+	})
+
+	$('.header__search-clear').click(function(e) {
+		e.preventDefault()
+
+		$('#header__search-input').val('')
+
+		$(this).closest('.header__search-field').removeClass('_full')
+	})
+
+	$('.filter__item-clear').click(function(e) {
+		e.preventDefault()
+
+		const $filterItem = $(this).closest('.filter__item');
+
+		$filterItem.find('input[type="checkbox"], input[type="radio"]').prop('checked', false);
+	})
 })
 
 

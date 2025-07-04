@@ -236,6 +236,11 @@
         font-size: 14px;
     }
 
+    .contacts .tabs__text
+    {
+        font-size: 15px;
+    }
+
 
     .main-stock__slider .swiper-overflow
     {
@@ -286,6 +291,8 @@
 
     .breadcrumbs
     {
+        font-size: 14px;
+
         overflow: hidden;
         overflow-x: auto;
 
@@ -308,7 +315,9 @@
     {
         font-size: 14px;
 
+        padding-top: 10px;
         padding-right: 12px;
+        padding-bottom: 20px;
         padding-left: 12px;
     }
 
@@ -321,13 +330,18 @@
 
     .categories__item-name
     {
-        margin-top: 12px;
+        margin-top: 6px;
     }
 
 
     .pagination-more__number
     {
         display: none;
+    }
+
+    .pagination-more .btn-bord
+    {
+        font-size: 14px;
     }
 
 
@@ -1140,8 +1154,6 @@
 
     .section-props__table .section-props__table-name
     {
-        font-size: 12px;
-
         width: 34.2%;
     }
 

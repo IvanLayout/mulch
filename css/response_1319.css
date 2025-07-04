@@ -63,7 +63,7 @@
 
     .content__center .page-title
     {
-        margin-bottom: 20px;
+        margin-bottom: 22px;
     }
 
 
@@ -755,6 +755,12 @@
     .main-news__grid .news-big__flex
     {
         padding: 20px;
+    }
+
+    .pagination-more .btn-bord
+    {
+        font-size: 16px;
+        line-height: 42px;
     }
 
 

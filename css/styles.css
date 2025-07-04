@@ -634,6 +634,7 @@ button
 
     color: #FFF;
     font-size: 16px;
+    font-weight: 700;
 
     display: block;
 
@@ -826,6 +827,11 @@ button
     background: #007657;
 }
 
+.header__search-field._full .header__search-submit
+{
+    display: none;
+}
+
 .header__search-submit svg
 {
     display: block;
@@ -834,6 +840,50 @@ button
     height: 17px;
 
     fill: currentColor;
+}
+
+.header__search-clear
+{
+    color: #616161;
+
+    display: none;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+
+    width: 42px;
+    height: 38px;
+    margin-left: 10px;
+
+    border-radius: 5px;
+
+    transition: color .2s linear;
+}
+
+.header__search-field._full .header__search-clear
+{
+    display: flex;
+}
+
+.header__search-clear svg
+{
+    display: block;
+
+    width: 13px;
+    height: 13px;
+
+    fill: none;
+    stroke: currentColor;
+}
+
+@media (any-hover: hover)
+{
+    .header__search-clear:hover
+    {
+        color: #282828;
+    }
 }
 
 .mini-modal__modal-select
@@ -1002,6 +1052,8 @@ button
     display: block;
 
     padding-top: 9px;
+    padding-right: 1px;
+    padding-left: 1px;
 
     text-align: center;
     text-decoration: none;
@@ -2109,7 +2161,7 @@ button
 
 .page-title_marg
 {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .page-title span
@@ -2168,9 +2220,10 @@ button
 /*----------------
     Typography
 ----------------*/
-.text-block > :last-child
+.text-block > :last-child,
+.text-block__box > :last-child
 {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .text-block
@@ -3710,6 +3763,16 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .swiper-scrollbar
 {
     display: none;
+
+    transition: opacity 0s .1s linear;
+}
+
+.swiper-scrollbar._hide
+{
+    opacity: 0;
+
+    transition-delay: .3s;
+    transition-duration: .3s;
 }
 
 
@@ -4058,6 +4121,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
     color: #282828;
     font-size: 20px;
     font-weight: 500;
+    line-height: normal;
 
     display: block;
 
@@ -4980,6 +5044,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     margin: 0 0 25px -20px;
 }
 
+.tabs_marg
+{
+    margin-bottom: 14px;
+}
+
 .tabs__text
 {
     position: relative;
@@ -4994,6 +5063,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     transition: color .2s linear;
 }
 
+.tabs__text_big
+{
+    font-size: 18px;
+}
+
 .tabs__text span
 {
     display: inline-block;
@@ -5001,6 +5075,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     border-bottom: 1px dashed transparent;
 
     transition: border .2s linear;
+}
+
+.tabs__text sup
+{
+    font-size: 89%;
 }
 
 @media (any-hover: hover)
@@ -5084,33 +5163,30 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
     max-width: 272px;
     margin: 0 auto;
-    padding-bottom: 45.23%;
 }
 
 .categories__item-img
+{
+    display: block;
+
+    width: 100%;
+    padding-bottom: 45.23%;
+}
+
+.categories__item-img img
 {
     position: absolute;
     top: 0;
     left: 0;
 
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: block;
 
     width: 100%;
     height: 100%;
-}
-
-.categories__item-img img
-{
-    display: block;
-
-    max-width: 100%;
-    max-height: 100%;
 
     transition: opacity .5s linear, transform .4s linear;
+
+    object-fit: contain;
 }
 
 @media (any-hover: hover)
@@ -7804,6 +7880,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
     padding-top: 20px;
 }
 
+.section-stock__btn .btn-bord
+{
+    padding-right: 29px;
+    padding-left: 29px;
+}
+
 
 .contacts__subtitle
 {
@@ -7867,6 +7949,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     align-content: center;
     align-items: center;
     flex-wrap: nowrap;
+}
+
+.contacts__item-link em
+{
+    font-style: normal;
 }
 
 .contacts__item-link a

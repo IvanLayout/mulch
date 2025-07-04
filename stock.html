@@ -142,8 +142,8 @@
 							<div class="header__logo">
 								<a href="/">
 									<picture>
-										<source data-srcset="images/logo_mob.png" type="image/png"  media="(max-width: 1023px)" class="lazyload">
-										<img data-src="images/logo.png" src="images/img_plug.png" alt="" class="lazyload">
+										<source srcset="images/logo_mob.png" type="image/png"  media="(max-width: 1023px)">
+										<img src="images/logo.png" alt="">
 									</picture>
 								</a>
 							</div>
@@ -2710,11 +2710,17 @@
 								</div>
 
 								<div class="header__search-field _flex">
-									<input type="text" value="" placeholder="Поиск по сайту…" class="header__search-input">
+									<input type="text" value="" placeholder="Поиск по сайту…" id="header__search-input" class="header__search-input">
 
 									<button type="submit" class="header__search-submit">
 										<svg>
 											<use xlink:href="images/sprite.svg#lupa"></use>
+										</svg>
+									</button>
+
+									<button type="button" class="header__search-clear">
+										<svg>
+											<use xlink:href="images/sprite.svg#close"></use>
 										</svg>
 									</button>
 								</div>
@@ -3140,15 +3146,6 @@
 
 						<span class="fix-btns__btn-name">Корзина</span>
 					</a>
-					<a href="/" class="fix-btns__btn">
-						<span class="fix-btns__btn-icon">
-							<svg>
-								<use xlink:href="images/sprite.svg#ic_menu4"></use>
-							</svg>
-						</span>
-
-						<span class="fix-btns__btn-name">Избранное</span>
-					</a>
 					<button type="button" class="fix-btns__btn open-user-info">
 						<span class="fix-btns__btn-icon">
 							<svg>
@@ -3158,6 +3155,17 @@
 
 						<span class="fix-btns__btn-name">Профиль</span>
 					</button>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu4"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-number">100</span>
+
+						<span class="fix-btns__btn-name">Избранное</span>
+					</a>
 				</div>
 
 				<div class="user-info">
@@ -3246,9 +3254,9 @@
 				<section class="section-stock">
 					<div class="cont">
 						<div class="tabs-container">
-							<div class="tabs _flex">
-								<button type="button" data-content="#tab1" data-level="level1" class="tabs__text tabs__button_js _active"><span>Активные</span> <sup>10</sup></button>
-								<button type="button" data-content="#tab2" data-level="level1" class="tabs__text tabs__button_js"><span>Архивные</span> <sup>100</sup></button>
+							<div class="tabs tabs_marg _flex">
+								<button type="button" data-content="#tab1" data-level="level1" class="tabs__text tabs__text_big tabs__button_js _active"><span>Активные</span> <sup>10</sup></button>
+								<button type="button" data-content="#tab2" data-level="level1" class="tabs__text tabs__text_big tabs__button_js"><span>Архивные</span> <sup>100</sup></button>
 							</div>
 
 							<div class="tab-content level1 _active" id="tab1">
@@ -3588,7 +3596,7 @@
 										<div class="product__added _flex">
 											<div class="amount product__amount">
 												<div class="amount__val _flex">
-													<button type="button" disabled class="amount__btn amount__btn_minus"></button>
+													<button type="button" class="amount__btn amount__btn_minus"></button>
 
 													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
 
@@ -3697,7 +3705,7 @@
 										<div class="product__added _flex">
 											<div class="amount product__amount">
 												<div class="amount__val _flex">
-													<button type="button" disabled class="amount__btn amount__btn_minus"></button>
+													<button type="button" class="amount__btn amount__btn_minus"></button>
 
 													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
 
@@ -3801,7 +3809,7 @@
 										<div class="product__added _flex">
 											<div class="amount product__amount">
 												<div class="amount__val _flex">
-													<button type="button" disabled class="amount__btn amount__btn_minus"></button>
+													<button type="button" class="amount__btn amount__btn_minus"></button>
 
 													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
 
@@ -3905,7 +3913,7 @@
 										<div class="product__added _flex">
 											<div class="amount product__amount">
 												<div class="amount__val _flex">
-													<button type="button" disabled class="amount__btn amount__btn_minus"></button>
+													<button type="button" class="amount__btn amount__btn_minus"></button>
 
 													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
 
@@ -4009,7 +4017,7 @@
 										<div class="product__added _flex">
 											<div class="amount product__amount">
 												<div class="amount__val _flex">
-													<button type="button" disabled class="amount__btn amount__btn_minus"></button>
+													<button type="button" class="amount__btn amount__btn_minus"></button>
 
 													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
 
@@ -4113,7 +4121,7 @@
 										<div class="product__added _flex">
 											<div class="amount product__amount">
 												<div class="amount__val _flex">
-													<button type="button" disabled class="amount__btn amount__btn_minus"></button>
+													<button type="button" class="amount__btn amount__btn_minus"></button>
 
 													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
 
@@ -4217,7 +4225,7 @@
 										<div class="product__added _flex">
 											<div class="amount product__amount">
 												<div class="amount__val _flex">
-													<button type="button" disabled class="amount__btn amount__btn_minus"></button>
+													<button type="button" class="amount__btn amount__btn_minus"></button>
 
 													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
 
@@ -4321,7 +4329,7 @@
 										<div class="product__added _flex">
 											<div class="amount product__amount">
 												<div class="amount__val _flex">
-													<button type="button" disabled class="amount__btn amount__btn_minus"></button>
+													<button type="button" class="amount__btn amount__btn_minus"></button>
 
 													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
 
@@ -4538,7 +4546,7 @@
 				</div>
 				<div class="footer__bot">
 					<div class="cont _flex">
-						<div class="footer__copy">&copy; 2024 Компания «Мульча.рф». <span>Все права защищены и охраняются законом.</span></div>
+						<div class="footer__copy">&copy; 2025 Компания «Мульча.рф». <span>Все права защищены и охраняются законом.</span></div>
 
 						<div class="footer__links _flex">
 							<div class="footer__link">

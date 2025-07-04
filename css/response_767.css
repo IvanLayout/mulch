@@ -1040,6 +1040,8 @@
 
     .fix-btns__btn
     {
+        position: relative;
+
         color: rgba(40, 40, 40, .4);
         font-size: 12px;
         font-weight: 500;
@@ -1078,6 +1080,26 @@
 
         fill: currentColor;
         stroke: currentColor;
+    }
+
+    .fix-btns__btn-number
+    {
+        position: absolute;
+        top: 7px;
+        left: 50%;
+
+        color: #FFF;
+        font-size: 7px;
+        line-height: 15px;
+
+        min-width: 15px;
+        margin-left: 5px;
+        padding: 0 2px;
+
+        text-align: center;
+
+        border-radius: 8px;
+        background: #F87740;
     }
 
 
@@ -1316,6 +1338,16 @@
         --products_count: 2;
     }
 
+    .product__prices
+    {
+        margin-top: 10px;
+    }
+
+    .product__bot
+    {
+        margin-top: 2px;
+    }
+
 
     .main-news__time
     {
@@ -1328,6 +1360,24 @@
     .main-news__time::before
     {
         left: 4px;
+    }
+
+    .main-news__flex .main-news__time
+    {
+        font-size: 13px;
+        line-height: 28px;
+
+        padding: 0 10px 0 31px;
+    }
+
+    .main-news__flex .main-news__time::before
+    {
+        left: 10px;
+
+        width: 16px;
+        height: 16px;
+
+        background-size: contain;
     }
 
 
@@ -1424,6 +1474,11 @@
         width: 55px;
         height: 60px;
         margin-right: 10px;
+    }
+
+    .categories-small__item-info
+    {
+        font-size: 14px;
     }
 
 
@@ -1746,17 +1801,22 @@
         font-size: 15px;
 
         width: 100%;
-        margin-bottom: 14px;
+        margin-bottom: 12px;
     }
 
     .contacts__item-val
     {
-        margin-left: -30px;
+        margin: -16px 0 0 -30px;
     }
 
     .contacts__item-col
     {
         margin-left: 30px;
+    }
+
+    .contacts__item-val
+    {
+        padding-bottom: 0;
     }
 
 
@@ -2375,9 +2435,10 @@
     }
 
 
+
     .footer
     {
-        padding: 22px 0;
+        padding: 20px 0 22px;
     }
 
     .footer__coll
