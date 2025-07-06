@@ -1829,6 +1829,219 @@
     }
 
 
+    .main-news__slider._middle .main-news__date
+    {
+        margin-top: 10px;
+    }
+
+    .main-news__slider._middle .main-news__name
+    {
+        margin-top: 12px;
+    }
+
+    .main-news__slider._middle .main-news__desc
+    {
+        margin-top: 10px;
+    }
+
+
+    .section-gallery .btn-bord
+    {
+        font-size: 14px;
+        line-height: 42px;
+
+        padding: 0 28px;
+    }
+
+    .main-news__slider._middle .main-news__date
+    {
+        font-size: 13px;
+    }
+
+
+    .compare-section__radios .radio__text
+    {
+        font-size: 13px;
+    }
+
+
+    .about-banner__bg
+    {
+        min-height: 480px;
+    }
+
+    .about-banner__top
+    {
+        padding-top: 50px;
+    }
+
+    .about-banner__top-wrap
+    {
+        max-width: 667px;
+    }
+
+    .about-banner__desc
+    {
+        max-width: 418px;
+        margin-top: 24px;
+        padding-right: 65px;
+    }
+
+
+    .about-banner__item
+    {
+        padding: 14px 15px 19px;
+    }
+
+    .about-banner__item-title
+    {
+        font-size: 15px;
+    }
+
+
+    .about__top-item
+    {
+        font-size: 13px;
+
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .about__top-item b
+    {
+        font-size: 48px;
+
+        margin-bottom: 5px;
+    }
+
+    .about__top-title
+    {
+        max-width: 193px;
+        padding-top: 40px;
+    }
+
+    .about__top-desc
+    {
+        font-size: 13px;
+
+        max-width: 380px;
+        padding-top: 40px;
+    }
+
+    .about__item
+    {
+        padding-bottom: 19px;
+    }
+
+    .about__title
+    {
+        font-size: 24px;
+    }
+
+    .about__desc
+    {
+        margin-top: 33px;
+    }
+
+
+    .mission__coll
+    {
+        padding: 30px 30px 40px;
+    }
+
+    .mission__title span
+    {
+        line-height: 27px;
+    }
+
+    .mission__name
+    {
+        font-size: 18px;
+
+        margin-top: 20px;
+    }
+
+    .mission__desc
+    {
+        max-width: 398px;
+    }
+
+
+    .cooperation__big
+    {
+        margin-top: 24px;
+    }
+
+
+    .founders__coll
+    {
+        width: 321px;
+    }
+
+    .founders__img
+    {
+        height: 476px;
+        min-height: 1px;
+    }
+
+    .founders__colr
+    {
+        width: calc(100% - 336px);
+    }
+
+    .founders__item
+    {
+        padding: 20px 25px;
+    }
+
+    .founders__bot
+    {
+        margin-top: 25px;
+    }
+
+    .founders__name
+    {
+        font-size: 16px;
+    }
+
+    .founders__position
+    {
+        font-size: 13px;
+
+        margin-top: 2px;
+    }
+
+    .founders__item + .founders__item
+    {
+        margin-top: 10px;
+    }
+
+
+    .about-info__bg
+    {
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+
+    .about-info__title
+    {
+        font-size: 20px;
+    }
+
+    .about-info__name
+    {
+        font-size: 16px;
+
+        margin-top: 20px;
+    }
+
+
+    .history__date
+    {
+        font-size: 18px;
+    }
+
+
     .footer__colr
     {
         width: 375px;

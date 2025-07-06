@@ -2435,6 +2435,48 @@
     }
 
 
+    .section-gallery .wrap-btn
+    {
+        margin-top: 20px;
+    }
+
+    .main-news__slider._middle .main-news__time
+    {
+        font-size: 13px;
+        line-height: 28px;
+
+        padding: 0 10px 0 31px;
+    }
+
+    .main-news__slider._middle .main-news__time::before
+    {
+        left: 10px;
+
+        width: 16px;
+        height: 16px;
+
+        background-size: contain;
+    }
+
+    .main-news__grid .main-news__time
+    {
+        font-size: 13px;
+        line-height: 28px;
+
+        padding: 0 10px 0 31px;
+    }
+
+    .main-news__grid .main-news__time::before
+    {
+        left: 10px;
+
+        width: 16px;
+        height: 16px;
+
+        background-size: contain;
+    }
+
+
 
     .footer
     {

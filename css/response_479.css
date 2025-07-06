@@ -505,6 +505,11 @@
         grid-column: span 1;
     }
 
+    .gallery-grid__item:nth-child(n + 4)
+    {
+        display: none;
+    }
+
     .gallery-grid__item._small
     {
         grid-column: span 1;
@@ -535,6 +540,11 @@
     {
         top: 15px;
         right: 15px;
+    }
+
+    .section-gallery .btn-bord
+    {
+        width: 100%;
     }
 
 

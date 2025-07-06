@@ -305,7 +305,6 @@ $(() => {
 			spaceBetween: 20,
 			slidesPerView: 'auto',
 			preloadImages: false,
-			slideToClickedSlide: true,
 			lazy: {
 				loadPrevNext: true,
 				elementClass: 'lazyload',
@@ -358,6 +357,217 @@ $(() => {
 	}
 
 
+	if ($('.major-projects__slider').length) {
+		new Swiper('.major-projects__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 20,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 3,
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				},
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
+			}
+		})
+	}
+
+
+	if ($('.inner-reviews__slider').length) {
+		new Swiper('.inner-reviews__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 20,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				el: ".slider-progressbar",
+				type: "progressbar",
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 3,
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				},
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
+			}
+		})
+	}
+
+
+	if ($('.history__dates').length) {
+		historyDates = new Swiper('.history__dates', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 20,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			slideToClickedSlide: true,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				el: ".slider-progressbar",
+				type: "progressbar",
+			},
+			scrollbar: {
+				el: ".swiper-scrollbar",
+				hide: false,
+      		},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 152,
+					slidesPerView: 'auto'
+				},
+				'1600': {
+					spaceBetween: 266,
+					slidesPerView: 'auto'
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				},
+				touchMove: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchStart: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+				},
+				touchEnd: function (swiper) {
+					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+				}
+			}
+		})
+
+		new Swiper('.history__slider', {
+			spaceBetween: 40,
+			slidesPerView: 'auto',
+			loop: false,
+			speed: 500,
+			watchOverflow: true,
+			thumbs: {
+				swiper: historyDates
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true,
+			}
+		})
+	}
+
+
 	if ($('.main-news__slider').length) {
 		new Swiper('.main-news__slider', {
 			loop: false,
@@ -366,7 +576,6 @@ $(() => {
 			spaceBetween: 16,
 			slidesPerView: 'auto',
 			preloadImages: false,
-			slideToClickedSlide: true,
 			lazy: {
 				loadPrevNext: true,
 				elementClass: 'lazyload',

@@ -549,10 +549,9 @@
         font-size: 16px;
     }
 
-
-    .footer__colr
+    .main-news__slider._middle .main-news__date
     {
-        width: 502px;
+        margin-top: 16px;
     }
 
 
@@ -622,5 +621,138 @@
     .cooperation__img6
     {
         width: 31%;
+    }
+
+
+    .about__title
+    {
+        font-size: 32px;
+    }
+
+    .about__item
+    {
+        padding-right: 14px;
+        padding-bottom: 14px;
+    }
+
+    .mission__desc
+    {
+        max-width: 535px;
+    }
+
+    .mission__name
+    {
+        font-size: 24px;
+    }
+
+
+    .cooperation__big-img
+    {
+        height: 195px;
+        padding-top: 12px;
+    }
+
+
+    .history__slider .swiper-slide
+    {
+        width: 899px;
+        min-height: 434px;
+        padding: 21px 30px 0 0;
+    }
+
+    .history__title
+    {
+        font-size: 48px;
+    }
+
+    .history__colr
+    {
+        width: 261px;
+    }
+
+
+    .inner-reviews__colr
+    {
+        width: calc(100% - 190px);
+    }
+
+    .inner-reviews__slider
+    {
+        padding-bottom: 19px;
+    }
+
+    .inner-reviews__item
+    {
+        padding-bottom: 18px;
+    }
+
+    .inner-reviews__photo
+    {
+        font-size: 16px;
+
+        width: 54px;
+        height: 54px;
+    }
+
+    .inner-reviews__name
+    {
+        font-size: 16px;
+    }
+
+    .inner-reviews__stars
+    {
+        margin-top: 10px;
+    }
+
+    .inner-reviews__item-bot
+    {
+        margin-top: 25px;
+    }
+
+    .inner-reviews__slider .slider-button-prev,
+    .inner-reviews__slider .slider-button-next
+    {
+        width: 37px;
+        height: 37px;
+    }
+
+    .inner-reviews__slider .slider-button-next
+    {
+        margin-left: 47px;
+    }
+
+    .inner-reviews__slider .slider-progressbar
+    {
+        width: calc(100% - 99px);
+        margin-top: 38px;
+    }
+
+    .inner-reviews__flex
+    {
+        margin-top: 20px;
+    }
+
+    .inner-reviews__coll
+    {
+        align-self: center;
+
+        padding-bottom: 58px;
+    }
+
+
+    .founders__coll
+    {
+        width: 493px;
+    }
+
+    .founders__colr
+    {
+        width: calc(100% - 513px);
+    }
+
+
+    .footer__colr
+    {
+        width: 502px;
     }
 }
