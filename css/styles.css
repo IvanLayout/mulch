@@ -6152,6 +6152,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     justify-content: space-between;
 
     margin-top: 3px;
+    display: none;
+}
+
+.filter__data._all .filter__item-bot{
+    display: flex;
 }
 
 .filter__item-hide
@@ -6184,6 +6189,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
     border-bottom: 1px dashed currentColor;
 
     transition: border .2s linear;
+    display: none;
 }
 
 @media (any-hover: hover)
@@ -6192,6 +6198,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     {
         border-bottom-color: transparent;
     }
+}
+
+._clear .filter__item-clear{
+    display: block;
 }
 
 .filter__search
@@ -6295,6 +6305,18 @@ input[type=checkbox]:checked + .checkbox-btn__text
     {
         border-bottom-color: transparent;
     }
+}
+
+.filter__item-more span + span{
+    display: none;
+}
+
+.filter__item-more._active span{
+    display: none;
+}
+
+.filter__item-more._active span + span{
+    display: block;
 }
 
 .filter__bot

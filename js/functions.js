@@ -589,6 +589,16 @@ $(() => {
 		const $filterItem = $(this).closest('.filter__item');
 
 		$filterItem.find('input[type="checkbox"], input[type="radio"]').prop('checked', false);
+
+		$filterItem.find('._clear').removeClass('_clear')
+	})
+
+	$('.filter__data').each(function(){
+		if ($(this).find('input[type="checkbox"]:checked, input[type="radio"]:checked').length > 0) {
+			$(this).addClass('_clear');
+		  } else {
+			$(this).removeClass('_clear');
+		  }
 	})
 })
 
