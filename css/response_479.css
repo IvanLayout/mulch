@@ -760,6 +760,113 @@
     }
 
 
+    .about-delivery__top
+    {
+        flex-wrap: wrap;
+    }
+
+    .about-delivery .select-sort
+    {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+
+
+    .major-projects .btn-bord
+    {
+        width: 100%;
+    }
+
+
+    .cooperation__big
+    {
+        overflow: hidden;
+
+        padding-right: 0;
+    }
+
+    .cooperation__big-coll
+    {
+        width: calc(100% - 66px);
+        padding-bottom: 109px;
+    }
+
+    .cooperation__big-img
+    {
+        justify-content: flex-start;
+
+        width: 259px;
+        height: 215px;
+        margin: 0 -62px 0 -131px;
+        padding-top: 0;
+    }
+
+    .founders__item-wrap
+    {
+        overflow: hidden;
+
+        max-height: 240px;
+    }
+
+    .founders__item-wrap._all
+    {
+        max-height: none;
+    }
+
+    .founders__open
+    {
+        position: relative;
+
+        color: #007657;
+        font-size: 12px;
+
+        display: none;
+
+        margin-top: 12px;
+        padding-right: 12px;
+    }
+
+    .founders__item-wrap._big + .founders__open
+    {
+        display: inline-block;
+    }
+
+    .founders__open span + span
+    {
+        display: none;
+    }
+
+    .founders__open._active span
+    {
+        display: none;
+    }
+
+    .founders__open._active span + span
+    {
+        display: inline-block;
+    }
+
+    .founders__open svg
+    {
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        display: block;
+
+        width: 6px;
+        height: 6px;
+        margin-top: -2px;
+
+        fill: currentColor;
+    }
+
+    .founders__open._active svg
+    {
+        transform: rotate(180deg);
+    }
+
+
     .footer__coll
     {
         width: 100%;

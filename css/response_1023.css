@@ -1850,6 +1850,354 @@
     }
 
 
+    .socials-section__bg
+    {
+        padding: 31px 40px;
+    }
+
+    .socials-section__coll
+    {
+        width: 290px;
+    }
+
+    .socials-section__desc
+    {
+        margin-top: 10px;
+    }
+
+    .socials-section__colr
+    {
+        width: auto;
+    }
+
+
+    .inner-reviews__coll
+    {
+        width: 155px;
+        padding-bottom: 15px;
+    }
+
+    .inner-reviews__coll-btn
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .inner-reviews__colr
+    {
+        width: calc(100% - 176px);
+    }
+
+    .inner-reviews__slider
+    {
+        width: calc(100% + 40px);
+        margin-right: -40px;
+        padding-right: 40px;
+        padding-bottom: 0;
+    }
+
+    .inner-reviews__slider .swiper-overflow
+    {
+        width: calc(100% + 40px);
+        margin-right: -40px;
+        padding-right: 40px;
+    }
+
+    .inner-reviews__item
+    {
+        width: 304px;
+    }
+
+    .inner-reviews__slider .slider-button-prev,
+    .inner-reviews__slider .slider-button-next
+    {
+        display: none;
+    }
+
+    .inner-reviews__slider .slider-progressbar
+    {
+        display: none;
+    }
+
+
+    .about-delivery__top
+    {
+        margin-bottom: 20px;
+    }
+
+    .about-delivery__map
+    {
+        height: 283px;
+    }
+
+
+    .activity-management
+    {
+        display: none;
+    }
+
+    .major-projects__slider
+    {
+        margin-top: 16px;
+    }
+
+
+    .major-projects__bot
+    {
+        padding: 16px;
+    }
+
+    .major-projects__name
+    {
+        font-size: 15px;
+    }
+
+    .major-projects__desc
+    {
+        margin-top: 10px;
+    }
+
+    .major-projects__eye
+    {
+        display: none;
+    }
+
+    .history__dates
+    {
+        padding: 0;
+
+        border: none;
+    }
+
+    .history__dates .swiper-overflow
+    {
+        overflow: visible;
+    }
+
+    .history__date
+    {
+        padding-bottom: 0;
+    }
+
+    .history__date::before
+    {
+        display: none;
+    }
+
+    .history__dates .slider-button-prev,
+    .history__dates .slider-button-next
+    {
+        display: none;
+    }
+
+    .history__slider
+    {
+        margin-top: 35px;
+    }
+
+    .history__slider .swiper-slide
+    {
+        min-height: 299px;
+        padding-top: 0;
+    }
+
+    .history__title
+    {
+        line-height: .8;
+    }
+
+
+    .about-info__bg
+    {
+        padding: 32px 72px;
+    }
+
+    .about-info__title
+    {
+        font-size: 16px;
+    }
+
+    .about-info__name
+    {
+        font-size: 14px;
+
+        margin-top: 16px;
+    }
+
+
+    .founders__cols
+    {
+        margin-top: 20px;
+    }
+
+    .founders__coll
+    {
+        width: 100%;
+    }
+
+    .founders__img
+    {
+        height: auto;
+        min-height: 224px;
+        padding-bottom: 67.16%;
+    }
+
+    .founders__colr
+    {
+        width: 100%;
+        max-width: none;
+        margin-top: 10px;
+    }
+
+    .founders__item
+    {
+        padding-right: 18px;
+    }
+
+    .founders__bot
+    {
+        margin-top: 19px;
+    }
+
+
+    .cooperation__big
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .cooperation__big-title
+    {
+        font-size: 16px;
+
+        max-width: 260px;
+    }
+
+    .cooperation__big-img
+    {
+        width: 35%;
+        height: 169px;
+    }
+
+    .cooperation__big-btn .btn-green
+    {
+        font-size: 14px;
+        line-height: 44px;
+
+        min-width: 208px;
+    }
+
+
+    .mission__coll
+    {
+        width: calc(50% - 5px);
+        padding: 20px 35px 35px 20px;
+    }
+
+    .mission__name
+    {
+        font-size: 15px;
+
+        max-width: 90%;
+        margin-top: 25px;
+    }
+
+    .mission__colr
+    {
+        width: calc(50% - 5px);
+    }
+
+    .mission__img
+    {
+        padding-bottom: 113%;
+    }
+
+
+    .about__item
+    {
+        padding-bottom: 14px;
+    }
+
+    .about__title
+    {
+        font-size: 20px;
+    }
+
+    .about__desc
+    {
+        margin-top: 29px;
+    }
+
+
+    .about__top-desc
+    {
+        padding-top: 30px;
+    }
+
+    .about__top-title
+    {
+        padding-top: 30px;
+    }
+
+
+    .about__top-item
+    {
+        padding-top: 56px;
+        padding-bottom: 46px;
+    }
+
+    .about__top-item b
+    {
+        font-size: 36px;
+    }
+
+
+    .about-banner__bg
+    {
+        min-height: 371px;
+    }
+
+    .about-banner__top-wrap
+    {
+        max-width: 597px;
+    }
+
+    .about-banner__desc
+    {
+        max-width: 402px;
+        margin-top: 20px;
+        padding-right: 49px;
+    }
+
+    .about-banner__item
+    {
+        padding-top: 9px;
+        padding-bottom: 23px;
+    }
+
+    .about-banner__item-title
+    {
+        font-size: 14px;
+    }
+
+    .about-banner__item-desc
+    {
+        margin-top: 6px;
+    }
+
+
+    .major-projects__slider .slider-button-prev,
+    .major-projects__slider .slider-button-next
+    {
+        display: none;
+    }
+
+    .history__slider .swiper-scrollbar
+    {
+        display: none;
+    }
+
+
     .footer__coll
     {
         width: 176px;

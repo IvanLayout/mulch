@@ -2477,6 +2477,328 @@
     }
 
 
+    .socials-section__bg
+    {
+        padding: 15px 26px 30px 20px;
+    }
+
+    .socials-section__coll
+    {
+        width: 100%;
+    }
+
+    .socials-section__desc
+    {
+        max-width: none;
+    }
+
+    .socials-section__colr
+    {
+        width: 100%;
+        max-width: none;
+        margin: 27px 0 0;
+        padding-top: 0;
+    }
+
+
+    .inner-reviews__flex
+    {
+        margin-top: 15px;
+    }
+
+    .inner-reviews__coll
+    {
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        width: 100%;
+        max-width: none;
+        padding-bottom: 0;
+    }
+
+    .inner-reviews__coll-top
+    {
+        width: calc(50% - 5px);
+        padding-right: 5px;
+
+        text-align: left;
+    }
+
+    .inner-reviews__coll-stars
+    {
+        justify-content: flex-start;
+    }
+
+    .inner-reviews__coll-name
+    {
+        margin-top: 11px;
+    }
+
+    .inner-reviews__coll-bot
+    {
+        width: calc(50% - 5px);
+
+        text-align: left;
+    }
+
+    .inner-reviews__coll-yandex
+    {
+        justify-content: flex-start;
+
+        margin-top: 0;
+    }
+
+    .inner-reviews__coll-btn
+    {
+        margin-top: 20px;
+    }
+
+    .inner-reviews__colr
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .inner-reviews__slider
+    {
+        width: 100%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .inner-reviews__slider .swiper-overflow
+    {
+        overflow: visible;
+
+        width: 100%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+
+    .major-projects .wrap-btn
+    {
+        margin-top: 20px;
+    }
+
+    .major-projects__slider .swiper-overflow
+    {
+        overflow: visible;
+    }
+
+    .major-projects__slider .swiper-slide
+    {
+        width: 222px;
+    }
+
+
+    .history__slider .swiper-slide
+    {
+        width: 298px;
+        min-height: 1px;
+    }
+
+    .history__flex
+    {
+        flex-wrap: wrap;
+    }
+
+    .history__coll
+    {
+        order: 2;
+
+        margin-top: 25px;
+    }
+
+    .history__slider-date + .history__slider-date
+    {
+        margin-top: 16px;
+    }
+
+    .history__slider-date span
+    {
+        margin-bottom: 5px;
+    }
+
+    .history__colr
+    {
+        margin-left: 0;
+    }
+
+    .history__title
+    {
+        margin-bottom: 0;
+    }
+
+    .history__slider
+    {
+        margin-top: 30px;
+    }
+
+    .history__slider .swiper-scrollbar
+    {
+        display: block;
+
+        margin-top: 20px;
+    }
+
+    .history__flex
+    {
+        margin-top: 25px;
+    }
+
+
+    .history__dates
+    {
+        margin-top: 16px;
+    }
+
+
+    .about-info__bg
+    {
+        padding: 20px 38px;
+    }
+
+    .about-info__title
+    {
+        font-size: 14px;
+    }
+
+    .about-info__name
+    {
+        font-size: 12px;
+
+        margin-top: 12px;
+    }
+
+
+    .founders__cols
+    {
+        margin-top: 16px;
+    }
+
+    .cooperation__big-btn
+    {
+        margin-top: 20px;
+    }
+
+    .cooperation__big-img
+    {
+        width: 40%;
+        margin-left: 0;
+    }
+
+
+    .mission__coll
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 11px;
+        padding-right: 32px;
+    }
+
+    .mission__colr
+    {
+        width: 100%;
+    }
+
+    .mission__img
+    {
+        padding-bottom: 95.83%;
+    }
+
+
+    .about-banner__bg
+    {
+        min-height: 544px;
+    }
+
+    .about-banner__top
+    {
+        padding: 40px 37px 0 20px;
+    }
+
+    .about-banner__top::before
+    {
+        display: none;
+    }
+
+    .about-banner .page-title
+    {
+        font-size: 20px;
+    }
+
+    .about-banner__desc
+    {
+        max-width: none;
+        margin: 20px 0 0;
+        padding: 0;
+    }
+
+    .about-banner__item
+    {
+        width: calc(100% / 2 + 1px);
+        min-height: 94px;
+    }
+
+    .about-banner__item:nth-child(3):before
+    {
+        display: none;
+    }
+
+
+    .about
+    {
+        margin-top: 20px;
+    }
+
+    .about__top
+    {
+        flex-wrap: wrap;
+    }
+
+    .about__top-title
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about__top-desc
+    {
+        width: 100%;
+        padding: 16px 25px 0 0;
+    }
+
+    .about__top-item
+    {
+        justify-content: flex-start;
+
+        width: 50%;
+        min-height: 114px;
+        margin-top: 24px;
+        padding: 14px;
+
+        text-align: left;
+
+        border-top: 1px solid #EAEAEA;
+    }
+
+    .about__item
+    {
+        width: calc(50% + 1px);
+    }
+
+    .about__item:empty
+    {
+        display: none;
+    }
+
+
 
     .footer
     {

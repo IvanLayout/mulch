@@ -11590,7 +11590,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
     background: rgba(0, 118, 87, .08);
 }
 
-.activity-management__icon
+.activity-management__icon img
 {
     display: block;
 
@@ -11825,6 +11825,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
     border-radius: 8px;
 
     object-fit: cover;
+    object-position: 50% 10%;
 }
 
 .founders__colr
@@ -11855,6 +11856,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
     max-width: 790px;
     margin: 0 auto;
+}
+
+.founders__open
+{
+    display: none;
 }
 
 .founders__bot
@@ -11921,6 +11927,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
     justify-content: center;
     align-content: flex-end;
     align-items: flex-end;
+    align-self: flex-end;
+    flex-shrink: 0;
     flex-wrap: wrap;
 
     width: 30%;
@@ -12882,9 +12890,9 @@ input[type=checkbox]:checked + .checkbox-btn__text
     background: #F9F9F9;
 }
 
-.about-banner__item:nth-child(3n-1):before,
-.about-banner__item:nth-child(3n+1):before,
-.about-banner__item:nth-child(3n):before
+.about-banner__item:nth-child(2):before,
+.about-banner__item:nth-child(3):before,
+.about-banner__item:nth-child(4):before
 {
     opacity: 1;
 }
@@ -13951,6 +13959,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
     .inner-reviews__colr
     {
         width: calc(100% - 196px);
+    }
+
+
+    .inner-reviews__like
+    {
+        font-size: 16px;
     }
 
 

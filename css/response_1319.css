@@ -2036,10 +2036,199 @@
     }
 
 
+    .history__dates
+    {
+        margin-top: 40px;
+        padding: 0 51px;
+    }
+
     .history__date
     {
         font-size: 18px;
     }
+
+
+    .history__slider .swiper-slide
+    {
+        width: 659px;
+        min-height: 334px;
+        padding: 23px 30px 0 0;
+    }
+
+    .history__title
+    {
+        font-size: 32px;
+    }
+
+    .history__subtitle
+    {
+        font-size: 18px;
+
+        margin-bottom: 11px;
+    }
+
+    .history__slider-date + .history__slider-date
+    {
+        margin-top: 10px;
+    }
+
+    .history__colr
+    {
+        width: 156px;
+    }
+
+
+    .mission__coll
+    {
+        background-size: cover;
+    }
+
+
+    .major-projects__name
+    {
+        font-size: 18px;
+    }
+
+    .major-projects__desc
+    {
+        margin-top: 12px;
+    }
+
+    .major-projects__eye
+    {
+        width: 30px;
+        height: 30px;
+
+        border-radius: 5px;
+    }
+
+    .major-projects__eye svg
+    {
+        width: 17px;
+        height: 17px;
+    }
+
+    .major-projects .btn-bord
+    {
+        font-size: 14px;
+        line-height: 42px;
+    }
+
+
+    .activity-management__item
+    {
+        padding: 17px 15px;
+    }
+
+    .activity-management__icon
+    {
+        width: 39px;
+        height: 39px;
+        margin-right: 15px;
+        padding: 8px;
+    }
+
+    .activity-management__desc
+    {
+        font-size: 16px;
+
+        margin-top: 11px;
+    }
+
+    .about-delivery__map
+    {
+        height: 336px;
+    }
+
+
+    .inner-reviews__coll
+    {
+        width: 289px;
+    }
+
+    .inner-reviews__coll-number
+    {
+        font-size: 15px;
+    }
+
+    .inner-reviews__coll-stars
+    {
+        margin-top: 12px;
+    }
+
+    .inner-reviews__coll-name
+    {
+        font-size: 15px;
+    }
+
+    .inner-reviews__coll-yandex
+    {
+        margin-top: 23px;
+    }
+
+    .inner-reviews__coll-btn
+    {
+        font-size: 14px;
+
+        padding: 0 22px;
+    }
+
+    .inner-reviews__coll-ratings
+    {
+        font-size: 13px;
+
+        margin-top: 8px;
+    }
+
+    .inner-reviews__name
+    {
+        font-size: 15px;
+    }
+
+    .inner-reviews__item-btns
+    {
+        margin-top: 24px;
+    }
+
+    .inner-reviews__item-bot
+    {
+        margin-top: 16px;
+    }
+
+    .inner-reviews__item
+    {
+        padding-bottom: 15px;
+    }
+
+    .inner-reviews__colr
+    {
+        width: calc(100% - 319px);
+    }
+
+
+    .socials-section__desc
+    {
+        max-width: 387px;
+        margin-top: 17px;
+    }
+
+    .socials-section__socials-flex
+    {
+        margin: 4px 0 0 -10px;
+    }
+
+    .socials-section__socials-item
+    {
+        width: 30px;
+        height: 30px;
+        margin: 10px 0 0 10px;
+    }
+
+    .about-delivery .select-sort
+    {
+        width: 224px;
+    }
+
 
 
     .footer__colr
