@@ -1118,7 +1118,7 @@ $(() => {
 		}
 
 		if (inputVal-1 == minimum) {
-			if ( !parent.hasClass('product__amount') ){
+			if ( !parent.hasClass('product__amount') && !parent.hasClass('product-info__amount') ){
 				$(this).prop("disabled", true)
 			}
 		}
@@ -1127,6 +1127,11 @@ $(() => {
 			if ( parent.hasClass('product__amount') ){
 				$(this).closest('.product').find('.product__added').removeClass('_show')
 				$(this).closest('.product').find('.product__bot').removeClass('_hide')
+			}
+
+			if ( parent.hasClass('product-info__amount') ){
+				$(this).closest('.product-info').find('.product-info__added').removeClass('_show')
+				$(this).closest('.product-info').find('.product-info__sales-bot').removeClass('_hide')
 			}
 		}
 	})

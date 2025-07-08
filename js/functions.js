@@ -93,14 +93,7 @@ $(() => {
 	$('.scroll-btn').click(function(e) {
 		e.preventDefault()
 
-		let href = $(this).data('anchor'),
-		addOffset = $('.header').innerHeight()
-
-		if ($(this).closest('.header__menu')){
-			$('.open-catalog-mob').removeClass('_active')
-			$('.header__menu').removeClass('_show')
-			$('body').removeClass('_menu-open')
-		}
+		let href = $(this).data('anchor')
 
 		$('html, body').stop().animate({ scrollTop: $(href).offset().top }, 1000)
 	})
@@ -449,6 +442,15 @@ $(() => {
 		$(this).closest('.product').find('.product__added').addClass('_show')
 	})
 
+	$('body').on('click', '.product-info__buy', function (e) {
+		e.preventDefault()
+		
+		$(this).closest('.product-info__sales-bot').addClass('_hide')
+		$(this).closest('.product-info').find('.product-info__added').addClass('_show')
+	})
+
+	
+
 
 	$('body').on('click', '.filter-open', function (e) {
 		e.preventDefault()
@@ -599,6 +601,44 @@ $(() => {
 		  } else {
 			$(this).removeClass('_clear');
 		  }
+	})
+
+	$('.checkbox__label, .checkbox-btn__label').click(function(){
+		if ($(this).closest('.filter__data').find('input[type="checkbox"]:checked').length > 0) {
+			$(this).closest('.filter__data').addClass('_clear');
+		} else {
+			$(this).closest('.filter__data').removeClass('_clear');
+		}
+	})
+
+	$('.radio__label').click(function(){
+		if ($(this).closest('.filter__data').find('input[type="radio"]:checked').length > 0) {
+			$(this).closest('.filter__data').addClass('_clear');
+		} else {
+			$(this).closest('.filter__data').removeClass('_clear');
+		}
+	})
+
+	$('.filter__item-more').click(function(e) {
+		e.preventDefault()
+
+		if ( $(this).hasClass('_active') ) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.filter__data').removeClass('_all')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.filter__data').addClass('_all')
+		}
+	})
+
+	$('.filter__data').each(function(){
+		console.log($(this).find('.checkbox').length > 4)
+
+		if ( $(this).find('.checkbox').length > 4 ) {
+			$(this).find('.filter__item-more').addClass('_show')
+		}
 	})
 })
 
