@@ -446,7 +446,7 @@ $(() => {
 		e.preventDefault()
 		
 		$(this).closest('.product-info__sales-bot').addClass('_hide')
-		$(this).closest('.product-info').find('.product-info__added').addClass('_show')
+		$(this).closest('.product-info__sales-bot').next().addClass('_show')
 	})
 
 	

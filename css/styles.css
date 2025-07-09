@@ -13307,6 +13307,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
     left: 20px;
 
     font-size: 14px;
+    color: #282828;
 
     visibility: hidden;
 
@@ -13339,8 +13340,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     margin-top: 16px;
 
     border-bottom: 1px dashed;
+    text-decoration: none;
 
     transition: border .2s linear;
+    display: inline-block;
 }
 
 @media (any-hover: hover)
@@ -13349,6 +13352,143 @@ input[type=checkbox]:checked + .checkbox-btn__text
     {
         border-bottom-color: transparent;
     }
+}
+
+.product-info__calculator{
+    width: 23.3%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.product-info__calculator-bg{
+    background: #F9F9F9;
+    padding: 20px 20px 39px;
+    border-radius: 10px;
+}
+
+.product-info__calculator-items{
+    margin-top: 24px;
+}
+
+.product-info__calculator-item{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.product-info__calculator-item_bot{
+    padding-top: 10px;
+}
+
+.product-info__calculator-item + .product-info__calculator-item{
+    margin-top: 15px;
+}
+
+.product-info__calculator-name{
+    align-self: center;
+    color: rgba(40, 40, 40, 0.5);
+}
+
+.product-info__calculator-item b{
+    color: #282828;
+    font-weight: 600;
+}
+
+.product-info__calculator-name sup{
+    font-size: 80%;
+}
+
+.product-info__calculator-val{
+    width: 123px;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.form-calculator__input{
+    display: block;
+    width: 100%;
+    height: 44px;
+    border: 1px solid rgba(0, 118, 87, 0.3);
+    border-radius: 5px;
+    font: 14px var(--font-family);
+    padding: 0 9px;
+    background: transparent;
+}
+
+
+.product-info__recommend{
+    width: calc(45.19% - 90px);
+    margin: 42px 0 0 30px;
+}
+
+.product-info__recommend-bg{
+    background: #F9F9F9;
+    padding: 20px 30px 24px;
+}
+
+.product-info__recommend-items{
+    margin-top: 16px;
+}
+
+.product-info__recommend-item{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.product-info__recommend-item + .product-info__recommend-item{
+    margin-top: 15px;
+}
+
+.product-info__recommend-name{
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(40, 40, 40, 0.5);
+}
+
+.product-info__recommend-colr{
+    width: 125px;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.product-info__recommend .product-info__sales-bot{
+    margin-top: 0;
+}
+
+.product-info__recommend .product-info__added{
+    margin-top: 0;
+}
+
+.product-info__recommend .product-info__added-check{
+    width: 100%;
+}
+
+.product-info__recommend-prices{
+    margin-left: -10px;
+    align-items: center;
+    align-content: center;
+}
+
+.product-info__recommend-price{
+    margin: 3px 0 0 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.product-info__recommend-oldprice{
+    margin: 3px 0 0 10px;
+    font-weight: 500;
+    font-size: 18px;
+    opacity: .3;
+    text-decoration: line-through;
+}
+
+.product-info__recommend .product-info__more{
+    margin-top: 40px;
+}
+
+.product-info__recommend-title{
+    font-size: 26px;
+    font-weight: 500;
 }
 
 
