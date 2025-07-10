@@ -11417,6 +11417,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
     width: 100%;
     height: 100%;
+    padding: 20px;
 }
 
 .product-images__img img
@@ -13139,11 +13140,26 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .product-info__added-check
 {
     width: calc(50% - 5px);
+    width: 100%;
     height: 44px;
 
     border: 2px solid #007657;
     border-radius: 5px;
     background: #F9F9F9 url(../images/ic_check.svg) 50% no-repeat;
+}
+
+.product-info__amount
+{
+    order: 2;
+
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+.product-info__amount .amount__val
+{
+    width: 140px;
+    margin: 0 auto;
 }
 
 .product-info__features
@@ -13281,6 +13297,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .product-info__feature .features__feature-name
 {
     width: 364px;
+}
+
+.product-info__feature .features__feature-val
+{
+    color: #282828;
 }
 
 .tooltip

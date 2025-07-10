@@ -2198,6 +2198,213 @@
     }
 
 
+    .product-info__top .page-title
+    {
+        width: calc(100% - 142px);
+        margin-bottom: 0;
+    }
+
+    .product-info__btns
+    {
+        order: 0;
+
+        margin-left: 20px;
+    }
+
+    .product-info__btn
+    {
+        width: 34px;
+        height: 34px;
+    }
+
+    .product-info__btn + .product-info__btn
+    {
+        margin-left: 10px;
+    }
+
+    .product-info__info
+    {
+        width: calc(100% + 20px);
+        max-width: none;
+        margin-top: 16px;
+    }
+
+    .product-info__wrap
+    {
+        gap: 25px 0;
+        grid-template-columns: 100%;
+    }
+
+    .product-info__top
+    {
+        grid-column: auto;
+    }
+
+    .product-thumbs
+    {
+        display: none;
+    }
+
+    .product-images
+    {
+        width: 100%;
+    }
+
+    .product-images__img
+    {
+        height: 306px;
+    }
+
+    .product-images .slider-pagination
+    {
+        position: relative;
+
+        display: flex;
+
+        margin-top: 15px;
+    }
+
+    .product-images .slider-dot
+    {
+        background: rgba(146, 146, 146, .2);
+    }
+
+    .slider-dot.slider-dot_active
+    {
+        background: #007657;
+    }
+
+    .fast-buy
+    {
+        margin-top: 20px;
+    }
+
+    .fast-buy__btn
+    {
+        font-size: 14px;
+    }
+
+    .product-info__feature .features__feature
+    {
+        font-size: 16px;
+    }
+
+    .product-info__feature .features__feature-name
+    {
+        width: 50%;
+    }
+
+    .product-info__feature .features__feature + .features__feature
+    {
+        margin-top: 25px;
+    }
+
+    .product-info__box
+    {
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        align-content: start;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        padding-bottom: 39px;
+    }
+
+    .product-info__calculator
+    {
+        position: relative;
+
+        width: calc(50% - 8px);
+    }
+
+    .product-info__calculator-bg
+    {
+        display: flex;
+        flex-direction: column;
+
+        min-height: 100%;
+        padding: 20px 15px;
+    }
+
+    .form-calculator
+    {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        width: 100%;
+    }
+
+    .product-info__calculator-items
+    {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        margin-top: 16px;
+    }
+
+    .product-info__calculator-item
+    {
+        width: 100%;
+    }
+
+    .product-info__calculator-item + .product-info__calculator-item
+    {
+        margin-top: 12px;
+    }
+
+    .form-calculator .product-info__calculator-item_bot
+    {
+        margin-top: auto;
+    }
+
+    .product-info__calculator-item_bot
+    {
+        padding-top: 25px;
+    }
+
+    .product-info__calculator .product-info__more
+    {
+        position: absolute;
+        bottom: -39px;
+        left: 0;
+    }
+
+    .product-info__recommend
+    {
+        width: calc(50% - 8px);
+    }
+
+    .product-info__recommend-bg
+    {
+        padding: 20px 15px;
+    }
+
+
+    .product-info__recommend-colr
+    {
+        width: 112px;
+    }
+
+    .product-info__recommend .product-info__buy
+    {
+        padding: 0;
+    }
+
+    .product-info__recommend-items
+    {
+        margin-top: 27px;
+    }
+
+    .product-info__recommend .product-info__more
+    {
+        margin-top: 15px;
+    }
+
+
     .footer__coll
     {
         width: 176px;

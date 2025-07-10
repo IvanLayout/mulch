@@ -1068,10 +1068,10 @@ $(() => {
 					slidesPerView: 8
 				},
 				'1025': {
-					spaceBetween: 9,
-					slidesPerView: 8
+					spaceBetween: 5,
+					slidesPerView: 7
 				},
-				'1200': {
+				'1320': {
 					spaceBetween: 8,
 					slidesPerView: 5
 				},
@@ -1288,6 +1288,25 @@ $(window).on('load', () => {
 			$(this).closest('.founders__item').find('.founders__item-wrap').addClass('_all')
 		}
 	})
+
+
+	if ( $(window).width() < 1320 && !$('.product-info').hasClass('mob') ) {
+		console.log('hgjhgj')
+		$('.product-info').removeClass('pc')
+		$('.product-info').addClass('mob')
+
+		$('.product-info__info').each(function() {
+			let parent = $('.product-info__top')
+
+			$(this).appendTo(parent)
+		})
+
+		$('.product-info__calculator').each(function() {
+			let parent = $('.product-info__box')
+
+			$(this).prependTo(parent)
+		})
+	}
 });
 
 
@@ -1342,6 +1361,41 @@ $(window).on('resize', () => {
 
 	if ($('.founders__item').length){
 		foundersTextHeught()
+	}
+
+
+	if ( $(window).width() < 1320 && !$('.product-info').hasClass('mob') ) {	
+		$('.product-info').removeClass('pc')
+		$('.product-info').addClass('mob')
+
+		$('.product-info__info').each(function() {
+			let parent = $('.product-info__top')
+
+			$(this).appendTo(parent)
+		})
+
+		$('.product-info__calculator').each(function() {
+			let parent = $('.product-info__box')
+
+			$(this).prependTo(parent)
+		})
+	}
+
+	if ( $(window).width() > 1319 && !$('.product-info').hasClass('pc') ) {
+		$('.product-info').removeClass('mob')
+		$('.product-info').addClass('pc')
+
+		$('.product-info__info').each(function() {
+			let parent = $('.product-info__coll')
+
+			$(this).prependTo(parent)
+		})
+
+		$('.product-info__calculator').each(function() {
+			let parent = $('.product-info__colr')
+
+			$(this).appendTo(parent)
+		})
 	}
 });
 
