@@ -13558,6 +13558,32 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 
+/*------------
+    coments
+------------*/
+
+
+.section-gray
+{
+	background: #F8F8F8;
+	padding-bottom: 80px;
+}
+
+.aside-order
+{
+	background: #fff;
+	padding: 25px 20px;
+	border-radius: 10px;
+
+	width: 277px;
+}
+
+.content__center 
+{
+    width: calc((100% / 6) * 5 - 20px);
+    margin-left: 20px;
+}
+
 
 /*------------
     footer
@@ -14687,6 +14713,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     {
         background-size: 34px auto;
     }
+
+
+	/*------------
+		coments
+	------------*/
 
 
     .footer-menu
