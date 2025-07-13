@@ -13688,6 +13688,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
     border-bottom: 1px dashed transparent;
 }
 
+
+.no-orders
+{
+	padding: 150px 30px;
+}
+
 /*------------
     footer
 ------------*/
