@@ -13609,7 +13609,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .order__name
 {
 	font-weight: 500;
-	margin-top: 20px;
+	margin-top: 18px;
 }
 
 .order__items
@@ -13619,7 +13619,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .order__block
 {
-	margin-top: 32px;
+	margin-top: 25px;
 }
 
 .order__small-title
@@ -13630,7 +13630,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .order__small-title + .order__item
 {
-	margin-top: 20px;
+	margin-top: 14px;
 }
 
 .order__item
@@ -13640,7 +13640,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .order__item + .order__item
 {
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 .order__link
@@ -13671,6 +13671,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	font-size: 14px;
 }
 
+.order__logout
+{
+	text-decoration: none;
+	transition: border .2s linear;
+	color: #007657;
+	font-size: 14px;
+	font-weight: 500;
+	border-bottom: dashed 1px #007657;
+	padding-bottom: 2px;
+	display: inline-block;
+}
+
+.order__logout:hover
+{
+    border-bottom: 1px dashed transparent;
+}
 
 /*------------
     footer
