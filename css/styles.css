@@ -13572,11 +13572,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .aside-order
 {
 	width: 277px;
+	margin-left: 20px;
 }
 
 .content__order 
 {
-    width: calc(100% - 297px);
+    width: calc(100% - 317px);
     margin-left: 20px;
 }
 
@@ -13700,6 +13701,30 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	display: none;
 }
 
+.back-link
+{
+	width: 21px;
+	height: 21px;
+	display: none;
+
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	background-color: #fff;
+	border-radius: 2px;
+	margin-right: 16px;
+	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+	padding: 5px;
+}
+
+.back-link__img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
 /*------------
     footer
 ------------*/
