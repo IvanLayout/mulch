@@ -870,7 +870,16 @@
 	/*------------
 		coments
 	------------*/
+
+	.section-gray
+	{
+		padding-bottom: 40px;
+	}
 	
+	.empty-section__br
+	{
+		display: inline-block;
+	}
 
     .footer__coll
     {

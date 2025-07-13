@@ -13610,14 +13610,15 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	font-weight: 500;
 	margin-top: 18px;
+	font-size: 16px;
 }
 
 .order__items
 {
-	margin-top: 5px;
+	margin-top: 30px;
 }
 
-.order__block
+.order__block + .order__block
 {
 	margin-top: 25px;
 }
@@ -13652,9 +13653,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	position: relative;
 }
 
-.order__link:hover
+@media (any-hover: hover)
 {
-	color: #007657;
+	.order__link:hover
+	{
+		color: #007657;
+	}
 }
 
 .order__link span
@@ -13683,15 +13687,17 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	display: inline-block;
 }
 
-.order__logout:hover
+@media (any-hover: hover)
 {
-    border-bottom: 1px dashed transparent;
+	.order__logout:hover
+	{
+		border-bottom: 1px dashed transparent;
+	}
 }
 
-
-.no-orders
+.empty-section__br
 {
-	padding: 150px 30px;
+	display: none;
 }
 
 /*------------
@@ -14827,6 +14833,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	/*------------
 		coments
 	------------*/
+
+	.section-gray
+	{
+		padding-bottom: 70px;
+	}
 
 
     .footer-menu

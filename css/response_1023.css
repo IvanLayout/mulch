@@ -2408,6 +2408,18 @@
 	/*------------
 		coments
 	------------*/
+
+	.aside-order 
+	{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.content__order 
+	{
+		width: 100%;
+		margin-left: 0;
+	}
 	
 
 
