@@ -13617,6 +13617,60 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin-top: 5px;
 }
 
+.order__block
+{
+	margin-top: 32px;
+}
+
+.order__small-title
+{
+	color: rgba(40, 40, 40, .5);
+	font-size: 12px;
+}
+
+.order__small-title + .order__item
+{
+	margin-top: 20px;
+}
+
+.order__item
+{
+	font-size: 14px;
+}
+
+.order__item + .order__item
+{
+	margin-top: 15px;
+}
+
+.order__link
+{
+	color: #282828;
+	text-decoration: none;
+	transition: color .2s linear;
+	display: inline-block;
+	position: relative;
+}
+
+.order__link:hover
+{
+	color: #007657;
+}
+
+.order__link span
+{
+	color: rgba(40, 40, 40, .8);
+	font-size: 10px;
+	font-weight: 500;
+	margin-left: 5px;
+}
+
+.order__link span.order__link-red
+{
+	color: #F87740;
+	font-size: 14px;
+}
+
 
 /*------------
     footer
