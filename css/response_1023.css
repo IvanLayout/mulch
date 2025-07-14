@@ -2723,6 +2723,30 @@
 		coments
 	------------*/
 
+    .page-top__box
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .back-link
+    {
+        display: flex;
+    }
+
+    .aside-order
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .content__order
+    {
+        width: 100%;
+    }
+
 
 
     .footer__coll
