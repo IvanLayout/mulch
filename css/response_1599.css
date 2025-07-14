@@ -829,7 +829,7 @@
         width: 232px;
     }
 
-    .tooltip__text
+    .mini-modal__modal_text
     {
         width: 502px;
         padding-right: 18px;
@@ -872,10 +872,45 @@
     }
 
 
-	/*------------
+    .modal-service__wrap
+    {
+        max-width: 1155px;
+    }
+
+    .modal-service__coll
+    {
+        width: 236px;
+    }
+
+    .modal-service__colr
+    {
+        width: calc(100% - 266px);
+    }
+
+
+    .modal-images__images
+    {
+        width: calc(100% - 540px);
+        padding-left: 40px;
+    }
+
+    .modal-images__info
+    {
+        width: 540px;
+        padding-right: 44px;
+        padding-left: 72px;
+    }
+
+    .modal-images__title
+    {
+        font-size: 22px;
+    }
+
+
+    /*------------
 		coments
 	------------*/
-	
+
 
     .footer__colr
     {

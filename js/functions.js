@@ -52,7 +52,6 @@ $(() => {
 			if( $(this).hasClass('mini-modal__btn_look') ) {
 				$('body').addClass('_lock-mini')
 			}
-			
 
 			if (is_touch_device()) $('body').css('cursor', 'pointer')
 		}
@@ -166,7 +165,21 @@ $(() => {
 		Fancybox.show([{
 			src: $(this).data('content'),
 			type: 'inline'
-		}])
+		}],
+		{
+			on: {
+				init: (fancyboxRef) => {
+					if ( $(this).attr('data-modal-big') ) {
+						$('body').addClass('_big-modal')
+					}
+				},
+				destroy: (fancyboxRef) => {
+					if ( $(this).attr('data-modal-big') ) {
+						$('body').removeClass('_big-modal')
+					}
+				},
+			},
+		})
 	})
 
 	$('body').on('click', '.modal-close', function (e) {
@@ -442,15 +455,12 @@ $(() => {
 		$(this).closest('.product').find('.product__added').addClass('_show')
 	})
 
-	$('body').on('click', '.product-info__buy', function (e) {
+	$('body').on('click', '.product-global-buy', function (e) {
 		e.preventDefault()
 		
-		$(this).closest('.product-info__sales-bot').addClass('_hide')
-		$(this).closest('.product-info__sales-bot').next().addClass('_show')
+		$('.product-global-btns').addClass('_hide')
+		$('.product-global-added').addClass('_show')
 	})
-
-	
-
 
 	$('body').on('click', '.filter-open', function (e) {
 		e.preventDefault()
@@ -502,8 +512,6 @@ $(() => {
 		const containerOffsetTop = $input.closest('.filter').offset().top;
 
 		const relativeOffset = inputOffsetTop - containerOffsetTop;
-
-		console.log(relativeOffset)
 
 		if( !$('.filter-filter').hasClass('_show') ){
 			$('.filter-filter').addClass('_show')
@@ -634,16 +642,124 @@ $(() => {
 	})
 
 	$('.filter__data').each(function(){
-		console.log($(this).find('.checkbox').length > 4)
-
 		if ( $(this).find('.checkbox').length > 4 ) {
 			$(this).find('.filter__item-more').addClass('_show')
 		}
 	})
+
+
+	$('body').on('click', '.calculator-open', function (e) {
+		e.preventDefault()
+
+		$('.product-info__calculator').addClass('_active')
+		$('body').addClass('_lock-calculator')
+	})
+
+	$('body').on('click', '.product-info__calculator-close', function (e) {
+		e.preventDefault()
+
+		$('.product-info__calculator').removeClass('_active')
+		$('body').removeClass('_lock-calculator')
+	})
+
+	$('body').on('click', '.product-info__calculator', function (e) {
+		e.preventDefault()
+
+		if ( $(e.target).hasClass('product-info__calculator') ) {
+			$('.product-info__calculator').removeClass('_active')
+			$('body').removeClass('_lock-calculator')
+		}
+	})
+
+
+	$('body').on('click', '.all-add', function (e) {
+		e.preventDefault()
+
+		$('.modal-service').addClass('_active')
+		$('body').addClass('_lock-add')
+	})
+
+	$('body').on('click', '.modal-service__close', function (e) {
+		e.preventDefault()
+
+		$('.modal-service').removeClass('_active')
+		$('body').removeClass('_lock-add')
+	})
+
+	$('body').on('click', '.modal-service', function (e) {
+		e.preventDefault()
+
+		if ( $(e.target).hasClass('modal-service') ) {
+			$('.modal-service').removeClass('_active')
+			$('body').removeClass('_lock-add')
+		}
+	})
+	
+	$('body').on('click', '.modal-service__product-boy', function (e) {
+		e.preventDefault()
+
+		$(this).addClass('_active')
+		$(this).closest('.modal-service__product').find('.modal-service__product-added').addClass('_show')
+	})
+
+	if ( $('.product-recommends__add').hasClass('_active') ) {
+		$('.modal-service__product-boy').prop("disabled", false)
+	}
+
+	$('body').on('click', '.product-recommends__add', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.modal-service').find('.modal-service__product-boy').prop("disabled", false)
+
+		$(this).addClass('_active')
+		$(this).closest('.product-recommends__item').find('.product-recommends__check').addClass('_show')
+	})
+
+
+	$('body').on('click', '.open-info', function (e) {
+		e.preventDefault()
+
+		let modal = $(this).data('content')
+		$(modal).addClass('_active')
+		$('body').addClass('_lock-info')
+	})
+
+	$('body').on('click', '.modal-information__close, .modal-information__hide', function (e) {
+		e.preventDefault()
+
+		$('.modal-information').removeClass('_active')
+		$('body').removeClass('_lock-info')
+	})
+
+	$('body').on('click', '.product-info__recommend-box .product-info__buy', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.product-info__sales-bot').addClass('_hide')
+		$(this).closest('.product-info__recommend-box').find('.product-info__added').addClass('_show')
+	})	
 })
 
 
-$(window).on('load resize', adjustMenu);
+$(window).on('load', () => {
+	adjustMenu
+
+	if( $(window).scrollTop() > $('.product-info').offset().top + $('.product-info').height() ) {
+		$('.product-fixed').addClass('_show')
+	} else {
+		$('.product-fixed').removeClass('_show')
+	}
+
+	$(window).on('scroll', () => {
+		if( $(window).scrollTop() > $('.product-info').offset().top + $('.product-info').height() ) {
+		$('.product-fixed').addClass('_show')
+	} else {
+		$('.product-fixed').removeClass('_show')
+	}
+	})
+})
+
+
+$(window).on('resize', adjustMenu);
 
 
 // Вспомогательные функции
