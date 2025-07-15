@@ -14432,6 +14432,348 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 
+.checkout__flex
+{
+    justify-content: space-between;
+}
+
+.checkout__coll
+{
+    width: calc(100% - 422px);
+}
+
+.checkout__reg
+{
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin-bottom: 20px;
+    padding: 24px 40px;
+
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.checkout__reg-title
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.checkout__reg-desc
+{
+    color: #616161;
+
+    margin-top: 10px;
+}
+
+.checkout__reg .btn-green
+{
+    flex-shrink: 0;
+
+    margin-left: 20px;
+    padding: 0 20px;
+
+    white-space: nowrap;
+}
+
+.checkout__colr
+{
+    width: 402px;
+}
+
+.checkout-total
+{
+    padding: 18px 20px 25px;
+
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.checkout-total__top
+{
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.checkout-total__title
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.checkout-total__number
+{
+    color: rgba(97, 97, 97, .5);
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.checkout-total__items
+{
+    margin-top: 11px;
+}
+
+.checkout-total__item
+{
+    font-size: 16px;
+
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.checkout-total__item + .checkout-total__item
+{
+    margin-top: 10px;
+}
+
+.checkout-total__item-name
+{
+    color: #616161;
+}
+
+.checkout-total__item-val
+{
+    font-weight: 500;
+
+    margin-left: 16px;
+
+    white-space: nowrap;
+}
+
+.checkout-total__bord
+{
+    margin: 20px 0;
+
+    border-top: 1px solid rgba(97, 97, 97, .2);
+}
+
+.checkout-total__line
+{
+    font-size: 16px;
+
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.checkout-total__line._big
+{
+    font-size: 24px;
+}
+
+.checkout-total__line + .checkout-total__line
+{
+    margin-top: 10px;
+}
+
+.checkout-total__line-val
+{
+    font-weight: 500;
+
+    margin-left: 16px;
+
+    white-space: nowrap;
+}
+
+.checkout-total__line b
+{
+    font-weight: 600;
+}
+
+.btn-green.checkout-total__btn
+{
+    line-height: 60px;
+
+    width: 100%;
+    margin-top: 24px;
+    padding: 0;
+}
+
+.checkout-total__link
+{
+    color: #007657;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.37;
+
+    margin-top: 16px;
+}
+
+.checkout-total__link a
+{
+    color: #007657;
+
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .checkout-total__link a:hover
+    {
+        color: #00684D;
+    }
+}
+
+.form-promo
+{
+    margin-top: 20px;
+    padding: 8px 20px 20px;
+
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 4px 14px 0 rgba(193, 193, 193, .25);
+}
+
+.form-promo__title
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-promo__flex
+{
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin-top: 17px;
+}
+
+.form-promo .form-promo__input
+{
+    color: #282828;
+    font: 16px var(--font-family);
+
+    display: block;
+
+    width: 100%;
+    height: 44px;
+    padding: 0 46px 0 14px;
+
+    border: 1px solid rgba(97, 97, 97, .5);
+    border-radius: 5px;
+    background: #FFF;
+
+    transition: color .2s linear, border .2s linear;
+}
+
+.form-promo .form-promo__input:focus
+{
+    border-color: #007657;
+}
+
+.form-promo .form-promo__input.error
+{
+    color: #CC1525;
+
+    border-color: #CC1525;
+}
+
+.form-promo__submit
+{
+    color: #007657;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 31px;
+    height: 31px;
+    margin-left: -37px;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0 0 7px 0 rgba(13, 30, 42, .1);
+
+    transition: border .2s linear, box-shadow .2s linear;
+}
+
+.form-promo__submit svg
+{
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    stroke: currentColor;
+}
+
+.form-promo__clear
+{
+    color: #616161;
+
+    display: none;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 31px;
+    height: 31px;
+    margin-left: -37px;
+
+    transition: .2s linear;
+}
+
+.form-promo__clear svg
+{
+    display: block;
+
+    width: 8px;
+    height: 8px;
+
+    stroke: currentColor;
+    stroke-width: 2px;
+}
+
+@media (any-hover: hover)
+{
+    .form-promo__submit:hover
+    {
+        border-color: #007657;
+        box-shadow: none;
+    }
+
+    .form-promo__clear:hover
+    {
+        color: #282828;
+    }
+}
+
+.form-promo__flex._full .form-promo__submit
+{
+    display: none;
+}
+
+.form-promo__flex._full .form-promo__clear
+{
+    display: flex;
+}
+
+.form-promo__succes
+{
+    font-size: 12px;
+
+    margin-top: 6px;
+}
+
+.form-promo__error
+{
+    color: #CC1525;
+    font-size: 12px;
+
+    margin-top: 6px;
+}
+
+
 
 /*------------
     coments

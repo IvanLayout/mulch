@@ -1286,7 +1286,17 @@
 
     .modal-cities
     {
-        columns: 2;
+        columns: 1;
+    }
+
+    .modal-cities__title
+    {
+        font-size: 20px;
+    }
+
+    .modal-cities__link
+    {
+        font-size: 16px;
     }
 
 

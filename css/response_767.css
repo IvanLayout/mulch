@@ -4136,7 +4136,7 @@
 
     .modal.modal-addres
     {
-        padding: 40px 20px 20px;
+        padding: 24px 20px 20px;
     }
 
     .modal__title
@@ -4166,16 +4166,12 @@
         font-size: 13px;
     }
 
-    .modal-search
-    {
-        margin-top: 20px;
-    }
 
     .modal-search .modal-search__input
     {
         font-size: 13px;
 
-        height: 35px;
+        height: 44px;
     }
 
     .fancybox__content > .carousel__button.is-close

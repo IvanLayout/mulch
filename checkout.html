@@ -1,0 +1,4684 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Мулча</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/dropzone.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1599.css" media="(max-width: 1599px)">
+		<link rel="stylesheet" href="css/response_1319.css" media="(max-width: 1319px)">
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<!-- Шапка -->
+				<header class="header">
+					<div class="header__top">
+						<div class="cont _flex">
+							<div class="header__list _flex">
+								<div class="header__list-item">
+									<a href="/">Контакты</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/">Доставка и оплата</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/">Сервис и поддержка</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/">Сотрудничество</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/">Новости</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/">О компании</a>
+								</div>
+								<button class="header__list-more">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<div class="header__list-box"></div>
+							</div>
+
+							<div class="header__contacts _flex">
+								<div class="header__adres">
+									<button type="button" data-content="#modal-addres" class="header__adres-btn modal-btn">
+										<svg class="header__adres-marker">
+											<use xlink:href="images/sprite.svg#marker"></use>
+										</svg>
+										Москва
+										<svg class="header__adres-arrow">
+											<use xlink:href="images/sprite.svg#arrow1"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="header__contact mini-modal">
+									<button type="button" class="mini-modal__btn mini-modal__btn-contact">Как нас найти?</button>
+
+									<div class="mini-modal__modal mini-modal__modal-contact">
+										<div class="header__contact-title">Адрес:</div>
+
+										<div class="header__contact-text">Москва, Варшавское шоссе, д.&nbsp;125, корп.&nbsp;3, офис&nbsp;201П</div>
+
+										<div class="header__contact-title">График работы:</div>
+										
+										<div class="header__contact-text">08:00–20:00</div>
+									</div>
+								</div>
+								<div class="header__phones mini-modal">
+									<button type="button" class="mini-modal__btn mini-modal__btn-phones">
+										<span>+7 499 704-65-10</span>
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow1"></use>
+										</svg>
+									</button>
+
+									<div class="mini-modal__modal mini-modal__modal-phones">
+										<div class="header__phone">
+											<a href="tel:+74997046510">+7 499 704-65-10</a>
+										</div>
+
+										<div class="header__phone">
+											<a href="tel:+74997046510">+7 499 704-65-10</a>
+										</div>
+									</div>
+								</div>
+								<div class="header__mail">
+									<a href="mailto:info@mulcha.online">info@mulcha.online</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__info">
+						<div class="cont _flex">
+							<div class="catalog-head _flex">
+								<button type="button" class="catalog-head__back">
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow2"></use>
+									</svg>
+								</button>
+								<div data-title="Каталог товаров" class="catalog-head__title">Каталог товаров</div>
+								<button type="button" class="catalog-head__close">
+									<svg>
+										<use xlink:href="images/sprite.svg#close"></use>
+									</svg>
+								</button>
+							</div>
+
+							<div class="header__logo">
+								<a href="/">
+									<picture>
+										<source srcset="images/logo_mob.png" type="image/png"  media="(max-width: 1023px)">
+										<img src="images/logo.png" alt="">
+									</picture>
+								</a>
+							</div>
+
+							<div class="header-catalog">
+								<button type="button" class="header-catalog__open">
+									Каталог
+								</button>
+
+								<div class="header-catalog__block">
+									<div class="cont">
+										<div class="header-catalog__wrap">
+											<div class="header-menu">
+												<div class="header-menu__item header-menu__item_all _active-pc">
+													<a href="/" class="header-menu__link _sub">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Все категории</span>
+														<svg class="header-menu__link-arrow">
+															<use xlink:href="images/sprite.svg#arrow5"></use>
+														</svg>
+													</a>
+
+													<div class="header-submenu">
+														<div class="header-submenu__title">Все категории</div>
+
+														<div class="header-submenu__flex _flex">
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-name">Дерматология</span>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Товары для рассады</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Семена</a>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-name">Органическая мульча</span>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Кора лиственных (для плодовых)</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Кора лиственницы</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Кора сосны</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Кора дуба</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Кора лиственных (для плодовых)</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Кора лиственницы</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Кора сосны</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Кора дуба</a>
+																	</div>
+																	<button type="button" class="header-submenu__sub-more">
+																		<span>Смотреть ещё</span>
+																		<span>Скрыть</span>
+																		<svg>
+																			<use xlink:href="images/sprite.svg#arrow1"></use>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Кокосовая мульча</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Кашпо, опоры</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Геотекстиль, волокно, верёвки</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Гнёзда, домики</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Грунт, торф, субстрат, чипсы</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Приствольные круги, укрытия</a>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Грунт, торф, навоз, компост</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/" class="_sub">
+																			Грунты, чернозём
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</a>
+
+																		<ul>
+																			<li>
+																				<a href="/">Грунты, чернозём</a>
+																			</li>
+																			<li>
+																				<a href="/">Грунты, чернозём</a>
+																			</li>
+																		</ul>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Торф, наполнители</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Навоз, помёт, компост</a>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Удобрения, биоактиваторы</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Удобрения АгроМастер</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Удобрения Буйские</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Удобрения БИУД</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Удобрения АгроМастер</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Удобрения Буйские</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Удобрения БИУД</a>
+																	</div>
+																	<button type="button" class="header-submenu__sub-more">
+																		<span>Смотреть ещё</span>
+																		<span>Скрыть</span>
+																		<svg>
+																			<use xlink:href="images/sprite.svg#arrow1"></use>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Средства защиты дома и сада</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">От болезнеЙ (фунгициды)</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">От насекомых (инсектициды)</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">От сорняков (гербициды)</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">От грызунов, кротов</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">От птиц</a>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Декоративные отсыпки</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Галька, ракушка</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Мрамор белый и галтованный</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Декоративная каменная крошка</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Керамзит</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Песок</a>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Геоматериалы</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Геотекстиль Гекса Агротекс</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Геотекстиль Plantex</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Геотекстиль Спанграм</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Геотекстиль Геонит (дорнит)</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Мешковина</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Укрытия и парники</a>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Инструментарий</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Инвентарь Plantic</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Инвентарь Fiskars</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Плоскорезы Фокина, рыхлители</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Дровоколы, щепоколы, переноски</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Бордюры, ленты, георешетки</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Инвентарь Plantic</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Инвентарь Fiskars</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Плоскорезы Фокина, рыхлители</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Дровоколы, щепоколы, переноски</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Бордюры, ленты, георешетки</a>
+																	</div>
+																	<button type="button" class="header-submenu__sub-more">
+																		<span>Смотреть ещё</span>
+																		<span>Скрыть</span>
+																		<svg>
+																			<use xlink:href="images/sprite.svg#arrow1"></use>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Товары для полива</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Системы полива Экогрядка</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Системы полива Plantic</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Системы полива Hozelock</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Капельный полив</a>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Травосмеси, сидераты</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Сидераты и монотравы</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Травосмеси</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Наборы для выращивания</a>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Садовый декор и мебель</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Садовые миниатюры, скворечники</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Береста, кора берёзы</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Маты тростниковые/камышовые</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Песочницы</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Садовые миниатюры, скворечники</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Береста, кора берёзы</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Маты тростниковые/камышовые</a>
+																	</div>
+																	<div class="header-submenu__sub-item _hide">
+																		<a href="/">Песочницы</a>
+																	</div>
+																	<button type="button" class="header-submenu__sub-more">
+																		<span>Смотреть ещё</span>
+																		<span>Скрыть</span>
+																		<svg>
+																			<use xlink:href="images/sprite.svg#arrow1"></use>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Сопутствующие товары</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Щепа для копчения</a>
+																	</div>
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Дрова и пеллеты</a>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Продукция наших партнёров</span>
+																</a>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">А также в нашем магазине</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<div class="header-submenu__sub-item">
+																		<a href="/">Изделия из кедра для дома и бани</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link _sub">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Все для рассады</span>
+														<svg class="header-menu__link-arrow">
+															<use xlink:href="images/sprite.svg#arrow5"></use>
+														</svg>
+													</a>
+
+													<div class="header-submenu">
+														<div class="header-submenu__title">Все для рассады</div>
+
+														<a href="/" class="header-submenu__all">
+															<span>Перейти в категорию</span>
+
+															<svg class="header-submenu__all-arrow">
+																<use xlink:href="images/sprite.svg#arrow5"></use>
+															</svg>
+														</a>
+
+														<div class="header-submenu__flex _flex">
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Дерматология</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Товары для рассады</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Семена</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Органическая мульча</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора лиственных (для плодовых)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора лиственницы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора сосны</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора дуба</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора лиственных (для плодовых)</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора лиственницы</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора сосны</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора дуба</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Кокосовая мульча</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кашпо, опоры</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль, волокно, верёвки</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Гнёзда, домики</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Грунт, торф, субстрат, чипсы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Приствольные круги, укрытия</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Грунт, торф, навоз, компост</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="_sub">
+																				Грунты, чернозём
+																				<svg>
+																					<use xlink:href="images/sprite.svg#arrow1"></use>
+																				</svg>
+																			</a>
+
+																			<ul>
+																				<li>
+																					<a href="/">Грунты, чернозём</a>
+																				</li>
+																				<li>
+																					<a href="/">Грунты, чернозём</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Торф, наполнители</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Навоз, помёт, компост</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Удобрения, биоактиваторы</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Удобрения АгроМастер</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Удобрения Буйские</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Удобрения БИУД</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Удобрения АгроМастер</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Удобрения Буйские</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Удобрения БИУД</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Средства защиты дома и сада</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От болезнеЙ (фунгициды)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От насекомых (инсектициды)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От сорняков (гербициды)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От грызунов, кротов</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От птиц</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Декоративные отсыпки</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Галька, ракушка</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Мрамор белый и галтованный</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Декоративная каменная крошка</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Керамзит</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Песок</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Геоматериалы</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Гекса Агротекс</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Plantex</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Спанграм</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Геонит (дорнит)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Мешковина</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Укрытия и парники</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Инструментарий</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Инвентарь Plantic</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Инвентарь Fiskars</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Плоскорезы Фокина, рыхлители</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Дровоколы, щепоколы, переноски</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Бордюры, ленты, георешетки</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Инвентарь Plantic</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Инвентарь Fiskars</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Плоскорезы Фокина, рыхлители</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Дровоколы, щепоколы, переноски</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Бордюры, ленты, георешетки</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Товары для полива</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Системы полива Экогрядка</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Системы полива Plantic</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Системы полива Hozelock</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Капельный полив</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Травосмеси, сидераты</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Сидераты и монотравы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Травосмеси</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Наборы для выращивания</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Садовый декор и мебель</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Садовые миниатюры, скворечники</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Береста, кора берёзы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Маты тростниковые/камышовые</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Песочницы</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Садовые миниатюры, скворечники</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Береста, кора берёзы</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Маты тростниковые/камышовые</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Песочницы</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Сопутствующие товары</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Щепа для копчения</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Дрова и пеллеты</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Продукция наших партнёров</span>
+																</a>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">А также в нашем магазине</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Изделия из кедра для дома и бани</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link _sub">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat2.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Органическая мульча</span>
+														<svg class="header-menu__link-arrow">
+															<use xlink:href="images/sprite.svg#arrow5"></use>
+														</svg>
+													</a>
+
+													<div class="header-submenu">
+														<div class="header-submenu__title">Органическая мульча</div>
+
+														<a href="/" class="header-submenu__all">
+															<span>Перейти в категорию</span>
+
+															<svg class="header-submenu__all-arrow">
+																<use xlink:href="images/sprite.svg#arrow5"></use>
+															</svg>
+														</a>
+
+														<div class="header-submenu__flex _flex">
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Дерматология</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Товары для рассады</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Семена</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Органическая мульча</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора лиственных (для плодовых)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора лиственницы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора сосны</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора дуба</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора лиственных (для плодовых)</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора лиственницы</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора сосны</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора дуба</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Кокосовая мульча</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кашпо, опоры</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль, волокно, верёвки</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Гнёзда, домики</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Грунт, торф, субстрат, чипсы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Приствольные круги, укрытия</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Грунт, торф, навоз, компост</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="_sub">
+																				Грунты, чернозём
+																				<svg>
+																					<use xlink:href="images/sprite.svg#arrow1"></use>
+																				</svg>
+																			</a>
+
+																			<ul>
+																				<li>
+																					<a href="/">Грунты, чернозём</a>
+																				</li>
+																				<li>
+																					<a href="/">Грунты, чернозём</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Торф, наполнители</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Навоз, помёт, компост</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Удобрения, биоактиваторы</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Удобрения АгроМастер</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Удобрения Буйские</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Удобрения БИУД</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Удобрения АгроМастер</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Удобрения Буйские</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Удобрения БИУД</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Средства защиты дома и сада</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От болезнеЙ (фунгициды)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От насекомых (инсектициды)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От сорняков (гербициды)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От грызунов, кротов</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От птиц</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Декоративные отсыпки</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Галька, ракушка</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Мрамор белый и галтованный</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Декоративная каменная крошка</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Керамзит</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Песок</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Геоматериалы</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Гекса Агротекс</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Plantex</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Спанграм</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Геонит (дорнит)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Мешковина</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Укрытия и парники</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Инструментарий</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Инвентарь Plantic</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Инвентарь Fiskars</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Плоскорезы Фокина, рыхлители</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Дровоколы, щепоколы, переноски</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Бордюры, ленты, георешетки</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Инвентарь Plantic</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Инвентарь Fiskars</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Плоскорезы Фокина, рыхлители</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Дровоколы, щепоколы, переноски</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Бордюры, ленты, георешетки</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Товары для полива</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Системы полива Экогрядка</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Системы полива Plantic</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Системы полива Hozelock</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Капельный полив</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Травосмеси, сидераты</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Сидераты и монотравы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Травосмеси</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Наборы для выращивания</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Садовый декор и мебель</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Садовые миниатюры, скворечники</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Береста, кора берёзы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Маты тростниковые/камышовые</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Песочницы</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Садовые миниатюры, скворечники</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Береста, кора берёзы</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Маты тростниковые/камышовые</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Песочницы</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Сопутствующие товары</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Щепа для копчения</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Дрова и пеллеты</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Продукция наших партнёров</span>
+																</a>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">А также в нашем магазине</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Изделия из кедра для дома и бани</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat3.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Кокосовая мульча</span>
+													</a>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat4.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Грунт, торф, навоз, компост</span>
+													</a>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link _sub">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat5.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Удобрения, биоактиваторы</span>
+														<svg class="header-menu__link-arrow">
+															<use xlink:href="images/sprite.svg#arrow5"></use>
+														</svg>
+													</a>
+
+													<div class="header-submenu">
+														<div class="header-submenu__title">Удобрения, биоактиваторы</div>
+
+														<a href="/" class="header-submenu__all">
+															<span>Перейти в категорию</span>
+
+															<svg class="header-submenu__all-arrow">
+																<use xlink:href="images/sprite.svg#arrow5"></use>
+															</svg>
+														</a>
+
+														<div class="header-submenu__flex _flex">
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Дерматология</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Товары для рассады</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Семена</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Органическая мульча</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора лиственных (для плодовых)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора лиственницы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора сосны</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кора дуба</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора лиственных (для плодовых)</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора лиственницы</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора сосны</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Кора дуба</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Кокосовая мульча</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Кашпо, опоры</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль, волокно, верёвки</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Гнёзда, домики</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Грунт, торф, субстрат, чипсы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Приствольные круги, укрытия</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Грунт, торф, навоз, компост</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/" class="_sub">
+																				Грунты, чернозём
+																				<svg>
+																					<use xlink:href="images/sprite.svg#arrow1"></use>
+																				</svg>
+																			</a>
+
+																			<ul>
+																				<li>
+																					<a href="/">Грунты, чернозём</a>
+																				</li>
+																				<li>
+																					<a href="/">Грунты, чернозём</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Торф, наполнители</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Навоз, помёт, компост</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Удобрения, биоактиваторы</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Удобрения АгроМастер</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Удобрения Буйские</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Удобрения БИУД</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Удобрения АгроМастер</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Удобрения Буйские</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Удобрения БИУД</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Средства защиты дома и сада</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От болезнеЙ (фунгициды)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От насекомых (инсектициды)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От сорняков (гербициды)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От грызунов, кротов</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">От птиц</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Декоративные отсыпки</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Галька, ракушка</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Мрамор белый и галтованный</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Декоративная каменная крошка</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Керамзит</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Песок</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Геоматериалы</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Гекса Агротекс</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Plantex</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Спанграм</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Геотекстиль Геонит (дорнит)</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Мешковина</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Укрытия и парники</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Инструментарий</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Инвентарь Plantic</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Инвентарь Fiskars</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Плоскорезы Фокина, рыхлители</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Дровоколы, щепоколы, переноски</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Бордюры, ленты, георешетки</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Инвентарь Plantic</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Инвентарь Fiskars</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Плоскорезы Фокина, рыхлители</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Дровоколы, щепоколы, переноски</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Бордюры, ленты, георешетки</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Товары для полива</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Системы полива Экогрядка</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Системы полива Plantic</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Системы полива Hozelock</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Капельный полив</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Травосмеси, сидераты</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Сидераты и монотравы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Травосмеси</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Наборы для выращивания</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Садовый декор и мебель</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Садовые миниатюры, скворечники</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Береста, кора берёзы</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Маты тростниковые/камышовые</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Песочницы</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Садовые миниатюры, скворечники</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Береста, кора берёзы</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Маты тростниковые/камышовые</a>
+																		</div>
+																		<div class="header-submenu__sub-item _hide">
+																			<a href="/">Песочницы</a>
+																		</div>
+																		<button type="button" class="header-submenu__sub-more">
+																			<span>Смотреть ещё</span>
+																			<span>Скрыть</span>
+																			<svg>
+																				<use xlink:href="images/sprite.svg#arrow1"></use>
+																			</svg>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Сопутствующие товары</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Щепа для копчения</a>
+																		</div>
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Дрова и пеллеты</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">Продукция наших партнёров</span>
+																</a>
+															</div>
+															<div class="header-submenu__item">
+																<a href="/" class="header-submenu__link _sub">
+																	<span class="header-submenu__link-icon">
+																		<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</span>
+																	<span class="header-submenu__link-name">А также в нашем магазине</span>
+																	<svg class="header-submenu__link-arrow">
+																		<use xlink:href="images/sprite.svg#arrow5"></use>
+																	</svg>
+																</a>
+
+																<div class="header-submenu__sub">
+																	<a href="/" class="header-submenu__sub-all">
+																		<span>Перейти в категорию</span>
+
+																		<svg class="header-submenu__all-arrow">
+																			<use xlink:href="images/sprite.svg#arrow5"></use>
+																		</svg>
+																	</a>
+
+																	<div class="header-submenu__sub-wrap">
+																		<div class="header-submenu__sub-item">
+																			<a href="/">Изделия из кедра для дома и бани</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat6.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Средства защиты дома и сада</span>
+													</a>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat7.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Декоративные отсыпки</span>
+													</a>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat8.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Геоматериалы</span>
+													</a>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat9.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Инструментарий</span>
+													</a>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat10.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Товары для полива</span>
+													</a>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat11.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Травосмеси, сидераты</span>
+													</a>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat12.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Садовый декор и мебель</span>
+													</a>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat13.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Сопутствующие товары</span>
+													</a>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat14.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">Продукция наших партнёров</span>
+													</a>
+												</div>
+												<div class="header-menu__item">
+													<a href="/" class="header-menu__link">
+														<span class="header-menu__link-icon">
+															<img data-src="images/ic_cat15.svg" src="images/img_plug.png" alt="" class="lazyload">
+														</span>
+														<span class="header-menu__link-name">А также в нашем магазине</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="header__search _flex">
+								<div class="mini-modal mini-modal__select">
+									<button type="button" class="mini-modal__btn mini-modal__btn-select">
+										Везде
+
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow1"></use>
+										</svg>
+									</button>
+
+									<div class="mini-modal__modal mini-modal__modal-select">
+										<div class="header__search-all">
+											<a href="/">
+												<svg>
+													<use xlink:href="images/sprite.svg#lupa"></use>
+												</svg>
+
+												Везде
+											</a>
+										</div>
+
+										<div class="header-cats">
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat1.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Все для рассады</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat2.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Органическая мульча</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat3.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Кокосовая мульча</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat4.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Грунт, торф, навоз, компост</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat5.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Удобрения, биоактиваторы</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat6.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Средства защиты дома и сада</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat7.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Декоративные отсыпки</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat8.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Геоматериалы</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat9.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Инструментарий</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat10.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Товары для полива</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat11.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Травосмеси, сидераты</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat12.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Садовый декор и мебель</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat13.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Сопутствующие товары</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat14.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">Продукция наших партнёров</span>
+												</a>
+											</div>
+											<div class="header-cats__cat">
+												<a href="/" class="header-cats__link">
+													<span class="header-cats__link-icon">
+														<img data-src="images/ic_cat15.svg" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+													<span class="header-cats__link-name">А также в нашем магазине</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="header__search-field _flex">
+									<input type="text" value="" placeholder="Поиск по сайту…" id="header__search-input" class="header__search-input">
+
+									<button type="submit" class="header__search-submit">
+										<svg>
+											<use xlink:href="images/sprite.svg#lupa"></use>
+										</svg>
+									</button>
+
+									<button type="button" class="header__search-clear">
+										<svg>
+											<use xlink:href="images/sprite.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="header__btns _flex">
+								<a href="/" class="header__btn">
+									<span class="header__btn-icon">
+										<svg width="16" height="18">
+											<use xlink:href="images/sprite.svg#user"></use>
+										</svg>
+									</span>
+									<span class="header__btn-name">Войти</span>
+								</a>
+								<a href="/" class="header__btn">
+									<span class="header__btn-number">10</span>
+									<span class="header__btn-icon">
+										<svg width="20" height="18">
+											<use xlink:href="images/sprite.svg#favorite"></use>
+										</svg>
+									</span>
+									<span class="header__btn-name">Избранное</span>
+								</a>
+								<a href="/" class="header__btn">
+									<span class="header__btn-icon">
+										<svg width="15" height="19">
+											<use xlink:href="images/sprite.svg#compare"></use>
+										</svg>
+									</span>
+									<span class="header__btn-name">Сравнить</span>
+								</a>
+								<a href="/" class="header__btn">
+									<span class="header__btn-number">100</span>
+									<span class="header__btn-icon">
+										<svg width="19" height="18">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</span>
+									<span class="header__btn-name">Корзина</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__bot">
+						<div class="cont">
+							<div class="header__cats swiper swiper_visible">
+								<div class="swiper-wrapper">
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat1.png">
+											</span>
+
+											<span class="header__cats-name">Погонажные изделия</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat2.png">
+											</span>
+
+											<span class="header__cats-name">Каменная крошка</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat3.png">
+											</span>
+
+											<span class="header__cats-name">Камень</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat4.png">
+											</span>
+
+											<span class="header__cats-name">Мульча</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat5.png">
+											</span>
+
+											<span class="header__cats-name">Растения</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat6.png">
+											</span>
+
+											<span class="header__cats-name">Грунты</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat7.png">
+											</span>
+
+											<span class="header__cats-name">Бордюрная лента</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat1.png">
+											</span>
+
+											<span class="header__cats-name">Погонажные изделия</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat2.png">
+											</span>
+
+											<span class="header__cats-name">Каменная крошка</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat3.png">
+											</span>
+
+											<span class="header__cats-name">Камень</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat4.png">
+											</span>
+
+											<span class="header__cats-name">Мульча</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat5.png">
+											</span>
+
+											<span class="header__cats-name">Растения</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat6.png">
+											</span>
+
+											<span class="header__cats-name">Грунты</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat7.png">
+											</span>
+
+											<span class="header__cats-name">Бордюрная лента</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat1.png">
+											</span>
+
+											<span class="header__cats-name">Погонажные изделия</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat2.png">
+											</span>
+
+											<span class="header__cats-name">Каменная крошка</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat3.png">
+											</span>
+
+											<span class="header__cats-name">Камень</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat4.png">
+											</span>
+
+											<span class="header__cats-name">Мульча</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat5.png">
+											</span>
+
+											<span class="header__cats-name">Растения</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat6.png">
+											</span>
+
+											<span class="header__cats-name">Грунты</span>
+										</a>
+									</div>
+									<div class="header__cats-item swiper-slide">
+										<a href="/" class="header__cats-link">
+											<span class="header__cats-icon">
+												<img src="images/main_cat7.png">
+											</span>
+
+											<span class="header__cats-name">Бордюрная лента</span>
+										</a>
+									</div>
+								</div>
+
+								<button type="button" class="slider-button-prev _small">
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow2"></use>
+									</svg>
+								</button>
+								<button type="button" class="slider-button-next _small">
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow2"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="header-mob">
+					<div class="header-mob__top">
+						<div class="cont _flex">
+							<div class="header-mob__logo">
+								<a href="/">
+									<img src="images/logo_mob.png" alt="">
+								</a>
+							</div>
+
+							<button type="button" data-content="#modal-addres" class="header-mob__adres modal-btn">
+								<svg class="header-mob__adres-marker">
+									<use xlink:href="images/sprite.svg#marker"></use>
+								</svg>
+								Москва
+							</button>
+
+							<div class="header-mob__contact _flex">
+								<a href="mailto:info@mulcha.online" class="header-mob__mail"></a>
+								<a href="tel:+74997046510" class="header-mob__phone"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="header-mob__bot">
+						<div class="cont _flex">
+							<button type="button" class="mob-menu-btn open-catalog-mob">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+
+							<div class="header-mob__search">
+								<div class="header-mob__search-wrap">
+									<div class="header-mob__search-box">
+										<form action="" class="header-mob__search-form">
+											<input type="text" placeholder="Поиск по сайту…" id="header-mob__search-input" class="header-mob__search-input">
+
+											<button type="submit" class="header-mob__search-btn"></button>
+											<button type="button" class="header-mob__search-close">
+												<svg>
+													<use xlink:href="images/sprite.svg#close"></use>
+												</svg>
+											</button>
+										</form>
+									</div>
+
+									<div class="header-mob__search-block">
+										<div class="search-cats">
+											<a href="/" class="search-cats__cat">
+												<span class="search-cats__cat-icon">
+													<img data-src="images/ic_cat4.svg" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="search-cats__cat-box">
+													<span class="search-cats__cat-name">Органическая мульча</span>
+
+													<span class="search-cats__cat-desc">Рубрика</span>
+												</span>
+											</a>
+											<a href="/" class="search-cats__cat">
+												<span class="search-cats__cat-icon">
+													<img data-src="images/ic_cat5.svg" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="search-cats__cat-box">
+													<span class="search-cats__cat-name">Кокосовая мульча</span>
+
+													<span class="search-cats__cat-desc">Рубрика</span>
+												</span>
+											</a>
+											<a href="/" class="search-cats__cat">
+												<span class="search-cats__cat-icon">
+													<img data-src="images/ic_cat6.svg" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="search-cats__cat-box">
+													<span class="search-cats__cat-name">Грунт, торф, навоз, компост</span>
+
+													<span class="search-cats__cat-desc">Рубрика</span>
+												</span>
+											</a>
+										</div>
+
+										<div class="header-mob__search-divider"></div>
+
+										<div class="search-brands">
+											<a href="/" class="search-brands__brand">
+												<span class="search-brands__brand-logo">
+													<img data-src="images/tmp/brand_small1.png" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="search-brands__brand-box">
+													<span class="search-brands__brand-name">JOY</span>
+
+													<span class="search-brands__brand-desc">Бренд</span>
+												</span>
+											</a>
+										</div>
+
+										<div class="header-mob__search-divider"></div>
+
+										<div class="search-products">
+											<a href="/" class="search-products__product">
+												<span class="search-products__product-img">
+													<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="search-products__product-box">
+													<span class="search-products__product-name">Кора сосны Люкс, <br>фракция 1–3 см</span>
+
+													<span class="search-products__product-price">2 600 000 ₽</span>
+												</span>
+											</a>
+											<a href="/" class="search-products__product">
+												<span class="search-products__product-img">
+													<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="search-products__product-box">
+													<span class="search-products__product-name">Кора сосны Люкс, <br>фракция 1–3 см</span>
+
+													<span class="search-products__product-price">2 600 000 ₽</span>
+												</span>
+											</a>
+											<a href="/" class="search-products__product">
+												<span class="search-products__product-img">
+													<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+												</span>
+
+												<span class="search-products__product-box">
+													<span class="search-products__product-name">Кора сосны Люкс, <br>фракция 1–3 см</span>
+
+													<span class="search-products__product-price">2 600 000 ₽</span>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mini-overlay"></div>
+
+				<div class="fix-btns">
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu1"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Главная</span>
+					</a>
+					<button type="button" class="fix-btns__btn open-catalog-mob">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu2"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Каталог</span>
+					</button>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu3"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Корзина</span>
+					</a>
+					<button type="button" class="fix-btns__btn open-user-info">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu5"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-name">Профиль</span>
+					</button>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_menu4"></use>
+							</svg>
+						</span>
+
+						<span class="fix-btns__btn-number">100</span>
+
+						<span class="fix-btns__btn-name">Избранное</span>
+					</a>
+				</div>
+
+				<div class="user-info">
+					<div class="no-user _flex">
+						<div class="no-user__icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#user"></use>
+							</svg>
+						</div>
+
+						<div class="no-user__box">
+							<div class="no-user__title">
+								<a href="/">Войдите в профиль</a>
+							</div>
+
+							<div class="no-user__desc">Вы сможете отслеживать статус заказа и получать персональные предложения</div>
+						</div>
+					</div>
+
+					<div class="user-info__links">
+						<div class="user-info__links-item">
+							<a href="/" class="user-info__links-link">
+								<span class="user-info__links-name">Избранное</span>
+								<span class="user-info__links-number">100</span>
+							</a>
+						</div>
+						<div class="user-info__links-item">
+							<a href="/" class="user-info__links-link">
+								<span class="user-info__links-name">Сравнение</span>
+								<span class="user-info__links-number">100</span>
+							</a>
+						</div>
+						<div class="user-info__links-item">
+							<a href="/" class="user-info__links-link">
+								<span class="user-info__links-name">Корзина</span>
+								<span class="user-info__links-number">100</span>
+							</a>
+						</div>
+						<div class="user-info__links-item">
+							<a href="/" class="user-info__links-link _sub">
+								<span class="user-info__links-name">Информация</span>
+
+								<svg class="user-info__links-arrow">
+									<use xlink:href="images/sprite.svg#arrow5"></use>
+								</svg>
+							</a>
+
+							<div class="user-info__links-sub">
+								<div>
+									<a href="/">Контакты</a>
+								</div>
+								<div>
+									<a href="/">Доставка и оплата</a>
+								</div>
+								<div>
+									<a href="/">Сервис и поддержка</a>
+								</div>
+								<div>
+									<a href="/">Сотрудничество</a>
+								</div>
+								<div>
+									<a href="/">Новости</a>
+								</div>
+								<div>
+									<a href="/">О компании</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="overlay-catalog"></div>
+				<!-- End Шапка -->
+
+				<section class="section-gray">
+					<section class="page-top page-top__bg">
+						<div class="cont">
+							<h1 class="page-title">Оформление заказа</h1>
+						</div>
+					</section>
+
+
+					<section class="checkout">
+						<div class="cont">
+							<div class="checkout__flex _flex">
+								<div class="checkout__coll">
+									<div class="checkout__reg _flex">
+										<div class="checkout__reg-box">
+											<div class="checkout__reg-title">Войдите или зарегистрируйтесь</div>
+											<div class="checkout__reg-desc">Вы сможете отслеживать статус заказа и получать персональные предложения</div>
+										</div>
+
+										<a href="/" class="btn-green">Вход или регистрация</a>
+									</div>
+								</div>
+								<div class="checkout__colr">
+									<div class="checkout-total">
+										<div class="checkout-total__top _flex">
+											<div class="checkout-total__title">Ваша корзина</div>
+
+											<div class="checkout-total__number">4 товара</div>
+										</div>
+
+										<div class="checkout-total__items">
+											<div class="checkout-total__item _flex">
+												<div class="checkout-total__item-name">Масса</div>
+												<div class="checkout-total__item-val">0.130 кг</div>
+											</div>
+											<div class="checkout-total__item _flex">
+												<div class="checkout-total__item-name">Объём</div>
+												<div class="checkout-total__item-val">0.000 м3</div>
+											</div>
+											<div class="checkout-total__item _flex">
+												<div class="checkout-total__item-name">Сумма без скидки</div>
+												<div class="checkout-total__item-val">1 000 000 000 ₽</div>
+											</div>
+										</div>
+
+										<div class="checkout-total__bord"></div>
+
+										<div class="checkout-total__lines">
+											<div class="checkout-total__line _flex">
+												<div class="checkout-total__line-name">Ваша экономия</div>
+												<div class="checkout-total__line-val">1 000 000 000 ₽</div>
+											</div>
+											<div class="checkout-total__line _big _flex">
+												<div class="checkout-total__line-name">
+													<b>Итого</b>
+												</div>
+												<div class="checkout-total__line-val">
+													<b>1 000 000 000 ₽</b>
+												</div>
+											</div>
+										</div>
+
+										<a href="/" class="btn-green checkout-total__btn">Оформить заказ</a>
+
+										<div class="checkout-total__link">
+											<a href="/">Распечатать заказ</a>
+										</div>
+									</div>
+
+									<form action="" class="form-promo">
+										<div class="form-promo__title">Промокод</div>
+
+										<div class="form-promo__flex _flex">
+											<input type="text" value="" placeholder="Введите промокод" id="form-promo__input" class="form-promo__input">
+
+											<button type="submit" class="form-promo__submit">
+												<svg>
+													<use xlink:href="images/sprite.svg#arrow2"></use>
+												</svg>
+											</button>
+
+											<button type="button" class="form-promo__clear">
+												<svg>
+													<use xlink:href="images/sprite.svg#close"></use>
+												</svg>
+											</button>
+										</div>
+
+										<!-- <div class="form-promo__error">Такого промокода не существует</div>
+
+										<div class="form-promo__succes">Промокод применён</div> -->
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+			</div>
+
+
+			<footer class="footer">
+				<div class="footer__top">
+					<div class="cont _flex">
+						<div class="footer__coll">
+							<div class="footer__logo">
+								<img src="images/logo.png" alt="">
+							</div>
+
+							<div class="footer__contacts">
+								<div class="footer__contacts-item _flex">
+									<div class="footer__contacts-name">Москва</div>
+									<div class="footer__contacts-val">
+										<div class="footer__contacts-phone">
+											<a href="tel:+74997046510">+7 499 704-65-10</a>;
+										</div>
+										<div class="footer__contacts-phone">
+											<a href="tel:+74993220782">+7 499 322-07-82</a>
+										</div>
+									</div>
+								</div>
+								<div class="footer__contacts-item _flex">
+									<div class="footer__contacts-name">Россия</div>
+									<div class="footer__contacts-val">
+										<div class="footer__contacts-phone">
+											<a href="tel:+88003339439">8 800 333-94-39</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="footer__socials _flex">
+								<a href="/" target="_blank" class="footer__socials-link">
+									<img data-src="images/ic_soc1.svg" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+								<a href="/" target="_blank" class="footer__socials-link">
+									<img data-src="images/ic_soc2.svg" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+								<a href="/" target="_blank" class="footer__socials-link">
+									<img data-src="images/ic_soc3.png" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+								<a href="/" target="_blank" class="footer__socials-link">
+									<img data-src="images/ic_soc4.svg" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+							</div>
+						</div>
+
+						<div class="footer-menu">
+							<div class="footer-menu__flex _flex">
+								<div class="footer-menu__col">
+									<div class="footer-menu__title _sub">
+										<a href="/">Каталог</a>
+
+										<span class="footer-menu__title-arrow">
+											<svg>
+												<use xlink:href="images/sprite.svg#arrow3"></use>
+											</svg>
+										</span>
+									</div>
+
+									<div class="footer-menu__list">
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Все для рассады</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Органическая мульча</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Кокосовая мульча</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Удобрения, биоактиваторы</a>
+										</div>
+									</div>
+								</div>
+								<div class="footer-menu__col">
+									<div class="footer-menu__title _sub">
+										<a href="/">О компании</a>
+
+										<span class="footer-menu__title-arrow">
+											<svg>
+												<use xlink:href="images/sprite.svg#arrow3"></use>
+											</svg>
+										</span>
+									</div>
+
+									<div class="footer-menu__list">
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">О компании</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Производство</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Новости</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Контакты</a>
+										</div>
+									</div>
+								</div>
+								<div class="footer-menu__col">
+									<div class="footer-menu__title _sub">
+										<a href="/">Покупателям</a>
+
+										<span class="footer-menu__title-arrow">
+											<svg>
+												<use xlink:href="images/sprite.svg#arrow3"></use>
+											</svg>
+										</span>
+									</div>
+
+									<div class="footer-menu__list">
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Как заказать</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Доставка и оплата</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Розничные скидки</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Сервис и поддержка</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Вопрос — ответ</a>
+										</div>
+									</div>
+								</div>
+								<div class="footer-menu__col">
+									<div class="footer-menu__title _sub">
+										<a href="/">Бизнесу</a>
+
+										<span class="footer-menu__title-arrow">
+											<svg>
+												<use xlink:href="images/sprite.svg#arrow3"></use>
+											</svg>
+										</span>
+									</div>
+
+									<div class="footer-menu__list">
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Блогерам</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Ландшафтным дизайнерам</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Оптовым покупателям</a>
+										</div>
+										<div class="footer-menu__item">
+											<a href="/" class="footer-menu__link">Совместная покупка</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__colr">
+							<form action="" class="form-subscribe">
+								<div class="form-subscribe__title">Получайте самые интересные предложения первыми!</div>
+
+								<div class="form-subscribe__flex _flex">
+									<div class="form-subscribe__field">
+										<input type="email" value="" placeholder="Email" class="form-subscribe__input">
+										<!-- <input type="email" value="" placeholder="Email" class="form-subscribe__input error"> -->
+
+										<!-- <div class="error-text">Введите корректный Email</div> -->
+									</div>
+
+									<button type="submit" class="form-subscribe__submit">
+										<span>Подписаться</span>
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow2"></use>
+										</svg>
+									</button>
+								</div>
+
+								<div class="form-subscribe__agree">Нажимая стрелку «Подписаться», я даю согласие на получение рекламной рассылки и обработку персональных данных</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bot">
+					<div class="cont _flex">
+						<div class="footer__copy">&copy; 2025 Компания «Мульча.рф». <span>Все права защищены и охраняются законом.</span></div>
+
+						<div class="footer__links _flex">
+							<div class="footer__link">
+								<a href="/" target="_blank">Политика конфиденциальности</a>
+							</div>
+							<div class="footer__link">
+								<a href="/" target="_blank">Публичная оферта</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div <div id="modal-addres" class="modal modal-addres">
+			<div class="modal__title">Выберите свой город</div>
+
+			<form action="" class="modal-search">
+				<input type="text" value="" placeholder="Введите название своего города" class="modal-search__input">
+			</form>
+
+			<div class="modal-cities">
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">В</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							<a href="/">Воронеж</a>
+						</div>
+						<div class="modal-cities__link">
+							 <a href="/">Волгоград</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">Е</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Екатеринбург</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">К</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Казань</a>
+						</div>
+						<div class="modal-cities__link">
+							 <a href="/">Краснодар</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">М</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Москва</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">Н</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Нижний Новгород</a>
+						</div>
+						<div class="modal-cities__link">
+							 <a href="/">Новосибирск</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">П</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Пермь</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">Р</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Ростов-на-Дону</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">С</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Саратов</a>
+						</div>
+						<div class="modal-cities__link">
+							 <a href="/">Самара</a>
+						</div>
+						<div class="modal-cities__link">
+							 <a href="/">Санкт-Петербург</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">Т</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Тула</a>
+						</div>
+						<div class="modal-cities__link">
+							 <a href="/">Тюмень</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">У</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Уфа</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">П</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Пермь</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">Р</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Ростов-на-Дону</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">С</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Саратов</a>
+						</div>
+						<div class="modal-cities__link">
+							 <a href="/">Самара</a>
+						</div>
+						<div class="modal-cities__link">
+							 <a href="/">Санкт-Петербург</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">Т</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Тула</a>
+						</div>
+						<div class="modal-cities__link">
+							 <a href="/">Тюмень</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-cities__item">
+					<div class="modal-cities__title">У</div>
+
+					<div class="modal-cities__links">
+						<div class="modal-cities__link">
+							 <a href="/">Уфа</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-images" class="modal modal-images">
+			<div class="modal-images__flex _flex product-info">
+				<div class="modal-images__images _flex">
+					<div class="modal-images__thumbs swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img modal-images__thumbs-img_video">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+							<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider-button-prev">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow2"></use>
+							</svg>
+						</div>
+						<div class="slider-button-next">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow2"></use>
+							</svg>
+						</div>
+
+						<div class="swiper-scrollbar"></div>
+					</div>
+
+					<div class="modal-images__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider-button-prev">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow2"></use>
+							</svg>
+						</div>
+						<div class="slider-button-next">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow2"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-images__info">
+					<div class="modal-images__title">Кора сосны Люкс, фракция 1–3 см</div>
+
+					<div class="product-info__codes _flex">
+						<div class="product-info__codes-title">Артикул:</div>
+
+						<div class="product-info__codes-flex _flex">
+							<div class="product-info__code">3521</div>
+							<div class="product-info__code">4607151510134</div>
+							<div class="product-info__code">3520</div>
+							<div class="product-info__code">Nk3521</div>
+							<div class="product-info__code">4607151510097</div>
+						</div>
+					</div>
+
+					<div class="product-info__sales">
+						<div class="product-info__table">
+							<div class="product-info__table-item _flex">
+								<div class="product-info__table-name">Розница</div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+							<div class="product-info__table-item _flex _active">
+								<div class="product-info__table-name">Скидка 1</div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+							<div class="product-info__table-item _flex">
+								<div class="product-info__table-name">Скидка 5 <br><span>Осталось 100 шт. до Скидки 2</span></div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+							<div class="product-info__table-item _flex">
+								<div class="product-info__table-name">Скидка 3</div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+							<div class="product-info__table-item _flex">
+								<div class="product-info__table-name">Скидка 4</div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+							<div class="product-info__table-item _flex">
+								<div class="product-info__table-name">Скидка 5</div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+						</div>
+
+						<div class="product-info__sales-bot product-global-btns">
+							<button type="button" class="btn-green product-info__buy product-global-buy">
+								В корзину
+							</button>
+
+							<div class="fast-buy">
+								<button type="button" class="fast-buy__btn modal-btn">
+									<span>Быстрая покупка</span>
+									<span>Быстрый заказ</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="product-info__added _flex product-global-added">
+							<div class="amount product-info__amount">
+								<div class="amount__val _flex">
+									<button type="button" class="amount__btn amount__btn_minus"></button>
+
+									<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+									<button type="button" class="amount__btn amount__btn_plus"></button>
+								</div>
+							</div>
+
+							<div class="product-info__added-check"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-review" class="modal modal-review">
+			<div class="modal-review__flex _flex">
+				<div class="modal-review__images swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="modal-review__images-thumb">
+								<div class="modal-review__images-img">
+									<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="modal-review__images-thumb">
+								<div class="modal-review__images-img">
+									<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="modal-review__images-thumb">
+								<div class="modal-review__images-img">
+									<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<button type="button" class="slider-button-prev">
+						<svg>
+							<use xlink:href="images/sprite.svg#arrow2"></use>
+						</svg>
+					</button>
+					<button type="button" class="slider-button-next">
+						<svg>
+							<use xlink:href="images/sprite.svg#arrow2"></use>
+						</svg>
+					</button>
+
+					<div class="slider-pagination"></div>
+				</div>
+
+				<div class="modal-review__colr">
+					<div class="modal-review__top _flex">
+						<div class="modal-review__user">Константин</div>
+
+						<div class="modal-review__stars _flex">
+							<div class="modal-review__star">
+								<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+							<div class="modal-review__star">
+								<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+							<div class="modal-review__star">
+								<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+							<div class="modal-review__star">
+								<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+							<div class="modal-review__star">
+								<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-review__date">17.12.2023</div>
+
+					<div class="modal-review__text">
+						<div class="text-block">
+							<p>
+								Мульча из коры сосны состоящая из комбинации разноразмерных кусочков (нефракционная) очень практична и удобна.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-comment" class="modal modal-comment">
+			<div class="modal__title">Напишите отзыв о&nbsp;товаре</div>
+
+			<div class="modal__subtitle">20 покупок ожидают вашей оценки</div>
+
+			<div class="modal-comment__images swiper swiper_visible">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+				</div>
+
+				<div class="slider-button-prev">
+					<svg>
+						<use xlink:href="images/sprite.svg#arrow2"></use>
+					</svg>
+				</div>
+				<div class="slider-button-next">
+					<svg>
+						<use xlink:href="images/sprite.svg#arrow2"></use>
+					</svg>
+				</div>
+
+				<div class="swiper-scrollbar"></div>
+			</div>
+
+			<form action="" data-content="#modal-success" class="form form-ajax">
+				<div class="modal-comment__product">Кора сосны 2-6 см средняя 60 л "Дышащий мешок"</div>
+
+				<div class="rating-js">
+					<div class="rating-js__star">
+						<input name="adv1" type="radio" class="wow" value="1">
+						<input name="adv1" type="radio" class="wow" value="2">
+						<input name="adv1" type="radio" class="wow" value="3">
+						<input name="adv1" type="radio" class="wow" value="4">
+						<input name="adv1" type="radio" class="wow" value="5">
+					</div>
+				</div>
+				
+				<div class="form__line">
+					<div class="form__field">
+						<textarea placeholder="Комментарий" class="form__textarea"></textarea>
+					</div>
+				</div>
+				
+				<div class="form__line">
+					<div class="form__field">
+						<div class="form__field-label">Загрузите до 5 фото</div>
+
+						<div class="dropzone-photo" id="dropzone-photo">
+							<div class="dropzone-photo__add">
+								<div class="dropzone-photo__add-flex _flex">
+									<div class="dropzone-photo__add-icon">
+										<img data-src="images/camera.svg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+
+									<div class="dropzone-photo__desc">
+										<span>Нажмите, чтобы загрузить или перетащите фото сюда</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="btn-green form__submit-btn form__submit-btn_big">Отправить отзыв</button>
+				</div>
+
+				<div class="modal-comment__info">Отзывы можно изменить в разделе отзывы</div>
+			</form>
+		</div>
+
+
+		<div id="modal-success" class="modal modal-success">
+			<div class="empty-section">
+				<div class="empty-section__icon">
+					<img data-src="images/ic_page_favorite.svg" src="images/ic_page_favorite.svg" alt="" class="lazyload loaded">
+				</div>
+
+				<div class="empty-section__text">Спасибо, что поделились&nbsp;мнением!</div>
+
+				<div class="empty-section__desc _flex">
+					<span>Ваш отзыв будет отправлен в отдел контроля&nbsp;качества доставки.</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="modal-info-del" class="modal modal-del">
+			<div class="modal-del__wrap">
+				<div class="modal__title">Доставка и укладка мульчи</div>
+
+				<div class="modal__subtitle">Забудьте о сорняках и пересыхании почвы. Мы доставим и уложим мульчу на вашем участке быстро, качественно и с гарантией результата.</div>
+
+				<div class="accordion">
+					<div class="accordion__item _active">
+						<div class="accordion__open">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow1"></use>
+							</svg>
+							<span>Как проходит оплата заказа?</span>
+						</div>
+
+						<div class="accordion__data">
+							<div class="text-block">
+								<h4>1. Выбор материала и расчёт:</h4>
+
+								<ul>
+									<li>Наш специалист выезжает на участок для оценки.</li>
+									<li>Помогаем выбрать подходящий вид мульчи: кора, щепа, опилки, гравий и&nbsp;другие материалы. Учитываем тип почвы, растения и ваши предпочтения.</li>
+									<li>Точно рассчитываем необходимое количество мульчи, чтобы избежать перерасхода.</li>
+								</ul>
+
+								<h4>2. Подготовка участка:</h4>
+
+								<ul>
+									<li>Удаляем сорняки.</li>
+									<li>Рыхлим почву для лучшего впитывания влаги.</li>
+									<li>Вносим удобрения.</li>
+								</ul>
+
+								<h4>3. Доставка мульчи:</h4>
+
+								<ul>
+									<li>Доставляем мульчу к вашему участку в удобное для вас время.</li>
+									<li>Аккуратно разгружаем материал, не повреждая территорию.</li>
+								</ul>
+
+								<h4>4. Укладка мульчи:</h4>
+
+								<ul>
+									<li>Профессионально и равномерно укладываем мульчу по всей площади участка.</li>
+									<li>Формируем приствольные круги вокруг деревьев и кустарников.</li>
+									<li>Используем проверенные технологии для максимальной эффективности.</li>
+								</ul>
+
+								<h4>5. Уборка (включена):</h4>
+
+								<ul>
+									<li>Убираем весь мусор после работы.</li>
+									<li>Вывозим остатки мульчи (если требуется).</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__open">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow1"></use>
+							</svg>
+							<span>Как проходит оплата заказа?</span>
+						</div>
+
+						<div class="accordion__data">
+							<div class="text-block">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="/" class="btn-green modal-del__btn">Добавить за 1039 ₽</a>
+			</div>
+		</div>
+
+
+		<div id="modal-add-service" class="modal-service">
+			<div class="modal-service__wrap">
+				<div class="modal-service__wrap-top">
+					<div class="modal-service__top _flex">
+						<button type="button" class="modal-service__close _arrow">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow2"></use>
+							</svg>
+						</button>
+
+						<div class="modal-service__top-title">Добавление услуг</div>
+
+						<button type="button" class="modal-service__close">
+							<svg>
+								<use xlink:href="images/sprite.svg#close"></use>
+							</svg>
+						</button>
+
+						<div class="modal-service__product _flex">
+							<div class="modal-service__product-img">
+								<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+
+							<div class="modal-service__product-box">
+								<div class="modal-service__product-info">1 товар и 1 услуга</div>
+								<div class="modal-service__product-prices _flex">
+									<div class="modal-service__product-price">2 600 ₽</div>
+									<div class="modal-service__product-oldprice">2 600 ₽</div>
+								</div>
+							</div>
+
+							<div class="modal-service__product-btn">
+								<button type="button" disabled class="btn-green modal-service__product-boy">В корзину</button>
+								<div class="modal-service__product-added"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-service__cats">
+						<div class="modal-service__cats-slider swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="modal-service__cats-link active">Рекомендованные услуги</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="modal-service__cats-link">Рекомендованные услуги</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="modal-service__cats-link">Рекомендованные услуги</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="modal-service__cats-link">Рекомендованные услуги</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="modal-service__cats-link">Рекомендованные услуги</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="modal-service__cats-link">Рекомендованные услуги</a>
+								</div>
+							</div>
+
+							<div class="swiper-scrollbar"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-service__cols _flex">
+					<div class="modal-service__coll">
+						<div class="modal-service__list">
+							<div class="modal-service__list-item">
+								<a class="modal-service__list-link active">Рекомендованные услуги</a>
+							</div>
+							<div class="modal-service__list-item">
+								<a href="/" class="modal-service__list-link">Рекомендованные услуги</a>
+							</div>
+							<div class="modal-service__list-item">
+								<a href="/" class="modal-service__list-link">Рекомендованные услуги</a>
+							</div>
+							<div class="modal-service__list-item">
+								<a href="/" class="modal-service__list-link">Рекомендованные услуги</a>
+							</div>
+							<div class="modal-service__list-item">
+								<a href="/" class="modal-service__list-link">Рекомендованные услуги</a>
+							</div>
+							<div class="modal-service__list-item">
+								<a href="/" class="modal-service__list-link">Рекомендованные услуги</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-service__colr">
+						<div class="product-recommends">
+							<div class="product-recommends__title">Рекомендованные услуги</div>
+
+							<div class="product-recommends__grid _flex">
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-recommends">
+							<div class="product-recommends__title">Рекомендованные услуги</div>
+
+							<div class="product-recommends__grid _flex">
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="modal-description" class="modal-information">
+			<div class="modal-information__top _flex">
+				<button type="button" class="modal-information__close _arrow">
+					<svg>
+						<use xlink:href="images/sprite.svg#arrow2"></use>
+					</svg>
+				</button>
+
+				<div class="modal-information__title">Описание</div>
+
+				<button type="button" class="modal-information__close">
+					<svg>
+						<use xlink:href="images/sprite.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal-information__box">
+				<div class="text-block">
+					<p>
+						Мульча из коры сосны состоящая из комбинации разноразмерных кусочков (нефракционная) очень практична и удобна. Наличие крупных элементов делает отсыпку более декоративной, а средние и мелкие включения обеспечивают высокую плотность отсыпки, её непроницаемость, необходимую для защиты от испарения влаги, роста сорняков и выветривания почвы. Непросеянная мульча включает в себя мелкие, средние и крупные частицы, поэтому разлагается постепенно, обеспечивая постоянную подпитку почвы и растений. Для восстановления первоначального слоя начиная со второго года мульчу добавляют так, чтобы толщина слоя сохранялась первоначальной — 5–7 см. Мульчирование корой сосны защищает растения от многих заболеваний благодаря антибактериальному и антисептическому действию, присущему хвойным породам и повышает урожайность ягодных и плодовых культур.Кору сосны используют для отсыпки клумб и цветников и газонов. Вследствие технологических особенностей процесса окаривания деревьев, в коре допускаются включения древесной щепы. На мульчирующие свойства коры это не влияет. Отличия коры сосны «Люкс» от «Стандарт»: Кора сосны «Люкс» снимается вручную с наиболее толстых стволов деревьев, она толще, в ней гораздо меньше ощепья, подкорной плёнки и посторонних примесей, нежели в коре класса «Стандарт». Кору класса «Стандарт» снимают машинным способом специальными окорочными станками. Именно кору класса «Стандарт» вы можете видеть в сетях «Оби», «Леруа», «Твой дом» и на садовых рынках.
+					</p>
+
+					<p>
+						Для комплексной защиты от сорняков, мы предлагаем использовать садовый геотекстиль DuPont™ Plantex®. Материал создаёт благоприятные условия для здорового роста растений, его уникальная конструкция пропускает воздух, воду и питательные вещества, позволяет почве и корням растений дышать, задерживая при этом сорняки под землёй.
+					</p>
+				</div>
+			</div>
+
+			<div class="modal-information__bot">
+				<button type="button" class="btn-green modal-information__hide">
+					Закрыть
+				</button>
+			</div>
+		</div>
+
+
+		<div id="modal-features" class="modal-information">
+			<div class="modal-information__top _flex">
+				<button type="button" class="modal-information__close _arrow">
+					<svg>
+						<use xlink:href="images/sprite.svg#arrow2"></use>
+					</svg>
+				</button>
+
+				<div class="modal-information__title">Характеристики</div>
+
+				<button type="button" class="modal-information__close">
+					<svg>
+						<use xlink:href="images/sprite.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal-information__box">
+				<div class="features">
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Фракция: 0–200 см</span>
+						</div>
+						<div class="features__feature-val">0–200 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Особенности</span>
+						</div>
+						<div class="features__feature-val">Масса коры может варьироваться в зависимости от влажности сырья. Допускается наличие смежных фракций и примесей</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Объём для калькулятора покрытия</span>
+						</div>
+						<div class="features__feature-val">60 л</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Примечание</span>
+						</div>
+						<div class="features__feature-val">Внешний вид товара может отличаться от приведённого на фотографиях, что никак не ухудшает его характеристики, свойства и качество.</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Состав</span>
+						</div>
+						<div class="features__feature-val">Кора сосны</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Единица измерения</span>
+						</div>
+						<div class="features__feature-val">шт</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Длина</span>
+						</div>
+						<div class="features__feature-val">90 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Ширина</span>
+						</div>
+						<div class="features__feature-val">55 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Высота</span>
+						</div>
+						<div class="features__feature-val">12.2 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Объём</span>
+						</div>
+						<div class="features__feature-val">0.0604 м3</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Длина в упаковке</span>
+						</div>
+						<div class="features__feature-val">90 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Ширина в упаковке</span>
+						</div>
+						<div class="features__feature-val">55 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Высота в упаковке</span>
+						</div>
+						<div class="features__feature-val">12.2 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Объём в упаковке</span>
+						</div>
+						<div class="features__feature-val">0.0604 м3</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Масса</span>
+						</div>
+						<div class="features__feature-val">10–13 кг</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-information__bot">
+				<button type="button" class="btn-green modal-information__hide">
+					Закрыть
+				</button>
+			</div>
+		</div>
+		
+
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/jquery.rating.pack.js"></script>
+		<script src="js/dropzone.min.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

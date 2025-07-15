@@ -593,6 +593,26 @@ $(() => {
 		$(this).closest('.header__search-field').removeClass('_full')
 	})
 
+	$('#form-promo__input').keydown(function() {
+		setTimeout(() => {
+			let value = $(this).val()
+
+			if ( value != '' ) {
+				$(this).closest('.form-promo__flex').addClass('_full')
+			} else {
+				$(this).closest('.form-promo__flex').removeClass('_full')
+			}
+		})
+	})
+
+	$('.form-promo__clear').click(function(e) {
+		e.preventDefault()
+
+		$('#form-promo__input').val('')
+
+		$(this).closest('.form-promo__flex').removeClass('_full')
+	})
+
 	$('.filter__item-clear').click(function(e) {
 		e.preventDefault()
 
