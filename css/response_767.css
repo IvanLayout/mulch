@@ -4057,6 +4057,10 @@
     /*------------
 		coments
 	------------*/
+    .page-top__box .page-title
+    {
+        font-size: 20px;
+    }
 
 
     .footer

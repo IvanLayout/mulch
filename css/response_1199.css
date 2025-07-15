@@ -440,54 +440,55 @@
     }
 
 
-	/*------------
+    /*------------
 		coments
 	------------*/
 
-	.aside-order
-	{
-		width: 213px;
-	}
+    .aside-order
+    {
+        width: 213px;
+    }
 
-	.order__name
-	{
-		margin-top: 12px;
-		font-size: 15px;
-	}
+    .order__name
+    {
+        font-size: 15px;
 
-	.order__block + .order__block 
-	{
-		margin-top: 30px;
-	}
+        margin-top: 12px;
+    }
 
-	.order__small-title + .order__item
-	{
-		margin-top: 10px;
-	}
+    .order__block + .order__block
+    {
+        margin-top: 30px;
+    }
 
-	.order__item + .order__item
-	{
-		margin-top: 8px;
-	}
+    .order__small-title + .order__item
+    {
+        margin-top: 10px;
+    }
 
-	.order__item
-	{
-		font-size: 13px;
-	}
+    .order__item + .order__item
+    {
+        margin-top: 8px;
+    }
 
-	.order__link span.order__link-red
-	{
-		font-size: 12px;
-	}
+    .order__item
+    {
+        font-size: 13px;
+    }
 
-	.content__order
-	{
-		width: calc(100% - 249px);
-		margin-left: 16px;
-	}
+    .order__link span.order__link-red
+    {
+        font-size: 12px;
+    }
 
-	.content__order .tabs__text
-	{
-		font-size: 18px;
-	}
+    .content__order
+    {
+        width: calc(100% - 249px);
+        margin-left: 16px;
+    }
+
+    .content__order .tabs__text
+    {
+        font-size: 18px;
+    }
 }

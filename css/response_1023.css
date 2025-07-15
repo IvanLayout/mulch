@@ -2740,11 +2740,13 @@
     {
         width: 100%;
         margin-bottom: 30px;
+        margin-left: 0;
     }
 
     .content__order
     {
         width: 100%;
+        margin-left: 0;
     }
 
 
