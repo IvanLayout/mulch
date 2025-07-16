@@ -15201,6 +15201,7 @@ input[type=radio]:checked + .radio-payment__wrap::before
     display: block;
 
     max-width: 100%;
+    max-height: 100%;
     margin-left: auto;
 }
 
@@ -15257,8 +15258,8 @@ input[type=radio]:checked + .radio-payment__wrap::before
 
     display: flex;
     justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-start;
+    align-content: center;
+    align-items: center;
     flex-grow: 1;
     flex-wrap: nowrap;
 
@@ -17774,6 +17775,51 @@ input[type=radio]:checked + .radio-delivery__wrap
     .checkout-table table tr td.checkout-table__info
     {
         width: 156px;
+    }
+
+    .radio-payment__wrap
+    {
+        padding-left: 44px;
+    }
+
+    .radio-payment__wrap::before
+    {
+        left: 15px;
+    }
+
+    .radio-payment__name
+    {
+        font-size: 14px;
+    }
+
+    .radio-payment__desc
+    {
+        font-size: 12px;
+
+        margin-top: 5px;
+    }
+
+    .radio-payment__icon
+    {
+        width: 84px;
+        height: 22px;
+    }
+
+    .radio-delivery__icon
+    {
+        width: 47px;
+        height: 47px;
+        margin-right: 10px;
+    }
+
+    .radio-delivery__name
+    {
+        font-size: 14px;
+    }
+
+    .radio-delivery__desc
+    {
+        font-size: 12px;
     }
 
 
