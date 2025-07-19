@@ -14544,6 +14544,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     white-space: nowrap;
 }
 
+.checkout-total__item-val sup{
+    font-size: 70%;
+}
+
 .checkout-total__bord
 {
     margin: 20px 0;
@@ -14947,8 +14951,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     margin-top: 7px;
 }
 
-.checkout-table__btns
-{
+.checkout-table__about{
+    display: none;
+}
+
+.checkout-table__abs{
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -14956,6 +14963,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     width: 100%;
     padding-right: 24px;
     padding-left: 67px;
+}
+
+.checkout-table__prices{
+    display: none;
 }
 
 .checkout-table__delete
@@ -15187,13 +15198,31 @@ input[type=radio]:checked + .radio-payment__wrap::before
     margin-top: 3px;
 }
 
-.radio-payment__icon
-{
-    display: block;
+.radio-payment__icons{
+    max-width: 134px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 9px;
     flex-shrink: 0;
 
-    width: 134px;
     margin-left: 16px;
+}
+
+.radio-payment__icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 36px;
+}
+
+.radio-payment__icons .radio-payment__icon{
+    height: 16px;
 }
 
 .radio-payment__icon img
@@ -17784,7 +17813,7 @@ input[type=radio]:checked + .radio-delivery__wrap
 
     .radio-payment__wrap::before
     {
-        left: 15px;
+        left: 14px;
     }
 
     .radio-payment__name
@@ -17798,18 +17827,21 @@ input[type=radio]:checked + .radio-delivery__wrap
 
         margin-top: 5px;
     }
+    
+    .radio-payment__icons{
+        max-width: 84px;
+        margin-left: 10px;
+        gap: 6px;
+    }
 
     .radio-payment__icon
     {
-        width: 84px;
         height: 22px;
     }
 
-    .radio-delivery__icon
+    .radio-payment__icons .radio-payment__icon
     {
-        width: 47px;
-        height: 47px;
-        margin-right: 10px;
+        height: 10px;
     }
 
     .radio-delivery__name
@@ -17820,6 +17852,32 @@ input[type=radio]:checked + .radio-delivery__wrap
     .radio-delivery__desc
     {
         font-size: 12px;
+    }
+
+
+    .radio-delivery__wrap{
+        padding: 9px 7px 9px 14px;
+        min-height: 75px;
+    }
+
+
+    .checkout-delivery__bg{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .checkout-payments__bg{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .checkout-pickup__coll{
+        padding-left: 29px;
+    }
+
+
+    .checkout-pickup__colr {
+        width: 51.2%;
     }
 
 
