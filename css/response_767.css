@@ -4054,6 +4054,74 @@
     }
 
 
+    .checkout__reg{
+        padding: 19px 20px;
+        flex-wrap: wrap;
+    }
+
+    .checkout__reg-box{
+        max-width: none;
+    }
+    
+    .checkout__reg .btn-green{
+        margin: 16px 0 0;
+        width: 100%;
+    }
+
+    .checkout-table table tr{
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+
+    .checkout-table table tr td.checkout-table__info{
+        width: calc(100% - 59px);
+        padding-right: 0;
+    }
+
+    .checkout-table__wrapabs{
+        position: relative;
+        padding-bottom: 44px;
+    }
+
+    .checkout-table__abs{
+        position: static;
+    }
+
+    .checkout-table__btns{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-top: 0;
+    }
+
+    .checkout-table__btn + .checkout-table__btn{
+        margin-left: 8px;
+    }
+
+    .checkout-table__delete{
+        margin-left: 8px;
+    }
+
+    .checkout-table__prices{
+        justify-content: flex-start;
+        padding-right: 100px;
+    }
+
+    .checkout-table .amount{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .checkout-table__about{
+        margin-top: 13px;
+    }
+
+    .checkout-table__wrapabs{
+        margin-top: 14px;
+    }
+
+
     /*------------
 		coments
 	------------*/

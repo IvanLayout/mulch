@@ -1544,6 +1544,20 @@ $(window).on('load', () => {
 		})
 	}
 
+	if ( $(window).width() < 768 && !$('.checkout-table').hasClass('mob') ) {	
+		$('.checkout-table').removeClass('pc')
+		$('.checkout-table').addClass('mob')
+
+		$('.checkout-table tr').each(function() {
+			let thisEl = $(this)
+			$(this).find('.amount').each(function() {
+				let parent = thisEl.closest('tr').find('.checkout-table__wrapabs')
+
+				$(this).appendTo(parent)
+			})
+		})
+	}
+
 	if ( $('#dropzone-photo').length ) {
 		$('#dropzone-photo').dropzone({
 			url: "/file/post",
@@ -1647,6 +1661,34 @@ $(window).on('resize', () => {
 			let parent = $('.product-info__colr')
 
 			$(this).appendTo(parent)
+		})
+	}
+
+	if ( $(window).width() < 768 && !$('.checkout-table').hasClass('mob') ) {	
+		$('.checkout-table').removeClass('pc')
+		$('.checkout-table').addClass('mob')
+
+		$('.checkout-table tr').each(function() {
+			let thisEl = $(this)
+			$(this).find('.amount').each(function() {
+				let parent = thisEl.closest('tr').find('.checkout-table__wrapabs')
+
+				$(this).appendTo(parent)
+			})
+		})
+	}
+
+	if ( $(window).width() > 767 && !$('.checkout-table').hasClass('pc') ) {
+		$('.checkout-table').removeClass('mob')
+		$('.checkout-table').addClass('pc')
+
+		$('.checkout-table tr').each(function() {
+			let thisEl = $(this)
+			$(this).find('.amount').each(function() {
+				let parent = thisEl.closest('tr').find('.checkout-table__amount')
+
+				$(this).appendTo(parent)
+			})
 		})
 	}
 });
