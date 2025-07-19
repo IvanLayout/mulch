@@ -30,6 +30,7 @@
 		<link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/dropzone.min.css">
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1599.css" media="(max-width: 1599px)">
@@ -3118,6 +3119,8 @@
 					</div>
 				</div>
 
+				<div class="mini-overlay"></div>
+
 				<div class="fix-btns">
 					<a href="/" class="fix-btns__btn">
 						<span class="fix-btns__btn-icon">
@@ -3326,59 +3329,63 @@
 								</div>
 
 								<div class="product-images">
+									<div class="product__stickers _flex">
+										<div class="product__sticker green">-19%</div>
+									</div>
+
 									<div class="product-images__slider swiper">
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
-												<button data-content="#modal-images" class="product-images__img modal-btn">
+												<button data-content="#modal-images" data-modal-big="true" class="product-images__img modal-btn">
 													<span class="product-images__img-wrap">
 														<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
 													</span>
 												</button>
 											</div>
 											<div class="swiper-slide">
-												<button data-content="#modal-images" class="product-images__img modal-btn">
+												<button data-content="#modal-images" data-modal-big="true" class="product-images__img modal-btn">
 													<span class="product-images__img-wrap">
 														<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
 													</span>
 												</button>
 											</div>
 											<div class="swiper-slide">
-												<button data-content="#modal-images" class="product-images__img modal-btn">
+												<button data-content="#modal-images" data-modal-big="true" class="product-images__img modal-btn">
 													<span class="product-images__img-wrap">
 														<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
 													</span>
 												</button>
 											</div>
 											<div class="swiper-slide">
-												<button data-content="#modal-images" class="product-images__img modal-btn">
+												<button data-content="#modal-images" data-modal-big="true" class="product-images__img modal-btn">
 													<span class="product-images__img-wrap">
 														<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
 													</span>
 												</button>
 											</div>
 											<div class="swiper-slide">
-												<button data-content="#modal-images" class="product-images__img modal-btn">
+												<button data-content="#modal-images" data-modal-big="true" class="product-images__img modal-btn">
 													<span class="product-images__img-wrap">
 														<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
 													</span>
 												</button>
 											</div>
 											<div class="swiper-slide">
-												<button data-content="#modal-images" class="product-images__img modal-btn">
+												<button data-content="#modal-images" data-modal-big="true" class="product-images__img modal-btn">
 													<span class="product-images__img-wrap">
 														<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
 													</span>
 												</button>
 											</div>
 											<div class="swiper-slide">
-												<button data-content="#modal-images" class="product-images__img modal-btn">
+												<button data-content="#modal-images" data-modal-big="true" class="product-images__img modal-btn">
 													<span class="product-images__img-wrap">
 														<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
 													</span>
 												</button>
 											</div>
 											<div class="swiper-slide">
-												<button data-content="#modal-images" class="product-images__img modal-btn">
+												<button data-content="#modal-images" data-modal-big="true" class="product-images__img modal-btn">
 													<span class="product-images__img-wrap">
 														<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
 													</span>
@@ -3392,6 +3399,17 @@
 							</div>
 
 							<div class="product-info__top _flex">
+								<div class="product-info__review _flex">
+									<div class="product-info__review-flex _flex">
+										<div class="product-info__review-star">
+											<img data-src="images/star.svg" src="images/star.svg" alt="" class="lazyload loaded">
+										</div>
+
+										<div class="product-info__review-number">4.8</div>
+									</div>
+									<div class="product-info__review-size">110 отзывов</div>
+								</div>
+
 								<h1 class="page-title">Кора сосны Стандарт, нефракционная</h1>
 
 								<div class="product-info__btns _flex">
@@ -3434,14 +3452,27 @@
 										</div>
 
 										<div class="product-info__codes _flex">
-											<div class="product-info__codes-title">Артикул:</div>
+											<div class="product-info__codes-title">Артикул: <span>3521</span></div>
 
-											<div class="product-info__codes-flex _flex">
-												<div class="product-info__code">3521</div>
-												<div class="product-info__code">4607151510134</div>
-												<div class="product-info__code">3520</div>
-												<div class="product-info__code">Nk3521</div>
-												<div class="product-info__code">4607151510097</div>
+											<div class="mini-modal tooltip">
+												<span class="tooltip__icon"></span>
+												<button type="button" class="mini-modal__btn mini-modal__btn_look tooltip__icon"></button>
+
+												<div class="mini-modal__modal mini-modal__modal_text">
+													<button type="button" data-mini-close class="mini-modal__close">
+														<svg>
+															<use xlink:href="images/sprite.svg#close"></use>
+														</svg>
+													</button>
+
+													<div class="product-info__codes-flex _flex">
+														<div class="product-info__code">3521</div>
+														<div class="product-info__code">4607151510134</div>
+														<div class="product-info__code">3520</div>
+														<div class="product-info__code">Nk3521</div>
+														<div class="product-info__code">4607151510097</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -3483,7 +3514,7 @@
 											</div>
 										</div>
 										<div class="product-info__sizes">
-											<div class="product-info__sizes-title">Фракция, см:</div>
+											<div class="product-info__features-title">Фракция, см:</div>
 
 											<div class="product-info__sizes-wrap">
 												<div class="product-info__sizes-flex _flex">
@@ -3517,10 +3548,25 @@
 														<span class="features__feature-span">
 															Фракция
 
-															<span class="tooltip">
+															<span class="mini-modal tooltip">
 																<span class="tooltip__icon"></span>
+																<button type="button" class="mini-modal__btn mini-modal__btn_look tooltip__icon"></button>
 
-																<span class="tooltip__text">Всё очень просто: основа — это всегда мелкая (максимум, средняя <br>1) она отсыпается первым слоем (примерно 5 см), а сверху любую покрупнее, в зависимости от того, какая вам визуально нравится. Оптимальное соотношение — 2/3 мелкая, 1/3 более крупная фракция.</span>
+																<div class="mini-modal__modal mini-modal__modal_text">
+																	<button type="button" data-mini-close class="mini-modal__close">
+																		<svg>
+																			<use xlink:href="images/sprite.svg#close"></use>
+																		</svg>
+																	</button>
+
+																	<div class="tooltip__text">
+																		<h2>Фракция</h2>
+
+																		<p>
+																			Всё очень просто: основа — это всегда мелкая (максимум, средняя <br>1) она отсыпается первым слоем (примерно 5 см), а сверху любую покрупнее, в зависимости от того, какая вам визуально нравится. Оптимальное соотношение — 2/3 мелкая, 1/3 более крупная фракция.
+																		</p>
+																	</div>
+																</div>
 															</span>
 														</span>
 													</div>
@@ -3571,7 +3617,7 @@
 															</div>
 														</div>
 
-														<div class="product-info__recommend-colr">
+														<div class="product-info__recommend-colr product-info__recommend-box">
 															<div class="product-info__sales-bot">
 																<button type="button" class="btn-green product-info__buy">
 																	В корзину
@@ -3592,7 +3638,7 @@
 															</div>
 														</div>
 
-														<div class="product-info__recommend-colr">
+														<div class="product-info__recommend-colr product-info__recommend-box">
 															<div class="product-info__sales-bot">
 																<button type="button" class="btn-green product-info__buy">
 																	В корзину
@@ -3614,7 +3660,7 @@
 															</div>
 														</div>
 
-														<div class="product-info__recommend-colr">
+														<div class="product-info__recommend-colr product-info__recommend-box">
 															<div class="product-info__sales-bot">
 																<button type="button" class="btn-green product-info__buy">
 																	В корзину
@@ -3628,13 +3674,40 @@
 													</div>
 												</div>
 
-												<button type="button" class="product-info__more modal-btn">Показать все услуги</button>
+												<button type="button" data-content="#modal-add-service" class="product-info__more all-add">Показать все услуги</button>
 											</div>
 										</div>
 									</div>
 								</div>
 
 								<div class="product-info__colr">
+									<div class="product-info__sale">
+										<div class="product-info__sale-prices _flex">
+											<div class="product-info__sale-price">260 000 ₽</div>
+											<div class="product-info__sale-oldprice">260 000 ₽</div>
+										</div>
+
+										<div class="product-info__sale-info _flex">
+											<div class="product-info__sale-title">Ваша скидка:</div>
+
+											<div class="product-info__sale-name">Скидка 2</div>
+										</div>
+
+										<div class="sale-progress">
+											<div class="sale-progress__name">Осталось 100 шт. до скидки 3</div>
+
+											<div class="sale-progres__line">
+												<span style="width: 35%;"></span>
+											</div>
+
+											<div class="sale-progress__point _flex">
+												<span>0%</span>
+												<span>50%</span>
+												<span>100%</span>
+											</div>
+										</div>
+									</div>
+
 									<div class="product-info__sales">
 										<div class="product-info__table">
 											<div class="product-info__table-item _flex">
@@ -3663,17 +3736,20 @@
 											</div>
 										</div>
 
-										<div class="product-info__sales-bot">
-											<button type="button" class="btn-green product-info__buy">
+										<div class="product-info__sales-bot product-global-btns">
+											<button type="button" class="btn-green product-info__buy product-global-buy">
 												В корзину
 											</button>
 
 											<div class="fast-buy">
-												<button type="button" class="fast-buy__btn modal-btn">Быстрая покупка</button>
+												<button type="button" class="fast-buy__btn modal-btn">
+													<span>Быстрая покупка</span>
+													<span>Быстрый заказ</span>
+												</button>
 											</div>
 										</div>
 
-										<div class="product-info__added _flex">
+										<div class="product-info__added _flex product-global-added">
 											<div class="amount product-info__amount">
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
@@ -3690,6 +3766,12 @@
 
 									<div class="product-info__calculator">
 										<div class="product-info__calculator-bg">
+											<button type="button" class="product-info__calculator-close">
+												<svg>
+													<use xlink:href="images/sprite.svg#close"></use>
+												</svg>
+											</button>
+
 											<div class="small-title">Расчёт требуемого <br>количества мешков</div>
 
 											<form action="" class="form-calculator">
@@ -3726,13 +3808,217 @@
 											</form>
 										</div>
 
-										<button type="button" class="product-info__more modal-btn">Смотреть условия доставки</button>
+										<button type="button" data-content="#modal-info-del" class="product-info__more modal-btn">Смотреть условия доставки</button>
 									</div>
 								</div>
 							</div>
 						</div>
+
+						<button type="button" class="calculator-open">
+							<span class="calculator-open__icon">
+								<img data-src="images/ic_calculator.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</span>
+
+							<span class="calculator-open__box">
+								<span class="calculator-open__name">Онлайн калькулятор</span>
+								<span class="calculator-open__desc">расчитайте требуемое количества мешков</span>
+							</span>
+						</button>
+
+						<button type="button" data-content="#modal-info-del" class="del-open modal-btn">
+							<span class="calculator-open__icon">
+								<img data-src="images/ic_del.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</span>
+
+							<span class="calculator-open__box">
+								<span class="calculator-open__name">Условия доставки</span>
+								<span class="calculator-open__desc">узнайте условия доставки</span>
+							</span>
+						</button>
+
+						<div class="product-info__recommend _mob">
+							<div class="product-info__recommend-bg">
+								<div class="product-info__recommend-title">Рекомендованные услуги</div>
+
+								<div class="product-info__recommend-slider swiper swiper_visible">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="product-info__recommend-top">
+												<div class="product-info__recommend-name">Доставка и укладка мульчи</div>
+												<div class="product-info__recommend-price">1039 ₽</div>
+											</div>
+
+											<div class="product-info__recommend-bot _flex">
+												<div class="product-info__recommend-box">
+													<div class="product-info__sales-bot">
+														<button type="button" class="btn-green product-info__buy">
+															Добавить
+														</button>
+													</div>
+
+													<div class="product-info__added _flex">
+														<div class="product-info__added-check"></div>
+													</div>
+												</div>
+
+												<a href="/" class="product-info__recommend-link">Что входит в услугу</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-info__recommend-top">
+												<div class="product-info__recommend-name">Доставка и укладка мульчи</div>
+												<div class="product-info__recommend-price">1039 ₽</div>
+											</div>
+
+											<div class="product-info__recommend-bot _flex">
+												<div class="product-info__recommend-box">
+													<div class="product-info__sales-bot">
+														<button type="button" class="btn-green product-info__buy">
+															Добавить
+														</button>
+													</div>
+
+													<div class="product-info__added _flex">
+														<div class="product-info__added-check"></div>
+													</div>
+												</div>
+
+												<a href="/" class="product-info__recommend-link">Что входит в услугу</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-info__recommend-top">
+												<div class="product-info__recommend-name">Доставка и укладка мульчи</div>
+												<div class="product-info__recommend-price">1039 ₽</div>
+											</div>
+
+											<div class="product-info__recommend-bot _flex">
+												<div class="product-info__recommend-box">
+													<div class="product-info__sales-bot">
+														<button type="button" class="btn-green product-info__buy">
+															Добавить
+														</button>
+													</div>
+
+													<div class="product-info__added _flex">
+														<div class="product-info__added-check"></div>
+													</div>
+												</div>
+
+												<a href="/" class="product-info__recommend-link">Что входит в услугу</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="swiper-scrollbar"></div>
+								</div>
+
+								<button type="button" content="#modal-add-service" class="product-info__more all-add">Показать все услуги</button>
+							</div>
+						</div>
 					</div>
 				</section>
+
+
+				<div class="product-fixed">
+					<div class="cont">
+						<div class="product-fixed__flex _flex">
+							<div class="product-fixed__product _flex">
+								<div class="product-fixed__product-img">
+									<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+
+								<div class="product-fixed__product-box">
+									<div class="product-fixed__product-name">Кора сосны Стандарт, нефракционная</div>
+									
+									<div class="product-fixed__review _flex">
+										<div class="product-fixed__review-flex _flex">
+											<div class="product-fixed__review-star">
+												<img data-src="images/star.svg" src="images/star.svg" alt="" class="lazyload loaded">
+											</div>
+
+											<div class="product-fixed__review-number">4.8</div>
+										</div>
+										<div class="product-fixed__review-size">110 отзывов</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="product-fixed__box">
+								<div class="product-fixed__prices _flex">
+									<div class="product-fixed__price">2 600 000 000 ₽</div>
+									<div class="product-fixed__oldprice">2 600 ₽</div>
+								</div>
+
+								<div class="product-fixed__sale _flex">
+									<div class="product-fixed__sale-name">Скидка 2</div>
+
+									<div class="mini-modal tooltip">
+										<button type="button" class="mini-modal__btn mini-modal__btn_look tooltip__icon"></button>
+
+										<div class="mini-modal__modal mini-modal__modal_text">
+											<button type="button" data-mini-close class="mini-modal__close">
+												<svg>
+													<use xlink:href="images/sprite.svg#close"></use>
+												</svg>
+											</button>
+
+											<div class="text-block">
+												<h4>Заголовок</h4>
+
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda sed blanditiis facilis nobis distinctio minus alias, iure hic deserunt temporibus quo, quaerat adipisci repellat quod optio magnam impedit. Expedita?
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="product-fixed__btns _flex">
+								<button type="button" class="product-fixed__btn product-compare">
+									<svg>
+										<use xlink:href="images/sprite.svg#compare2"></use>
+									</svg>
+								</button>
+								<button type="button" class="product-fixed__btn product-favorite">
+									<svg>
+										<use xlink:href="images/sprite.svg#favorite2"></use>
+									</svg>
+								</button>
+							</div>
+
+							<div class="product-fixed__wrap">
+								<div class="product-fixed__wrap-flex _flex product-global-btns">
+									<div class="fast-buy">
+										<button type="button" class="fast-buy__btn modal-btn">
+											<span>Быстрая покупка</span>
+											<span>Быстрый заказ</span>
+										</button>
+									</div>
+
+									<button type="button" class="btn-green product-fixed__buy product-global-buy">
+										В корзину
+									</button>
+								</div>
+
+								<div class="product-fixed__added _flex product-global-added">
+									<div class="amount product-fixed__amount">
+										<div class="amount__val _flex">
+											<button type="button" class="amount__btn amount__btn_minus"></button>
+
+											<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+											<button type="button" class="amount__btn amount__btn_plus"></button>
+										</div>
+									</div>
+
+									<div class="product-fixed__added-check"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
 
 				<section class="product-about _marg" id="anchor1">
@@ -3756,6 +4042,13 @@
 										Для комплексной защиты от сорняков, мы предлагаем использовать садовый геотекстиль DuPont™ Plantex®. Материал создаёт благоприятные условия для здорового роста растений, его уникальная конструкция пропускает воздух, воду и питательные вещества, позволяет почве и корням растений дышать, задерживая при этом сорняки под землёй.
 									</p>
 								</div>
+
+								<button type="button" data-content="#modal-description" class="product-about__more open-info">
+									<span>Показать еще</span>
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow1"></use>
+									</svg>
+								</button>
 							</div>
 
 							<div class="tab-content level1" id="tab2">
@@ -3853,6 +4146,13 @@
 										<div class="features__feature-val">10–13 кг</div>
 									</div>
 								</div>
+
+								<button type="button" data-content="#modal-features" class="product-about__more open-info">
+									<span>Показать еще</span>
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow1"></use>
+									</svg>
+								</button>
 							</div>
 
 							<div class="tab-content level1" id="tab3">
@@ -5868,7 +6168,7 @@
 													</div>
 												</div>
 
-												<button type="button" class="btn-light stats-reviews__btn-light">Написать отзыв</button>
+												<button type="button" data-content="#modal-comment" class="btn-light stats-reviews__btn-light modal-btn">Написать отзыв</button>
 											</div>
 										</div>
 
@@ -7622,7 +7922,7 @@
 		</div>
 
 
-		<div id="modal-addres" class="modal">
+		<div <div id="modal-addres" class="modal modal-addres">
 			<div class="modal__title">Выберите свой город</div>
 
 			<form action="" class="modal-search">
@@ -7795,10 +8095,950 @@
 			</div>
 		</div>
 
+		<div id="modal-images" class="modal modal-images">
+			<div class="modal-images__flex _flex product-info">
+				<div class="modal-images__images _flex">
+					<div class="modal-images__thumbs swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img modal-images__thumbs-img_video">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+							<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__thumbs-img">
+									<div class="modal-images__thumbs-wrap">
+										<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+						</div>
 
-		<div id="modal-review" class="modal modal_review">
+						<div class="slider-button-prev">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow2"></use>
+							</svg>
+						</div>
+						<div class="slider-button-next">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow2"></use>
+							</svg>
+						</div>
 
+						<div class="swiper-scrollbar"></div>
+					</div>
+
+					<div class="modal-images__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="modal-images__img">
+									<div class="modal-images__img-wrap">
+										<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider-button-prev">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow2"></use>
+							</svg>
+						</div>
+						<div class="slider-button-next">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow2"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-images__info">
+					<div class="modal-images__title">Кора сосны Люкс, фракция 1–3 см</div>
+
+					<div class="product-info__codes _flex">
+						<div class="product-info__codes-title">Артикул:</div>
+
+						<div class="product-info__codes-flex _flex">
+							<div class="product-info__code">3521</div>
+							<div class="product-info__code">4607151510134</div>
+							<div class="product-info__code">3520</div>
+							<div class="product-info__code">Nk3521</div>
+							<div class="product-info__code">4607151510097</div>
+						</div>
+					</div>
+
+					<div class="product-info__sales">
+						<div class="product-info__table">
+							<div class="product-info__table-item _flex">
+								<div class="product-info__table-name">Розница</div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+							<div class="product-info__table-item _flex _active">
+								<div class="product-info__table-name">Скидка 1</div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+							<div class="product-info__table-item _flex">
+								<div class="product-info__table-name">Скидка 5 <br><span>Осталось 100 шт. до Скидки 2</span></div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+							<div class="product-info__table-item _flex">
+								<div class="product-info__table-name">Скидка 3</div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+							<div class="product-info__table-item _flex">
+								<div class="product-info__table-name">Скидка 4</div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+							<div class="product-info__table-item _flex">
+								<div class="product-info__table-name">Скидка 5</div>
+								<div class="product-info__table-val">2 600 000 ₽</div>
+							</div>
+						</div>
+
+						<div class="product-info__sales-bot product-global-btns">
+							<button type="button" class="btn-green product-info__buy product-global-buy">
+								В корзину
+							</button>
+
+							<div class="fast-buy">
+								<button type="button" class="fast-buy__btn modal-btn">
+									<span>Быстрая покупка</span>
+									<span>Быстрый заказ</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="product-info__added _flex product-global-added">
+							<div class="amount product-info__amount">
+								<div class="amount__val _flex">
+									<button type="button" class="amount__btn amount__btn_minus"></button>
+
+									<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+									<button type="button" class="amount__btn amount__btn_plus"></button>
+								</div>
+							</div>
+
+							<div class="product-info__added-check"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
+		<div id="modal-review" class="modal modal-review">
+			<div class="modal-review__flex _flex">
+				<div class="modal-review__images swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="modal-review__images-thumb">
+								<div class="modal-review__images-img">
+									<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="modal-review__images-thumb">
+								<div class="modal-review__images-img">
+									<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="modal-review__images-thumb">
+								<div class="modal-review__images-img">
+									<img data-src="images/tmp/product_big.png" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<button type="button" class="slider-button-prev">
+						<svg>
+							<use xlink:href="images/sprite.svg#arrow2"></use>
+						</svg>
+					</button>
+					<button type="button" class="slider-button-next">
+						<svg>
+							<use xlink:href="images/sprite.svg#arrow2"></use>
+						</svg>
+					</button>
+
+					<div class="slider-pagination"></div>
+				</div>
+
+				<div class="modal-review__colr">
+					<div class="modal-review__top _flex">
+						<div class="modal-review__user">Константин</div>
+
+						<div class="modal-review__stars _flex">
+							<div class="modal-review__star">
+								<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+							<div class="modal-review__star">
+								<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+							<div class="modal-review__star">
+								<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+							<div class="modal-review__star">
+								<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+							<div class="modal-review__star">
+								<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-review__date">17.12.2023</div>
+
+					<div class="modal-review__text">
+						<div class="text-block">
+							<p>
+								Мульча из коры сосны состоящая из комбинации разноразмерных кусочков (нефракционная) очень практична и удобна.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-comment" class="modal modal-comment">
+			<div class="modal__title">Напишите отзыв о&nbsp;товаре</div>
+
+			<div class="modal__subtitle">20 покупок ожидают вашей оценки</div>
+
+			<div class="modal-comment__images swiper swiper_visible">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+					<div class="swiper-slide modal-comment__images-img">
+						<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+				</div>
+
+				<div class="slider-button-prev">
+					<svg>
+						<use xlink:href="images/sprite.svg#arrow2"></use>
+					</svg>
+				</div>
+				<div class="slider-button-next">
+					<svg>
+						<use xlink:href="images/sprite.svg#arrow2"></use>
+					</svg>
+				</div>
+
+				<div class="swiper-scrollbar"></div>
+			</div>
+
+			<form action="" data-content="#modal-success" class="form form-ajax">
+				<div class="modal-comment__product">Кора сосны 2-6 см средняя 60 л "Дышащий мешок"</div>
+
+				<div class="rating-js">
+					<div class="rating-js__star">
+						<input name="adv1" type="radio" class="wow" value="1">
+						<input name="adv1" type="radio" class="wow" value="2">
+						<input name="adv1" type="radio" class="wow" value="3">
+						<input name="adv1" type="radio" class="wow" value="4">
+						<input name="adv1" type="radio" class="wow" value="5">
+					</div>
+				</div>
+				
+				<div class="form__line">
+					<div class="form__field">
+						<textarea placeholder="Комментарий" class="form__textarea"></textarea>
+					</div>
+				</div>
+				
+				<div class="form__line">
+					<div class="form__field">
+						<div class="form__field-label">Загрузите до 5 фото</div>
+
+						<div class="dropzone-photo" id="dropzone-photo">
+							<div class="dropzone-photo__add">
+								<div class="dropzone-photo__add-flex _flex">
+									<div class="dropzone-photo__add-icon">
+										<img data-src="images/camera.svg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+
+									<div class="dropzone-photo__desc">
+										<span>Нажмите, чтобы загрузить или перетащите фото сюда</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="btn-green form__submit-btn form__submit-btn_big">Отправить отзыв</button>
+				</div>
+
+				<div class="modal-comment__info">Отзывы можно изменить в разделе отзывы</div>
+			</form>
+		</div>
+
+
+		<div id="modal-success" class="modal modal-success">
+			<div class="empty-section">
+				<div class="empty-section__icon">
+					<img data-src="images/ic_page_favorite.svg" src="images/ic_page_favorite.svg" alt="" class="lazyload loaded">
+				</div>
+
+				<div class="empty-section__text">Спасибо, что поделились&nbsp;мнением!</div>
+
+				<div class="empty-section__desc _flex">
+					<span>Ваш отзыв будет отправлен в отдел контроля&nbsp;качества доставки.</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="modal-info-del" class="modal modal-del">
+			<div class="modal-del__wrap">
+				<div class="modal__title">Доставка и укладка мульчи</div>
+
+				<div class="modal__subtitle">Забудьте о сорняках и пересыхании почвы. Мы доставим и уложим мульчу на вашем участке быстро, качественно и с гарантией результата.</div>
+
+				<div class="accordion">
+					<div class="accordion__item _active">
+						<div class="accordion__open">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow1"></use>
+							</svg>
+							<span>Как проходит оплата заказа?</span>
+						</div>
+
+						<div class="accordion__data">
+							<div class="text-block">
+								<h4>1. Выбор материала и расчёт:</h4>
+
+								<ul>
+									<li>Наш специалист выезжает на участок для оценки.</li>
+									<li>Помогаем выбрать подходящий вид мульчи: кора, щепа, опилки, гравий и&nbsp;другие материалы. Учитываем тип почвы, растения и ваши предпочтения.</li>
+									<li>Точно рассчитываем необходимое количество мульчи, чтобы избежать перерасхода.</li>
+								</ul>
+
+								<h4>2. Подготовка участка:</h4>
+
+								<ul>
+									<li>Удаляем сорняки.</li>
+									<li>Рыхлим почву для лучшего впитывания влаги.</li>
+									<li>Вносим удобрения.</li>
+								</ul>
+
+								<h4>3. Доставка мульчи:</h4>
+
+								<ul>
+									<li>Доставляем мульчу к вашему участку в удобное для вас время.</li>
+									<li>Аккуратно разгружаем материал, не повреждая территорию.</li>
+								</ul>
+
+								<h4>4. Укладка мульчи:</h4>
+
+								<ul>
+									<li>Профессионально и равномерно укладываем мульчу по всей площади участка.</li>
+									<li>Формируем приствольные круги вокруг деревьев и кустарников.</li>
+									<li>Используем проверенные технологии для максимальной эффективности.</li>
+								</ul>
+
+								<h4>5. Уборка (включена):</h4>
+
+								<ul>
+									<li>Убираем весь мусор после работы.</li>
+									<li>Вывозим остатки мульчи (если требуется).</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__open">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow1"></use>
+							</svg>
+							<span>Как проходит оплата заказа?</span>
+						</div>
+
+						<div class="accordion__data">
+							<div class="text-block">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="/" class="btn-green modal-del__btn">Добавить за 1039 ₽</a>
+			</div>
+		</div>
+
+
+		<div id="modal-add-service" class="modal-service">
+			<div class="modal-service__wrap">
+				<div class="modal-service__wrap-top">
+					<div class="modal-service__top _flex">
+						<button type="button" class="modal-service__close _arrow">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow2"></use>
+							</svg>
+						</button>
+
+						<div class="modal-service__top-title">Добавление услуг</div>
+
+						<button type="button" class="modal-service__close">
+							<svg>
+								<use xlink:href="images/sprite.svg#close"></use>
+							</svg>
+						</button>
+
+						<div class="modal-service__product _flex">
+							<div class="modal-service__product-img">
+								<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
+							</div>
+
+							<div class="modal-service__product-box">
+								<div class="modal-service__product-info">1 товар и 1 услуга</div>
+								<div class="modal-service__product-prices _flex">
+									<div class="modal-service__product-price">2 600 ₽</div>
+									<div class="modal-service__product-oldprice">2 600 ₽</div>
+								</div>
+							</div>
+
+							<div class="modal-service__product-btn">
+								<button type="button" disabled class="btn-green modal-service__product-boy">В корзину</button>
+								<div class="modal-service__product-added"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-service__cats">
+						<div class="modal-service__cats-slider swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="modal-service__cats-link active">Рекомендованные услуги</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="modal-service__cats-link">Рекомендованные услуги</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="modal-service__cats-link">Рекомендованные услуги</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="modal-service__cats-link">Рекомендованные услуги</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="modal-service__cats-link">Рекомендованные услуги</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="modal-service__cats-link">Рекомендованные услуги</a>
+								</div>
+							</div>
+
+							<div class="swiper-scrollbar"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-service__cols _flex">
+					<div class="modal-service__coll">
+						<div class="modal-service__list">
+							<div class="modal-service__list-item">
+								<a class="modal-service__list-link active">Рекомендованные услуги</a>
+							</div>
+							<div class="modal-service__list-item">
+								<a href="/" class="modal-service__list-link">Рекомендованные услуги</a>
+							</div>
+							<div class="modal-service__list-item">
+								<a href="/" class="modal-service__list-link">Рекомендованные услуги</a>
+							</div>
+							<div class="modal-service__list-item">
+								<a href="/" class="modal-service__list-link">Рекомендованные услуги</a>
+							</div>
+							<div class="modal-service__list-item">
+								<a href="/" class="modal-service__list-link">Рекомендованные услуги</a>
+							</div>
+							<div class="modal-service__list-item">
+								<a href="/" class="modal-service__list-link">Рекомендованные услуги</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-service__colr">
+						<div class="product-recommends">
+							<div class="product-recommends__title">Рекомендованные услуги</div>
+
+							<div class="product-recommends__grid _flex">
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-recommends">
+							<div class="product-recommends__title">Рекомендованные услуги</div>
+
+							<div class="product-recommends__grid _flex">
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+								<div class="product-recommends__item">
+									<div class="product-recommends__top">
+										<div class="product-recommends__name">Доставка и укладка мульчи</div>
+										<div class="product-recommends__price">1039 ₽</div>
+									</div>
+
+									<div class="product-recommends__bot _flex">
+										<div class="product-recommends__box">
+											<button type="button" class="btn-green product-recommends__add">
+												Добавить
+											</button>
+
+											<div class="product-recommends__check"></div>
+										</div>
+
+										<a href="/" class="product-recommends__link">Что входит в услугу</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="modal-description" class="modal-information">
+			<div class="modal-information__top _flex">
+				<button type="button" class="modal-information__close _arrow">
+					<svg>
+						<use xlink:href="images/sprite.svg#arrow2"></use>
+					</svg>
+				</button>
+
+				<div class="modal-information__title">Описание</div>
+
+				<button type="button" class="modal-information__close">
+					<svg>
+						<use xlink:href="images/sprite.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal-information__box">
+				<div class="text-block">
+					<p>
+						Мульча из коры сосны состоящая из комбинации разноразмерных кусочков (нефракционная) очень практична и удобна. Наличие крупных элементов делает отсыпку более декоративной, а средние и мелкие включения обеспечивают высокую плотность отсыпки, её непроницаемость, необходимую для защиты от испарения влаги, роста сорняков и выветривания почвы. Непросеянная мульча включает в себя мелкие, средние и крупные частицы, поэтому разлагается постепенно, обеспечивая постоянную подпитку почвы и растений. Для восстановления первоначального слоя начиная со второго года мульчу добавляют так, чтобы толщина слоя сохранялась первоначальной — 5–7 см. Мульчирование корой сосны защищает растения от многих заболеваний благодаря антибактериальному и антисептическому действию, присущему хвойным породам и повышает урожайность ягодных и плодовых культур.Кору сосны используют для отсыпки клумб и цветников и газонов. Вследствие технологических особенностей процесса окаривания деревьев, в коре допускаются включения древесной щепы. На мульчирующие свойства коры это не влияет. Отличия коры сосны «Люкс» от «Стандарт»: Кора сосны «Люкс» снимается вручную с наиболее толстых стволов деревьев, она толще, в ней гораздо меньше ощепья, подкорной плёнки и посторонних примесей, нежели в коре класса «Стандарт». Кору класса «Стандарт» снимают машинным способом специальными окорочными станками. Именно кору класса «Стандарт» вы можете видеть в сетях «Оби», «Леруа», «Твой дом» и на садовых рынках.
+					</p>
+
+					<p>
+						Для комплексной защиты от сорняков, мы предлагаем использовать садовый геотекстиль DuPont™ Plantex®. Материал создаёт благоприятные условия для здорового роста растений, его уникальная конструкция пропускает воздух, воду и питательные вещества, позволяет почве и корням растений дышать, задерживая при этом сорняки под землёй.
+					</p>
+				</div>
+			</div>
+
+			<div class="modal-information__bot">
+				<button type="button" class="btn-green modal-information__hide">
+					Закрыть
+				</button>
+			</div>
+		</div>
+
+
+		<div id="modal-features" class="modal-information">
+			<div class="modal-information__top _flex">
+				<button type="button" class="modal-information__close _arrow">
+					<svg>
+						<use xlink:href="images/sprite.svg#arrow2"></use>
+					</svg>
+				</button>
+
+				<div class="modal-information__title">Характеристики</div>
+
+				<button type="button" class="modal-information__close">
+					<svg>
+						<use xlink:href="images/sprite.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal-information__box">
+				<div class="features">
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Фракция: 0–200 см</span>
+						</div>
+						<div class="features__feature-val">0–200 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Особенности</span>
+						</div>
+						<div class="features__feature-val">Масса коры может варьироваться в зависимости от влажности сырья. Допускается наличие смежных фракций и примесей</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Объём для калькулятора покрытия</span>
+						</div>
+						<div class="features__feature-val">60 л</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Примечание</span>
+						</div>
+						<div class="features__feature-val">Внешний вид товара может отличаться от приведённого на фотографиях, что никак не ухудшает его характеристики, свойства и качество.</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Состав</span>
+						</div>
+						<div class="features__feature-val">Кора сосны</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Единица измерения</span>
+						</div>
+						<div class="features__feature-val">шт</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Длина</span>
+						</div>
+						<div class="features__feature-val">90 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Ширина</span>
+						</div>
+						<div class="features__feature-val">55 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Высота</span>
+						</div>
+						<div class="features__feature-val">12.2 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Объём</span>
+						</div>
+						<div class="features__feature-val">0.0604 м3</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Длина в упаковке</span>
+						</div>
+						<div class="features__feature-val">90 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Ширина в упаковке</span>
+						</div>
+						<div class="features__feature-val">55 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Высота в упаковке</span>
+						</div>
+						<div class="features__feature-val">12.2 см</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Объём в упаковке</span>
+						</div>
+						<div class="features__feature-val">0.0604 м3</div>
+					</div>
+					<div class="features__feature _flex">
+						<div class="features__feature-name">
+							<span class="features__feature-span">Масса</span>
+						</div>
+						<div class="features__feature-val">10–13 кг</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-information__bot">
+				<button type="button" class="btn-green modal-information__hide">
+					Закрыть
+				</button>
+			</div>
+		</div>
+		
 
 
 		<div class="supports-error">
@@ -7814,6 +9054,8 @@
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/nice-select.js"></script>
 		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/jquery.rating.pack.js"></script>
+		<script src="js/dropzone.min.js"></script>
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>

@@ -867,19 +867,163 @@
     }
 
 
-	/*------------
+    .product-info__calculator-item
+    {
+        flex-wrap: wrap;
+    }
+
+    .product-info__calculator-name
+    {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .product-info__calculator-val
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    .product-info__calculator-item_bot
+    {
+        font-size: 16px;
+
+        display: block;
+
+        padding-top: 20px;
+    }
+
+    .product-info__calculator-item_bot .product-info__calculator-name
+    {
+        display: inline;
+
+        width: auto;
+        margin: 0;
+    }
+
+    .product-info__calculator-item_bot .product-info__calculator-val
+    {
+        display: inline;
+
+        width: auto;
+        margin: 0;
+    }
+
+
+    .modal-service__top
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .modal-service__cats
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .modal-service__cols
+    {
+        padding: 24px 20px 110px;
+    }
+
+    .product-recommends__title
+    {
+        font-size: 18px;
+    }
+
+    .product-recommends__grid
+    {
+        margin-top: 5px;
+    }
+
+    .product-recommends__item
+    {
+        margin-top: 10px;
+    }
+
+    .product-recommends__name
+    {
+        font-size: 15px;
+    }
+
+    .product-recommends__price
+    {
+        font-size: 18px;
+    }
+
+    .modal-service__product
+    {
+        padding: 20px;
+    }
+
+    .modal-service__product-img
+    {
+        display: none;
+    }
+
+    .modal-service__product-btn
+    {
+        margin-left: 20px;
+    }
+
+    .modal-service__product-boy
+    {
+        font-size: 14px;
+    }
+
+    .product-recommends__add
+    {
+        font-size: 14px;
+    }
+
+    .product-info__buy
+    {
+        font-size: 14px;
+    }
+
+    .modal-information__hide
+    {
+        font-size: 14px;
+    }
+
+
+    .product-fixed__flex
+    {
+        flex-wrap: nowrap;
+    }
+
+    .product-fixed__prices
+    {
+        flex-wrap: wrap;
+
+        margin-left: -10px;
+    }
+
+    .product-fixed__price
+    {
+        margin-left: 10px;
+    }
+
+    .form__submit-btn_big
+    {
+        font-size: 14px;
+    }
+
+
+    /*------------
 		coments
 	------------*/
 
-	.section-gray
-	{
-		padding-bottom: 40px;
-	}
-	
-	.empty-section__br
-	{
-		display: inline-block;
-	}
+    .section-gray
+    {
+        padding-bottom: 40px;
+    }
+
+    .empty-section__br
+    {
+        display: inline-block;
+    }
 
     .footer__coll
     {
@@ -1142,7 +1286,17 @@
 
     .modal-cities
     {
-        columns: 2;
+        columns: 1;
+    }
+
+    .modal-cities__title
+    {
+        font-size: 20px;
+    }
+
+    .modal-cities__link
+    {
+        font-size: 16px;
     }
 
 

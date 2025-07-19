@@ -2387,6 +2387,11 @@
         font-size: 15px;
     }
 
+    .product-info__sizes-title
+    {
+        font-size: 15px;
+    }
+
     .product-info__colors
     {
         margin-top: 2px;
@@ -2412,12 +2417,15 @@
         width: 41%;
     }
 
+    .mini-modal__modal_text
+    {
+        width: 438px;
+        padding: 16px 20px;
+    }
+
     .tooltip__text
     {
         font-size: 13px;
-
-        width: 438px;
-        padding: 16px 20px;
     }
 
     .tooltip__text br
@@ -2511,10 +2519,372 @@
     }
 
 
-	/*------------
+    .modal-service__wrap
+    {
+        max-width: 1004px;
+    }
+
+    .modal-service__top
+    {
+        padding: 11px 60px 16px;
+    }
+
+    .modal-service__cats
+    {
+        display: block;
+        overflow: hidden;
+
+        padding: 0 60px 20px;
+    }
+
+    .modal-service__cats-slider
+    {
+        overflow: visible;
+    }
+
+    .modal-service__cats-slider .swiper-scrollbar
+    {
+        display: block;
+    }
+
+    .modal-service__cats .swiper-slide
+    {
+        width: auto;
+    }
+
+    .modal-service__cats-link
+    {
+        color: rgba(40, 40, 40, .5);
+        font-size: 15px;
+        font-weight: 500;
+
+        display: block;
+
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+    .modal-service__cats-link.active
+    {
+        color: #282828;
+    }
+
+    .modal-service__cols
+    {
+        padding: 30px 60px;
+    }
+
+    .modal-service__coll
+    {
+        display: none;
+    }
+
+    .modal-service__colr
+    {
+        width: 100%;
+    }
+
+
+
+    .modal-review__images
+    {
+        width: calc(100% - 492px);
+    }
+
+    .modal-review__images-thumb
+    {
+        min-height: 541px;
+    }
+
+    .modal-review__colr
+    {
+        width: 492px;
+        padding: 49px 40px 49px 30px;
+    }
+
+    .modal-review__top
+    {
+        padding-right: 20px;
+    }
+
+
+    .product-fixed__product
+    {
+        width: 340px;
+    }
+
+    .product-fixed__product-name
+    {
+        font-size: 12px;
+    }
+
+    .product-fixed__review-star
+    {
+        width: 12px;
+        height: 11px;
+    }
+
+    .product-fixed__review-number
+    {
+        font-size: 12px;
+    }
+
+    .product-fixed__review-size
+    {
+        font-size: 12px;
+    }
+
+    .product-fixed__price
+    {
+        font-size: 18px;
+    }
+
+    .product-fixed__oldprice
+    {
+        font-size: 15px;
+
+        margin-left: 16px;
+    }
+
+    .product-fixed__wrap
+    {
+        width: 240px;
+    }
+
+    .product-fixed .fast-buy__btn
+    {
+        font-size: 12px;
+    }
+
+    .product-fixed .product-fixed__buy
+    {
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .product-fixed__added-check
+    {
+        height: 40px;
+    }
+
+
+    .modal-images__images
+    {
+        width: calc(100% - 424px);
+        padding: 65px 36px;
+    }
+
+    .modal-images__thumbs
+    {
+        order: 2;
+
+        width: 100%;
+        height: auto;
+        margin-top: 42px;
+        padding: 0 19px;
+    }
+
+    .modal-images__thumbs::before
+    {
+        top: 0;
+        left: 0;
+
+        width: 19px;
+        height: 100%;
+    }
+
+    .modal-images__thumbs::after
+    {
+        top: 0;
+        right: 0;
+        bottom: auto;
+        left: auto;
+
+        width: 19px;
+        height: 100%;
+    }
+
+    .modal-images__thumbs .slider-button-prev,
+    .modal-images__thumbs .slider-button-next
+    {
+        top: 50%;
+        bottom: 0;
+
+        width: 34px;
+        height: 34px;
+        margin: -17px 0 0 0;
+    }
+
+    .modal-images__thumbs .slider-button-prev
+    {
+        left: 4px;
+    }
+
+    .modal-images__thumbs .slider-button-next
+    {
+        right: 4px;
+        left: auto;
+    }
+
+    .modal-images__thumbs .slider-button-next svg
+    {
+        transform: rotate(0);
+    }
+
+    .modal-images__thumbs .slider-button-prev svg
+    {
+        transform: rotate(-180deg);
+    }
+
+    .modal-images__slider
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    .modal-images__slider .slider-button-prev,
+    .modal-images__slider .slider-button-next
+    {
+        display: none;
+    }
+
+    .modal-images__img
+    {
+        height: 347px;
+        padding: 0;
+    }
+
+    .modal-images__img-wrap
+    {
+        padding: 0;
+    }
+
+    .modal-images__info
+    {
+        width: 424px;
+        padding: 25px 38px;
+    }
+
+    .modal-images__title
+    {
+        font-size: 18px;
+    }
+
+    .modal-images .product-info__sales
+    {
+        margin-top: 24px;
+    }
+
+    .fancybox__content.modal-images > .carousel__button.is-close
+    {
+        top: 15px;
+        right: 15px;
+    }
+
+    .modal-comment__product
+    {
+        font-size: 15px;
+
+        margin-bottom: 16px;
+    }
+
+    .modal-comment__images-img
+    {
+        width: 76px;
+        height: 76px;
+    }
+
+    .dropzone-photo__add-flex
+    {
+        max-width: 227px;
+    }
+
+    .modal-success .empty-section__text
+    {
+        font-size: 18px;
+
+        margin-top: 50px;
+    }
+
+    .modal-success .empty-section__desc
+    {
+        margin-top: 16px;
+    }
+
+
+    
+    .checkout__coll{
+        width: 100%;
+    }
+
+    .checkout-table table td{
+        font-size: 13px;
+    }
+
+    .checkout__colr{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .checkout-total{
+        width: 100%;
+        order: 2;
+        margin-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .checkout-total__link{
+        text-align: center;
+    }
+
+    .form-promo{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .checkout-total__top{
+        justify-content: flex-start;
+    }
+
+    .checkout-total__title{
+        font-size: 18px;
+    }
+
+    .checkout-total__number{
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .form-promo__title{
+        font-size: 18px;
+    }
+
+    .checkout-payments__title{
+        font-size: 18px;
+    }
+
+    .checkout-delivery__title{
+        font-size: 18px;
+    }
+
+    .btn-green.checkout-total__btn{
+        line-height: 50px;
+        margin-top: 16px;
+    }
+
+    .checkout-total__link{
+        font-size: 14px;
+    }
+
+
+
+    /*------------
 		coments
 	------------*/
-	
+
 
     .footer__colr
     {

@@ -141,25 +141,9 @@
         padding-bottom: 56.454%;
     }
 
-
     .swiper .swiper-scrollbar
     {
-        position: relative;
-        bottom: 0;
-        left: 0;
-
         display: block;
-
-        width: 100%;
-        height: 5px;
-        margin-top: 10px;
-
-        background: #F5F5F5;
-    }
-
-    .swiper .swiper-scrollbar-drag
-    {
-        background: #E5E5E5;
     }
 
 
@@ -2405,34 +2389,704 @@
     }
 
 
-	/*------------
+    .product-info__availability
+    {
+        flex-grow: 0;
+    }
+
+    .product-info__codes-title span
+    {
+        display: inline;
+    }
+
+    .product-info__codes .tooltip
+    {
+        align-self: center;
+
+        margin-left: 6px;
+    }
+
+    .product-info__codes .tooltip__icon
+    {
+        display: block;
+    }
+
+    .product-info__codes .mini-modal__btn.tooltip__icon
+    {
+        display: none;
+    }
+
+    .product-info__codes .mini-modal__modal_text
+    {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        left: auto;
+
+        visibility: visible;
+
+        width: 270px;
+        padding: 16px 20px;
+
+        pointer-events: none;
+
+        opacity: 0;
+        border-radius: 3px;
+        background: #F3F3F3;
+    }
+
+
+    .modal-service__wrap
+    {
+        max-width: none;
+        min-height: 100%;
+    }
+
+    .modal-service__top
+    {
+        padding: 17px 40px 20px;
+    }
+
+    .modal-service__close
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        width: 25px;
+        height: 25px;
+    }
+
+    .modal-service__close._arrow
+    {
+        color: #007657;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        border-radius: 2px;
+        background: #FFF;
+        box-shadow: 0 0 9px 0 rgba(13, 30, 42, .1);
+
+        transform: rotate(180deg);
+    }
+
+    .modal-service__top-title
+    {
+        font-size: 22px;
+    }
+
+    .modal-service__cats
+    {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .modal-service__cols
+    {
+        padding: 40px 40px 120px;
+    }
+
+    .modal-service__product
+    {
+        position: fixed;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        margin: 0;
+        padding: 16px 40px;
+
+        background: #FFF;
+        box-shadow: 0 4px 4px 0 rgba(212, 212, 212, .25);
+    }
+
+    .modal-service__product-box
+    {
+        margin-right: auto;
+    }
+
+    .modal-service__product-img
+    {
+        width: 51px;
+        height: 53px;
+        padding: 5px;
+    }
+
+    .modal-service__product-info
+    {
+        font-size: 13px;
+    }
+
+    .modal-service__product-boy
+    {
+        line-height: 44px;
+
+        padding: 0;
+    }
+
+
+    .modal.modal-review
+    {
+        width: 768px;
+    }
+
+    .modal-review__images
+    {
+        width: 100%;
+    }
+
+    .modal-review__images-thumb
+    {
+        min-height: 610px;
+    }
+
+    .modal-review__colr
+    {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .fancybox__content.modal-review > .carousel__button.is-close
+    {
+        top: 15px;
+        right: 15px;
+    }
+
+    .modal-review__images-img
+    {
+        padding: 40px;
+    }
+
+    .modal-review__images .slider-button-prev,
+    .modal-review__images .slider-button-next
+    {
+        display: none;
+    }
+
+    .modal-review__images .slider-pagination
+    {
+        position: relative;
+        bottom: 0;
+
+        display: flex;
+
+        margin-top: 15px;
+    }
+
+    .modal-review__top
+    {
+        padding-right: 0;
+    }
+
+
+    .product-fixed__product
+    {
+        width: 270px;
+    }
+
+    .product-fixed__product-name
+    {
+        font-size: 14px;
+    }
+
+    .product-fixed__review
+    {
+        display: none;
+    }
+
+    .product-fixed__price
+    {
+        font-size: 15px;
+    }
+
+    .product-fixed__oldprice
+    {
+        font-size: 12px;
+
+        margin-left: 10px;
+    }
+
+    .product-fixed__btns
+    {
+        display: none;
+    }
+
+    .product-fixed__wrap
+    {
+        width: 184px;
+    }
+
+    .product-fixed .fast-buy
+    {
+        display: none;
+    }
+
+    .product-fixed .product-fixed__buy
+    {
+        line-height: 44px;
+
+        width: 100%;
+    }
+
+    .product-fixed__added-check
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    .product-fixed__amount
+    {
+        width: calc(100% - 50px);
+        height: 44px;
+    }
+
+
+
+    .modal-images__images
+    {
+        width: 100%;
+        padding: 77px 20px 2px;
+
+        border-bottom: 1px solid rgba(40, 40, 40, .1);
+    }
+
+    .modal-images__img
+    {
+        height: 281px;
+    }
+
+    .modal-images__thumbs
+    {
+        max-width: 476px;
+        margin: 80px auto 0;
+    }
+
+    .modal-images__info
+    {
+        width: 100%;
+        padding: 58px 40px 36px;
+    }
+
+    .modal-images .product-info__sales
+    {
+        max-width: none;
+        margin-top: 20px;
+    }
+
+    .modal-images__title
+    {
+        font-size: 22px;
+    }
+
+    .modal-images .product-info__codes
+    {
+        margin-top: 24px;
+    }
+
+    .modal-images .product-info__codes-flex
+    {
+        margin-left: 0;
+    }
+
+    .modal-images .product-info__code
+    {
+        margin-left: 10px;
+    }
+
+    .modal-images__thumbs .swiper-scrollbar
+    {
+        display: none;
+    }
+
+    .modal-comment__images .swiper-scrollbar
+    {
+        display: none;
+    }
+
+    .modal-comment__images
+    {
+        margin-top: 16px;
+    }
+
+    .modal-success .empty-section__icon
+    {
+        height: 125px;
+    }
+
+
+    .checkout__reg{
+        padding: 14px 20px;
+    }
+
+    .checkout__reg-box{
+        max-width: 266px;
+    }
+
+    .checkout__reg-title{
+        font-size: 15px;
+    }
+
+    .checkout__reg .btn-green{
+        line-height: 44px;
+    }
+
+
+    .checkout-delivery__bg{
+        padding: 20px;
+    }
+
+    .checkout-delivery__title{
+        font-size: 15px;
+    }
+    
+    .radio-deliverys{
+        margin: 6px 0 0 -10px;
+    }
+
+    .radio-delivery {
+        width: calc(100% / 2 - 10px);
+        margin: 10px 0 0 10px;
+    }
+
+    .radio-delivery__wrap{
+        padding: 14px;
+    }
+
+    .radio-delivery__icon{
+        width: 45px;
+        height: 45px;
+    }
+
+    .checkout-pickup__coll{
+        padding: 14px 19px;
+    }
+
+    .checkout-pickup__title{
+        font-size: 15px;
+    }
+
+    .checkout-pickup__adres{
+        font-size: 13px;
+    }
+
+    .checkout-pickup__info{
+        margin-top: 7px;
+    }
+
+    .checkout-pickup__time{
+        margin-top: 7px;
+    }
+
+    .checkout-pickup__colr {
+        width: 51.1%;
+    }
+
+    
+    .checkout-payments__bg{
+        padding: 20px;
+    }
+
+    .checkout-payments__title{
+        font-size: 15px;
+    }
+
+    .radio-payments{
+        margin-top: 6px;
+    }
+
+    .radio-payment{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .radio-payment__box{
+        max-width: 380px;
+    }
+
+    .radio-payment__icons {
+        max-width: 84px;
+    }
+
+
+    .form-promo{
+        padding: 18px 20px 24px;
+    }
+
+    .form-promo__title{
+        font-size: 15px;
+    }
+
+    .form-promo .form-promo__input{
+        font-size: 13px;
+    }
+
+    .form-promo__flex{
+        margin-top: 12px;
+    }
+
+
+    .checkout-total{
+        padding: 20px;
+    }
+
+    .checkout-total__item{
+        font-size: 13px;
+    }
+
+    .checkout-total__title{
+        font-size: 15px;
+    }
+
+
+    .checkout-total__line + .checkout-total__line{
+        margin-top: 4px;
+    }
+
+    .checkout-total__line{
+        font-size: 13px;
+    }
+
+    .checkout-total__line._big{
+        font-size: 20px;
+    }
+
+    .checkout-total__bord{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+
+    .checkout-table__bg{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .checkout-table__bg::before{
+        height: 100%;
+    }
+
+    .checkout-table table thead{
+        display: none;
+    }
+
+    .checkout-table table tr{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+        position: relative;
+        padding-right: 140px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: 122px;
+    }
+
+    .checkout-table table tr + tr{
+        border-top: 1px solid rgba(97, 97, 97, 0.2);
+    }
+
+    .checkout-table table td{
+        display: none;
+        padding: 0;
+        border: none;
+    }
+
+    .checkout-table table td.checkout-table__img,
+    .checkout-table table td.checkout-table__info,
+    .checkout-table table td.checkout-table__amount{
+        display: block;
+    }
+    
+    .checkout-table table tr td.checkout-table__img{
+        width: 59px;
+        flex-shrink: 0;
+        padding-right: 8px;
+        padding-top: 0;
+    }
+
+    .checkout-table table tr td.checkout-table__info{
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100%;
+        padding-right: 16px;
+    }
+    
+    .checkout-table table tr td.checkout-table__amount{
+        padding-top: 0;
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+    .checkout-table .amount{
+        width: 75px;
+        min-width: 75px;
+        height: 34px;
+    }
+
+    .checkout-table .amount__btn{
+        width: 20px;
+    }
+
+    .checkout-table .amount__btn::before{
+        width: 8px;
+        margin-left: -4px;
+    }
+
+    .checkout-table .amount__btn::after{
+        height: 8px;
+        margin-top: -4px;
+    }
+
+    .checkout-table .amount .amount__input{
+        width: calc(100% - 40px);
+    }
+
+    .checkout-table__abs{
+        width: auto;
+        right: 0;
+        left: auto;
+        top: 20px;
+        bottom: auto;
+        padding: 0;
+    }
+
+    .checkout-table__prices{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: flex-end;
+        flex-wrap: wrap;
+    }
+    
+    .checkout-table__price{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .checkout-table__oldprice{
+        font-size: 13px;
+        margin-top: 3px;
+        opacity: 0.5;
+        text-decoration: line-through;
+    }
+
+    .checkout-table__btns{
+        margin-top: 22px;
+    }
+
+    .checkout-table__delete{
+        margin-left: 4px;
+    }
+
+    .checkout-table__codes{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .checkout-table__about{
+        display: block;
+        margin-top: 26px;
+    }
+
+    .checkout-table__about-open{
+        display: block;
+        position: relative;
+        padding-right: 12px;
+        font-weight: 500;
+        font-size: 13px;
+        display: inline-block;
+    }
+
+    .checkout-table__about-open svg{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -2px;
+
+        fill: currentColor;
+        display: block;
+        width: 5px;
+        height: 4px;
+    }
+
+    .checkout-table__about._active .checkout-table__about-open svg{
+        transform: rotate(180deg);
+    }
+
+    .checkout-table__about-data{
+        display: none;
+        margin-top: 13px;
+    }
+
+    .checkout-table__about._active .checkout-table__about-data{
+        display: block;
+    }
+
+    .checkout-table__about-item{
+        flex-wrap: nowrap;
+    }
+
+    .checkout-table__about-item + .checkout-table__about-item{
+        margin-top: 10px;
+    }
+
+    .checkout-table__about-name{
+        font-size: 12px;
+        line-height: 1.2;
+        color: rgba(97, 97, 97, 0.4);
+        width: 85px;
+        margin-right: 10px;
+        flex-shrink: 0;
+        align-self: center;
+    }
+
+    .checkout-table__about-val{
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .checkout-table__about-val sup{
+        font-size: 63%;
+    }
+
+    .checkout-table table tfoot{
+        display: none;
+    }
+
+
+
+    /*------------
 		coments
 	------------*/
 
-	.page-top__box
-	{
-		display: flex;
-		align-items: center;
-		align-content: center;
-		flex-wrap: wrap;
-	}
+    .page-top__box
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
-	.back-link
-	{
-		display: flex;
-	}
+    .back-link
+    {
+        display: flex;
+    }
 
 	.aside-order 
 	{
 		width: 100%;
-		margin-left: 0;
 		margin-bottom: 30px;
 	}
 
 	.content__order 
 	{
 		width: 100%;
-		margin-left: 0;
 	}
 	
 

@@ -829,7 +829,7 @@
         width: 232px;
     }
 
-    .tooltip__text
+    .mini-modal__modal_text
     {
         width: 502px;
         padding-right: 18px;
@@ -872,15 +872,143 @@
     }
 
 
-	/*------------
+    .modal-service__wrap
+    {
+        max-width: 1155px;
+    }
+
+    .modal-service__coll
+    {
+        width: 236px;
+    }
+
+    .modal-service__colr
+    {
+        width: calc(100% - 266px);
+    }
+
+
+    .modal-images__images
+    {
+        width: calc(100% - 540px);
+        padding-left: 40px;
+    }
+
+    .modal-images__info
+    {
+        width: 540px;
+        padding-right: 44px;
+        padding-left: 72px;
+    }
+
+    .modal-images__title
+    {
+        font-size: 22px;
+    }
+
+
+    .checkout__reg{
+        padding: 28px 30px;
+    }
+
+    .checkout__reg-desc{
+        margin-top: 1px;
+    }
+
+    .checkout__coll {
+        width: calc(100% - 342px);
+    }
+
+    .checkout-table__bg{
+        padding-top: 20px;
+    }
+
+    .checkout-table table th{
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .checkout-table table td{
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .checkout-table table tr td.checkout-table__img{
+        width: 55px;
+    }
+
+    .radio-delivery__icon{
+        width: 40px;
+        height: 40px;
+    }
+
+    .radio-delivery__name{
+        font-size: 13px;
+    }
+
+    .checkout-pickup__colr {
+        width: 47.74%;
+    }
+
+    .checkout-pickup__coll {
+        padding: 21px 20px 21px 24px;
+    }
+
+    .radio-payment__name{
+        font-size: 13px;
+    }
+
+    .radio-payment__wrap{
+        padding-right: 15px;
+    }
+
+    .radio-payment__icons{
+        max-width: 48px;
+    }
+
+
+    .radio-deliverys{
+        margin: 0 0 0 -16px;
+    }
+
+    .radio-delivery {
+        width: calc(100% / 4 - 16px);
+        margin: 16px 0 0 16px;
+    }
+
+    .radio-payment {
+        width: calc(100% / 2 - 8px);
+        margin-top: 16px;
+    }
+
+    .checkout-table__abs{
+        padding-left: 60px;
+    }
+
+
+    .checkout__colr{
+        width: 320px;
+    }
+
+    .checkout-total{
+        padding: 20px 15px;
+    }
+
+    .form-promo{
+        padding-top: 17px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+
+    /*------------
 		coments
 	------------*/
 
-	.section-gray
-	{
-		padding-bottom: 60px;
-	}
-	
+    .section-gray
+    {
+        padding-bottom: 60px;
+    }
 
     .footer__colr
     {
