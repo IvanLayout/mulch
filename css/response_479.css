@@ -1010,6 +1010,47 @@
         font-size: 14px;
     }
 
+    .checkout-table__total-item
+    {
+        flex-wrap: nowrap;
+
+        width: 100%;
+    }
+
+    .checkout-table__total-name
+    {
+        flex-shrink: 0;
+
+        width: 148px;
+        margin-right: 16px;
+    }
+
+    .checkout-table__total-val
+    {
+        margin-left: 0;
+    }
+
+    .checkout__marg
+    {
+        margin-top: 0;
+    }
+
+    .delivery__form-date
+    {
+        max-width: none;
+    }
+
+    .delivery__form-flex
+    {
+        flex-wrap: wrap;
+    }
+
+    .delivery__add
+    {
+        width: auto;
+        margin: 10px 0 0;
+    }
+
 
     /*------------
 		coments

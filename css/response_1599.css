@@ -907,97 +907,153 @@
     }
 
 
-    .checkout__reg{
+    .checkout__reg
+    {
         padding: 28px 30px;
     }
 
-    .checkout__reg-desc{
+    .checkout__reg-desc
+    {
         margin-top: 1px;
     }
 
-    .checkout__coll {
+    .checkout__coll
+    {
         width: calc(100% - 342px);
     }
 
-    .checkout-table__bg{
+    .checkout-table__bg
+    {
         padding-top: 20px;
     }
 
-    .checkout-table table th{
-        padding-left: 4px;
+    .checkout-table table th
+    {
         padding-right: 4px;
+        padding-left: 4px;
     }
 
-    .checkout-table table td{
-        padding-left: 4px;
+    .checkout-table table td
+    {
         padding-right: 4px;
+        padding-left: 4px;
     }
 
-    .checkout-table table tr td.checkout-table__img{
+    .checkout-table table tr td.checkout-table__img
+    {
         width: 55px;
     }
 
-    .radio-delivery__icon{
+    .radio-delivery__icon
+    {
         width: 40px;
         height: 40px;
     }
 
-    .radio-delivery__name{
+    .radio-delivery__name
+    {
         font-size: 13px;
     }
 
-    .checkout-pickup__colr {
+    .checkout-pickup__colr
+    {
         width: 47.74%;
     }
 
-    .checkout-pickup__coll {
+    .checkout-pickup__coll
+    {
         padding: 21px 20px 21px 24px;
     }
 
-    .radio-payment__name{
+    .radio-payment__name
+    {
         font-size: 13px;
     }
 
-    .radio-payment__wrap{
+    .radio-payment__wrap
+    {
         padding-right: 15px;
     }
 
-    .radio-payment__icons{
+    .radio-payment__icons
+    {
         max-width: 48px;
     }
 
 
-    .radio-deliverys{
+    .radio-deliverys
+    {
         margin: 0 0 0 -16px;
     }
 
-    .radio-delivery {
+    .radio-delivery
+    {
         width: calc(100% / 4 - 16px);
         margin: 16px 0 0 16px;
     }
 
-    .radio-payment {
+    .radio-payment
+    {
         width: calc(100% / 2 - 8px);
         margin-top: 16px;
     }
 
-    .checkout-table__abs{
+    .checkout-table__abs
+    {
         padding-left: 60px;
     }
 
 
-    .checkout__colr{
+    .checkout__colr
+    {
         width: 320px;
     }
 
-    .checkout-total{
+    .checkout-total
+    {
         padding: 20px 15px;
     }
 
-    .form-promo{
+    .form-promo
+    {
         padding-top: 17px;
         padding-right: 15px;
         padding-left: 15px;
+    }
+
+    .transport-company__imp
+    {
+        font-size: 13px;
+    }
+
+    .transport-company__table th
+    {
+        font-size: 13px;
+    }
+
+    .transport-company__table td
+    {
+        font-size: 13px;
+    }
+
+    .transport-company__table-name
+    {
+        font-size: 15px;
+    }
+
+    .transport-company__btn
+    {
+        margin-top: 13px;
+    }
+
+    .transport-company__table-icon
+    {
+        width: 76px;
+    }
+
+    .transport-company .delivery__form
+    {
+        margin-top: 32px;
     }
 
 

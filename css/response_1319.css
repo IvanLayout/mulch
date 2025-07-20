@@ -2812,71 +2812,154 @@
     }
 
 
-    
-    .checkout__coll{
+
+    .checkout__coll
+    {
         width: 100%;
     }
 
-    .checkout-table table td{
+    .checkout-table table td
+    {
         font-size: 13px;
     }
 
-    .checkout__colr{
-        width: 100%;
+    .checkout__colr
+    {
         display: flex;
         flex-direction: column;
-    }
 
-    .checkout-total{
         width: 100%;
-        order: 2;
-        margin-top: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
-    .checkout-total__link{
+    .checkout-total
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .checkout-total__link
+    {
         text-align: center;
     }
 
-    .form-promo{
+    .form-promo
+    {
         width: 100%;
-        padding-left: 30px;
         padding-right: 30px;
+        padding-left: 30px;
     }
 
-    .checkout-total__top{
+    .checkout-total__top
+    {
         justify-content: flex-start;
     }
 
-    .checkout-total__title{
+    .checkout-total__title
+    {
         font-size: 18px;
     }
 
-    .checkout-total__number{
+    .checkout-total__number
+    {
         font-size: 13px;
+
         margin-left: 10px;
     }
 
-    .form-promo__title{
+    .form-promo__title
+    {
         font-size: 18px;
     }
 
-    .checkout-payments__title{
+    .checkout-payments__title
+    {
         font-size: 18px;
     }
 
-    .checkout-delivery__title{
+    .checkout-delivery__title
+    {
         font-size: 18px;
     }
 
-    .btn-green.checkout-total__btn{
+    .btn-green.checkout-total__btn
+    {
         line-height: 50px;
+
         margin-top: 16px;
     }
 
-    .checkout-total__link{
+    .checkout-total__link
+    {
         font-size: 14px;
+    }
+
+
+    .delivery__form-title
+    {
+        font-size: 14px;
+    }
+
+    .delivery__form * + .delivery__form-title
+    {
+        margin-top: 10px;
+    }
+
+    .delivery__info .tooltip__icon:before
+    {
+        top: 0;
+    }
+
+    .delivery__info
+    {
+        margin-bottom: 20px;
+    }
+
+    .select-wrap .nice-select .current
+    {
+        font-size: 13px;
+    }
+
+    .modal-point__title
+    {
+        font-size: 22px;
+    }
+
+    .modal-point__subtitle
+    {
+        font-size: 18px;
+
+        margin-top: 16px;
+    }
+
+    .modal-point .modal-search
+    {
+        margin-top: 12px;
+    }
+
+    .modal-point__items
+    {
+        height: 403px;
+        margin-top: 20px;
+    }
+
+    .modal-point__coll
+    {
+        width: calc(44.96% - 20px);
+    }
+
+    .transport-company .delivery__form-title
+    {
+        font-size: 18px;
+    }
+
+
+    .transport-company__table
+    {
+        margin-top: 20px;
     }
 
 

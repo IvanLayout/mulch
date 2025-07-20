@@ -683,8 +683,6 @@ $(() => {
 	})
 
 	$('body').on('click', '.product-info__calculator', function (e) {
-		e.preventDefault()
-
 		if ( $(e.target).hasClass('product-info__calculator') ) {
 			$('.product-info__calculator').removeClass('_active')
 			$('body').removeClass('_lock-calculator')
@@ -707,8 +705,6 @@ $(() => {
 	})
 
 	$('body').on('click', '.modal-service', function (e) {
-		e.preventDefault()
-
 		if ( $(e.target).hasClass('modal-service') ) {
 			$('.modal-service').removeClass('_active')
 			$('body').removeClass('_lock-add')
@@ -770,10 +766,11 @@ $(() => {
 	})
 
 
-	$('body').on('click', '.checkout-open-modal', function (e) {
+	$('body').on('click', '.checkout-open-modal_js', function (e) {
 		e.preventDefault()
 
-		$('.checkout-modal').addClass('_active')
+		let modal = $(this).data('content')
+		$(modal).addClass('_active')
 		$('body').addClass('_lock-checkout')
 	})
 
@@ -785,11 +782,79 @@ $(() => {
 	})
 
 	$('body').on('click', '.checkout-modal', function (e) {
-		e.preventDefault()
-
 		if ( $(e.target).hasClass('checkout-modal') ) {
 			$('.checkout-modal').removeClass('_active')
 			$('body').removeClass('_lock-checkout')
+		}
+	})
+	
+
+	$('body').on('click', '.checkout-table__open', function (e) {
+		e.preventDefault()
+
+		if ( $(this).closest('.checkout-table').hasClass('_active') ) {
+			$(this).closest('.checkout-table').removeClass('_active')
+		} else {
+			$(this).closest('.checkout-table').addClass('_active')
+		}
+	})
+
+
+	$('body').on('click', '.radio-delivery__label_js', function (e) {
+		$('.checkout-modal__item').removeClass('_show')
+		$('.delivery-btn').removeClass('_show')
+
+		let deliveryItem = $(this).data('delivery')
+		$(deliveryItem).addClass('_show')
+
+		let deliveryBtn = $(this).data('delivery-btn')
+		$(deliveryBtn).addClass('_show')
+	})
+
+
+	$('body').on('change', '.checkbox-slider__label_recipient input[type="checkbox"]', function () {
+		const checkbox = $(this)
+		const recipientContainer = checkbox.closest('.checkout-recipient')
+		const inputField = recipientContainer.find('.checkout-recipient__input')
+
+		inputField.prop("disabled", !checkbox.is(':checked'))
+	})
+
+
+	$('body').on('click', '.modal-js', function (e) {
+		e.preventDefault()
+
+		let modal = $(this).data('content')
+		$(modal).addClass('_active')
+		$('body').addClass('_lock-modal')
+	})
+
+	$('body').on('click', '.modal-point__close', function (e) {
+		e.preventDefault()
+
+		$('.modal-point').removeClass('_active')
+		$('body').removeClass('_lock-modal')
+	})
+
+	$('body').on('click', '.modal-point', function (e) {
+		if ( $(e.target).hasClass('modal-point') ) {
+			$('.modal-point').removeClass('_active')
+			$('body').removeClass('_lock-modal')
+		}
+	})
+
+	$('body').on('change', '.radio-dot__label input[type="radio"]', function () {
+		const radio = $(this)
+
+		$(this).closest('.transport-company').find('._show').removeClass('_show')
+
+		let transportAdres = $(this).closest('.radio-dot__label').data('content')
+		if (transportAdres && $(transportAdres).length > 0) {
+			$(transportAdres).addClass('_show')
+		}
+
+		if (radio.is(':checked') && $(this).closest('tr').find('.transport-company__btn').length > 0 ){
+			$(this).closest('tr').find('.transport-company__btn').addClass('_show')
 		}
 	})
 })
