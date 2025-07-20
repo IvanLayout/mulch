@@ -14623,6 +14623,14 @@ input[type=checkbox]:checked + .checkbox-btn__text
     }
 }
 
+.checkout-open-modal{
+    display: none;
+}
+
+.checkout-modal__close{
+    display: none;
+}
+
 .form-promo
 {
     margin-top: 20px;
@@ -17945,6 +17953,11 @@ input[type=radio]:checked + .radio-delivery__wrap
     .radio-payment__wrap::before
     {
         left: 14px;
+    }
+
+    .radio-delivery__icon {
+        width: 45px;
+        height: 45px;
     }
 
     .radio-payment__name

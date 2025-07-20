@@ -3731,114 +3731,157 @@
 										</div>
 									</div>
 
-									<div class=" _marg">
-										<button class="checkout-open-modal">
-											<div class="checkout-open-modal__name">Город</div>
-											<div class="checkout-open-modal__desc">Выберите город</div>
+									<div class="checkout__marg _marg">
+										<button data-content="#modal-addres" class="checkout-open-modal modal-btn">
+											<span class="checkout-open-modal__name">Город</span>
+											<span class="checkout-open-modal__desc">Выберите город</span>
+
+											<svg>
+												<use xlink:href="images/sprite.svg#arrow1"></use>
+											</svg>
 										</button>
 
 										<div class="checkout-delivery">
 											<div class="checkout-delivery__bg">
-												<div class="checkout-delivery__top _flex">
-													<div class="checkout-delivery__title">Выберите способ оплаты</div>
+												<button class="checkout-open-modal">
+													<span class="checkout-open-modal__name">Где и как вы хотите <br>получить заказ?</span>
+													<span class="checkout-open-modal__desc">Заполните данные</span>
+		
+													<svg>
+														<use xlink:href="images/sprite.svg#arrow1"></use>
+													</svg>
+												</button>
 
-													<div class="checkout-delivery__city">
-														Ваш город <button type="button" data-content="#modal-addres" class="checkout-delivery__city-btn modal-btn">Москва</button>
+												<div class="">
+													<div class="checkout-delivery__top _flex">
+														<div class="checkout-delivery__title">Выберите способ оплаты</div>
+	
+														<div class="checkout-delivery__city">
+															Ваш город <button type="button" data-content="#modal-addres" class="checkout-delivery__city-btn modal-btn">Москва</button>
+														</div>
+													</div>
+	
+													<div class="radio-deliverys _flex">
+														<div class="radio-delivery">
+															<label class="radio-delivery__label">
+																<input type="radio" name="radio_delivery" checked>
+	
+																<span class="radio-delivery__wrap">
+																	<div class="radio-delivery__icon">
+																		<svg>
+																			<use xlink:href="images/sprite.svg#delivery1"></use>
+																		</svg>
+																	</div>
+	
+																	<span class="radio-delivery__box">
+																		<div class="radio-delivery__name">Самовывоз</div>
+																		<div class="radio-delivery__desc">1 магазин</div>
+																	</span>
+																</span>
+															</label>
+														</div>
+														<div class="radio-delivery">
+															<label class="radio-delivery__label">
+																<input type="radio" name="radio_delivery">
+	
+																<span class="radio-delivery__wrap">
+																	<div class="radio-delivery__icon">
+																		<svg>
+																			<use xlink:href="images/sprite.svg#delivery2"></use>
+																		</svg>
+																	</div>
+	
+																	<span class="radio-delivery__box">
+																		<div class="radio-delivery__name">Курьером</div>
+																		<div class="radio-delivery__desc">Завтра, от 150 ₽</div>
+																	</span>
+																</span>
+															</label>
+														</div>
+														<div class="radio-delivery">
+															<label class="radio-delivery__label">
+																<input type="radio" name="radio_delivery">
+	
+																<span class="radio-delivery__wrap">
+																	<div class="radio-delivery__icon">
+																		<svg>
+																			<use xlink:href="images/sprite.svg#delivery3"></use>
+																		</svg>
+																	</div>
+	
+																	<span class="radio-delivery__box">
+																		<div class="radio-delivery__name">Транспортная компания</div>
+																		<div class="radio-delivery__desc">Рассчитать стоимость</div>
+																	</span>
+																</span>
+															</label>
+														</div>
+														<div class="radio-delivery">
+															<label class="radio-delivery__label">
+																<input type="radio" name="radio_delivery">
+	
+																<span class="radio-delivery__wrap">
+																	<div class="radio-delivery__icon">
+																		<svg>
+																			<use xlink:href="images/sprite.svg#delivery4"></use>
+																		</svg>
+																	</div>
+	
+																	<span class="radio-delivery__box">
+																		<div class="radio-delivery__name">ПВЗ по программе совместная&nbsp;покупка</div>
+																	</span>
+																</span>
+															</label>
+														</div>
 													</div>
 												</div>
 
-												<div class="radio-deliverys _flex">
-													<div class="radio-delivery">
-														<label class="radio-delivery__label">
-															<input type="radio" name="radio_delivery" checked>
+												<div class="">
+													<button class="checkout-open-modal">
+														<span class="checkout-open-modal__name">Адрес пункта самовывоза</span>
+														<span class="checkout-open-modal__desc">Заполните данные</span>
+			
+														<svg>
+															<use xlink:href="images/sprite.svg#arrow1"></use>
+														</svg>
+													</button>
 
-															<span class="radio-delivery__wrap">
-																<div class="radio-delivery__icon">
-																	<svg>
-																		<use xlink:href="images/sprite.svg#delivery1"></use>
-																	</svg>
+													<div class="">
+														<div class="checkout-pickup _flex">
+															<div class="checkout-pickup__coll">
+																<div class="checkout-pickup__title">Выбранный пункт самовывоза</div>
+																<div class="checkout-pickup__adres">г. Москва, Варшавское шоссе, д. 125, корп. 3, офис 216</div>
+																<div class="checkout-pickup__info">В магазине 1 шт, забирайте сегодня</div>
+																<div class="checkout-pickup__time">Пн-Сб 08:00–20:00</div>
+															</div>
+															<div class="checkout-pickup__colr">
+																<div class="checkout-pickup__map">
+																	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3072e579884c5527c0799e32c3c786ef39f2d9d4ccae70adc53a600b4780e84d&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
 																</div>
-
-																<span class="radio-delivery__box">
-																	<div class="radio-delivery__name">Самовывоз</div>
-																	<div class="radio-delivery__desc">1 магазин</div>
-																</span>
-															</span>
-														</label>
-													</div>
-													<div class="radio-delivery">
-														<label class="radio-delivery__label">
-															<input type="radio" name="radio_delivery">
-
-															<span class="radio-delivery__wrap">
-																<div class="radio-delivery__icon">
-																	<svg>
-																		<use xlink:href="images/sprite.svg#delivery2"></use>
-																	</svg>
-																</div>
-
-																<span class="radio-delivery__box">
-																	<div class="radio-delivery__name">Курьером</div>
-																	<div class="radio-delivery__desc">Завтра, от 150 ₽</div>
-																</span>
-															</span>
-														</label>
-													</div>
-													<div class="radio-delivery">
-														<label class="radio-delivery__label">
-															<input type="radio" name="radio_delivery">
-
-															<span class="radio-delivery__wrap">
-																<div class="radio-delivery__icon">
-																	<svg>
-																		<use xlink:href="images/sprite.svg#delivery3"></use>
-																	</svg>
-																</div>
-
-																<span class="radio-delivery__box">
-																	<div class="radio-delivery__name">Транспортная компания</div>
-																	<div class="radio-delivery__desc">Рассчитать стоимость</div>
-																</span>
-															</span>
-														</label>
-													</div>
-													<div class="radio-delivery">
-														<label class="radio-delivery__label">
-															<input type="radio" name="radio_delivery">
-
-															<span class="radio-delivery__wrap">
-																<div class="radio-delivery__icon">
-																	<svg>
-																		<use xlink:href="images/sprite.svg#delivery4"></use>
-																	</svg>
-																</div>
-
-																<span class="radio-delivery__box">
-																	<div class="radio-delivery__name">ПВЗ по программе совместная&nbsp;покупка</div>
-																</span>
-															</span>
-														</label>
-													</div>
-												</div>
-
-												<div class="checkout-pickup _flex">
-													<div class="checkout-pickup__coll">
-														<div class="checkout-pickup__title">Выбранный пункт самовывоза</div>
-														<div class="checkout-pickup__adres">г. Москва, Варшавское шоссе, д. 125, корп. 3, офис 216</div>
-														<div class="checkout-pickup__info">В магазине 1 шт, забирайте сегодня</div>
-														<div class="checkout-pickup__time">Пн-Сб 08:00–20:00</div>
-													</div>
-													<div class="checkout-pickup__colr">
-														<div class="checkout-pickup__map">
-															<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3072e579884c5527c0799e32c3c786ef39f2d9d4ccae70adc53a600b4780e84d&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 
-										<div class="checkout-payments">
-											<div class="checkout-payments__bg">
+										<button class="checkout-open-modal">
+											<span class="checkout-open-modal__name">Выберите способ оплаты</span>
+											<span class="checkout-open-modal__desc">Заполните данные</span>
+
+											<svg>
+												<use xlink:href="images/sprite.svg#arrow1"></use>
+											</svg>
+										</button>
+
+										<div class="checkout-payments checkout-modal">
+											<div class="checkout-payments__bg checkout-modal__bg">
+												<button class="checkout-modal__close">
+													<svg>
+														<use xlink:href="images/sprite.svg#close"></use>
+													</svg>
+												</button>
+
 												<div class="checkout-payments__title">Выберите способ оплаты</div>
 
 												<div class="radio-payments _flex">
@@ -3848,32 +3891,32 @@
 
 															<span class="radio-payment__wrap">
 																<span class="radio-payment__box">
-																	<div class="radio-payment__name">Наличными</div>
-																	<div class="radio-payment__desc">Оплата наличными при получении заказа</div>
+																	<span class="radio-payment__name">Наличными</span>
+																	<span class="radio-payment__desc">Оплата наличными при получении заказа</span>
 																</span>
 															</span>
 														</label>
 													</div>
 													<div class="radio-payment">
 														<label class="radio-payment__label">
-															<input type="radio" name="radio_payment" checked>
+															<input type="radio" name="radio_payment">
 
 															<span class="radio-payment__wrap">
 																<span class="radio-payment__box">
-																	<div class="radio-payment__name">Безналичным платежом на основании счета</div>
-																	<div class="radio-payment__desc">После проверки заказа, вам будет выставлен счёт. Произвести оплату вы можете в любом ближайшем к вам банке</div>
+																	<span class="radio-payment__name">Безналичным платежом на основании счета</span>
+																	<span class="radio-payment__desc">После проверки заказа, вам будет выставлен счёт. Произвести оплату вы можете в любом ближайшем к вам банке</span>
 																</span>
 															</span>
 														</label>
 													</div>
 													<div class="radio-payment">
 														<label class="radio-payment__label">
-															<input type="radio" name="radio_payment" checked>
+															<input type="radio" name="radio_payment">
 
 															<span class="radio-payment__wrap">
 																<span class="radio-payment__box">
-																	<div class="radio-payment__name">СБП</div>
-																	<div class="radio-payment__desc">Оплата по QR-коду через Систему Быстрых Платежей.</div>
+																	<span class="radio-payment__name">СБП</span>
+																	<span class="radio-payment__desc">Оплата по QR-коду через Систему Быстрых Платежей.</span>
 																</span>
 
 																<span class="radio-payment__icon">
@@ -3884,12 +3927,12 @@
 													</div>
 													<div class="radio-payment">
 														<label class="radio-payment__label">
-															<input type="radio" name="radio_payment" checked>
+															<input type="radio" name="radio_payment">
 
 															<span class="radio-payment__wrap">
 																<span class="radio-payment__box">
-																	<div class="radio-payment__name">Онлайн Visa, Mastercard, Maestro, Мир</div>
-																	<div class="radio-payment__desc">Онлайн оплата картами Visa, Mastercard, Maestro, Мир</div>
+																	<span class="radio-payment__name">Онлайн Visa, Mastercard, Maestro, Мир</span>
+																	<span class="radio-payment__desc">Онлайн оплата картами Visa, Mastercard, Maestro, Мир</span>
 																</span>
 																
 																<span class="radio-payment__icons _flex">
@@ -3908,12 +3951,12 @@
 													</div>
 													<div class="radio-payment">
 														<label class="radio-payment__label">
-															<input type="radio" name="radio_payment" checked>
+															<input type="radio" name="radio_payment">
 
 															<span class="radio-payment__wrap">
 																<span class="radio-payment__box">
-																	<div class="radio-payment__name">В офисе Visa, Mastercard, Maestro, Мир</div>
-																	<div class="radio-payment__desc">В офисе оплата картами Visa, Mastercard, Maestro, Мир</div>
+																	<span class="radio-payment__name">В офисе Visa, Mastercard, Maestro, Мир</span>
+																	<span class="radio-payment__desc">В офисе оплата картами Visa, Mastercard, Maestro, Мир</span>
 																</span>
 
 																<span class="radio-payment__icons _flex">
