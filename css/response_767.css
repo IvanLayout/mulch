@@ -4993,6 +4993,11 @@
         width: 100%;
     }
 
+    .lk-user__items-title
+    {
+        font-size: 14px;
+    }
+
 
     /*------------
 		coments
