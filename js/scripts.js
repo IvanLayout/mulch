@@ -1394,6 +1394,14 @@ $(() => {
 	if ($('.rating-js').length){
 		$('input.wow').rating()
 	}
+
+
+	if ( $('#datepicker').length ) {
+		new AirDatepicker('#datepicker', {
+			isMobile: true,
+			autoClose: true,
+		})
+	}
 });
 
 
@@ -1558,6 +1566,20 @@ $(window).on('load', () => {
 		})
 	}
 
+	if ( $(window).width() < 768 && !$('.lk-user__item-imp').hasClass('mob') ) {	
+		$('.lk-user').removeClass('pc')
+		$('.lk-user').addClass('mob')
+
+		$('.lk-user__item').each(function() {
+			let thisEl = $(this)
+			$(this).find('.lk-user__item-imp').each(function() {
+				let parent = thisEl.find('.lk-user__item-info')
+
+				$(this).appendTo(parent)
+			})
+		})
+	}
+
 	if ( $('#dropzone-photo').length ) {
 		$('#dropzone-photo').dropzone({
 			url: "/file/post",
@@ -1686,6 +1708,35 @@ $(window).on('resize', () => {
 			let thisEl = $(this)
 			$(this).find('.amount').each(function() {
 				let parent = thisEl.closest('tr').find('.checkout-table__amount')
+
+				$(this).appendTo(parent)
+			})
+		})
+	}
+
+
+	if ( $(window).width() < 768 && !$('.lk-user__item-imp').hasClass('mob') ) {	
+		$('.lk-user').removeClass('pc')
+		$('.lk-user').addClass('mob')
+
+		$('.lk-user__item').each(function() {
+			let thisEl = $(this)
+			$(this).find('.lk-user__item-imp').each(function() {
+				let parent = thisEl.find('.lk-user__item-info')
+
+				$(this).appendTo(parent)
+			})
+		})
+	}
+
+	if ( $(window).width() > 767 && !$('.lk-user__item-imp').hasClass('pc') ) {
+		$('.lk-user').removeClass('mob')
+		$('.lk-user').addClass('pc')
+
+		$('.lk-user__item').each(function() {
+			let thisEl = $(this)
+			$(this).find('.lk-user__item-imp').each(function() {
+				let parent = thisEl.find('.lk-user__item-wrap')
 
 				$(this).appendTo(parent)
 			})

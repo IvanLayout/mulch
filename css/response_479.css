@@ -1056,6 +1056,18 @@
         margin-top: 0;
     }
 
+    .lk-user__form-btns .lk-user__form-submit
+    {
+        font-size: 14px;
+    }
+
+    .lk-user
+    {
+        margin-bottom: -40px;
+        padding-bottom: 40px;
+    }
+
+
 
     /*------------
 		coments

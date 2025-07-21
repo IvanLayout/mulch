@@ -31,6 +31,7 @@
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/ion.rangeSlider.css">
 		<link rel="stylesheet" href="css/dropzone.min.css">
+		<link rel="stylesheet" href="css/air-datepicker.css">
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1599.css" media="(max-width: 1599px)">
@@ -3236,18 +3237,17 @@
 				<!-- End Шапка -->
 
 				<section class="section-gray">
-					<section class="page-top page-top_bord">
+					<section class="page-top page-top_bord page-top_bord_white">
 						<div class="cont">
 							<div class="page-top__box">
 								<a href="/" class="back-link">
 									<img data-src="images/ic_arrow.svg" src="images/img_plug.png" alt="" class="lazyload back-link__img">
 								</a>
 
-								<h1 class="page-title">Мои заказы</h1>
+								<h1 class="page-title">Моя учётная запись</h1>
 							</div>
 						</div>
 					</section>
-
 
 					<section class="content">
 						<div class="cont">
@@ -3331,29 +3331,310 @@
 								</aside>
 
 								<div class="content__order">
-									<div class="tabs-container">
-										<div class="tabs tabs_marg _flex">
-											<button type="button" data-content="#tab1" data-level="level1" class="tabs__text tabs__button_js _active"><span>Активные</span> <sup>0</sup></button>
-											<button type="button" data-content="#tab2" data-level="level1" class="tabs__text tabs__button_js"><span>Выполненные</span> <sup>12</sup></button>
-										</div>
+									<div class="lk-user pc">
+										<a href="/" class="lk-user__photo">
+											<span>ККК</span>
+										</a>
 
-										<div class="tab-content level1 _active" id="tab1">
-											<div class="empty-section">
-												<div class="empty-section__bord">
-													<div class="empty-section__icon">
-														<img data-src="images/ic_page_order.svg" src="images/img_plug.png" alt="" class="lazyload">
+										<div class="lk-user__items">
+											<div class="lk-user__item">
+												<div class="lk-user__item-line _flex">
+													<div class="lk-user__item-wrap">
+														<div class="lk-user__item-title">ФИО</div>
+
+														<div class="lk-user__item-flex _flex">
+															<div class="lk-user__item-name">Константин Константинович Константинопольский</div>
+															<button type="button" class="lk-user__item-edit">
+																<svg>
+																	<use xlink:href="images/sprite.svg#edit"></use>
+																</svg>
+															</button>
+														</div>
 													</div>
-						
-													<div class="empty-section__text">У вас пока <br class="empty-section__br">нет активных заказов</div>
-						
-													<div class="empty-section__desc">
-														<span>Когда появятся, будут отображаться здесь</span>
+												</div>
+
+												<form action="" class="form lk-user__form lk-user__form_small">
+													<div class="lk-user__form-flex _flex">
+														<div class="form__line form__line_small">
+															<div class="form__field">
+																<input type="mail" value="" class="form__input form__input-anim">
+
+																<label class="form__label">Имя</label>
+															</div>
+														</div>
+														<div class="form__line form__line_small">
+															<div class="form__field">
+																<input type="mail" value="" class="form__input form__input-anim">
+
+																<label class="form__label">Отчество</label>
+															</div>
+														</div>
+														<div class="form__line form__line_small">
+															<div class="form__field">
+																<input type="mail" value="" class="form__input form__input-anim">
+
+																<label class="form__label">Фамилия</label>
+															</div>
+														</div>
+														<div class="lk-user__form-btns _flex">
+															<button type="submit" class="btn-green lk-user__form-submit">Сохранить</button>
+															<button type="button" class="lk-user__form-cancel">Отменить</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="lk-user__item">
+												<div class="lk-user__item-line _flex">
+													<div class="lk-user__item-wrap">
+														<div class="lk-user__item-title">ФИО</div>
+
+														<form action="" class="form lk-user__gender">
+															<div class="lk-user__gender-radios _flex">
+																<div class="radio">
+																	<label class="radio__label">
+																		<input type="radio" name="radio_gender" checked>
+
+																		<span class="radio__text">Мужчина</span>
+																	</label>
+																</div>
+																<div class="radio">
+																	<label class="radio__label">
+																		<input type="radio" name="radio_gender">
+
+																		<span class="radio__text">Женщина</span>
+																	</label>
+																</div>
+															</div>
+														</form>
 													</div>
 												</div>
 											</div>
+											<div class="lk-user__item">
+												<div class="lk-user__item-line _flex">
+													<div class="lk-user__item-wrap">
+														<div class="lk-user__item-title">Телефон</div>
+
+														<div class="lk-user__item-flex _flex">
+															<div class="lk-user__item-name">+7 963 923-45-88</div>
+															<button type="button" class="lk-user__item-edit">
+																<svg>
+																	<use xlink:href="images/sprite.svg#edit"></use>
+																</svg>
+															</button>
+														</div>
+
+														<div class="lk-user__item-imp">
+															<span>Мы отправили код на ваш номер телефона. Получить новый код можно через 00:58</span>
+														</div>
+													</div>
+
+													<div class="lk-user__item-info _flex">
+														<div class="lk-user__item-noconfirmed">
+															Номер не подтверждён
+														</div>
+
+														<div class="confirm-box">
+															<button type="button" class="confirm-box__btn">Подтвердить</button>
+
+															<form action="" class="form confirm-box__form">
+																<div class="form__line">
+																	<div class="form__field">
+																		<input type="mail" value="" class="form__input form__input-anim">
+
+																		<label class="form__label">Введите код из СМС</label>
+																	</div>
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+
+												<form action="" class="form lk-user__form">
+													<div class="lk-user__form-flex _flex">
+														<div class="form__line">
+															<div class="form__field">
+																<input type="mail" value="" class="form__input form__input-anim">
+
+																<label class="form__label">Телефон</label>
+															</div>
+														</div>
+														<div class="lk-user__form-btns _flex">
+															<button type="submit" class="btn-green lk-user__form-submit">Сохранить</button>
+															<button type="button" class="lk-user__form-cancel">Отменить</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="lk-user__item">
+												<div class="lk-user__item-line _flex">
+													<div class="lk-user__item-wrap">
+														<div class="lk-user__item-title">Email</div>
+
+														<div class="lk-user__item-flex _flex">
+															<div class="lk-user__item-name">infomail123@gmail.com</div>
+															<button type="button" class="lk-user__item-edit">
+																<svg>
+																	<use xlink:href="images/sprite.svg#edit"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+
+													<div class="lk-user__item-info _flex">
+														<div class="lk-user__item-confirmed">
+															Email подтверждён
+														</div>
+													</div>
+												</div>
+
+												<form action="" class="form lk-user__form">
+													<div class="lk-user__form-flex _flex">
+														<div class="form__line">
+															<div class="form__field">
+																<input type="mail" value="" class="form__input form__input-anim">
+
+																<label class="form__label">Email</label>
+															</div>
+														</div>
+														<div class="lk-user__form-btns _flex">
+															<button type="submit" class="btn-green lk-user__form-submit">Сохранить</button>
+															<button type="button" class="lk-user__form-cancel">Отменить</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="lk-user__item">
+												<div class="lk-user__item-line _flex">
+													<div class="lk-user__item-wrap">
+														<div class="lk-user__item-title">Дата рождения</div>
+
+														<div class="lk-user__item-flex _flex">
+															<div class="lk-user__item-name">03.08.1999</div>
+															<button type="button" class="lk-user__item-edit">
+																<svg>
+																	<use xlink:href="images/sprite.svg#edit"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+
+												<form action="" class="form lk-user__form">
+													<div class="lk-user__form-flex _flex">
+														<div class="form__line">
+															<div class="form__field">
+																<input type="mail" value="" id="datepicker" class="form__input form__input-anim datepicker-input">
+
+																<label class="form__label">Дата рождения</label>
+															</div>
+														</div>
+														<div class="lk-user__form-btns _flex">
+															<button type="submit" class="btn-green lk-user__form-submit">Сохранить</button>
+															<button type="button" class="lk-user__form-cancel">Отменить</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="lk-user__item">
+												<div class="lk-user__item-line _flex">
+													<div class="lk-user__item-wrap">
+														<div class="lk-user__item-title">Город</div>
+
+														<div class="lk-user__item-flex _flex">
+															<div class="lk-user__item-name">Москва</div>
+															<button type="button" class="lk-user__item-edit">
+																<svg>
+																	<use xlink:href="images/sprite.svg#edit"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+
+												<form action="" class="form lk-user__form">
+													<div class="lk-user__form-flex _flex">
+														<div class="form__line">
+															<div class="form__field">
+																<input type="mail" value="" class="form__input form__input-anim">
+
+																<label class="form__label">Город</label>
+															</div>
+														</div>
+														<div class="lk-user__form-btns _flex">
+															<button type="submit" class="btn-green lk-user__form-submit">Сохранить</button>
+															<button type="button" class="lk-user__form-cancel">Отменить</button>
+														</div>
+													</div>
+												</form>
+											</div>
 										</div>
 
-										<div class="tab-content level1" id="tab2"></div>
+										<div class="lk-user__password">
+											<button type="button" class="lk-user__password-btn">
+												<span>Изменить пароль</span>
+											</button>
+
+											<form action="" class="form form-password">
+												<div class="form-password__title">Изменить пароль</div>
+
+												<div class="form__line">
+													<div class="form__field">
+														<input type="password" value="" class="form__input form__input-anim form__input-password">
+
+														<label class="form__label">Введите текущий пароль</label>
+
+														<button class="password-eye">
+															<svg>
+																<use xlink:href="images/sprite.svg#eye2"></use>
+															</svg>
+															<svg>
+																<use xlink:href="images/sprite.svg#eye2_on"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="form__forgot">
+													<a href="/">Восстановить пароль</a>
+												</div>
+												<div class="form__line">
+													<div class="form__field">
+														<input type="text" value="" class="form__input form__input-anim form__input-password">
+
+														<label class="form__label">Новый пароль</label>
+
+														<button class="password-eye _active">
+															<svg>
+																<use xlink:href="images/sprite.svg#eye2"></use>
+															</svg>
+															<svg>
+																<use xlink:href="images/sprite.svg#eye2_on"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="form__line">
+													<div class="form__field">
+														<input type="text" value="" class="form__input form__input-anim form__input-password">
+
+														<label class="form__label">Подтвердите пароль</label>
+
+														<button class="password-eye _active">
+															<svg>
+																<use xlink:href="images/sprite.svg#eye2"></use>
+															</svg>
+															<svg>
+																<use xlink:href="images/sprite.svg#eye2_on"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+
+												<div class="form-password__bot _flex">
+													<button type="submit" class="btn-green form-password__submit">Сохранить</button>
+													<button type="button" class="form-password__cancel">Отменить</button>
+												</div>
+											</form>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -3362,133 +3643,7 @@
 				</section>
 
 
-				<section class="products-small _marg">
-					<div class="cont">
-						<div class="section-top section-top_marg _flex">
-							<div class="main-title">Вы смотрели</div>
-						</div>
-
-						<div class="products-small__slider swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide product-small">
-									<a href="/" class="product-small__thumb">
-										<span class="product-small__img">
-											<span>
-												<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</span>
-									</a>
-
-									<div class="product-small__wrap">
-										<div class="product-small__name">
-											<a href="/">Кора сосны Люкс, фракция <span>1–3 см</span></a>
-										</div>
-
-										<div class="product-small__box _flex">
-											<div class="product-small__review _flex">
-												<div class="product-small__review-flex _flex">
-													<div class="product-small__review-star">
-														<img data-src="images/star.svg" src="images/img_plug.png" alt="" class="lazyload">
-													</div>
-
-													<div class="product-small__review-number">4.8</div>
-												</div>
-											</div>
-											<div class="product-small__availability">&gt; 1000 шт.</div>
-										</div>
-
-										<div class="product-small__prices _flex">
-											<div class="product-small__price">2 600 000 ₽</div>
-											<div class="product-small__oldprice">2 600 000 ₽</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide product-small">
-									<a href="/" class="product-small__thumb">
-										<span class="product-small__img">
-											<span>
-												<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</span>
-									</a>
-
-									<div class="product-small__wrap">
-										<div class="product-small__name">
-											<a href="/">Кора сосны Люкс, фракция <span>1–3 см</span></a>
-										</div>
-
-										<div class="product-small__box _flex">
-											<div class="product-small__review _flex">
-												<div class="product-small__review-flex _flex">
-													<div class="product-small__review-star">
-														<img data-src="images/star.svg" src="images/img_plug.png" alt="" class="lazyload">
-													</div>
-
-													<div class="product-small__review-number">4.8</div>
-												</div>
-											</div>
-											<div class="product-small__availability">&gt; 1000 шт.</div>
-										</div>
-
-										<div class="product-small__prices _flex">
-											<div class="product-small__price">2 600 000 ₽</div>
-											<div class="product-small__oldprice">2 600 000 ₽</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide product-small">
-									<a href="/" class="product-small__thumb">
-										<span class="product-small__img">
-											<span>
-												<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</span>
-									</a>
-
-									<div class="product-small__wrap">
-										<div class="product-small__name">
-											<a href="/">Кора сосны Люкс, фракция <span>1–3 см</span></a>
-										</div>
-
-										<div class="product-small__box _flex">
-											<div class="product-small__review _flex">
-												<div class="product-small__review-flex _flex">
-													<div class="product-small__review-star">
-														<img data-src="images/star.svg" src="images/img_plug.png" alt="" class="lazyload">
-													</div>
-
-													<div class="product-small__review-number">4.8</div>
-												</div>
-											</div>
-											<div class="product-small__availability">&gt; 1000 шт.</div>
-										</div>
-
-										<div class="product-small__prices _flex">
-											<div class="product-small__price">2 600 000 ₽</div>
-											<div class="product-small__oldprice">2 600 000 ₽</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<button type="button" class="slider-button-prev">
-								<svg>
-									<use xlink:href="images/sprite.svg#arrow2"></use>
-								</svg>
-							</button>
-							<button type="button" class="slider-button-next">
-								<svg>
-									<use xlink:href="images/sprite.svg#arrow2"></use>
-								</svg>
-							</button>
-
-							<div class="swiper-scrollbar"></div>
-						</div>
-					</div>
-				</section>
-
-
-				<section class="products _marg">
+				<section class="products products_nomob _marg">
 					<div class="cont">
 						<div class="section-top section-top_marg _flex">
 							<div class="main-title">Вам может понравится</div>
@@ -4360,7 +4515,7 @@
 			</div>
 
 
-			<footer class="footer _marg">
+			<footer class="footer footer_nomarg _marg">
 				<div class="footer__top">
 					<div class="cont _flex">
 						<div class="footer__coll">
@@ -4750,6 +4905,7 @@
 		<script src="js/ion.rangeSlider.min.js"></script>
 		<script src="js/jquery.rating.pack.js"></script>
 		<script src="js/dropzone.min.js"></script>
+		<script src="js/air-datepicker.js"></script>
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>

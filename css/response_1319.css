@@ -3116,6 +3116,60 @@
     }
 
 
+    .lk-user__items
+    {
+        margin-top: 30px;
+    }
+
+    .lk-user__form_small
+    {
+        width: 295px;
+    }
+
+    .lk-user__form .form__line_small
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .lk-user__item-info
+    {
+        width: 255px;
+    }
+
+    .confirm-box
+    {
+        margin-left: 10px;
+    }
+
+    .confirm-box._show
+    {
+        width: 100%;
+        margin: 9px 0 0 0;
+    }
+
+    .confirm-box__form
+    {
+        width: 100%;
+    }
+
+    .lk-user__form-cancel
+    {
+        font-size: 14px;
+    }
+
+    .lk-user__password-btn
+    {
+        font-size: 14px;
+    }
+
+    .form-password
+    {
+        width: 283px;
+    }
+
+
     /*------------
 		coments
 	------------*/

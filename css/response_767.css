@@ -4954,15 +4954,49 @@
         width: 100%;
     }
 
+    .lk-user__form-btns .lk-user__form-submit
+    {
+        width: 160px;
+    }
+
+    .lk-user__form_small
+    {
+        width: 100%;
+    }
+
+    .lk-user__form .form__line
+    {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+    .lk-user__item-info
+    {
+        width: 100%;
+        min-height: 1px;
+        margin: 5px 0 0;
+    }
+
+    .lk-user__item-imp
+    {
+        width: 100%;
+    }
+
+    .lk-user__item-imp span
+    {
+        max-width: 334px;
+    }
+
+
+    .form-password
+    {
+        width: 100%;
+    }
+
 
     /*------------
 		coments
 	------------*/
-    .page-top__box .page-title
-    {
-        font-size: 20px;
-    }
-
     .page-top__box .page-title
     {
         font-size: 20px;

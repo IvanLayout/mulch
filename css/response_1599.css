@@ -1057,6 +1057,17 @@
     }
 
 
+    .lk-user__form .form__line_small
+    {
+        width: 204px;
+    }
+
+    .confirm-box__form
+    {
+        width: 290px;
+    }
+
+
     /*------------
 		coments
 	------------*/

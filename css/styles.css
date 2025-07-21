@@ -2611,6 +2611,13 @@ button
     transition: border .2s linear;
 }
 
+.form .form__input.datepicker-input
+{
+    background-image: url(../images/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 14px) 50%;
+}
+
 .form .form__input_white
 {
     color: #FFF;
@@ -16529,6 +16536,551 @@ input[type=radio]:checked + .radio-dot__dot
     display: none;
 }
 
+
+.lk-user
+{
+    padding: 30px;
+
+    background: #FFF;
+}
+
+.lk-user__photo
+{
+    position: relative;
+
+    color: rgba(0, 118, 87, .5);
+    font-size: 26px;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 83px;
+    height: 83px;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 50%;
+    background: #E5F1EE;
+}
+
+.lk-user__photo::before
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    background: rgba(8, 85, 66, .4) url(../images/camera2.svg) 50% no-repeat;
+
+    transition: background .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .lk-user__photo:hover::before
+    {
+        background-color: rgba(8, 85, 66, .6);
+    }
+}
+
+.lk-user__password
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.37;
+
+    margin-top: 30px;
+}
+
+.lk-user__password-btn
+{
+    position: relative;
+
+    color: #007657;
+
+    display: inline-block;
+
+    padding-left: 23px;
+
+    text-decoration: none;
+}
+
+.lk-user__password._show .lk-user__password-btn
+{
+    display: none;
+}
+
+.lk-user__password-btn::before
+{
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+
+    background: url(../images/lock.svg) 50% no-repeat;
+}
+
+.lk-user__password-btn span
+{
+    border-bottom: 1px dashed currentColor;
+
+    transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .lk-user__password-btn:hover span
+    {
+        border-color: transparent;
+    }
+}
+
+.lk-user__items
+{
+    margin-top: 50px;
+}
+
+.lk-user__item + .lk-user__item
+{
+    margin-top: 20px;
+}
+
+.lk-user__item-title
+{
+    font-size: 14px;
+    line-height: 10px;
+
+    margin-bottom: 9px;
+
+    opacity: .5;
+}
+
+.lk-user__item-flex
+{
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.lk-user__item-name
+{
+    overflow: hidden;
+
+    width: 292px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.lk-user__item-edit
+{
+    color: #616161;
+
+    flex-shrink: 0;
+
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .lk-user__item-edit:hover
+    {
+        color: #007657;
+    }
+}
+
+.lk-user__item-edit svg
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    fill: none;
+    stroke: currentColor;
+}
+
+.lk-user__item-info
+{
+    align-content: center;
+    align-items: center;
+
+    min-height: 41px;
+    margin-left: 61px;
+}
+
+.lk-user__item-confirmed
+{
+    position: relative;
+
+    color: #007657;
+    font-size: 12px;
+    line-height: 19px;
+
+    padding-left: 24px;
+}
+
+.lk-user__item-confirmed::before
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 19px;
+    height: 19px;
+
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    background: url(../images/ic_check.svg) 50%/10px auto no-repeat;
+}
+
+.lk-user__item-noconfirmed
+{
+    position: relative;
+
+    color: #CC1525;
+    font-size: 12px;
+    line-height: 19px;
+
+    padding-left: 24px;
+}
+
+.lk-user__item-noconfirmed::before
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 19px;
+    height: 19px;
+
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    background: url(../images/ic_imp2.svg) 50% no-repeat;
+}
+
+.confirm-box
+{
+    margin-left: 31px;
+}
+
+.confirm-box__btn
+{
+    color: #616161;
+    font-size: 12px;
+
+    display: block;
+
+    border-bottom: 1px dashed;
+
+    transition: .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .confirm-box__btn:hover
+    {
+        border-bottom-color: transparent;
+    }
+}
+
+.confirm-box._show .confirm-box__btn
+{
+    display: none;
+}
+
+.confirm-box__form
+{
+    display: none;
+
+    width: 349px;
+}
+
+.confirm-box._show .confirm-box__form
+{
+    display: block;
+}
+
+.confirm-box__form .form__line
+{
+    margin-bottom: 0;
+}
+
+.confirm-box__form .form__input
+{
+    height: 40px;
+}
+
+.confirm-box__form .form__label
+{
+    line-height: 40px;
+}
+
+.lk-user__gender-radios
+{
+    margin: -9px 0 0 -25px;
+}
+
+.lk-user__gender-radios .radio
+{
+    margin: 10px 0 0 25px;
+}
+
+.lk-user__gender-radios .radio__text
+{
+    font-size: 16px;
+}
+
+.lk-user__form
+{
+    display: none;
+}
+
+.lk-user__item._show .lk-user__form
+{
+    display: block;
+}
+
+.lk-user__item._show .lk-user__item-line
+{
+    display: none;
+}
+
+.lk-user__form .form__line
+{
+    width: 237px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.lk-user__form-btns
+{
+    align-content: center;
+    align-items: center;
+}
+
+.lk-user__form-btns .lk-user__form-submit
+{
+    line-height: 44px;
+
+    width: 126px;
+    padding: 0;
+}
+
+.lk-user__form-cancel
+{
+    color: #616161;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 44px;
+
+    margin-left: 15px;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .lk-user__form-cancel:hover
+    {
+        color: #282828;
+    }
+}
+
+.lk-user__item-imp
+{
+    position: relative;
+
+    color: rgba(40, 40, 40, .5);
+    font-size: 12px;
+
+    width: 334px;
+    margin-top: 10px;
+}
+
+.lk-user__item-imp span
+{
+    display: block;
+
+    padding-left: 19px;
+}
+
+.lk-user__item-imp span::before
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 14px;
+    height: 14px;
+
+    background: url(../images/ic_imp.svg) 50%/contain no-repeat;
+}
+
+.form-password
+{
+    width: 334px;
+}
+
+.lk-user__password .form-password
+{
+    display: none;
+}
+
+.lk-user__password._show .form-password
+{
+    display: block;
+}
+
+.form-password__title
+{
+    font-size: 18px;
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+.password-eye
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    color: #CBCBCB;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 0 5px 5px 0;
+
+    transition: color .2s linear;
+}
+
+.password-eye svg
+{
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    fill: none;
+    stroke: currentColor;
+}
+
+@media (any-hover: hover)
+{
+    .password-eye:hover
+    {
+        color: #282828;
+    }
+}
+
+.password-eye._active
+{
+    color: #282828;
+}
+
+.password-eye svg + svg
+{
+    display: none;
+}
+
+.password-eye._active svg
+{
+    display: none;
+}
+
+.password-eye._active svg + svg
+{
+    display: block;
+}
+
+.form-password .form-password__submit
+{
+    line-height: 44px;
+
+    width: 126px;
+    padding: 0;
+}
+
+.form-password__cancel
+{
+    color: #616161;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 44px;
+
+    margin-left: 15px;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .form-password__cancel:hover
+    {
+        color: #282828;
+    }
+}
+
+.form__forgot
+{
+    color: rgba(40, 40, 40, .5);
+    font-size: 14px;
+
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+.form__forgot a
+{
+    color: rgba(40, 40, 40, .5);
+
+    text-decoration: none;
+
+    border-bottom: 1px dashed currentColor;
+
+    transition: color .2s linear, border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .form__forgot a:hover
+    {
+        color: #282828;
+    }
+}
 
 
 /*------------
