@@ -1067,6 +1067,31 @@
         padding-bottom: 40px;
     }
 
+    .lk-info__col.lk-info__col_big
+    {
+        width: calc(100% - 10px);
+    }
+
+
+    .content__order_white
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+
+        border-radius: 0;
+    }
+
+    .content__order .select-sort
+    {
+        width: 100%;
+    }
+
+    .sorting .checkbox-slider
+    {
+        margin: 16px 0 0;
+    }
+
 
 
     /*------------

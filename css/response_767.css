@@ -4998,6 +4998,81 @@
         font-size: 14px;
     }
 
+    .lk-info_marg
+    {
+        margin-top: 10px;
+    }
+
+    .lk-history_marg
+    {
+        margin-top: 40px;
+    }
+
+    .lk-history__table .lk-history__nomob
+    {
+        display: none;
+    }
+
+    .lk-history__table th
+    {
+        font-size: 12px;
+    }
+
+    .lk-history__table .lk-history__th
+    {
+        font-size: 0;
+    }
+
+    .lk-history__table .lk-history__th::before
+    {
+        content: attr(data-label);
+
+        font-size: 12px;
+    }
+
+    .lk-history__table td:last-child
+    {
+        width: 14%;
+    }
+
+    .lk-history__table td
+    {
+        font-size: 12px;
+    }
+
+    .lk-history__table .lk-history__name::after
+    {
+        content: attr(data-label);
+
+        display: block;
+
+        margin-top: 1px;
+    }
+
+
+    .notification
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .notification__item + .notification__item
+    {
+        margin-top: 30px;
+    }
+
+    .content__order .select-sort
+    {
+        width: 200px;
+        margin-right: 0;
+    }
+
+    .sorting .checkbox-slider
+    {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
 
     /*------------
 		coments

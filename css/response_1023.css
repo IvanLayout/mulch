@@ -3502,6 +3502,28 @@
         margin-bottom: 6px;
     }
 
+    .lk-info_marg
+    {
+        margin-top: 16px;
+    }
+
+    .lk-history_marg
+    {
+        margin-top: 60px;
+    }
+
+
+    .sorting .checkbox-slider__text
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .content_marg
+    {
+        margin-top: 30px;
+    }
+
 
 
     /*------------

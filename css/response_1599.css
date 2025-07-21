@@ -1067,6 +1067,50 @@
         width: 290px;
     }
 
+    .lk-info__col.lk-info__col_big
+    {
+        min-height: 210px;
+        padding: 20px 25px 20px;
+    }
+
+    .lk-info__col_big .lk-info__top
+    {
+        padding-bottom: 14px;
+    }
+
+    .lk-info__col_big .lk-info__title
+    {
+        font-size: 20px;
+    }
+
+    .lk-info__col_big .lk-info__points
+    {
+        font-size: 18px;
+
+        margin-top: 16px;
+    }
+
+    .lk-info__col_big .lk-info__points-icon
+    {
+        font-size: 18px;
+
+        width: 31px;
+        height: 31px;
+        margin-right: 10px;
+    }
+
+    .lk-history__table td:last-child
+    {
+        width: 20%;
+    }
+
+    .content__order .product__btn
+    {
+        font-size: 12px;
+
+        width: 37%;
+    }
+
 
     /*------------
 		coments
