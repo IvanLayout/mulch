@@ -16664,6 +16664,165 @@ input[type=radio]:checked + .radio-dot__dot
 .order-info__box:last-child
 {
 	width: calc(46.5% - 10px);
+
+	display: flex;
+    flex-direction: column;
+}
+
+.order-info__box:last-child .order-info__block
+{
+	flex: 1 0 auto;
+}
+
+.order-info__block + .order-info__block
+{
+	margin-top: 30px;
+}
+
+.order-info__lines + *
+{
+	margin-top: 12px;
+}
+
+.order-info__line
+{
+	margin-top: 15px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.order-info__line + .order-info__line
+{
+	margin-top: 15px;
+}
+
+.order-info__name
+{
+	color: #616161;
+	width: calc(55.8% - 15px);
+}
+
+.order-info__line-big
+{
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.order-info__title
+{
+	font-size: 20px;
+	font-weight: 500;
+	color: #282828;
+}
+
+.order-info__desc
+{
+	width: calc(44.2% - 15px);
+	color: #282828;
+
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.order-info__box:last-child .order-info__desc
+{
+	text-align: right;
+}
+
+.order-info__box:last-child .order-info__lines:first-child .order-info__line:first-child .order-info__desc
+{
+	opacity: .5;
+}
+
+.order-info__desc span
+{
+	color: #fff;
+	font-size: 12px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.order-info__confirmed
+{
+	background-color: #83A2DD;
+	padding: 5px 9px;
+}
+
+.order-info__paid-full
+{
+	background-color: #28BB1D;
+	padding: 5px 5px;
+}
+
+.order-info__total
+{
+	border-top: 1px solid rgba(97, 97, 97, .2);
+	margin-top: 20px;
+	padding-top: 15px;
+}
+
+.order-info__total .order-info__name
+{
+	color: #282828;
+}
+
+.download-check
+{
+	margin-top: 30px;
+}
+
+.download-check__link
+{
+	text-decoration: none;
+	font-weight: 500;
+	color: #007657;
+	border-bottom: 1px dashed #007657;
+	transition: border-color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .download-check__link:hover
+    {
+        border-color: transparent;
+    }
+}
+
+.order-info__copy
+{
+    color: #282828;
+
+	flex-shrink: 0;
+
+    width: 15px;
+    height: 15px;
+    margin-left: 9px;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .order-info__copy:hover
+    {
+        color: #007657;
+    }
+}
+
+.order-info__copy svg
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    fill: none;
+    stroke: currentColor;
 }
 /*------------
     footer
