@@ -4871,6 +4871,129 @@
     }
 
 
+    .lk-info
+    {
+        margin: -10px 0 0 -10px;
+    }
+
+    .lk-info__col
+    {
+        width: calc(100%/2 - 10px);
+        margin: 10px 0 0 10px;
+        padding-bottom: 35px;
+    }
+
+    .lk-info__col._middle
+    {
+        width: calc(100%/2 - 10px);
+    }
+
+    .lk-info__cart-number span
+    {
+        display: none;
+    }
+
+    .lk-info__cart-title
+    {
+        display: none;
+    }
+
+    .lk-info__cart-sum
+    {
+        display: none;
+    }
+
+    .lk-info__col._points
+    {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        width: calc(100% - 10px);
+        padding: 12px 15px;
+    }
+
+    .lk-info__col._points .lk-info__top
+    {
+        padding-bottom: 0;
+
+        border: none;
+    }
+
+    .lk-info__col._points .lk-info__points
+    {
+        margin-top: 0;
+    }
+
+    .lk-info__top
+    {
+        padding-bottom: 7px;
+    }
+
+    .lk-info__title
+    {
+        font-size: 13px;
+    }
+
+
+    .lk-header__photo
+    {
+        font-size: 13px;
+
+        width: 42px;
+        height: 42px;
+        margin-right: 10px;
+    }
+
+    .lk-header__name
+    {
+        font-size: 16px;
+
+        width: 100%;
+    }
+
+    .lk-user__form-btns .lk-user__form-submit
+    {
+        width: 160px;
+    }
+
+    .lk-user__form_small
+    {
+        width: 100%;
+    }
+
+    .lk-user__form .form__line
+    {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+    .lk-user__item-info
+    {
+        width: 100%;
+        min-height: 1px;
+        margin: 5px 0 0;
+    }
+
+    .lk-user__item-imp
+    {
+        width: 100%;
+    }
+
+    .lk-user__item-imp span
+    {
+        max-width: 334px;
+    }
+
+
+    .form-password
+    {
+        width: 100%;
+    }
+
+
     /*------------
 		coments
 	------------*/
@@ -4879,100 +5002,102 @@
         font-size: 20px;
     }
 
-    .page-top__box .page-title
+    .order-active__number
     {
-        font-size: 20px;
+        order: 1;
+
+        width: 100%;
     }
 
-	.order-active__number
-	{
-		width: 100%;
-		order: 1;
-	}
+    .order-active__border
+    {
+        order: 2;
+    }
 
-	.order-active__border
-	{
-		order: 2;
-	}
+    .order-active__info
+    {
+        order: 3;
 
-	.order-active__info
-	{
-		order: 3;
-		width: 100%;
-	}
+        width: 100%;
+    }
 
-	.order-active__line
-	{
-		flex-wrap: wrap;
-	}
+    .order-active__line
+    {
+        flex-wrap: wrap;
+    }
 
-	.order-active__desc
-	{
-		margin-right: 0;
-		width: 100%;
-	}
+    .order-active__desc
+    {
+        width: 100%;
+        margin-right: 0;
+    }
 
-	.order-active__line-status
-	{
-		margin-top: 10px;
-	}
+    .order-active__line-status
+    {
+        margin-top: 10px;
+    }
 
-	.order-active__box
-	{
-		width: 100%;
-		order: 4;
-		margin-top: 15px;
-		justify-content: flex-start;
-	}
+    .order-active__box
+    {
+        justify-content: flex-start;
+        order: 4;
 
-	.order-active__price
-	{
-		margin-left: 0;
-		order: 1;
-	}
+        width: 100%;
+        margin-top: 15px;
+    }
 
-	.order-active__status
-	{
-		order: 2;
-		margin-left: 10px;
-	}
+    .order-active__price
+    {
+        order: 1;
 
-	.order-active__images
-	{
-		width: 100%;
-		order: 5;
-		margin-top: 18px;
-		justify-content: flex-start;
-	}
+        margin-left: 0;
+    }
 
-	.order-active__image
-	{
-		width: 39px;
-		height: 39px;
-		margin: 6px 6px 0 0;
-	}
+    .order-active__status
+    {
+        order: 2;
 
-	.order-active__btns
-	{
-		order: 6;
-		margin-top: 24px;
-	}
+        margin-left: 10px;
+    }
 
-	.order-active__btns a
-	{
-		width: 100%;
-	}
+    .order-active__images
+    {
+        justify-content: flex-start;
+        order: 5;
 
-	.order-active__btns a + a
-	{
-		margin-top: 10px;
-		margin-left: 0;
-	}
+        width: 100%;
+        margin-top: 18px;
+    }
 
-	.wrap-btn-order .btn-bord
-	{
-		width: 100%;
-	}
+    .order-active__image
+    {
+        width: 39px;
+        height: 39px;
+        margin: 6px 6px 0 0;
+    }
+
+    .order-active__btns
+    {
+        order: 6;
+
+        margin-top: 24px;
+    }
+
+    .order-active__btns a
+    {
+        width: 100%;
+    }
+
+    .order-active__btns a + a
+    {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .wrap-btn-order .btn-bord
+    {
+        width: 100%;
+    }
 
 
     .footer

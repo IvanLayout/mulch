@@ -3236,18 +3236,34 @@
 				<!-- End Шапка -->
 
 				<section class="section-gray">
-					<section class="page-top page-top_bord">
+					<section class="page-top page-top_nomob">
 						<div class="cont">
 							<div class="page-top__box">
 								<a href="/" class="back-link">
 									<img data-src="images/ic_arrow.svg" src="images/img_plug.png" alt="" class="lazyload back-link__img">
 								</a>
 
-								<h1 class="page-title">Мои заказы</h1>
+								<h1 class="page-title">Кабинет</h1>
 							</div>
 						</div>
 					</section>
 
+
+					<section class="lk-header">
+						<div class="cont">
+							<div class="lk-header__flex _flex">
+								<div class="lk-header__photo">
+									<span>ККК</span>
+								</div>
+
+								<div class="lk-header__name">ООО «ИНФО МАКС»</div>
+
+								<a href="/" class="lk-header__settings">
+									<img src="images/settings.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</section>
 
 					<section class="content">
 						<div class="cont">
@@ -3331,29 +3347,295 @@
 								</aside>
 
 								<div class="content__order">
-									<div class="tabs-container">
-										<div class="tabs tabs_marg _flex">
-											<button type="button" data-content="#tab1" data-level="level1" class="tabs__text tabs__button_js _active"><span>Активные</span> <sup>0</sup></button>
-											<button type="button" data-content="#tab2" data-level="level1" class="tabs__text tabs__button_js"><span>Выполненные</span> <sup>12</sup></button>
-										</div>
+									<div class="lk-info _flex">
+										<div class="lk-info__col _big _nomob">
+											<div class="lk-info__top _flex">
+												<div class="lk-info__title">Данные компании</div>
+												<div class="lk-info__change">
+													<a href="/">Изменить</a>
+												</div>
+											</div>
 
-										<div class="tab-content level1 _active" id="tab1">
-											<div class="empty-section">
-												<div class="empty-section__bord">
-													<div class="empty-section__icon">
-														<img data-src="images/ic_page_order.svg" src="images/img_plug.png" alt="" class="lazyload">
+											<div class="lk-info__info">
+												<div class="lk-info__info-wrap">
+													<div class="lk-info__cols">
+														<div class="lk-info__item">
+															<div class="lk-info__item-title">Наименование компании</div>
+															<div class="lk-info__item-desc">ООО «ИНФО МАКС»</div>
+														</div>
+														<div class="lk-info__item">
+															<div class="lk-info__item-title">ИНН</div>
+															<div class="lk-info__item-desc">43646364564564564</div>
+														</div>
+														<div class="lk-info__item">
+															<div class="lk-info__item-title">КПП</div>
+															<div class="lk-info__item-desc">364464545646336</div>
+														</div>
+														<div class="lk-info__item">
+															<div class="lk-info__item-title">Телефон</div>
+															<div class="lk-info__item-desc">+7 963-****826</div>
+														</div>
+														<div class="lk-info__item">
+															<div class="lk-info__item-title">Email</div>
+															<div class="lk-info__item-desc">infomail123@gmail.com</div>
+														</div>
+														<div class="lk-info__item">
+															<div class="lk-info__item-title">Юр.адрес</div>
+															<div class="lk-info__item-desc">г. Москва., Тверская 10</div>
+														</div>
+														<div class="lk-info__item">
+															<div class="lk-info__item-title">БИК</div>
+															<div class="lk-info__item-desc">044525225</div>
+														</div>
+														<div class="lk-info__item">
+															<div class="lk-info__item-title">Наименование банка</div>
+															<div class="lk-info__item-desc">Публичное акционерное общество «СберБанк России»</div>
+														</div>
+														<div class="lk-info__item">
+															<div class="lk-info__item-title">Расчётный счёт</div>
+															<div class="lk-info__item-desc">30101810500000000641</div>
+														</div>
+														<div class="lk-info__item">
+															<div class="lk-info__item-title">Корреспондентский счёт</div>
+															<div class="lk-info__item-desc">30101810500000000641</div>
+														</div>
 													</div>
-						
-													<div class="empty-section__text">У вас пока <br class="empty-section__br">нет активных заказов</div>
-						
-													<div class="empty-section__desc">
-														<span>Когда появятся, будут отображаться здесь</span>
+												</div>
+
+												<button type="button" class="lk-info__info-more">
+													<span>
+														Развернуть
+														<svg>
+															<use xlink:href="images/sprite.svg#arrow1"></use>
+														</svg>
+													</span>
+												</button>
+											</div>
+										</div>
+										<div class="lk-info__col _middle">
+											<div class="lk-info__top _flex">
+												<div class="lk-info__title">Корзина</div>
+											</div>
+
+											<div class="lk-info__cart _flex">
+												<div class="lk-info__cart-icon">
+													<img src="images/ic_cart.svg" alt="">
+												</div>
+												<div class="lk-info__cart-box">
+													<div class="lk-info__cart-number">100 товаров <span>в корзине</span></div>
+													<div class="lk-info__cart-title">Сумма заказа:</div>
+													<div class="lk-info__cart-sum">1 000 000 000 ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="lk-info__col _middle _mob">
+											<div class="lk-info__top _flex">
+												<div class="lk-info__title">Активные заказы</div>
+											</div>
+
+											<div class="lk-info__desc">1 заказ</div>
+										</div>
+									</div>
+
+									<div class="lk-nomob lk-nomob_marg">
+										<div class="order-active">
+											<div class="order-active__top _flex">
+												<div class="order-active__top-title">Активные заказы</div>
+												<div class="order-active__top-link">
+													<a href="/">Перейти к моим заказам</a>
+												</div>
+											</div>
+
+											<div class="order-active__wrapp _flex">
+												<div class="order-active__number">
+													<span>Заказ № 123 от 01.01.2001</span>
+												</div>
+
+												<div class="order-active__box">
+													<div class="order-active__status">Оплачен полностью</div>
+
+													<div class="order-active__price">2 506 ₽</div>
+												</div>
+
+												<div class="order-active__border"></div>
+
+												<div class="order-active__info">
+													<div class="order-active__line">
+														<div class="order-active__desc">5 товаров, 0.01 кг, 100 м3 5 товаров, 0.01 кг, 100 м3 5 товаров, 0.01 кг, 100 м3</div>
+														<div class="order-active__line-status">Ожидаем поставку товара</div>
 													</div>
+
+													<div class="order-active__line">
+														<div class="order-active__desc">Способ доставки: CDEK, курьер</div>
+													</div>
+
+													<div class="order-active__line">
+														<div class="order-active__desc">Адрес доставки: Москва, Багратионовский проезд, 7к2</div>
+													</div>
+												</div>
+
+												<div class="order-active__images _flex">
+													<a href="/" class="order-active__image">
+														<img data-src="images/tmp/order_img1.png" src="images/img_plug.png" alt="" class="lazyload">
+													</a>
+
+													<a href="/" class="order-active__image">
+														<img data-src="images/tmp/order_img2.png" src="images/img_plug.png" alt="" class="lazyload">
+													</a>
+
+													<a href="/" class="order-active__image">
+														<img data-src="images/tmp/order_img3.png" src="images/img_plug.png" alt="" class="lazyload">
+													</a>
+
+													<a href="/" class="order-active__image">
+														<img data-src="images/tmp/order_img4.png" src="images/img_plug.png" alt="" class="lazyload">
+													</a>
+
+													<a href="/" class="order-active__image">
+														<img data-src="images/tmp/order_img5.png" src="images/img_plug.png" alt="" class="lazyload">
+													</a>
+												</div>
+
+												<div class="order-active__btns">
+													<a href="/" class="btn-light btn-light_small">Подробнее о заказе</a>
+												</div>
+											</div>
+
+											<div class="order-active__wrapp _flex">
+												<div class="order-active__number">
+													<span>1 товар, 0.01 кг, 100 м3</span>
+												</div>
+
+												<div class="order-active__box">
+													<div class="order-active__status not-paid">Не оплачен</div>
+
+													<div class="order-active__price">22 791 ₽</div>
+												</div>
+
+												<div class="order-active__border"></div>
+
+												<div class="order-active__info">
+													<div class="order-active__line">
+														<div class="order-active__desc">1 товар, 0.01 кг, 100 м3</div>
+														<div class="order-active__line-status not-confirmed">Не подтверждён</div>
+													</div>
+
+													<div class="order-active__line">
+														<div class="order-active__desc">Способ доставки: Самовывоз</div>
+													</div>
+
+													<div class="order-active__line">
+														<div class="order-active__desc">Адрес самовывоза: Варшавское шоссе, д. 125, корп. 3, стр. 3</div>
+													</div>
+
+													<div class="order-active__line">
+														<div class="order-active__desc">Срок хранения: до 01.02.2025</div>
+													</div>
+												</div>
+
+												<div class="order-active__images _flex">
+													<a href="/" class="order-active__image">
+														<img data-src="images/tmp/order_img5.png" src="images/img_plug.png" alt="" class="lazyload">
+													</a>
+												</div>
+
+												<div class="order-active__btns">
+													<a href="/" class="btn-green btn-green_small">Оплатить онлайн</a>
+
+													<a href="/" class="btn-light btn-light_small">Подробнее о заказе</a>
 												</div>
 											</div>
 										</div>
 
-										<div class="tab-content level1" id="tab2"></div>
+										<div class="wrap-btn wrap-btn-order">
+											<a href="/" class="btn-bord">Показать ещё</a>
+										</div>
+									</div>
+
+									<div class="lk-links">
+										<div class="lk-links__item">
+											<a href="/" class="lk-links__link">
+												<span class="lk-links__link-name">Моя учётная запись</span>
+												<svg class="lk-links__link-arrow">
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="lk-links__item">
+											<a href="/" class="lk-links__link">
+												<span class="lk-links__link-name">Баллы и бонусы <b>+1024</b></span>
+												<svg class="lk-links__link-arrow">
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="lk-links__item">
+											<a href="/" class="lk-links__link">
+												<span class="lk-links__link-name">Адреса доставки</span>
+												<svg class="lk-links__link-arrow">
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="lk-links__item">
+											<a href="/" class="lk-links__link">
+												<span class="lk-links__link-name">Избранное <span>(100)</span></span>
+												<svg class="lk-links__link-arrow">
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="lk-links__item">
+											<a href="/" class="lk-links__link">
+												<span class="lk-links__link-name">Сравнение товаров <span>(100)</span></span>
+												<svg class="lk-links__link-arrow">
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="lk-links__item">
+											<a href="/" class="lk-links__link">
+												<span class="lk-links__link-name">Моя корзина <span>(100)</span></span>
+												<svg class="lk-links__link-arrow">
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="lk-links__item">
+											<a href="/" class="lk-links__link">
+												<span class="lk-links__link-name">Мои заказы <span>(100)</span></span>
+												<svg class="lk-links__link-arrow">
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="lk-links__item">
+											<a href="/" class="lk-links__link">
+												<span class="lk-links__link-name">Купленные товары <span>(100)</span></span>
+												<svg class="lk-links__link-arrow">
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="lk-links__item">
+											<a href="/" class="lk-links__link">
+												<span class="lk-links__link-name">Мои отзывы <span>(100)</span></span>
+												<svg class="lk-links__link-arrow">
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="lk-links__item">
+											<a href="/" class="lk-links__link">
+												<span class="lk-links__link-name">Настройка уведомлений</span>
+												<svg class="lk-links__link-arrow">
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="lk-links__logout">
+											<a href="/">Выйти из аккаунта</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -3362,133 +3644,7 @@
 				</section>
 
 
-				<section class="products-small _marg">
-					<div class="cont">
-						<div class="section-top section-top_marg _flex">
-							<div class="main-title">Вы смотрели</div>
-						</div>
-
-						<div class="products-small__slider swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide product-small">
-									<a href="/" class="product-small__thumb">
-										<span class="product-small__img">
-											<span>
-												<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</span>
-									</a>
-
-									<div class="product-small__wrap">
-										<div class="product-small__name">
-											<a href="/">Кора сосны Люкс, фракция <span>1–3 см</span></a>
-										</div>
-
-										<div class="product-small__box _flex">
-											<div class="product-small__review _flex">
-												<div class="product-small__review-flex _flex">
-													<div class="product-small__review-star">
-														<img data-src="images/star.svg" src="images/img_plug.png" alt="" class="lazyload">
-													</div>
-
-													<div class="product-small__review-number">4.8</div>
-												</div>
-											</div>
-											<div class="product-small__availability">&gt; 1000 шт.</div>
-										</div>
-
-										<div class="product-small__prices _flex">
-											<div class="product-small__price">2 600 000 ₽</div>
-											<div class="product-small__oldprice">2 600 000 ₽</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide product-small">
-									<a href="/" class="product-small__thumb">
-										<span class="product-small__img">
-											<span>
-												<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</span>
-									</a>
-
-									<div class="product-small__wrap">
-										<div class="product-small__name">
-											<a href="/">Кора сосны Люкс, фракция <span>1–3 см</span></a>
-										</div>
-
-										<div class="product-small__box _flex">
-											<div class="product-small__review _flex">
-												<div class="product-small__review-flex _flex">
-													<div class="product-small__review-star">
-														<img data-src="images/star.svg" src="images/img_plug.png" alt="" class="lazyload">
-													</div>
-
-													<div class="product-small__review-number">4.8</div>
-												</div>
-											</div>
-											<div class="product-small__availability">&gt; 1000 шт.</div>
-										</div>
-
-										<div class="product-small__prices _flex">
-											<div class="product-small__price">2 600 000 ₽</div>
-											<div class="product-small__oldprice">2 600 000 ₽</div>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide product-small">
-									<a href="/" class="product-small__thumb">
-										<span class="product-small__img">
-											<span>
-												<img data-src="images/tmp/product1.png" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</span>
-									</a>
-
-									<div class="product-small__wrap">
-										<div class="product-small__name">
-											<a href="/">Кора сосны Люкс, фракция <span>1–3 см</span></a>
-										</div>
-
-										<div class="product-small__box _flex">
-											<div class="product-small__review _flex">
-												<div class="product-small__review-flex _flex">
-													<div class="product-small__review-star">
-														<img data-src="images/star.svg" src="images/img_plug.png" alt="" class="lazyload">
-													</div>
-
-													<div class="product-small__review-number">4.8</div>
-												</div>
-											</div>
-											<div class="product-small__availability">&gt; 1000 шт.</div>
-										</div>
-
-										<div class="product-small__prices _flex">
-											<div class="product-small__price">2 600 000 ₽</div>
-											<div class="product-small__oldprice">2 600 000 ₽</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<button type="button" class="slider-button-prev">
-								<svg>
-									<use xlink:href="images/sprite.svg#arrow2"></use>
-								</svg>
-							</button>
-							<button type="button" class="slider-button-next">
-								<svg>
-									<use xlink:href="images/sprite.svg#arrow2"></use>
-								</svg>
-							</button>
-
-							<div class="swiper-scrollbar"></div>
-						</div>
-					</div>
-				</section>
-
-
-				<section class="products _marg">
+				<section class="products products_nomob _marg">
 					<div class="cont">
 						<div class="section-top section-top_marg _flex">
 							<div class="main-title">Вам может понравится</div>
@@ -4360,7 +4516,7 @@
 			</div>
 
 
-			<footer class="footer _marg">
+			<footer class="footer footer_nomarg _marg">
 				<div class="footer__top">
 					<div class="cont _flex">
 						<div class="footer__coll">

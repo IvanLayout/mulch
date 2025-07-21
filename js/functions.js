@@ -857,6 +857,57 @@ $(() => {
 			$(this).closest('tr').find('.transport-company__btn').addClass('_show')
 		}
 	})
+
+	$('body').on('click', '.lk-info__info-more', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.lk-info__info').addClass('_show')
+	})
+
+	$('body').on('click', '.confirm-box__btn', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.confirm-box').addClass('_show')
+	})
+
+	$('body').on('click', '.lk-user__item-edit', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.lk-user__item').addClass('_show')
+	})
+
+	$('body').on('click', '.lk-user__form-cancel', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.lk-user__item').removeClass('_show')
+	})
+
+	$('body').on('click', '.password-eye', function (e) {
+		e.preventDefault()
+
+		const input = $(this).closest('.form__field').find('.form__input-password')
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+			input.attr('type', 'password')
+		} else {
+			$(this).addClass('_active')
+			input.attr('type', 'text')
+		}
+	})
+
+
+	$('body').on('click', '.lk-user__password-btn', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.lk-user__password').addClass('_show')
+	})
+
+	$('body').on('click', '.form-password__cancel', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.lk-user__password').removeClass('_show')
+	})
 })
 
 
