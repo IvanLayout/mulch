@@ -3278,8 +3278,22 @@
         display: flex;
     }
 
+    .lk-page .header,
+    .lk-page .header-mob,
+    .lk-page .fix-btns
+    {
+        display: none;
+    }
+
+    .lk-page .wrap
+    {
+        padding-bottom: 0;
+    }
+
     .aside-order
     {
+        display: none;
+
         width: 100%;
         margin-bottom: 30px;
         margin-left: 0;
