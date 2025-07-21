@@ -4884,6 +4884,96 @@
         font-size: 20px;
     }
 
+	.order-active__number
+	{
+		width: 100%;
+		order: 1;
+	}
+
+	.order-active__border
+	{
+		order: 2;
+	}
+
+	.order-active__info
+	{
+		order: 3;
+		width: 100%;
+	}
+
+	.order-active__line
+	{
+		flex-wrap: wrap;
+	}
+
+	.order-active__desc
+	{
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.order-active__line-status
+	{
+		margin-top: 10px;
+	}
+
+	.order-active__box
+	{
+		width: 100%;
+		order: 4;
+		margin-top: 15px;
+		justify-content: flex-start;
+	}
+
+	.order-active__price
+	{
+		margin-left: 0;
+		order: 1;
+	}
+
+	.order-active__status
+	{
+		order: 2;
+		margin-left: 10px;
+	}
+
+	.order-active__images
+	{
+		width: 100%;
+		order: 5;
+		margin-top: 18px;
+		justify-content: flex-start;
+	}
+
+	.order-active__image
+	{
+		width: 39px;
+		height: 39px;
+		margin: 6px 6px 0 0;
+	}
+
+	.order-active__btns
+	{
+		order: 6;
+		margin-top: 24px;
+	}
+
+	.order-active__btns a
+	{
+		width: 100%;
+	}
+
+	.order-active__btns a + a
+	{
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+	.wrap-btn-order .btn-bord
+	{
+		width: 100%;
+	}
+
 
     .footer
     {

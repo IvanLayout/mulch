@@ -16538,9 +16538,24 @@ input[type=radio]:checked + .radio-dot__dot
     width: calc(50% - 15px);
 }
 
+.order-active__line
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: nowrap;
+}
+
 .order-active__line + .order-active__line
 {
     margin-top: 15px;
+}
+
+.order-active__desc
+{
+	margin-right: 10px;
+	align-self: center;
 }
 
 .order-active__line-status
@@ -16548,18 +16563,60 @@ input[type=radio]:checked + .radio-dot__dot
     color: #FFF;
     font-size: 12px;
 
-    margin-left: 10px;
     padding: 5px 6px;
 
     white-space: nowrap;
+	display: inline-block;
 
     border-radius: 5px;
     background-color: #83A2DD;
+
+	align-self: flex-start;
 }
 
 .order-active__line-status.not-confirmed
 {
     background-color: #C1C1C1;
+}
+
+.order-active__images
+{
+	width: calc(50% - 15px);
+	justify-content: flex-end;
+}
+
+.order-active__image
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	padding: 13px 8px;
+
+    width: 60px;
+	height: 60px;
+    margin: 0 0 10px 10px;
+    border-radius: 10px;
+	background: #F9F9F9;
+	border: 1px solid transparent;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover) 
+{
+    .order-active__image:hover
+	{
+        border-color: #007657;
+    }
+}
+
+.order-active__image img
+{
+	display: block;
+	max-width: 100%;
+	min-height: 100%;
 }
 
 .order-active__btns
