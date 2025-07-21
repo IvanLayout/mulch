@@ -15005,6 +15005,16 @@ input[type=checkbox]:checked + .checkbox-btn__text
     padding-top: 20px;
 }
 
+.checkout-table table tr td.checkout-table__amount_pad
+{
+    padding-top: 32px;
+}
+
+.checkout-table__amount-numb
+{
+    display: none;
+}
+
 .checkout-table table tr td.checkout-table__info
 {
     width: 204px;
@@ -17291,6 +17301,22 @@ input[type=radio]:checked + .radio-dot__dot
 .content__order .product__btn
 {
     width: 43%;
+}
+
+.checkout-table_marg
+{
+    margin-top: 25px;
+}
+
+.content__order .checkout-table .amount
+{
+    width: auto;
+    min-width: 1px;
+    height: auto;
+    margin-right: 0;
+
+    border-radius: 0;
+    background: none;
 }
 
 
