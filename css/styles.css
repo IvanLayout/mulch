@@ -16640,6 +16640,31 @@ input[type=radio]:checked + .radio-dot__dot
 {
     margin-left: 20px;
 }
+
+
+.order-info__flex
+{
+	justify-content: space-between;
+	align-content: stretch;
+	align-items: stretch;
+}
+
+.order-info__box
+{
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.order-info__box:first-child
+{
+	width: calc(53.5% - 10px);
+}
+
+.order-info__box:last-child
+{
+	width: calc(46.5% - 10px);
+}
 /*------------
     footer
 ------------*/
