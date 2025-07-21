@@ -857,6 +857,12 @@ $(() => {
 			$(this).closest('tr').find('.transport-company__btn').addClass('_show')
 		}
 	})
+
+	$('body').on('click', '.lk-info__info-more', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.lk-info__info').addClass('_show')
+	})
 })
 
 
