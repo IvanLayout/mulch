@@ -17764,8 +17764,8 @@ input[type=radio]:checked + .radio-dot__dot
 {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -17839,11 +17839,29 @@ input[type=radio]:checked + .radio-dot__dot
     background-color: #83A2DD;
 }
 
+.order-info__completed
+{
+	background-color: #FFA800;
+}
+
 .order-info__paid-full
 {
     padding: 5px 5px;
 
     background-color: #28BB1D;
+}
+
+.order-info__payment
+{
+	background-color: #4D4D4D;
+}
+
+.order-info__desc span.order-info__note
+{
+	display: block;
+	margin-top: 10px;
+	color: #616161;
+	font-style: italic;
 }
 
 .order-info__total
@@ -17861,7 +17879,7 @@ input[type=radio]:checked + .radio-dot__dot
 
 .download-check
 {
-    margin-top: 30px;
+    margin-top: 90px;
 }
 
 .download-check__link
@@ -17914,6 +17932,14 @@ input[type=radio]:checked + .radio-dot__dot
 
     fill: none;
     stroke: currentColor;
+}
+
+
+.order-info__btn
+{
+	width: 100%;
+	margin-top: 24px;
+	display: block;
 }
 /*------------
     footer
@@ -20225,6 +20251,11 @@ input[type=radio]:checked + .radio-dot__dot
 	.order-info__box:last-child
 	{
 		width: calc(47% - 10px);
+	}
+
+	.download-check
+	{
+		margin-top: 64px;
 	}
 
 

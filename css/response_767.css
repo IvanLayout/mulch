@@ -5323,6 +5323,12 @@
 		width: 100%;
 	}
 
+	.order-info__box
+	{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
 	.order-info__box:last-child
 	{
 		width: 100%;
@@ -5344,9 +5350,14 @@
 		width: calc(59% - 7px);
 	}
 
+	.order-info__confirmed
+	{
+		padding: 5px;
+	}
+
 	.download-check
 	{
-		margin-top: 143px;
+		margin-top: 75px;
 	}
 
 

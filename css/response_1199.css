@@ -884,7 +884,7 @@
 
 	.order-info__desc
 	{
-		width: calc(54% - 10px);
+		width: 54%;
 	}
 
 	.order-info__block + .order-info__block
@@ -911,5 +911,10 @@
 	.order-info__box:last-child .order-info__desc
 	{
 		width: calc(42% - 0px);
+	}
+
+	.download-check
+	{
+		margin-top: 30px;
 	}
 }
