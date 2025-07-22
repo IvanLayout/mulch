@@ -3251,6 +3251,12 @@
 	------------*/
 
 
+	.download-check__link
+	{
+		font-size: 14px;
+	}
+
+
     .footer__colr
     {
         width: 375px;

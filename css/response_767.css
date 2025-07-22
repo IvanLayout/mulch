@@ -5318,6 +5318,37 @@
         width: 100%;
     }
 
+	.order-info__box:first-child
+	{
+		width: 100%;
+	}
+
+	.order-info__box:last-child
+	{
+		width: 100%;
+		margin-top: 16px;
+	}
+
+	.order-info__box:first-child .order-info__lines
+	{
+		margin-top: 15px;
+	}
+
+	.order-info__name
+	{
+		width: calc(41% - 2px);
+	}
+
+	.order-info__desc
+	{
+		width: calc(59% - 7px);
+	}
+
+	.download-check
+	{
+		margin-top: 143px;
+	}
+
 
     .footer
     {
