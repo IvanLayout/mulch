@@ -1117,6 +1117,11 @@
         margin-top: 25px;
     }
 
+    .my-comment__text
+    {
+        max-width: 660px;
+    }
+
 
     /*------------
 		coments
@@ -1127,39 +1132,39 @@
         padding-bottom: 60px;
     }
 
-	.content__flex-order
-	{
-		margin-left: -20px;
-	}
+    .content__flex-order
+    {
+        margin-left: -20px;
+    }
 
-	.aside-order
-	{
-		margin-left: 20px;
-	}
+    .aside-order
+    {
+        margin-left: 20px;
+    }
 
-	.content__order
-	{
-		width: calc(100% - 317px);
-		margin-left: 20px;
-	}
-
-
-	.order-info__box:first-child
-	{
-		width: calc(53.3% - 10px);
-	}
-
-	.order-info__box:last-child
-	{
-		width: calc(46.7% - 10px);
-	}
+    .content__order
+    {
+        width: calc(100% - 317px);
+        margin-left: 20px;
+    }
 
 
-	.order-info__box
-	{
-		padding-left: 27px;
-		padding-right: 27px;
-	}
+    .order-info__box:first-child
+    {
+        width: calc(53.3% - 10px);
+    }
+
+    .order-info__box:last-child
+    {
+        width: calc(46.7% - 10px);
+    }
+
+
+    .order-info__box
+    {
+        padding-right: 27px;
+        padding-left: 27px;
+    }
 
     .footer__colr
     {

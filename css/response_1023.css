@@ -3525,6 +3525,14 @@
     }
 
 
+    .my-comments
+    {
+        padding-top: 0;
+
+        border-top: none;
+    }
+
+
 
     /*------------
 		coments
@@ -3565,42 +3573,42 @@
     }
 
     .content__order,
-	.content__flex-order .content__order
+    .content__flex-order .content__order
     {
         width: 100%;
         margin-left: 0;
     }
 
-	.order-info__box:first-child
-	{
-		width: calc(53.5% - 8px);
-	}
+    .order-info__box:first-child
+    {
+        width: calc(53.5% - 8px);
+    }
 
-	.order-info__box:last-child
-	{
-		width: calc(46.5% - 8px);
-	}
+    .order-info__box:last-child
+    {
+        width: calc(46.5% - 8px);
+    }
 
-	.order-info__title
-	{
-		font-size: 15px;
-	}
+    .order-info__title
+    {
+        font-size: 15px;
+    }
 
-	.order-info__name
-	{
-		width: calc(43% - 7px);
-	}
+    .order-info__name
+    {
+        width: calc(43% - 7px);
+    }
 
-	.order-info__desc
-	{
-		width: 57%;
-	}
+    .order-info__desc
+    {
+        width: 57%;
+    }
 
 
-	.checkout-table_marg
-	{
-		margin-top: 20px;
-	}
+    .checkout-table_marg
+    {
+        margin-top: 20px;
+    }
 
 
 

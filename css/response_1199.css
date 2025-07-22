@@ -709,6 +709,18 @@
         margin-left: 5px;
     }
 
+    .checkout-table__btns .rate-product
+    {
+        display: none;
+    }
+
+    .checkout-table__about .rate-product
+    {
+        display: block;
+
+        margin: 17px 0 0;
+    }
+
 
     /*------------
 		coments
@@ -757,11 +769,11 @@
         margin-left: 16px;
     }
 
-	.content__flex-order .content__order
-	{
-		width: calc(100% - 253px);
+    .content__flex-order .content__order
+    {
+        width: calc(100% - 253px);
         margin-left: 20px;
-	}
+    }
 
     .content__order .tabs__text
     {
@@ -847,74 +859,74 @@
         padding: 0 19px;
     }
 
-	.order-info__box:first-child
-	{
-		width: calc(54.2% - 10px);
-	}
+    .order-info__box:first-child
+    {
+        width: calc(54.2% - 10px);
+    }
 
-	.order-info__box:last-child
-	{
-		width: calc(45.8% - 10px);
-	}
+    .order-info__box:last-child
+    {
+        width: calc(45.8% - 10px);
+    }
 
-	.order-info__box
-	{
-		padding: 20px;
-	}
+    .order-info__box
+    {
+        padding: 20px;
+    }
 
-	.order-info__title
-	{
-		font-size: 18px;
-	}
+    .order-info__title
+    {
+        font-size: 18px;
+    }
 
-	.order-info__box:first-child .order-info__lines
-	{
-		margin-top: 10px;
-	}
+    .order-info__box:first-child .order-info__lines
+    {
+        margin-top: 10px;
+    }
 
-	.order-info__line + .order-info__line
-	{
-		margin-top: 10px;
-	}
+    .order-info__line + .order-info__line
+    {
+        margin-top: 10px;
+    }
 
-	.order-info__name
-	{
-		width: calc(46% - 10px);
-	}
+    .order-info__name
+    {
+        width: calc(46% - 10px);
+    }
 
-	.order-info__desc
-	{
-		width: 54%;
-	}
+    .order-info__desc
+    {
+        width: 54%;
+    }
 
-	.order-info__block + .order-info__block
-	{
-		margin-top: 20px;
-	}
+    .order-info__block + .order-info__block
+    {
+        margin-top: 20px;
+    }
 
-	.order-info__total
-	{
-		margin-top: 16px;
-		padding-top: 10px;
-	}
+    .order-info__total
+    {
+        margin-top: 16px;
+        padding-top: 10px;
+    }
 
-	.order-info__line-big
-	{
-		font-size: 16px;
-	}
+    .order-info__line-big
+    {
+        font-size: 16px;
+    }
 
-	.order-info__box:last-child .order-info__name
-	{
-		width: calc(58% - 0px);
-	}
+    .order-info__box:last-child .order-info__name
+    {
+        width: calc(58% - 0px);
+    }
 
-	.order-info__box:last-child .order-info__desc
-	{
-		width: calc(42% - 0px);
-	}
+    .order-info__box:last-child .order-info__desc
+    {
+        width: calc(42% - 0px);
+    }
 
-	.download-check
-	{
-		margin-top: 30px;
-	}
+    .download-check
+    {
+        margin-top: 30px;
+    }
 }

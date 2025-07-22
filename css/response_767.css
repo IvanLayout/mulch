@@ -5098,6 +5098,11 @@
         padding-bottom: 44px;
     }
 
+    .content__order .checkout-table__wrapabs_pad
+    {
+        padding-bottom: 100px;
+    }
+
     .content__order .checkout-table__abs
     {
         position: static;
@@ -5109,6 +5114,7 @@
         bottom: 0;
         left: 0;
 
+        width: 100%;
         margin-top: 0;
     }
 
@@ -5210,6 +5216,36 @@
     .content__order .checkout-table__total-item
     {
         margin-top: 10px;
+    }
+
+    .checkout-table__btns .rate-product
+    {
+        display: block;
+
+        width: calc(100% + 59px);
+        margin: 16px 0 0 -59px;
+    }
+
+    .checkout-table__about .rate-product
+    {
+        display: none;
+    }
+
+
+    .my-comment
+    {
+        padding: 20px;
+    }
+
+    .my-comment__images
+    {
+        margin: 2px 0 0 -8px;
+    }
+
+    .my-comment__images-img
+    {
+        width: 48px;
+        margin: 8px 0 0 8px;
     }
 
 
@@ -5318,47 +5354,47 @@
         width: 100%;
     }
 
-	.order-info__box:first-child
-	{
-		width: 100%;
-	}
+    .order-info__box:first-child
+    {
+        width: 100%;
+    }
 
-	.order-info__box
-	{
-		padding-left: 16px;
-		padding-right: 16px;
-	}
+    .order-info__box
+    {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
 
-	.order-info__box:last-child
-	{
-		width: 100%;
-		margin-top: 16px;
-	}
+    .order-info__box:last-child
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
 
-	.order-info__box:first-child .order-info__lines
-	{
-		margin-top: 15px;
-	}
+    .order-info__box:first-child .order-info__lines
+    {
+        margin-top: 15px;
+    }
 
-	.order-info__name
-	{
-		width: calc(41% - 2px);
-	}
+    .order-info__name
+    {
+        width: calc(41% - 2px);
+    }
 
-	.order-info__desc
-	{
-		width: calc(59% - 7px);
-	}
+    .order-info__desc
+    {
+        width: calc(59% - 7px);
+    }
 
-	.order-info__confirmed
-	{
-		padding: 5px;
-	}
+    .order-info__confirmed
+    {
+        padding: 5px;
+    }
 
-	.download-check
-	{
-		margin-top: 75px;
-	}
+    .download-check
+    {
+        margin-top: 75px;
+    }
 
 
     .footer

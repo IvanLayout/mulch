@@ -908,6 +908,17 @@ $(() => {
 
 		$(this).closest('.lk-user__password').removeClass('_show')
 	})
+
+
+	$('body').on('click', '.my-comment__answer-open', function (e) {
+		e.preventDefault()
+
+		if ( $(this).closest('.my-comment__answer').hasClass('_show') ) {
+			$(this).closest('.my-comment__answer').removeClass('_show')
+		} else {
+			$(this).closest('.my-comment__answer').addClass('_show')
+		}
+	})
 })
 
 

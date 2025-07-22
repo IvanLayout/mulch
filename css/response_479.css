@@ -1093,6 +1093,17 @@
     }
 
 
+    .content__order .tabs__text_small
+    {
+        font-size: 15px;
+    }
+
+    .modal-comment .modal__title
+    {
+        padding-right: 26px;
+    }
+
+
 
     /*------------
 		coments
