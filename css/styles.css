@@ -1890,7 +1890,7 @@ button
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
-    line-height: 45px;
+    line-height: 44px;
 
     display: inline-block;
 
@@ -17895,9 +17895,23 @@ input[type=radio]:checked + .radio-dot__dot
     width: calc(100% - 336px);
 }
 
+.faq-page__cols
+{
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.faq-page__cols-coll
+{
+    width: 65.2%;
+}
+
 .faq__text-block
 {
     color: #282828;
+
+    max-width: 828px;
 }
 
 .faq__text-block h3
@@ -17923,6 +17937,195 @@ input[type=radio]:checked + .radio-dot__dot
 .faq__text-block ul li + li
 {
     margin-top: 8px;
+}
+
+.faq-page__cols-colr
+{
+    width: calc(34.8% - 20px);
+}
+
+.faq-page__list
+{
+    position: sticky;
+    top: 0;
+}
+
+.faq-page__list-item + .faq-page__list-item
+{
+    margin-top: 14px;
+}
+
+.faq-page__list-btn
+{
+    position: relative;
+
+    color: #77897C;
+
+    display: inline-block;
+
+    padding-left: 11px;
+
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.faq-page__list-btn::before
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 2px;
+    height: 100%;
+
+    opacity: 0;
+    border-radius: 2px;
+    background: #F87740;
+
+    transition: opacity .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .faq-page__list-btn:hover
+    {
+        color: #007657;
+    }
+
+    .faq-page__list-btn:hover::before
+    {
+        opacity: 1;
+    }
+}
+
+
+.faq__bg
+{
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    min-height: 586px;
+    padding: 45px 0 75px 60px;
+
+    border-radius: 10px;
+    background: #F9F9F9;
+}
+
+.faq__bg::before
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 60.331%;
+    height: 100%;
+
+    background: url(../images/faq_bg.png) 0 50% no-repeat;
+}
+
+.faq__bg-box
+{
+    position: relative;
+
+    max-width: 574px;
+    margin: auto 0;
+}
+
+.faq__bg._succes .faq__bg-box
+{
+    display: none;
+}
+
+.faq__bg-title
+{
+    font-size: 26px;
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+.faq__bg-subtitle
+{
+    color: rgba(40, 40, 40, .8);
+
+    margin-bottom: 30px;
+}
+
+.faq__form
+{
+    max-width: 542px;
+}
+
+.faq__form .form__textarea
+{
+    height: 125px;
+
+    background: transparent;
+}
+
+.faq__form .form__bot
+{
+    margin-top: 32px;
+}
+
+.faq__form .form__bot .form__agree
+{
+    color: #616161;
+
+    letter-spacing: -.03em;
+}
+
+.faq__succes
+{
+    display: none;
+
+    max-width: 594px;
+    margin: auto 0;
+}
+
+.faq__bg._succes .faq__succes
+{
+    display: block;
+}
+
+.faq__succes-title
+{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.faq__succes-desc
+{
+    color: rgba(40, 40, 40, .8);
+
+    margin-top: 7px;
+}
+
+.faq__succes-desc span
+{
+    display: inline-block;
+}
+
+
+.catalog-printing__btns
+{
+    margin: 50px 0 0 -10px;
+    padding-left: 30px;
+}
+
+.catalog-printing__btn
+{
+    margin: 10px 0 0 10px;
+    padding-right: 14px;
+    padding-left: 14px;
 }
 
 
@@ -18554,71 +18757,73 @@ input[type=radio]:checked + .radio-dot__dot
 
 .catalog-printing__cols
 {
-	margin-left: -30px;
+    margin-left: -30px;
 }
 
 .catalog-printing__col
 {
-	width: calc(100%/4 - 30px);
-	margin-left: 30px;
+    width: calc(100%/4 - 30px);
+    margin-left: 30px;
 }
 
 .catalog-printing .checkbox__text
 {
-	padding-left: 30px;
-	transition: color .2s linear;
+    padding-left: 30px;
+
+    transition: color .2s linear;
 }
 
 .checkbox__main .checkbox__text
 {
-	font-size: 16px;
-	font-weight: 500;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .catalog-printing__small .checkbox__text
 {
-	font-size: 12px;
+    font-size: 12px;
 }
 
 .catalog-printing .checkbox__text::before
 {
-	left: 0;
+    left: 0;
 }
 
 .catalog-printing .checkbox__text::after
 {
-	left: 0;
+    left: 0;
 }
 
 .catalog-printing input[type=checkbox]:checked + .checkbox__text
 {
-	background: none;
+    background: none;
 }
 
-@media (any-hover: hover) 
+@media (any-hover: hover)
 {
-    .catalog-printing .checkbox__text:hover 
-	{
+    .catalog-printing .checkbox__text:hover
+    {
         color: #007657;
-		background: none;
-	}
+
+        background: none;
+    }
 }
 
 .catalog-printing__item + .catalog-printing__item
 {
-	margin-top: 13px;
+    margin-top: 13px;
 }
 
 .catalog-printing__middle
 {
-	padding-left: 30px;
-	margin-top: 7px;
+    margin-top: 7px;
+    padding-left: 30px;
 }
 
 .catalog-printing__small
 {
-	margin-top: 3px;
-	padding-left: 30px;
+    margin-top: 3px;
+    padding-left: 30px;
 }
 /*------------
     footer

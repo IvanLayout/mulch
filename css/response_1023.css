@@ -3571,6 +3571,46 @@
     }
 
 
+    .faq-page__coll
+    {
+        width: 220px;
+    }
+
+    .faq-page__colr
+    {
+        width: calc(100% - 240px);
+    }
+
+    .faq-page__cols-coll
+    {
+        width: 100%;
+    }
+
+    .faq-page__cols-colr
+    {
+        display: none;
+    }
+
+    .faq__bg
+    {
+        padding: 30px 20px;
+    }
+
+
+    .catalog-printing__cols
+    {
+        margin-top: -30px;
+    }
+
+    .catalog-printing__col
+    {
+        flex-grow: 1;
+
+        width: calc(100%/2 - 30px);
+        margin-top: 30px;
+    }
+
+
 
     /*------------
 		coments

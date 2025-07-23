@@ -5267,6 +5267,29 @@
     }
 
 
+    .faq-page__coll
+    {
+        display: none;
+    }
+
+    .faq-page__colr
+    {
+        width: 100%;
+    }
+
+
+    .catalog-printing__cols
+    {
+        margin: 0;
+    }
+
+    .catalog-printing__col
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+
     /*------------
 		coments
 	------------*/

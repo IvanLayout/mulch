@@ -75,6 +75,14 @@ $(() => {
 		}])
 	})
 
+	$('body').on('submit', '.faq-ajax', function (e) {
+		e.preventDefault()
+
+		console.log('adad')
+
+		$(this).closest('.faq__bg').addClass('_succes')
+	})
+
 
 
 	//Ползунки

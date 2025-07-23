@@ -1104,6 +1104,17 @@
     }
 
 
+    .catalog-printing__btns
+    {
+        margin-left: 0;
+    }
+
+    .catalog-printing__btn
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
 
     /*------------
 		coments

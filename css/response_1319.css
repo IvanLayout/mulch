@@ -3335,6 +3335,98 @@
     }
 
 
+    .faq-page__coll
+    {
+        width: 240px;
+    }
+
+    .page-list
+    {
+        padding: 20px;
+    }
+
+
+    .page-list__link
+    {
+        font-size: 14px;
+    }
+
+    .page-list__sublist-link
+    {
+        font-size: 14px;
+    }
+
+    .faq-page__colr
+    {
+        width: calc(100% - 270px);
+    }
+
+
+    .faq__bg
+    {
+        display: block;
+
+        min-height: 1px;
+        padding: 40px;
+    }
+
+    .faq__bg-title
+    {
+        font-size: 22px;
+
+        margin-bottom: 16px;
+    }
+
+    .faq__bg-subtitle
+    {
+        margin-bottom: 20px;
+    }
+
+    .faq__bg-box
+    {
+        width: 100%;
+        max-width: none;
+    }
+
+    .faq__form
+    {
+        max-width: none;
+    }
+
+    .faq__form .form__bot
+    {
+        margin-top: 24px;
+    }
+
+    .faq__bg::before
+    {
+        display: none;
+    }
+
+    .faq__succes
+    {
+        padding: 50px 0;
+    }
+
+    .faq__succes-title
+    {
+        font-size: 28px;
+    }
+
+
+    .catalog-printing__col
+    {
+        width: calc(100% / 3 - 30px);
+        margin-left: 30px;
+    }
+
+    .catalog-printing__btns
+    {
+        margin-top: 30px;
+        padding-left: 0;
+    }
+
+
     /*------------
 		coments
 	------------*/
