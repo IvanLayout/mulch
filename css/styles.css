@@ -18270,6 +18270,75 @@ input[type=radio]:checked + .radio-dot__dot
     width: 100%;
     margin-top: 24px;
 }
+
+.catalog-printing__cols
+{
+	margin-left: -30px;
+}
+
+.catalog-printing__col
+{
+	width: calc(100%/4 - 30px);
+	margin-left: 30px;
+}
+
+.catalog-printing .checkbox__text
+{
+	padding-left: 30px;
+	transition: color .2s linear;
+}
+
+.checkbox__main .checkbox__text
+{
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.catalog-printing__small .checkbox__text
+{
+	font-size: 12px;
+}
+
+.catalog-printing .checkbox__text::before
+{
+	left: 0;
+}
+
+.catalog-printing .checkbox__text::after
+{
+	left: 0;
+}
+
+.catalog-printing input[type=checkbox]:checked + .checkbox__text
+{
+	background: none;
+}
+
+@media (any-hover: hover) 
+{
+    .catalog-printing .checkbox__text:hover 
+	{
+        color: #007657;
+		background: none;
+	}
+}
+
+.catalog-printing__item + .catalog-printing__item
+{
+	margin-top: 13px;
+}
+
+.catalog-printing__middle
+{
+	padding-left: 30px;
+	margin-top: 7px;
+}
+
+.catalog-printing__small
+{
+	margin-top: 3px;
+	padding-left: 30px;
+}
 /*------------
     footer
 ------------*/
