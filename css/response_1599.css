@@ -1122,6 +1122,39 @@
         max-width: 660px;
     }
 
+    .modal-add__map
+    {
+        height: 676px;
+    }
+
+    .my-addres__item
+    {
+        padding-left: 20px;
+    }
+
+    .my-addres__btn
+    {
+        width: calc(50% - 10px);
+        min-width: 1px;
+    }
+
+    .my-addres__btn.btn-bord
+    {
+        font-size: 14px;
+        line-height: 42px;
+
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .add-addres
+    {
+        font-size: 14px;
+        line-height: 44px;
+
+        margin-top: 26px;
+    }
+
 
     /*------------
 		coments
@@ -1133,6 +1166,11 @@
     }
 
     .content__flex-order
+    {
+        margin-left: -20px;
+    }
+
+    .content__flex
     {
         margin-left: -20px;
     }

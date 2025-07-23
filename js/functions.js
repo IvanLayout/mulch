@@ -919,6 +919,19 @@ $(() => {
 			$(this).closest('.my-comment__answer').addClass('_show')
 		}
 	})
+
+
+	$('body').on('click', '.page-list__link._sub', function (e) {
+		e.preventDefault()
+
+		if ( $(this).hasClass('_active') ) {
+			$(this).removeClass('_active')
+			$(this).next().removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+			$(this).next().addClass('_show')
+		}
+	})
 })
 
 

@@ -1962,6 +1962,13 @@ button
     transition: background .2s linear, color .2s linear;
 }
 
+.btn-bord:disabled
+{
+    color: #616161;
+
+    opacity: .2;
+}
+
 .btn-bord_icon
 {
     padding: 0 25px;
@@ -2127,6 +2134,14 @@ button
         color: #FFF;
 
         background: #007657;
+    }
+
+    .btn-bord:disabled:hover
+    {
+        color: #616161;
+
+        opacity: .2;
+        background-color: transparent;
     }
 
     .main-link:hover
@@ -17645,6 +17660,272 @@ input[type=radio]:checked + .radio-dot__dot
 
 
 
+.my-addres
+{
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-top: -20px;
+}
+
+.my-addres__item
+{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(50% - 10px);
+    margin-top: 20px;
+    padding: 20px 18px 32px 25px;
+
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.my-addres__top
+{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    width: 100%;
+}
+
+.my-addres__addres
+{
+    margin-top: 6px;
+}
+
+.my-addres__info
+{
+    color: #007657;
+    line-height: 27px;
+
+    flex-shrink: 0;
+
+    margin-left: 16px;
+    padding: 0 10px;
+
+    white-space: nowrap;
+
+    border-radius: 2px;
+    background: #F7F7F7;
+}
+
+.my-addres__btns
+{
+    margin: auto 0 0 -10px;
+    padding-top: 19px;
+}
+
+.my-addres__btn
+{
+    min-width: 164px;
+    margin: 10px 0 0 10px;
+}
+
+.my-addres__btn.btn-green
+{
+    line-height: 44px;
+}
+
+
+.add-addres
+{
+    color: #007657;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 58px;
+
+    margin-top: 32px;
+    padding: 0 15px;
+
+    text-align: center;
+
+    border-radius: 5px;
+    background: #E0ECE9;
+
+    transition: background .2s linear;
+}
+
+.add-addres span
+{
+    position: relative;
+
+    display: inline-block;
+
+    padding-left: 34px;
+}
+
+.add-addres span::before
+{
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+
+    background: url(../images/ic_plus.svg) 50% no-repeat;
+}
+
+@media (any-hover: hover)
+{
+    .add-addres:hover
+    {
+        background: rgba(0, 118, 87, .2);
+    }
+}
+
+
+.faq-page__flex
+{
+    justify-content: space-between;
+}
+
+.faq-page__coll
+{
+    width: 296px;
+}
+
+.page-list
+{
+    padding: 30px 35px 30px 25px;
+
+    border-radius: 10px;
+    background: #F9F9F9;
+}
+
+.page-list__item + .page-list__item
+{
+    margin-top: 22px;
+}
+
+.page-list__link
+{
+    position: relative;
+
+    color: #282828;
+    font-size: 16px;
+    font-weight: 500;
+
+    display: block;
+
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.page-list__link._sub
+{
+    padding-right: 26px;
+}
+
+.page-list__link svg
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 10px;
+    height: 9px;
+    margin-top: -5px;
+
+    fill: currentColor;
+}
+
+@media (any-hover: hover)
+{
+    .page-list__link:hover
+    {
+        color: #007657;
+    }
+}
+
+.page-list__link._active
+{
+    color: #007657;
+}
+
+.page-list__link._active svg
+{
+    transform: rotate(180deg);
+}
+
+.page-list__sublist
+{
+    display: none;
+
+    margin-top: 11px;
+    padding-left: 15px;
+}
+
+.page-list__sublist._show
+{
+    display: block;
+}
+
+.page-list__sublist-item + .page-list__sublist-item
+{
+    margin-top: 10px;
+}
+
+.page-list__sublist-link
+{
+    color: rgba(40, 40, 40, .7);
+    font-size: 16px;
+
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .page-list__sublist-link:hover
+    {
+        color: #282828;
+    }
+}
+
+.faq-page__colr
+{
+    width: calc(100% - 336px);
+}
+
+.faq__text-block
+{
+    color: #282828;
+}
+
+.faq__text-block h3
+{
+    margin-bottom: 20px;
+}
+
+.faq__text-block p
+{
+    margin-bottom: 20px;
+}
+
+.faq__text-block p + ul
+{
+    margin-top: -10px;
+}
+
+.faq__text-block ul
+{
+    margin-bottom: 10px;
+}
+
+.faq__text-block ul li + li
+{
+    margin-top: 8px;
+}
+
+
 /*------------
     coments
 ------------*/
@@ -18798,6 +19079,14 @@ input[type=radio]:checked + .radio-dot__dot
     padding: 46px 30px 52px;
 }
 
+.modal.modal-add
+{
+    width: 1920px;
+    padding: 0;
+
+    border-radius: 0;
+}
+
 .modal__title
 {
     font-size: 26px;
@@ -19930,6 +20219,128 @@ input[type=radio]:checked + .radio-dot__dot
     transition: background .2s linear, color .2s linear;
 }
 
+.modal-add .carousel__button.is-close
+{
+    display: none;
+}
+
+.modal-add__flex
+{
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.modal-add__coll
+{
+    width: 659px;
+    padding: 40px;
+}
+
+.modal-close
+{
+    position: relative;
+
+    color: #616161;
+    font-size: 14px;
+    line-height: 21px;
+
+    display: inline-block;
+
+    margin-bottom: 32px;
+    padding-left: 31px;
+
+    transition: color .2s linear;
+}
+
+.modal-close__arrow
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 21px;
+    height: 21px;
+
+    border-radius: 2px;
+    background: #FFF;
+    box-shadow: 0 0 12px 0 rgba(13, 30, 42, .1);
+}
+
+.modal-close__arrow svg
+{
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    transform: rotate(180deg);
+
+    fill: none;
+    stroke: #007657;
+}
+
+@media (any-hover: hover)
+{
+    .modal-close:hover
+    {
+        color: #282828;
+    }
+}
+
+.modal-add__title
+{
+    font-size: 26px;
+    font-weight: 500;
+
+    margin-bottom: 24px;
+}
+
+.modal-add .checkbox-text
+{
+    margin-top: 15px;
+}
+
+.modal-add .form .form__textarea
+{
+    height: 111px;
+}
+
+.form__submit_marg
+{
+    margin-top: 32px;
+}
+
+.modal-add__colr
+{
+    width: calc(100% - 659px);
+}
+
+.modal-add__map
+{
+    height: 900px;
+    min-height: 100%;
+}
+
+.delivery-price
+{
+    color: #616161;
+    font-size: 16px;
+
+    margin-top: 15px;
+}
+
+.delivery-price b
+{
+    color: #282828;
+    font-weight: 500;
+}
+
 @media (any-hover: hover)
 {
     .btn-yes:hover
@@ -20620,6 +21031,18 @@ input[type=radio]:checked + .radio-dot__dot
     }
 
 
+    .modal-add__coll
+    {
+        width: 652px;
+        padding-right: 30px;
+    }
+
+    .modal-add__colr
+    {
+        width: calc(100% - 652px);
+    }
+
+
     /*------------
 		coments
 	------------*/
@@ -20630,6 +21053,11 @@ input[type=radio]:checked + .radio-dot__dot
     }
 
     .content__flex-order
+    {
+        margin-left: -14px;
+    }
+
+    .content__flex
     {
         margin-left: -14px;
     }

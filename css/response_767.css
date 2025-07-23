@@ -5249,6 +5249,24 @@
     }
 
 
+    .my-addres__item
+    {
+        width: 100%;
+    }
+
+
+    .modal-add__coll
+    {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .modal-add__colr
+    {
+        display: none;
+    }
+
+
     /*------------
 		coments
 	------------*/

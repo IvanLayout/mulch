@@ -3533,6 +3533,44 @@
     }
 
 
+    .modal-add__coll
+    {
+        width: 398px;
+        padding: 30px 30px 30px 40px;
+    }
+
+    .modal-close
+    {
+        font-size: 13px;
+        line-height: 17px;
+
+        margin-bottom: 22px;
+        padding-left: 23px;
+    }
+
+    .modal-close__arrow
+    {
+        width: 17px;
+        height: 17px;
+    }
+
+    .modal-close__arrow svg
+    {
+        width: 8px;
+        height: 8px;
+    }
+
+    .modal-add__title
+    {
+        margin-bottom: 16px;
+    }
+
+    .modal-add__colr
+    {
+        width: calc(100% - 398px);
+    }
+
+
 
     /*------------
 		coments
