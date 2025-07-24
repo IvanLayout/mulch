@@ -932,6 +932,18 @@ $(() => {
 			$(this).next().addClass('_show')
 		}
 	})
+
+	$('body').on('click', '.about-stock__open', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.about-stock').addClass('_show')
+	})
+
+	$('body').on('click', '.about-stock__mob-close', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.about-stock').removeClass('_show')
+	})
 })
 
 

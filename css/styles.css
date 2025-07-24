@@ -18129,6 +18129,140 @@ input[type=radio]:checked + .radio-dot__dot
 }
 
 
+.about-stock{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 60;
+}
+
+.about-stock__flex{
+    background: #FFAA86;
+    flex-wrap: nowrap;
+}
+
+.about-stock__item{
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+.about-stock__item.active{
+    background: #F87740;
+}
+
+.about-stock__item-name{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.about-stock__item-name._big{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-stock__item.active .about-stock__item-name{
+    font-weight: 500;
+}
+
+.about-stock__progress{
+    height: 19px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,.6);
+    width: 100%;
+    position: relative;
+}
+
+.about-stock__item.active .about-stock__progress{
+    display: flex;
+}
+
+.about-stock__item.active + .about-stock__item .about-stock__progress{
+    display: flex;
+}
+
+.about-stock__progress-bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #F87740;
+}
+
+.about-stock__progress-name{
+    position: relative;
+    z-index: 1;
+}
+
+.about-stock__item .tooltip{
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    display: none;
+}
+
+.about-stock__item.active .tooltip{
+    display: block;
+}
+
+.about-stock__item .tooltip__icon{
+    background: #fff url(../images/ic_tooltip2.svg) 50% no-repeat;
+}
+
+.about-stock__item .mini-modal__modal_text{
+    left: 50%;
+    top: auto;
+    bottom: calc(100% + 6px);
+    width: 370px;
+    border: 1px solid rgba(248, 119, 64, 0.29);
+    border-radius: 3px;
+    background: #fff;
+    padding: 6px 9px;
+    transform: translateX(-50%);
+}
+
+.about-stock__item:first-child .mini-modal__modal_text{
+    left: -20px;
+    transform: translateX(0);
+}
+
+.about-stock__item:last-child .mini-modal__modal_text{
+    right: -20px;
+    left: auto;
+    transform: translateX(0);
+}
+
+.about-stock__item .tooltip__text{
+    font-size: 12px;
+}
+
+.about-stock__open{
+    display: none;
+}
+
+.about-stock__mob{
+    display: none;
+}
+
+
 /*------------
     coments
 ------------*/
@@ -21314,6 +21448,10 @@ input[type=radio]:checked + .radio-dot__dot
     .modal-add__colr
     {
         width: calc(100% - 652px);
+    }
+
+    .about-stock__item-name._big{
+        font-size: 16px;
     }
 
 

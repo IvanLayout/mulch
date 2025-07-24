@@ -3427,6 +3427,24 @@
     }
 
 
+    .about-stock__item{
+        height: 42px;
+    }
+
+    .about-stock__item-name._big{
+        font-size: 13px;
+    }
+
+    .about-stock__progress{
+        font-size: 10px;
+    }
+
+    .about-stock__item .tooltip{
+        top: 4px;
+        right: 4px;
+    }
+
+
     /*------------
 		coments
 	------------*/
