@@ -3399,16 +3399,16 @@
 							</div>
 
 							<div class="product-info__top _flex">
-								<div class="product-info__review _flex">
-									<div class="product-info__review-flex _flex">
-										<div class="product-info__review-star">
+								<button type="button" data-anchor="#reviews" class="product-info__review _flex scroll-btn">
+									<span class="product-info__review-flex _flex">
+										<span class="product-info__review-star">
 											<img data-src="images/star.svg" src="images/star.svg" alt="" class="lazyload loaded">
-										</div>
+										</span>
 
-										<div class="product-info__review-number">4.8</div>
-									</div>
-									<div class="product-info__review-size">110 отзывов</div>
-								</div>
+										<span class="product-info__review-number">4.8</span>
+									</span>
+									<span class="product-info__review-size">110 отзывов</span>
+								</button>
 
 								<h1 class="page-title">Кора сосны Стандарт, нефракционная</h1>
 
@@ -3436,16 +3436,16 @@
 							<div class="product-info__cols _flex">
 								<div class="product-info__coll">
 									<div class="product-info__info _flex">
-										<div class="product-info__review _flex">
-											<div class="product-info__review-flex _flex">
-												<div class="product-info__review-star">
+										<button type="button" data-anchor="#reviews" class="product-info__review _flex scroll-btn">
+											<span class="product-info__review-flex _flex">
+												<span class="product-info__review-star">
 													<img data-src="images/star.svg" src="images/star.svg" alt="" class="lazyload loaded">
-												</div>
+												</span>
 
-												<div class="product-info__review-number">4.8</div>
-											</div>
-											<div class="product-info__review-size">110 отзывов</div>
-										</div>
+												<span class="product-info__review-number">4.8</span>
+											</span>
+											<span class="product-info__review-size">110 отзывов</span>
+										</button>
 
 										<div class="product-info__availability">
 											<span>Наличие: </span>&#8250; 1000 шт.
@@ -3754,7 +3754,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -5985,7 +5985,7 @@
 				</section>
 
 
-				<section class="product-about _marg">
+				<section class="product-about _marg" id="reviews">
 					<div class="cont">
 						<div class="tabs-container">
 							<div class="tabs tabs_scroll tabs_small _flex">

@@ -94,7 +94,13 @@ $(() => {
 
 		let href = $(this).data('anchor')
 
-		$('html, body').stop().animate({ scrollTop: $(href).offset().top }, 1000)
+		let offsetTop = 10;
+
+		if ( $('.product-fixed').length && $(window).width() > 767 ){
+			offsetTop = $('.product-fixed').innerHeight() + 10
+		}
+
+		$('html, body').stop().animate({ scrollTop: $(href).offset().top - offsetTop }, 1000)
 	})
 
 
@@ -141,6 +147,10 @@ $(() => {
 		$(this).inputmask(`${datamask}`, {
 			showMaskOnHover: false
 		})
+	})
+
+	$('.amount__input').inputmask('numeric', {
+		showMaskOnHover: false
 	})
 
 	// Кастомный select
@@ -372,6 +382,15 @@ $(() => {
 		$('.open-catalog-mob').removeClass('_active')
 		$('.header').removeClass('_show')
 		$('body').removeClass('_menu-open')
+
+		$('.header-submenu').removeClass('_show')
+		$('.header__info, .catalog-head__back').removeClass('_second')
+
+		$('.header-submenu__sub').removeClass('_show')
+		$('.header__info, .catalog-head__back').removeClass('_third')
+
+		let titleCatalog = $('.catalog-head__title').data('title')
+		$('.catalog-head__title').text(titleCatalog)
 	})
 
 	$('body').on('click', '.catalog-head__back', function (e) {
@@ -951,19 +970,35 @@ $(window).on('load', () => {
 	adjustMenu()
 
 	if ( $('.product-fixed').length ) {
-		if( $(window).scrollTop() > $('.product-info').offset().top + $('.product-info').height() ) {
+		if( $(window).scrollTop() > $('.product-info').offset().top + $('.product-info').height() - 80 ) {
 			$('.product-fixed').addClass('_show')
 		} else {
 			$('.product-fixed').removeClass('_show')
 		}
 	}
 
+	if ( $('.about-stock').length ) {
+		if( $(window).scrollTop() > ($('.footer__bot').offset().top - $(window).height()) ) {
+			$('.about-stock').addClass('_hide')
+		} else {
+			$('.about-stock').removeClass('_hide')
+		}
+	}
+
 	$(window).on('scroll', () => {
 		if ( $('.product-fixed').length ) {
-			if( $(window).scrollTop() > $('.product-info').offset().top + $('.product-info').height() ) {
+			if( $(window).scrollTop() > $('.product-info').offset().top + $('.product-info').height() - 80 ) {
 				$('.product-fixed').addClass('_show')
 			} else {
 				$('.product-fixed').removeClass('_show')
+			}
+		}
+
+		if ( $('.about-stock').length ) {
+			if( $(window).scrollTop() > ($('.footer__bot').offset().top - $(window).height()) ) {
+				$('.about-stock').addClass('_hide')
+			} else {
+				$('.about-stock').removeClass('_hide')
 			}
 		}
 	})

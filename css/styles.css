@@ -5238,7 +5238,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
     width: calc(100% - 88px);
     height: 100%;
 
-    text-align: center;
+    text-align: center !important;
 
     border: none;
     background: none;
@@ -9207,6 +9207,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .cooperation__item
 {
+    color: #282828;
+
     justify-content: space-between;
     align-content: stretch;
     align-items: stretch;
@@ -9216,8 +9218,23 @@ input[type=checkbox]:checked + .checkbox-btn__text
     margin: 20px 0 0 20px;
     padding: 0 20px 0 30px;
 
+    text-decoration: none;
+
     border-radius: 8px;
     background: #F9F9F9;
+}
+
+@media (any-hover: hover)
+{
+    .cooperation__item:hover
+    {
+        color: #007657;
+    }
+
+    .cooperation__item:hover .cooperation__arrow
+    {
+        background: #00684D;
+    }
 }
 
 .cooperation__coll
@@ -9230,6 +9247,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .cooperation__top
 {
+    display: block;
+
     width: 100%;
     margin-bottom: auto;
 }
@@ -9240,6 +9259,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
     font-size: 20px;
     font-weight: 500;
+
+    display: block;
 
     padding-bottom: 13px;
 }
@@ -9261,7 +9282,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .cooperation__desc
 {
+    color: #282828;
     font-size: 14px;
+
+    display: block;
 
     max-width: 198px;
     margin-top: 25px;
@@ -9271,6 +9295,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .cooperation__bot
 {
+    display: block;
+
     margin-top: 20px;
 }
 
@@ -9290,6 +9316,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
     border-radius: 6px;
     background: #007657;
     box-shadow: 0 0 10px 0 rgba(13, 30, 42, .1);
+
+    transition: background .2s linear;
 }
 
 .cooperation__arrow svg
@@ -9304,6 +9332,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .cooperation__img
 {
+    display: block;
     align-self: flex-end;
     flex-shrink: 0;
 
@@ -13251,9 +13280,20 @@ input[type=checkbox]:checked + .checkbox-btn__text
     color: #929292;
 
     margin-left: 7px;
-    padding-top: 2px;
+    padding-top: 1px;
 
     white-space: nowrap;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .product-info__review-size:hover
+    {
+        color: #282828;
+    }
 }
 
 .product-info__availability
@@ -18178,6 +18218,17 @@ input[type=radio]:checked + .radio-dot__dot
     left: 0;
 
     width: 100%;
+
+    transition: visibility .2s linear, opacity .2s linear;
+}
+
+.about-stock._hide
+{
+    visibility: hidden;
+
+    pointer-events: none;
+
+    opacity: 0;
 }
 
 .about-stock__flex
@@ -19251,6 +19302,13 @@ input[type=radio]:checked + .radio-dot__dot
     border: 1px solid #007657;
     border-radius: 5px;
     background: none;
+
+    transition: border .2s linear;
+}
+
+.form-subscribe .form-subscribe__input:focus
+{
+    border-color: #00684D;
 }
 
 .form-subscribe__input.error

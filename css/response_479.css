@@ -1206,13 +1206,13 @@
     {
         position: relative;
 
-        padding-right: 30px;
+        padding-right: 70px;
     }
 
     .footer-menu__title-arrow
     {
         position: absolute;
-        top: 0;
+        top: -15px;
         right: 0;
 
         display: flex;
@@ -1221,8 +1221,8 @@
         align-items: center;
         flex-wrap: wrap;
 
-        width: 30px;
-        height: 100%;
+        width: 60px;
+        height: calc(100% + 30px);
     }
 
     .footer-menu__title svg
