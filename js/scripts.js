@@ -78,11 +78,14 @@ $(() => {
 	$('body').on('submit', '.faq-ajax', function (e) {
 		e.preventDefault()
 
-		console.log('adad')
-
 		$(this).closest('.faq__bg').addClass('_succes')
 	})
 
+	$('body').on('submit', '.forgot-ajax', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.forgot').addClass('_succes')
+	})
 
 
 	//Ползунки

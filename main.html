@@ -2728,14 +2728,14 @@
 							</div>
 
 							<div class="header__btns _flex">
-								<a href="/" class="header__btn">
+								<button type="button" data-content="#modal-login" class="header__btn modal-btn">
 									<span class="header__btn-icon">
 										<svg width="16" height="18">
 											<use xlink:href="images/sprite.svg#user"></use>
 										</svg>
 									</span>
 									<span class="header__btn-name">Войти</span>
-								</a>
+								</button>
 								<a href="/" class="header__btn">
 									<span class="header__btn-number">10</span>
 									<span class="header__btn-icon">
@@ -3181,7 +3181,7 @@
 
 						<div class="no-user__box">
 							<div class="no-user__title">
-								<a href="/">Войдите в профиль</a>
+								<button type="button" data-content="#modal-login" class="modal-btn">Войдите в профиль</button>
 							</div>
 
 							<div class="no-user__desc">Вы сможете отслеживать статус заказа и получать персональные предложения</div>
@@ -9299,6 +9299,150 @@
 							 <a href="/">Уфа</a>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="modal-login" class="modal modal-login">
+			<div class="modal__title modal__title_center">Вход</div>
+
+			<div class="tabs-container">
+				<div class="tabs _flex">
+					<button type="button" data-content="#tab-log1" data-level="level1" class="tabs__text tabs__button_js _active">
+						<span>Физ.лицо</span>
+					</button>
+					<span class="tabs__step">/</span>
+					<button type="button" data-content="#tab-log2" data-level="level1" class="tabs__text tabs__button_js">
+						<span>Организация</span>
+					</button>
+				</div>
+
+				<div class="tab-content level1 _active" id="tab-log1">
+					<form action="" data-content="#modal-code" class="form form-ajax">
+						<div class="form__line">
+							<div class="form__field">
+								<input type="text" value="" placeholder="" class="form__input form__input-anim">
+
+								<label class="form__label">Телефон или Email</label>
+							</div>
+						</div>
+
+						<div class="form__submit">
+							<button type="submit" class="btn-green form__submit-btn">Войти</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="tab-content level1" id="tab-log2">
+					<form action="" data-content="#modal-code" class="form form-ajax">
+						<div class="form__line">
+							<div class="form__field">
+								<input type="text" value="" placeholder="" class="form__input form__input-anim">
+
+								<label class="form__label">Телефон или Email</label>
+							</div>
+						</div>
+
+						<div class="form__submit">
+							<button type="submit" class="btn-green form__submit-btn">Войти</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="modal-code" class="modal modal-login">
+			<div class="modal__title modal__title_center">Введите код</div>
+
+			<div class="modal-login__info">Мы отправили код подтверждения на номер <br><b>+7 912 456 45 56</b> <button type="button" data-content="#modal-login" class="modal-login__info-link modal-btn">Изменить</button></div>
+
+			<form action="" class="form">
+				<div class="form__code">
+					<div class="form__code-flex _flex">
+						<div class="form__code-field">
+							<input type="text" value="" maxlength="1" class="form__input">
+						</div>
+						<div class="form__code-field">
+							<input type="text" value="" maxlength="1" class="form__input">
+						</div>
+						<div class="form__code-field">
+							<input type="text" value="" maxlength="1" class="form__input">
+						</div>
+						<div class="form__code-field">
+							<input type="text" value="" maxlength="1" class="form__input">
+						</div>
+					</div>
+
+					<div class="form__code-time">Получить новый код можно через 00:54</div>
+
+					<div class="form__code-link">
+						<a href="/">Отправить новый код</a>
+					</div>
+
+					<div class="form__code-no">Не приходит код? <button type="button" data-content="#modal-login-pass" class="modal-btn">Войти по почте и паролю</button></div>
+				</div>
+			</form>
+		</div>
+
+		<div id="modal-login-pass" class="modal modal-login">
+			<div class="modal__title modal__title_center">Введите пароль</div>
+
+			<div class="modal-login__info">Для входа на сайт введите пароль: <br><b>rtrtr@gmail.com</b> <button type="button" data-content="#modal-login" class="modal-login__info-link modal-btn">Изменить</button></div>
+
+			<form action="" data-content="#modal-code" class="form">
+				<div class="form__line">
+					<div class="form__field">
+						<input type="password" value="" placeholder="" class="form__input form__input-anim form__input-password">
+
+						<label class="form__label">Пароль</label>
+
+						<button class="password-eye">
+							<svg>
+								<use xlink:href="images/sprite.svg#eye2"></use>
+							</svg>
+							<svg>
+								<use xlink:href="images/sprite.svg#eye2_on"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="btn-green form__submit-btn">Войти</button>
+				</div>
+			</form>
+
+			<div class="forgot-wrap">
+				<button type="button" data-content="#modal-forgot" class="forgot-wrap__btn modal-btn">Забыли пароль?</button>
+			</div>
+		</div>
+
+		<div id="modal-forgot" class="modal modal-login">
+			<div class="modal__title modal__title_center">Восстановление пароля</div>
+
+			<div class="forgot">
+				<div class="forgot__sector">
+					<div class="modal__subtitle modal__subtitle_canter">Укажите адрес эл. почты, который вы использовали при регистрации. Мы вышлем вам инструкцию по восстановлению пароля</div>
+
+					<form action="" data-content="#modal-code" class="form forgot-ajax">
+						<div class="form__line">
+							<div class="form__field">
+								<input type="email" value="" placeholder="" class="form__input form__input-anim">
+
+								<label class="form__label">Email</label>
+							</div>
+						</div>
+
+						<div class="form__submit">
+							<button type="submit" class="btn-green form__submit-btn">Восстановить пароль</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="forgot__send">
+					<div class="modal__subtitle modal__subtitle_canter">Мы отправили ссылку для востановления пароля на <b>info545@gmail.com</b></div>
 				</div>
 			</div>
 		</div>

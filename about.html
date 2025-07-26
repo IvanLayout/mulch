@@ -2728,14 +2728,14 @@
 							</div>
 
 							<div class="header__btns _flex">
-								<a href="/" class="header__btn">
+								<button type="button" data-content="#modal-reg" class="header__btn modal-btn">
 									<span class="header__btn-icon">
 										<svg width="16" height="18">
 											<use xlink:href="images/sprite.svg#user"></use>
 										</svg>
 									</span>
 									<span class="header__btn-name">Войти</span>
-								</a>
+								</button>
 								<a href="/" class="header__btn">
 									<span class="header__btn-number">10</span>
 									<span class="header__btn-icon">
@@ -3171,71 +3171,144 @@
 					</a>
 				</div>
 
-				<div class="user-info">
-					<div class="no-user _flex">
-						<div class="no-user__icon">
-							<svg>
-								<use xlink:href="images/sprite.svg#user"></use>
-							</svg>
-						</div>
+				<div class="user-info user-info_log">
+					<section class="lk-header">
+						<div class="cont">
+							<div class="lk-header__flex _flex">
+								<div class="lk-header__photo">
+									<span>ККК</span>
+								</div>
 
-						<div class="no-user__box">
-							<div class="no-user__title">
-								<a href="/">Войдите в профиль</a>
+								<div class="lk-header__name">Константин Константинопольский</div>
+
+								<a href="/" class="lk-header__settings">
+									<img src="images/settings.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</section>
+
+					<div class="lk-info _flex">
+						<div class="lk-info__col _points">
+							<div class="lk-info__top _flex">
+								<div class="lk-info__title">Ваши баллы</div>
 							</div>
 
-							<div class="no-user__desc">Вы сможете отслеживать статус заказа и получать персональные предложения</div>
+							<div class="lk-info__points _flex">
+								<div class="lk-info__points-icon">
+									Б
+								</div>
+								<div class="lk-info__points-name">1 024</div>
+							</div>
+						</div>
+						<div class="lk-info__col">
+							<div class="lk-info__top _flex">
+								<div class="lk-info__title">Корзина</div>
+							</div>
+
+							<div class="lk-info__cart _flex">
+								<div class="lk-info__cart-icon">
+									<img src="images/ic_cart.svg" alt="">
+								</div>
+								<div class="lk-info__cart-box">
+									<div class="lk-info__cart-number">100 товаров <span>в корзине</span></div>
+									<div class="lk-info__cart-title">Сумма заказа:</div>
+									<div class="lk-info__cart-sum">1 000 000 000 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="lk-info__col _mob">
+							<div class="lk-info__top _flex">
+								<div class="lk-info__title">Мои заказы</div>
+							</div>
+
+							<div class="lk-info__desc">1 заказ</div>
 						</div>
 					</div>
 
-					<div class="user-info__links">
-						<div class="user-info__links-item">
-							<a href="/" class="user-info__links-link">
-								<span class="user-info__links-name">Избранное</span>
-								<span class="user-info__links-number">100</span>
-							</a>
-						</div>
-						<div class="user-info__links-item">
-							<a href="/" class="user-info__links-link">
-								<span class="user-info__links-name">Сравнение</span>
-								<span class="user-info__links-number">100</span>
-							</a>
-						</div>
-						<div class="user-info__links-item">
-							<a href="/" class="user-info__links-link">
-								<span class="user-info__links-name">Корзина</span>
-								<span class="user-info__links-number">100</span>
-							</a>
-						</div>
-						<div class="user-info__links-item">
-							<a href="/" class="user-info__links-link _sub">
-								<span class="user-info__links-name">Информация</span>
-
-								<svg class="user-info__links-arrow">
-									<use xlink:href="images/sprite.svg#arrow5"></use>
+					<div class="lk-links">
+						<div class="lk-links__item">
+							<a href="/" class="lk-links__link">
+								<span class="lk-links__link-name">Моя учётная запись</span>
+								<svg class="lk-links__link-arrow">
+									<use xlink:href="images/sprite.svg#arrow1"></use>
 								</svg>
 							</a>
-
-							<div class="user-info__links-sub">
-								<div>
-									<a href="/">Контакты</a>
-								</div>
-								<div>
-									<a href="/">Доставка и оплата</a>
-								</div>
-								<div>
-									<a href="/">Сервис и поддержка</a>
-								</div>
-								<div>
-									<a href="/">Сотрудничество</a>
-								</div>
-								<div>
-									<a href="/">Новости</a>
-								</div>
-								<div>
-									<a href="/">О компании</a>
-								</div>
-							</div>
+						</div>
+						<div class="lk-links__item">
+							<a href="/" class="lk-links__link">
+								<span class="lk-links__link-name">Баллы и бонусы <b>+1024</b></span>
+								<svg class="lk-links__link-arrow">
+									<use xlink:href="images/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="lk-links__item">
+							<a href="/" class="lk-links__link">
+								<span class="lk-links__link-name">Адреса доставки</span>
+								<svg class="lk-links__link-arrow">
+									<use xlink:href="images/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="lk-links__item">
+							<a href="/" class="lk-links__link">
+								<span class="lk-links__link-name">Избранное <span>(100)</span></span>
+								<svg class="lk-links__link-arrow">
+									<use xlink:href="images/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="lk-links__item">
+							<a href="/" class="lk-links__link">
+								<span class="lk-links__link-name">Сравнение товаров <span>(100)</span></span>
+								<svg class="lk-links__link-arrow">
+									<use xlink:href="images/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="lk-links__item">
+							<a href="/" class="lk-links__link">
+								<span class="lk-links__link-name">Моя корзина <span>(100)</span></span>
+								<svg class="lk-links__link-arrow">
+									<use xlink:href="images/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="lk-links__item">
+							<a href="/" class="lk-links__link">
+								<span class="lk-links__link-name">Мои заказы <span>(100)</span></span>
+								<svg class="lk-links__link-arrow">
+									<use xlink:href="images/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="lk-links__item">
+							<a href="/" class="lk-links__link">
+								<span class="lk-links__link-name">Купленные товары <span>(100)</span></span>
+								<svg class="lk-links__link-arrow">
+									<use xlink:href="images/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="lk-links__item">
+							<a href="/" class="lk-links__link">
+								<span class="lk-links__link-name">Мои отзывы <span>(100)</span></span>
+								<svg class="lk-links__link-arrow">
+									<use xlink:href="images/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="lk-links__item">
+							<a href="/" class="lk-links__link">
+								<span class="lk-links__link-name">Настройка уведомлений</span>
+								<svg class="lk-links__link-arrow">
+									<use xlink:href="images/sprite.svg#arrow1"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="lk-links__logout">
+							<a href="/">Выйти из аккаунта</a>
 						</div>
 					</div>
 				</div>
@@ -4882,6 +4955,166 @@
 							 <a href="/">Уфа</a>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-reg" class="modal modal-login">
+			<div class="modal__title modal__title_center">Завершите регистрацию</div>
+
+			<div class="tabs-container">
+				<div class="tabs _flex">
+					<button type="button" data-content="#tab-reg1" data-level="level1" class="tabs__text tabs__button_js _active">
+						<span>Физ.лицо</span>
+					</button>
+					<span class="tabs__step">/</span>
+					<button type="button" data-content="#tab-reg2" data-level="level1" class="tabs__text tabs__button_js">
+						<span>Организация</span>
+					</button>
+				</div>
+
+				<div class="tab-content level1 _active" id="tab-reg1">
+					<form action="" data-content="#modal-code" class="form form-ajax">
+						<div class="form__line">
+							<div class="form__field">
+								<input type="text" value="" placeholder="" class="form__input form__input-anim">
+
+								<label class="form__label">Имя*</label>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="email" value="rtrtr@gmail.com" placeholder="" class="form__input form__input-anim form__input_succes">
+
+								<label class="form__label">Email</label>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="password" value="" placeholder="" class="form__input form__input-anim form__input-password">
+
+								<label class="form__label">Пароль</label>
+
+								<button class="password-eye">
+									<svg>
+										<use xlink:href="images/sprite.svg#eye2"></use>
+									</svg>
+									<svg>
+										<use xlink:href="images/sprite.svg#eye2_on"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="password" value="" placeholder="" class="form__input form__input-anim form__input-password">
+
+								<label class="form__label">Повторите пароль</label>
+
+								<button class="password-eye">
+									<svg>
+										<use xlink:href="images/sprite.svg#eye2"></use>
+									</svg>
+									<svg>
+										<use xlink:href="images/sprite.svg#eye2_on"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" value="" placeholder="" data-mask="+7 999 999-99-99" class="form__input form__input-anim">
+
+								<label class="form__label">Телефон</label>
+							</div>
+						</div>
+
+						<div class="checkbox-text">
+							<label class="checkbox-text__label">
+								<input type="checkbox" name="">
+
+								<span class="checkbox-text__text">Хочу получать информацию о скидках, специальных предложениях и акциях</span>
+							</label>
+						</div>
+						
+						<div class="form__submit">
+							<button type="submit" class="btn-green form__submit-btn">Войти</button>
+						</div>
+
+						<div class="agree-text">При регистрации вы предоставляете <a href="/">Согласие на обработку персональных данных</a> в соответствии с <a href="/">Политикой в отношении обработки персональных данных</a>, а также принимаете условия <a href="/">Пользовательского соглашения</a>.</div>
+					</form>
+				</div>
+
+				<div class="tab-content level1" id="tab-reg2">
+					<form action="" data-content="#modal-code" class="form form-ajax">
+						<div class="form__line">
+							<div class="form__field">
+								<input type="text" value="" placeholder="" class="form__input form__input-anim">
+
+								<label class="form__label">ИНН*</label>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" value="+7 912 456-45-56" placeholder="" data-mask="+7 999 999-99-99" class="form__input form__input-anim form__input_succes">
+
+								<label class="form__label">Телефон</label>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="password" value="" placeholder="" class="form__input form__input-anim form__input-password">
+
+								<label class="form__label">Пароль</label>
+
+								<button class="password-eye">
+									<svg>
+										<use xlink:href="images/sprite.svg#eye2"></use>
+									</svg>
+									<svg>
+										<use xlink:href="images/sprite.svg#eye2_on"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="password" value="" placeholder="" class="form__input form__input-anim form__input-password">
+
+								<label class="form__label">Повторите пароль</label>
+
+								<button class="password-eye">
+									<svg>
+										<use xlink:href="images/sprite.svg#eye2"></use>
+									</svg>
+									<svg>
+										<use xlink:href="images/sprite.svg#eye2_on"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="email" value="" placeholder="" class="form__input form__input-anim">
+
+								<label class="form__label">Email</label>
+							</div>
+						</div>
+
+						<div class="checkbox-text">
+							<label class="checkbox-text__label">
+								<input type="checkbox" name="">
+
+								<span class="checkbox-text__text">Хочу получать информацию о скидках, специальных предложениях и акциях</span>
+							</label>
+						</div>
+						
+						<div class="form__submit">
+							<button type="submit" class="btn-green form__submit-btn">Войти</button>
+						</div>
+
+						<div class="agree-text">При регистрации вы предоставляете <a href="/">Согласие на обработку персональных данных</a> в соответствии с <a href="/">Политикой в отношении обработки персональных данных</a>, а также принимаете условия <a href="/">Пользовательского соглашения</a>.</div>
+					</form>
 				</div>
 			</div>
 		</div>
