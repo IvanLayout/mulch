@@ -147,6 +147,20 @@
     }
 
 
+    .radio-payment__wrap
+    {
+        min-height: 72px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+
+    .checkout__reg-desc
+    {
+        margin-top: 8px;
+    }
+
+
 
     .advantages
     {
@@ -918,6 +932,11 @@
         width: 19px;
         height: 18px;
         margin-right: 5px;
+    }
+
+    .product-small__review-number
+    {
+        font-size: 13px;
     }
 
     .product-small__availability
@@ -2138,6 +2157,36 @@
     }
 
 
+    .checkbox-text__text._big
+    {
+        font-size: 16px;
+    }
+
+
+    .filter-btns
+    {
+        overflow: hidden;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-right: 40px;
+        padding-left: 30px;
+    }
+
+    .filter-btns::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+    .filter-btns__btn
+    {
+        flex-shrink: 0;
+
+        white-space: nowrap;
+    }
+
     .mission__coll
     {
         width: calc(50% - 5px);
@@ -2694,6 +2743,7 @@
 
     .product-fixed .product-fixed__buy
     {
+        font-size: 16px;
         line-height: 44px;
 
         width: 100%;
@@ -2802,6 +2852,7 @@
 
     .checkout__reg .btn-green
     {
+        font-size: 14px;
         line-height: 44px;
     }
 
@@ -3725,6 +3776,18 @@
     }
 
 
+    .checkout-table__top
+    {
+        margin-bottom: 0;
+        padding-top: 20px;
+    }
+
+    .checkout-table__top-title
+    {
+        font-size: 15px;
+    }
+
+
     /*------------
 		coments
 	------------*/
@@ -3793,6 +3856,11 @@
     .order-info__desc
     {
         width: 57%;
+    }
+
+    .order-info__btn
+    {
+        line-height: 44px;
     }
 
 

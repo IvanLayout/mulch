@@ -3344,7 +3344,7 @@
 
 											<div class="my-addres__btns _flex">
 												<button type="button" data-content="#modal-change-addres" data-modal-big="true" class="btn-green my-addres__btn modal-btn">Изменить</button>
-												<button type="button" disabled class="btn-bord my-addres__btn">Удалить</button>
+												<button type="button" disabled class="btn-bord my-addres__btn my-addres__btn-delete">Удалить</button>
 											</div>
 										</div>
 
@@ -3359,7 +3359,7 @@
 											<div class="my-addres__btns _flex">
 												<button type="button" data-content="#modal-change-addres" data-modal-big="true" class="btn-green my-addres__btn modal-btn">Изменить</button>
 												<a href="/" class="btn-green my-addres__btn">По умолчанию</a>
-												<button type="button" class="btn-bord my-addres__btn">Удалить</button>
+												<button type="button" class="btn-bord my-addres__btn my-addres__btn-delete">Удалить</button>
 											</div>
 										</div>
 									</div>
@@ -3903,7 +3903,7 @@
 						</div>
 
 						<div class="form__submit form__submit_marg">
-							<button type="button" class="btn-green form__submit-btn">Добавить адрес доставки</button>
+							<button type="submit" class="btn-green form__submit-btn">Добавить адрес доставки</button>
 						</div>
 					</form>
 				</div>
@@ -3977,7 +3977,7 @@
 						</div>
 
 						<div class="form__submit form__submit_marg">
-							<button type="button" class="btn-green form__submit-btn">Изменить адрес доставки</button>
+							<button type="submit" class="btn-green form__submit-btn">Изменить адрес доставки</button>
 						</div>
 					</form>
 				</div>
@@ -3989,6 +3989,33 @@
 			</div>
 		</div>
 		
+
+
+		<div id="modal-fast" class="modal modal-fast">
+			<div class="modal__title modal__title_center">Быстрая покупка</div>
+
+			<form action="" data-content="#modal-code" class="form form-ajax">
+				<div class="form__line">
+					<div class="form__field">
+						<input type="text" value="" placeholder="" class="form__input form__input-anim">
+
+						<label class="form__label">Имя</label>
+					</div>
+				</div>
+
+				<div class="form__line">
+					<div class="form__field">
+						<input type="tel" value="" placeholder="" data-mask="+7 999 999-99-99" class="form__input form__input-anim">
+
+						<label class="form__label">Номер телефона</label>
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="btn-green form__submit-btn">Купить</button>
+				</div>
+			</form>
+		</div>
 
 
 		<div class="supports-error">

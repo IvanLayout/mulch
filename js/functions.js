@@ -149,7 +149,7 @@ $(() => {
 		})
 	})
 
-	$('.amount__input').inputmask('numeric', {
+	$('[inputmode="numeric"]').inputmask('numeric', {
 		showMaskOnHover: false
 	})
 
@@ -962,6 +962,31 @@ $(() => {
 		e.preventDefault()
 
 		$(this).closest('.about-stock').removeClass('_show')
+	})
+
+	$('.order-info__copy').on('click', function () {
+		const textToCopy = $(this).data('copy');
+
+		const $tempInput = $('<input>');
+		$('body').append($tempInput);
+		$tempInput.val(textToCopy).select();
+		document.execCommand('copy');
+		$tempInput.remove();
+
+		const originalText = $('#order-code').text();
+		$('#order-code').text('Скопировано!');
+		const $el = $('#order-code');
+		setTimeout(function () {
+			$el.text(originalText);
+		}, 1000);
+	})
+
+	
+
+	$('body').on('click', '.my-addres__btn-delete', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.my-addres__item').remove()
 	})
 })
 

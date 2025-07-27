@@ -1966,6 +1966,8 @@ button
 {
     color: #616161;
 
+    cursor: default;
+
     opacity: .2;
 }
 
@@ -2624,6 +2626,11 @@ button
     background: transparent;
 
     transition: border .2s linear;
+}
+
+[inputmode=numeric]
+{
+    text-align: left !important;
 }
 
 .form .form__input-anim
@@ -3984,6 +3991,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     margin-top: 80px;
 }
 
+._marg2
+{
+    margin-top: 40px;
+}
+
 
 .first-section
 {
@@ -5074,7 +5086,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
     margin: 6px 0 0 10px;
 }
 
-.product__buy a
+.product__buy-fast
 {
     color: inherit;
 
@@ -5087,7 +5099,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 @media (any-hover: hover)
 {
-    .product__buy a:hover
+    .product__buy-fast:hover
     {
         color: #505050;
     }
@@ -7244,6 +7256,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     display: none;
 }
 
+.product-about .text-block h3
+{
+    margin-bottom: 16px;
+}
+
 
 .features_marg
 {
@@ -7322,9 +7339,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
     display: block;
 
+    min-width: 82px;
     margin: 10px 0 0 10px;
     padding: 0 16px;
 
+    text-align: center;
     text-decoration: none;
 
     border: 1px solid #007657;
@@ -10676,6 +10695,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
     display: block;
     overflow: hidden;
 
+    text-decoration: none;
+
     border-radius: 10px;
 }
 
@@ -10689,7 +10710,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
     grid-column: span 2;
 }
-
 
 .production-photos__img
 {
@@ -10717,7 +10737,17 @@ input[type=checkbox]:checked + .checkbox-btn__text
     width: 100%;
     height: 100%;
 
+    transition: transform .4s linear, opacity .5s linear;
+
     object-fit: cover;
+}
+
+@media (any-hover: hover)
+{
+    .production-photos__photo:hover img
+    {
+        transform: scale(1.05);
+    }
 }
 
 .production-photos__number
@@ -13821,6 +13851,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
     margin-top: 41px;
 }
 
+.product-info__recommend-title
+{
+    font-size: 26px;
+    font-weight: 500;
+}
+
 .product-info__recommend._mob
 {
     display: none;
@@ -15002,6 +15038,31 @@ input[type=checkbox]:checked + .checkbox-btn__text
     background: #FFF;
 }
 
+.checkout-table__top
+{
+    position: relative;
+
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    padding-top: 4px;
+    padding-bottom: 29px;
+}
+
+.checkout-table__top-title
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.checkout-table__top-btn
+{
+    flex-shrink: 0;
+
+    min-width: 192px;
+    margin: -9px 0 -9px 30px;
+}
+
 .checkout-table table
 {
     position: relative;
@@ -15031,6 +15092,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .checkout-table table th:last-child
 {
     padding-right: 0;
+}
+
+.checkout-table table th:nth-child(2)
+{
+    text-align: left;
 }
 
 .checkout-table table td
@@ -15287,6 +15353,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     border-top: none;
 }
 
+.checkout-table__rate
+{
+    display: none;
+}
+
 .checkout-payments
 {
     margin-top: 20px;
@@ -15349,7 +15420,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
     width: 100%;
     min-height: 93px;
-    padding: 19px 19px 19px 69px;
+    padding: 17px 19px 17px 69px;
 
     border: 1px solid rgba(97, 97, 97, .2);
     border-radius: 10px;
@@ -15780,6 +15851,11 @@ input[type=radio]:checked + .radio-delivery__wrap
 {
     max-width: 1150px;
     margin-top: 26px;
+}
+
+.delivery__for .form__submit
+{
+    display: none;
 }
 
 .delivery__form-title
@@ -18166,6 +18242,11 @@ input[type=radio]:checked + .radio-dot__dot
     background: transparent;
 }
 
+.form .form__textarea_small
+{
+    height: 111px;
+}
+
 .faq__form .form__bot
 {
     margin-top: 32px;
@@ -18405,6 +18486,17 @@ input[type=radio]:checked + .radio-dot__dot
 }
 
 .about-stock__mob
+{
+    display: none;
+}
+
+
+.page-compare
+{
+    display: none;
+}
+
+.compare-feature_mob
 {
     display: none;
 }
@@ -20945,6 +21037,12 @@ input[type=radio]:checked + .radio-dot__dot
     padding: 40px 50px;
 }
 
+.modal.modal-fast
+{
+    width: 499px;
+    padding: 40px 50px;
+}
+
 .modal-login .tabs
 {
     justify-content: center;
@@ -21157,6 +21255,21 @@ input[type=radio]:checked + .radio-dot__dot
     top: 0;
 
     margin-top: 0;
+}
+
+.modal-fast .form
+{
+    margin-top: 21px;
+}
+
+.modal-fast .form__submit
+{
+    margin-top: 24px;
+}
+
+.modal-fast .form__submit-btn
+{
+    width: 100%;
 }
 
 @media (max-width: 1759px)

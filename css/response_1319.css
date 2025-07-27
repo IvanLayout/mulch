@@ -1274,9 +1274,20 @@
     }
 
 
+    .product-about .text-block h3
+    {
+        margin-bottom: 12px;
+    }
+
+
     .filter-btns
     {
         margin-top: 2px;
+    }
+
+    .filter-btns__btn
+    {
+        min-width: 59px;
     }
 
     .faq__coll
@@ -1326,6 +1337,11 @@
         font-size: 16px;
     }
 
+
+    .form__field-label
+    {
+        font-size: 15px;
+    }
 
 
     .brand-items__item
@@ -2887,6 +2903,7 @@
 
     .btn-green.checkout-total__btn
     {
+        font-size: 14px;
         line-height: 50px;
 
         margin-top: 16px;
@@ -3159,7 +3176,7 @@
         font-size: 14px;
     }
 
-    .lk-user__password-btn
+    .lk-user__password
     {
         font-size: 14px;
     }
@@ -3446,6 +3463,12 @@
     {
         top: 4px;
         right: 4px;
+    }
+
+
+    .checkout__reg-desc
+    {
+        margin-top: 4px;
     }
 
 

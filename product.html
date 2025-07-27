@@ -3413,11 +3413,11 @@
 								<h1 class="page-title">Кора сосны Стандарт, нефракционная</h1>
 
 								<div class="product-info__btns _flex">
-									<button type="button" class="product-info__btn product-share">
+									<a href="/" class="product-info__btn product-share">
 										<svg>
 											<use xlink:href="images/sprite.svg#share"></use>
 										</svg>
-									</button>
+									</a>
 
 									<button type="button" class="product-info__btn product-compare">
 										<svg>
@@ -3742,7 +3742,7 @@
 											</button>
 
 											<div class="fast-buy">
-												<button type="button" class="fast-buy__btn modal-btn">
+												<button type="button" data-content="#modal-fast" class="fast-buy__btn modal-btn">
 													<span>Быстрая покупка</span>
 													<span>Быстрый заказ</span>
 												</button>
@@ -3780,21 +3780,21 @@
 														<div class="product-info__calculator-name">Объём мешка, л</div>
 
 														<div class="product-info__calculator-val">
-															<input type="text" value="60" placeholder="" class="form-calculator__input">
+															<input type="text" value="60" placeholder="" class="form-calculator__input" inputmode="numeric" pattern="[0-9]*">
 														</div>
 													</div>
 													<div class="product-info__calculator-item _flex">
 														<div class="product-info__calculator-name">Площадь мульчирования, м<sup>2</sup></div>
 
 														<div class="product-info__calculator-val">
-															<input type="text" value="18000" placeholder="" class="form-calculator__input">
+															<input type="text" value="18000" placeholder="" class="form-calculator__input" inputmode="numeric" pattern="[0-9]*">
 														</div>
 													</div>
 													<div class="product-info__calculator-item _flex">
 														<div class="product-info__calculator-name">Высота мульчирования, см</div>
 
 														<div class="product-info__calculator-val">
-															<input type="text" value="20" placeholder="" class="form-calculator__input">
+															<input type="text" value="20" placeholder="" class="form-calculator__input" inputmode="numeric" pattern="[0-9]*">
 														</div>
 													</div>
 													<div class="product-info__calculator-item product-info__calculator-item_bot _flex">
@@ -3991,7 +3991,7 @@
 							<div class="product-fixed__wrap">
 								<div class="product-fixed__wrap-flex _flex product-global-btns">
 									<div class="fast-buy">
-										<button type="button" class="fast-buy__btn modal-btn">
+										<button type="button" data-content="#modal-fast" class="fast-buy__btn modal-btn">
 											<span>Быстрая покупка</span>
 											<span>Быстрый заказ</span>
 										</button>
@@ -4007,7 +4007,7 @@
 										<div class="amount__val _flex">
 											<button type="button" class="amount__btn amount__btn_minus"></button>
 
-											<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+											<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 											<button type="button" class="amount__btn amount__btn_plus"></button>
 										</div>
@@ -4343,7 +4343,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -4352,7 +4352,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -4452,7 +4452,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -4461,7 +4461,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -4556,7 +4556,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -4565,7 +4565,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -4660,7 +4660,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -4669,7 +4669,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -4764,7 +4764,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -4773,7 +4773,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -4868,7 +4868,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -4877,7 +4877,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -4972,7 +4972,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -4981,7 +4981,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -5076,7 +5076,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -5085,7 +5085,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -5214,7 +5214,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -5223,7 +5223,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -5323,7 +5323,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -5332,7 +5332,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -5427,7 +5427,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -5436,7 +5436,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -5531,7 +5531,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -5540,7 +5540,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -5635,7 +5635,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -5644,7 +5644,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -5739,7 +5739,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -5748,7 +5748,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -5843,7 +5843,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -5852,7 +5852,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -5947,7 +5947,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -5956,7 +5956,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -6823,7 +6823,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -6832,7 +6832,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -6932,7 +6932,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -6941,7 +6941,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -7036,7 +7036,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -7045,7 +7045,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -7140,7 +7140,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -7149,7 +7149,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -7244,7 +7244,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -7253,7 +7253,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -7348,7 +7348,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -7357,7 +7357,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -7452,7 +7452,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -7461,7 +7461,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -7556,7 +7556,7 @@
 												В корзину
 											</button>
 											<div class="product__buy">
-												<a href="/">Быстрая покупка</a>
+												<button type="button" data-content="#modal-fast" class="product__buy-fast modal-btn">Быстрая покупка</button>
 											</div>
 										</div>
 
@@ -7565,7 +7565,7 @@
 												<div class="amount__val _flex">
 													<button type="button" class="amount__btn amount__btn_minus"></button>
 
-													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+													<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
@@ -8336,7 +8336,7 @@
 							</button>
 
 							<div class="fast-buy">
-								<button type="button" class="fast-buy__btn modal-btn">
+								<button type="button" data-content="#modal-fast" class="fast-buy__btn modal-btn">
 									<span>Быстрая покупка</span>
 									<span>Быстрый заказ</span>
 								</button>
@@ -8348,7 +8348,7 @@
 								<div class="amount__val _flex">
 									<button type="button" class="amount__btn amount__btn_minus"></button>
 
-									<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+									<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 									<button type="button" class="amount__btn amount__btn_plus"></button>
 								</div>
@@ -8563,7 +8563,7 @@
 							<svg>
 								<use xlink:href="images/sprite.svg#arrow1"></use>
 							</svg>
-							<span>Как проходит оплата заказа?</span>
+							<span>Что входит в услугу</span>
 						</div>
 
 						<div class="accordion__data">
@@ -8613,7 +8613,35 @@
 							<svg>
 								<use xlink:href="images/sprite.svg#arrow1"></use>
 							</svg>
-							<span>Как проходит оплата заказа?</span>
+							<span>Преимущества</span>
+						</div>
+
+						<div class="accordion__data">
+							<div class="text-block">
+								
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__open">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow1"></use>
+							</svg>
+							<span>Сроки</span>
+						</div>
+
+						<div class="accordion__data">
+							<div class="text-block">
+								
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__open">
+							<svg>
+								<use xlink:href="images/sprite.svg#arrow1"></use>
+							</svg>
+							<span>Гарантия</span>
 						</div>
 
 						<div class="accordion__data">
@@ -9038,7 +9066,33 @@
 				</button>
 			</div>
 		</div>
-		
+
+
+		<div id="modal-fast" class="modal modal-fast">
+			<div class="modal__title modal__title_center">Быстрая покупка</div>
+
+			<form action="" data-content="#modal-code" class="form form-ajax">
+				<div class="form__line">
+					<div class="form__field">
+						<input type="text" value="" placeholder="" class="form__input form__input-anim">
+
+						<label class="form__label">Имя</label>
+					</div>
+				</div>
+
+				<div class="form__line">
+					<div class="form__field">
+						<input type="tel" value="" placeholder="" data-mask="+7 999 999-99-99" class="form__input form__input-anim">
+
+						<label class="form__label">Номер телефона</label>
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="btn-green form__submit-btn">Купить</button>
+				</div>
+			</form>
+		</div>
 
 
 		<div class="supports-error">

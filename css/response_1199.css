@@ -722,6 +722,44 @@
     }
 
 
+    .lk-user__item-title
+    {
+        font-size: 12px;
+    }
+
+    .lk-user__gender-radios .radio__text
+    {
+        font-size: 13px;
+    }
+
+    .checkout-table__top
+    {
+        margin-bottom: -4px;
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .checkout-table__top-title
+    {
+        font-size: 18px;
+    }
+
+    .checkout-table__top-btn
+    {
+        display: none;
+    }
+
+    .checkout-table__rate
+    {
+        font-size: 14px;
+
+        display: inline-block;
+
+        min-width: 192px;
+        margin-top: 20px;
+    }
+
+
     /*------------
 		coments
 	------------*/

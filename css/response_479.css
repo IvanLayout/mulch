@@ -692,37 +692,6 @@
     }
 
 
-    .compare-products__slider .swiper-slide
-    {
-        width: 160px;
-    }
-
-    .compare-section__slider .swiper-slide
-    {
-        width: 160px;
-    }
-
-    .compare-section__top-left
-    {
-        width: calc(50% - 16px);
-    }
-
-    .compare-products
-    {
-        width: calc(50% - 16px);
-    }
-
-    .compare-feature__coll
-    {
-        width: calc(50% - 16px);
-    }
-
-    .compare-section__slider
-    {
-        width: calc(50% + 4px);
-    }
-
-
     .payments-methods__item
     {
         width: calc(100% - 16px);
@@ -1135,6 +1104,19 @@
     }
 
 
+    .page-compare__slider2
+    {
+        width: calc(50% - 8px);
+    }
+
+    .compare-feature__item
+    {
+        font-size: 12px;
+
+        width: calc(50% - 8px);
+    }
+
+
     /*------------
 		coments
 	------------*/
@@ -1428,5 +1410,38 @@
     {
         padding-right: 10px;
         padding-left: 10px;
+    }
+
+    .product-info__top .page-title
+    {
+        font-size: 20px;
+        line-height: 1.21;
+    }
+
+    .product-info__info
+    {
+        font-size: 13px;
+    }
+
+    .checkout-total__number
+    {
+        margin-left: auto;
+    }
+
+    .checkout__reg-desc
+    {
+        margin-top: 6px;
+    }
+
+    .checkout-table__rate
+    {
+        font-size: 14px;
+
+        width: 100%;
+    }
+
+    .order-info__btn
+    {
+        font-size: 14px;
     }
 }

@@ -3388,7 +3388,7 @@
 																<div class="amount__val _flex">
 																	<button type="button" class="amount__btn amount__btn_minus"></button>
 
-																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 																	<button type="button" class="amount__btn amount__btn_plus"></button>
 																</div>
@@ -3495,7 +3495,7 @@
 																<div class="amount__val _flex">
 																	<button type="button" class="amount__btn amount__btn_minus"></button>
 
-																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 																	<button type="button" class="amount__btn amount__btn_plus"></button>
 																</div>
@@ -3602,7 +3602,7 @@
 																<div class="amount__val _flex">
 																	<button type="button" class="amount__btn amount__btn_minus"></button>
 
-																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 																	<button type="button" class="amount__btn amount__btn_plus"></button>
 																</div>
@@ -3709,7 +3709,7 @@
 																<div class="amount__val _flex">
 																	<button type="button" class="amount__btn amount__btn_minus"></button>
 
-																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 																	<button type="button" class="amount__btn amount__btn_plus"></button>
 																</div>
@@ -4138,6 +4138,10 @@
 																			<textarea placeholder="Комментарий" class="form__textarea"></textarea>
 																		</div>
 																	</div>
+
+																	<div class="form__submit">
+																		<button type="submit" class="btn-green form__submit-btn">Сохранить</button>
+																	</div>
 																</form>
 															</div>
 															<div id="delivery-item3" class="checkout-modal__item _show">
@@ -4304,8 +4308,12 @@
 																			</div>
 																			<div class="form__line">
 																				<div class="form__field">
-																					<textarea placeholder="Комментарий к адресу" class="form__textarea"></textarea>
+																					<textarea placeholder="Комментарий к адресу" class="form__textarea form__textarea_small"></textarea>
 																				</div>
+																			</div>
+
+																			<div class="form__submit">
+																				<button type="submit" class="btn-green form__submit-btn">Сохранить</button>
 																			</div>
 																		</div>
 																	</form>
@@ -5382,7 +5390,7 @@
 								<div class="amount__val _flex">
 									<button type="button" class="amount__btn amount__btn_minus"></button>
 
-									<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+									<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
 
 									<button type="button" class="amount__btn amount__btn_plus"></button>
 								</div>
@@ -6133,7 +6141,7 @@
 						<div class="delivery-price">Стоимость доставки: <b>150 ₽</b></div>
 
 						<div class="form__submit form__submit_marg">
-							<button type="button" class="btn-green form__submit-btn">Доставить сюда</button>
+							<button type="submit" class="btn-green form__submit-btn">Доставить сюда</button>
 						</div>
 					</form>
 				</div>
@@ -6145,6 +6153,33 @@
 			</div>
 		</div>
 		
+
+
+		<div id="modal-fast" class="modal modal-fast">
+			<div class="modal__title modal__title_center">Быстрая покупка</div>
+
+			<form action="" data-content="#modal-code" class="form form-ajax">
+				<div class="form__line">
+					<div class="form__field">
+						<input type="text" value="" placeholder="" class="form__input form__input-anim">
+
+						<label class="form__label">Имя</label>
+					</div>
+				</div>
+
+				<div class="form__line">
+					<div class="form__field">
+						<input type="tel" value="" placeholder="" data-mask="+7 999 999-99-99" class="form__input form__input-anim">
+
+						<label class="form__label">Номер телефона</label>
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="btn-green form__submit-btn">Купить</button>
+				</div>
+			</form>
+		</div>
 
 
 		<div class="supports-error">
