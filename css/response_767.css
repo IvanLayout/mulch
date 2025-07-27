@@ -2647,6 +2647,8 @@
 
     .history__slider-date span
     {
+        display: block;
+
         margin-bottom: 5px;
     }
 
@@ -2707,6 +2709,11 @@
         margin-top: 16px;
     }
 
+    .founders__bot
+    {
+        margin-top: 24px;
+    }
+
     .cooperation__big-btn
     {
         margin-top: 20px;
@@ -2725,7 +2732,12 @@
 
         width: 100%;
         margin-top: 11px;
-        padding-right: 32px;
+        padding: 25px 27px 35px 20px;
+    }
+
+    .mission__desc
+    {
+        padding-top: 56px;
     }
 
     .mission__colr

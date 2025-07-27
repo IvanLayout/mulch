@@ -10147,7 +10147,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
     font-size: 14px;
     line-height: 36px;
 
-    padding: 0 19px;
+    padding: 0 13.5px;
 
     border-radius: 10px 10px 2px 2px;
     background: #007657;
@@ -12621,7 +12621,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .inner-reviews__date
 {
     color: #616161;
-    font-size: 12px;
+    font-size: 13px;
 
     margin-top: 6px;
 }
@@ -19491,7 +19491,7 @@ input[type=radio]:checked + .radio-dot__dot
 
     margin-right: 22px;
     margin-left: 22px;
-    padding: 26px 30px;
+    padding: 26.5px 30px;
 
     text-align: center;
 }

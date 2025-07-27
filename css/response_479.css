@@ -353,6 +353,18 @@
         width: 251px;
     }
 
+    .inner-reviews__item-text
+    {
+        margin-top: 16px;
+
+        -webkit-line-clamp: 6;
+    }
+
+    .inner-reviews__item-bot
+    {
+        margin-top: 19px;
+    }
+
 
     .features_marg
     {
