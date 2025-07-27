@@ -345,8 +345,12 @@
 
     .main-news__slider._middle .swiper-slide
     {
-        width: 251px;
         min-width: calc(100% / 2 - 16px / 2);
+    }
+
+    .product-about .main-news__slider._middle .swiper-slide
+    {
+        width: 251px;
     }
 
 
@@ -484,9 +488,12 @@
 
     .section-props__table .section-props__table-name
     {
-        font-size: 14px;
-
         width: 100%;
+    }
+
+    .contacts .tabs__btn
+    {
+        width: auto;
     }
 
     .section-props__table td + td

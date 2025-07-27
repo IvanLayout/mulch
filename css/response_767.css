@@ -1655,6 +1655,11 @@
         background: #F9F9F9;
     }
 
+    .products__list .product__btn
+    {
+        width: 100%;
+    }
+
     .tabs_scroll
     {
         overflow: visible;
@@ -5575,6 +5580,12 @@
         font-size: 12px;
 
         margin-top: 16px;
+    }
+
+
+    .pagination-more__number
+    {
+        display: none;
     }
 
 
