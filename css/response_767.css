@@ -266,6 +266,7 @@
         position: static;
 
         margin-left: 0;
+        padding: 0;
     }
 
     .header-catalog__open
@@ -5337,7 +5338,7 @@
     {
         position: relative;
         position: fixed;
-        z-index: 90;
+        z-index: 80;
         bottom: 70px;
         left: 20px;
 

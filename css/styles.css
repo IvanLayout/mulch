@@ -1450,7 +1450,6 @@ button
 
     width: 100%;
     height: calc(100vh - 140px);
-    padding: 60px 0;
 
     pointer-events: none;
 
@@ -1485,6 +1484,7 @@ button
 
     height: 100%;
     margin-left: -36px;
+    padding: 60px 0;
 }
 
 .header-menu
@@ -1609,7 +1609,7 @@ button
 {
     position: absolute;
     z-index: 2;
-    top: 0;
+    top: 60px;
     left: 29.68%;
 
     visibility: hidden;
@@ -1618,7 +1618,7 @@ button
 
     width: 70.32%;
     max-width: 1114px;
-    height: 100%;
+    height: calc(100% - 120px);
     padding-right: 10px;
     padding-left: 60px;
 
@@ -10569,6 +10569,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     max-width: 742px;
 }
 
+.production-process .tabs{
+    margin: 0;
+}
+
 .production-process__item
 {
     position: relative;
@@ -10582,6 +10586,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
     text-decoration: none;
 
     border: 1px solid #DADADA;
+    width: 100%;
+    text-align: left;
 }
 
 .production-process__item + .production-process__item
@@ -10656,7 +10662,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     position: relative;
 
     display: block;
+}
 
+.production-process__img._active
+{
     min-height: 100%;
     padding-bottom: 68.966%;
 }
@@ -19405,7 +19414,7 @@ input[type=radio]:checked + .radio-dot__dot
     height: 44px;
     padding: 0 14px;
 
-    border: 1px solid #007657;
+    border: 1px solid rgba(0, 118, 87, .3);
     border-radius: 5px;
     background: none;
 
@@ -19414,7 +19423,7 @@ input[type=radio]:checked + .radio-dot__dot
 
 .form-subscribe .form-subscribe__input:focus
 {
-    border-color: #00684D;
+    border-color: #007657;
 }
 
 .form-subscribe__input.error

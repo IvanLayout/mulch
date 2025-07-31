@@ -1323,7 +1323,7 @@
         width: calc(100% - 70px);
     }
 
-    .production-process__img
+    .production-process__img._active
     {
         min-height: 322px;
     }

@@ -1,6 +1,6 @@
 $(() => {
 	// Observer API
-	const boxes = document.querySelectorAll('.lazyload')
+	const boxes = document.querySelectorAll('.lazyload, .production-process__flex')
 
 	function scrollTracking(entries) {
 		for (const entry of entries) {
@@ -14,6 +14,13 @@ $(() => {
 				entry.target.srcset = entry.target.getAttribute('data-srcset')
 
 				entry.target.classList.add('loaded')
+			}
+
+			if (entry.intersectionRatio > 0 && entry.target.classList.contains('production-process__flex') && !entry.target.classList.contains('act')) {
+				console.log(entry.target)
+				tabsTimer()
+
+				entry.target.classList.add('act')
 			}
 		}
 	}
@@ -120,6 +127,15 @@ $(() => {
 
 			$(this).addClass('_active')
 			$(activeTab).addClass('_active')
+
+			if ( $(this).closest('.production-process').length ) {
+				clearTimeout($stopTimer);
+				$index = $(this).index();
+				$('.production-process .tabs').attr('class', '').addClass('tabs act' + $index);
+				tabsTimer();
+
+				return false
+			}
 		}
 	})
 
@@ -862,6 +878,23 @@ $(() => {
 		}
 	})
 
+
+	$('body').on('click', '.header-catalog__block', function (e) {
+		if ( $(e.target).hasClass('header-catalog__block') ) {
+			$('.header-catalog__open').removeClass('_active')
+			$('.header-catalog__block').removeClass('_show')
+			$('.overlay-catalog').removeClass('_show')
+		}
+	})
+
+	$('body').on('click', '.header-catalog__block .cont', function (e) {
+		if ( $(e.target).hasClass('cont') ) {
+			$('.header-catalog__open').removeClass('_active')
+			$('.header-catalog__block').removeClass('_show')
+			$('.overlay-catalog').removeClass('_show')
+		}
+	})
+
 	$('body').on('change', '.radio-dot__label input[type="radio"]', function () {
 		const radio = $(this)
 
@@ -1096,3 +1129,21 @@ function adjustMenu() {
 }
 
 const is_touch_device = () => !!('ontouchstart' in window)
+
+let $index = 0;
+let $timer = true;
+let $stopTimer;
+
+function tabsTimer(){
+	if ($('.production-process .production-process__item:eq(' + $index + ')').next().length) {
+		if ($timer) {
+			clearTimeout($stopTimer); // Очистити попередній таймер
+			$stopTimer = setTimeout(function(){
+				$index++; // Збільшити індекс
+				$('.production-process .production-process__item:eq(' + $index + ')').trigger('click');
+				$('.production-process .tabs').attr('class', '').addClass('tabs act' + $index);
+				tabsTimer();
+			}, 5000);
+		}
+	}
+}

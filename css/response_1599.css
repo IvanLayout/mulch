@@ -31,14 +31,10 @@
     }
 
 
-    .header-catalog__block
-    {
-        padding: 33px 0;
-    }
-
     .header-catalog__wrap
     {
         margin-left: -10px;
+        padding: 33px 0;
     }
 
     .header-menu
@@ -62,6 +58,9 @@
         width: 71.06%;
         max-width: none;
         padding-left: 32px;
+
+        height: calc(100% - 66px);
+        top: 33px;
     }
 
     .header-submenu__flex
