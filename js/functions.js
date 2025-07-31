@@ -1134,16 +1134,19 @@ let $index = 0;
 let $timer = true;
 let $stopTimer;
 
-function tabsTimer(){
-	if ($('.production-process .production-process__item:eq(' + $index + ')').next().length) {
-		if ($timer) {
-			clearTimeout($stopTimer); // Очистити попередній таймер
-			$stopTimer = setTimeout(function(){
-				$index++; // Збільшити індекс
-				$('.production-process .production-process__item:eq(' + $index + ')').trigger('click');
-				$('.production-process .tabs').attr('class', '').addClass('tabs act' + $index);
-				tabsTimer();
-			}, 5000);
-		}
-	}
+function tabsTimer() {
+	clearTimeout($stopTimer);
+
+	$stopTimer = setTimeout(function() {
+		let $items = $('.production-process .production-process__item');
+		let totalItems = $items.length;
+
+		$index = ($index + 1) % totalItems;
+
+		$items.eq($index).trigger('click');
+
+		$('.production-process .tabs').attr('class', '').addClass('tabs act' + $index);
+
+		tabsTimer();
+	}, 5000);
 }
