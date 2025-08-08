@@ -1045,7 +1045,7 @@ $(window).on('load', () => {
 
 	$(window).on('scroll', () => {
 		if ( $('.product-fixed').length ) {
-			if( $(window).scrollTop() > $('.product-info').offset().top + $('.product-info').height() - 80 ) {
+			if( $(window).scrollTop() > $('.product-info__sales').offset().top + $('.product-info__sales').height() ) {
 				$('.product-fixed').addClass('_show')
 			} else {
 				$('.product-fixed').removeClass('_show')

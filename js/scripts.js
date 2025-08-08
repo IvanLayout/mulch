@@ -1445,9 +1445,9 @@ $(window).on('load', () => {
 		filterUse()
 	}
 
-	if ($('.cooperation__wrap').length){
-		cooperationSlider()
-	}
+	// if ($('.cooperation__wrap').length){
+	// 	cooperationSlider()
+	// }
 
 	if ($('.approach__wrap').length){
 		approachSlider()
@@ -1744,9 +1744,9 @@ $(window).on('resize', () => {
 		filterUse()
 	}
 
-	if ($('.cooperation__wrap').length){
-		cooperationSlider()
-	}
+	// if ($('.cooperation__wrap').length){
+	// 	cooperationSlider()
+	// }
 
 	if ($('.approach__wrap').length){
 		approachSlider()
@@ -2012,51 +2012,51 @@ function compareHeight() {
 }
 
 
-function cooperationSlider(){
-	if ( $(window).width() < 768 && !$('.cooperation__wrap').hasClass('swiper-initialized') ) {
-		$('.cooperation__wrap').addClass('swiper')
-		$('.cooperation__grid').addClass('swiper-wrapper').removeClass('_flex')
-		$('.cooperation__item').addClass('swiper-slide')
+// function cooperationSlider(){
+// 	if ( $(window).width() < 768 && !$('.cooperation__wrap').hasClass('swiper-initialized') ) {
+// 		$('.cooperation__wrap').addClass('swiper')
+// 		$('.cooperation__grid').addClass('swiper-wrapper').removeClass('_flex')
+// 		$('.cooperation__item').addClass('swiper-slide')
 
-		cooperationSwiper = new Swiper('.cooperation__wrap', {
-			loop: false,
-			watchSlidesProgress: true,
-			watchOverflow: true,
-			spaceBetween: 16,
-			slidesPerView: 'auto',
-			preloadImages: false,
-			lazy: {
-				loadPrevNext: true,
-				elementClass: 'lazyload',
-				enabled: true,
-				loadedClass: 'loaded',
-				checkInView: true,
-				loadOnTransitionStart: true
-			},
-			scrollbar: {
-				el: ".swiper-scrollbar",
-				hide: false,
-      		},
-			on: {
-				touchMove: function (swiper) {
-					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
-				},
-				touchStart: function (swiper) {
-					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
-				},
-				touchEnd: function (swiper) {
-					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
-				}
-			}
-		})
-	} else if ($(window).width() > 767 && $('.cooperation__wrap').hasClass('swiper-initialized')) {
-		cooperationSwiper.destroy(true, true)
+// 		cooperationSwiper = new Swiper('.cooperation__wrap', {
+// 			loop: false,
+// 			watchSlidesProgress: true,
+// 			watchOverflow: true,
+// 			spaceBetween: 16,
+// 			slidesPerView: 'auto',
+// 			preloadImages: false,
+// 			lazy: {
+// 				loadPrevNext: true,
+// 				elementClass: 'lazyload',
+// 				enabled: true,
+// 				loadedClass: 'loaded',
+// 				checkInView: true,
+// 				loadOnTransitionStart: true
+// 			},
+// 			scrollbar: {
+// 				el: ".swiper-scrollbar",
+// 				hide: false,
+//       		},
+// 			on: {
+// 				touchMove: function (swiper) {
+// 					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+// 				},
+// 				touchStart: function (swiper) {
+// 					$(swiper.el).find('.swiper-scrollbar').removeClass('_hide')
+// 				},
+// 				touchEnd: function (swiper) {
+// 					$(swiper.el).find('.swiper-scrollbar').addClass('_hide')
+// 				}
+// 			}
+// 		})
+// 	} else if ($(window).width() > 767 && $('.cooperation__wrap').hasClass('swiper-initialized')) {
+// 		cooperationSwiper.destroy(true, true)
 
-		$('.cooperation__wrap').removeClass('swiper')
-		$('.cooperation__grid').removeClass('swiper-wrapper').addClass('_flex')
-		$('.cooperation__item').removeClass('swiper-slide')
-	}
-}
+// 		$('.cooperation__wrap').removeClass('swiper')
+// 		$('.cooperation__grid').removeClass('swiper-wrapper').addClass('_flex')
+// 		$('.cooperation__item').removeClass('swiper-slide')
+// 	}
+// }
 
 
 function approachSlider(){

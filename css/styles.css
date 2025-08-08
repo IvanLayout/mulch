@@ -4204,18 +4204,18 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
     border-radius: 10px;
 
-    transition: transform .4s linear, opacity .5s linear;
+    /* transition: transform .4s linear, opacity .5s linear; */
 
     object-fit: cover;
 }
 
-@media (any-hover: hover)
+/* @media (any-hover: hover)
 {
     .main-stock__img:hover img
     {
         transform: scale(1.05);
     }
-}
+} */
 
 
 .main-news__slider .swiper-slide
@@ -4255,18 +4255,18 @@ input[type=checkbox]:checked + .checkbox-btn__text
     width: 100%;
     height: 100%;
 
-    transition: transform .4s linear, opacity .5s linear;
+    /* transition: transform .4s linear, opacity .5s linear; */
 
     object-fit: cover;
 }
 
-@media (any-hover: hover)
+/* @media (any-hover: hover)
 {
     .news-big:hover img
     {
         transform: scale(1.05);
     }
-}
+} */
 
 .main-news__time
 {
@@ -4402,18 +4402,18 @@ input[type=checkbox]:checked + .checkbox-btn__text
     width: 100%;
     height: 100%;
 
-    transition: transform .4s linear, opacity .5s linear;
+    /* transition: transform .4s linear, opacity .5s linear; */
 
     object-fit: cover;
 }
 
-@media (any-hover: hover)
+/* @media (any-hover: hover)
 {
     .main-news__img:hover img
     {
         transform: scale(1.05);
     }
-}
+} */
 
 .main-news__date
 {
@@ -8068,18 +8068,18 @@ input[type=checkbox]:checked + .checkbox-btn__text
     width: 100%;
     height: 100%;
 
-    transition: transform .4s linear, opacity .5s linear;
+    /* transition: transform .4s linear, opacity .5s linear; */
 
     object-fit: cover;
 }
 
-@media (any-hover: hover)
+/* @media (any-hover: hover)
 {
     .section-stock__img:not(._old):hover img
     {
         transform: scale(1.05);
     }
-}
+} */
 
 .section-stock__img._old img
 {
@@ -8518,16 +8518,16 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
     border-radius: 10px;
 
-    transition: transform .4s linear, opacity .5s linear;
+    /* transition: transform .4s linear, opacity .5s linear; */
 }
 
-@media (any-hover: hover)
+/* @media (any-hover: hover)
 {
     .video:hover img
     {
         transform: scale(1.05);
     }
-}
+} */
 
 .contacts__video
 {
@@ -10746,18 +10746,18 @@ input[type=checkbox]:checked + .checkbox-btn__text
     width: 100%;
     height: 100%;
 
-    transition: transform .4s linear, opacity .5s linear;
+    /* transition: transform .4s linear, opacity .5s linear; */
 
     object-fit: cover;
 }
 
-@media (any-hover: hover)
+/* @media (any-hover: hover)
 {
     .production-photos__photo:hover img
     {
         transform: scale(1.05);
     }
-}
+} */
 
 .production-photos__number
 {
@@ -11990,18 +11990,18 @@ input[type=checkbox]:checked + .checkbox-btn__text
     width: 100%;
     height: 100%;
 
-    transition: transform .4s linear, opacity .5s linear;
+    /* transition: transform .4s linear, opacity .5s linear; */
 
     object-fit: cover;
 }
 
-@media (any-hover: hover)
+/* @media (any-hover: hover)
 {
     .major-projects__item:hover .major-projects__img
     {
         transform: scale(1.05);
     }
-}
+} */
 
 .major-projects__item::after
 {
@@ -13412,7 +13412,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
     margin: 2px 0 0 10px;
 
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
 }
 
 .mini-modal__close

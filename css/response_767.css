@@ -1887,7 +1887,7 @@
     }
 
 
-    .cooperation__wrap.swiper
+    /* .cooperation__wrap.swiper
     {
         overflow: visible;
 
@@ -1904,6 +1904,10 @@
         width: 315px;
         height: auto;
         margin: 0;
+    } */
+
+    .cooperation__item{
+        width: calc(100% - 16px);
     }
 
     .cooperation__img
@@ -3774,7 +3778,6 @@
         top: 0;
         left: 0;
 
-        display: block;
         display: flex;
         visibility: hidden;
         overflow: hidden;
@@ -3789,7 +3792,7 @@
         opacity: 0;
         background: #FFF;
 
-        transition: opacity .2s linear, visibility .2s linear;
+        transition: opacity .3s linear, visibility .3s linear;
     }
 
     .modal-information._active
@@ -5594,6 +5597,7 @@
         opacity: 1;
         background: none;
         box-shadow: none;
+        z-index: 1;
     }
 
     .mini-modal__modal-links::before

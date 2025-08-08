@@ -1269,11 +1269,10 @@
 
     .news-text__colr
     {
-        order: -1;
 
         width: 100%;
         max-width: none;
-        margin-bottom: 24px;
+        margin-top: 24px;
     }
 
     .news-text__aside
