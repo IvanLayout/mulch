@@ -16490,6 +16490,9 @@ input[type=radio]:checked + .radio-dot__dot
 
     border-radius: 10px;
     background: #FFF;
+    display: block;
+    text-decoration: none;
+    color: currentColor;
 }
 
 .lk-info__col._mob
@@ -16646,6 +16649,7 @@ input[type=radio]:checked + .radio-dot__dot
 .lk-info__cart-number
 {
     padding-top: 5px;
+    display: block;
 }
 
 .lk-info__cart-title
@@ -16655,11 +16659,13 @@ input[type=radio]:checked + .radio-dot__dot
     margin-top: 11px;
 
     opacity: .5;
+    display: block;
 }
 
 .lk-info__cart-sum
 {
     margin-top: 6px;
+    display: block;
 }
 
 
@@ -16894,9 +16900,15 @@ input[type=radio]:checked + .radio-dot__dot
     font-size: 14px;
     line-height: 10px;
 
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 
     opacity: .5;
+}
+
+.lk-user__item-line._center{
+    min-height: 44px;
+    align-items: center;
+    align-content: center;
 }
 
 .lk-user__item-flex
@@ -16961,7 +16973,7 @@ input[type=radio]:checked + .radio-dot__dot
     align-content: center;
     align-items: center;
 
-    min-height: 41px;
+    min-height: 44px;
     margin-left: 61px;
 }
 
@@ -18739,13 +18751,22 @@ input[type=radio]:checked + .radio-dot__dot
 {
     font-size: 20px;
     font-weight: 500;
+    text-decoration: none;
+    color: currentColor;
 
-    width: calc(50% - 15px);
+    max-width: calc(50% - 15px);
 }
 
 .order-active__number span
 {
-    border-bottom: 1px dashed #282828;
+    border-bottom: 1px dashed currentColor;
+    transition: border .2s linear;
+}
+
+@media (any-hover: hover){
+    .order-active__number:hover span{
+        border-bottom-color: transparent;
+    }
 }
 
 .order-active__box

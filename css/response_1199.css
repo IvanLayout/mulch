@@ -828,7 +828,7 @@
     {
         font-size: 18px;
 
-        width: calc(60% - 10px);
+        max-width: calc(60% - 10px);
     }
 
     .order-active__box

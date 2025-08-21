@@ -5021,6 +5021,10 @@
         max-width: 334px;
     }
 
+    .lk-user__item-title{
+        margin-bottom: 9px;
+    }
+
 
     .form-password
     {
@@ -5889,7 +5893,7 @@
     {
         order: 1;
 
-        width: 100%;
+        max-width: 100%;
     }
 
     .order-active__border

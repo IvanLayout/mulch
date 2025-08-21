@@ -925,6 +925,8 @@ $(() => {
 	$('body').on('click', '.lk-user__item-edit', function (e) {
 		e.preventDefault()
 
+		$('.lk-user__items').find('.lk-user__item').removeClass('_show')
+
 		$(this).closest('.lk-user__item').addClass('_show')
 	})
 
