@@ -3670,6 +3670,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
     padding-top: 60px;
 }
 
+.carousel__button{
+	height: 50%;
+}
+
 .fancybox__content > .carousel__button.is-close
 {
     top: 25px;
@@ -13343,7 +13347,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 @media (any-hover: hover)
 {
-    .product-info__review-size:hover
+    .product-info__review:hover .product-info__review-size
     {
         color: #282828;
     }
@@ -17980,6 +17984,14 @@ input[type=radio]:checked + .radio-dot__dot
 .faq-page__coll
 {
     width: 296px;
+}
+
+.open-page-list{
+	display: none;
+}
+
+.page-wrap-list__close{
+	display: none;
 }
 
 .page-list

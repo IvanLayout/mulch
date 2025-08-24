@@ -1016,12 +1016,24 @@ $(() => {
 		}, 1000);
 	})
 
-	
 
 	$('body').on('click', '.my-addres__btn-delete', function (e) {
 		e.preventDefault()
 
 		$(this).closest('.my-addres__item').remove()
+	})
+
+
+	$('body').on('click', '.open-page-list', function (e) {
+		e.preventDefault()
+
+		$('.page-wrap-list').addClass('_show')
+	})
+
+	$('body').on('click', '.page-wrap-list__close', function (e) {
+		e.preventDefault()
+
+		$('.page-wrap-list').removeClass('_show')
 	})
 })
 
