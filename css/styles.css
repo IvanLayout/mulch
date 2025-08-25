@@ -716,11 +716,14 @@ button
     position: relative;
 
     flex-grow: 1;
-    flex-wrap: nowrap;
 
     width: 400px;
     max-width: 931px;
     margin-left: 20px;
+}
+
+.header__search-flex{
+	flex-wrap: nowrap;
     padding: 2px;
 
     border: 1px solid #007657;
