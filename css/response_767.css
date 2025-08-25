@@ -250,7 +250,7 @@
     {
         position: relative;
 
-        /* overflow: hidden; */
+        overflow: hidden;
         overflow-y: auto;
         order: 2;
 
@@ -260,10 +260,10 @@
         padding: 56px 0 10px;
     }
 
-    /* .header__info._second .header-catalog
+    .header__info._second .header-catalog
     {
-        overflow: hidden;
-    } */
+        overflow: visible;
+    }
 
     .header-catalog__wrap
     {
@@ -358,21 +358,22 @@
 
     .header-submenu
     {
-        position: fixed;
-        top: 61px;
-        left: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
 
         visibility: visible;
         overflow: hidden;
 
         width: 100%;
-        height: calc(100% - 61px);
+        height: 100%;
         padding: 0;
 
         opacity: 1;
         background: #FFF;
 
-        transition: left .2s linear;
+        transition: transform .2s linear;
+		transform: translateX(100%);
     }
 
     .header._show
@@ -382,7 +383,7 @@
 
     .header-submenu._show
     {
-        left: 0;
+        transform: translateX(0);
     }
 
     .header-submenu__title
@@ -429,12 +430,17 @@
 
     .header-submenu__flex
     {
-        /* overflow: hidden; */
+        overflow: hidden;
         overflow-y: auto;
 
         height: calc(100% - 34px);
         margin: 0;
         padding-bottom: 10px;
+    }
+
+	.header__info._third .header-submenu__flex
+    {
+        overflow: visible;
     }
 
     /* .header__info._third .header-submenu__flex
@@ -519,26 +525,27 @@
 
     .header-submenu__sub
     {
-        position: fixed;
+        position: absolute;
         z-index: 10;
-        top: 61px;
-        left: 100%;
+        top: 0;
+        left: 0;
 
         overflow: hidden;
 
         width: 100%;
-        height: calc(100% - 61px);
+        height: 100%;
         margin: 0;
         padding: 0;
 
         background: #FFF;
 
-        transition: left .2s linear;
+        transition: transform .2s linear;
+		transform: translateX(100%);
     }
 
     .header-submenu__sub._show
     {
-        left: 0;
+        transform: translateX(0);
     }
 
     .header-submenu__sub-wrap
