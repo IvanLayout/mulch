@@ -3869,6 +3869,24 @@
     }
 
 
+	.irs .irs{
+		height: 8px;
+	}
+
+	.irs-line{
+		height: 8px;
+	}
+
+	.irs-bar{
+		height: 8px;
+	}
+
+	.irs-slider{
+		top: -6px;
+		width: 18px;
+		height: 18px;
+	}
+
 
     .footer__coll
     {
