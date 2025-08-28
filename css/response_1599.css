@@ -1155,6 +1155,11 @@
     }
 
 
+	.empty-section__bord{
+		padding: 6vh 0;
+	}
+
+
     /*------------
 		coments
 	------------*/

@@ -417,12 +417,10 @@
         margin-top: 16px;
     }
 
+	.empty-section__bord {
+		padding: 6vh 0;
+	}
 
-    .empty-section__bord
-    {
-        padding-top: 150px;
-        padding-bottom: 150px;
-    }
 
     .info-save__btn.btn-bord
     {

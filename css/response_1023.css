@@ -1113,8 +1113,7 @@
 
     .empty-section__bord
     {
-        padding-top: 159px;
-        padding-bottom: 159px;
+        padding: 8vh 0;
     }
 
     .empty-section__icon
@@ -4025,4 +4024,19 @@
     {
         margin-right: -6%;
     }
+
+
+	.carousel__button.is-prev,
+	.carousel__button.is-next{
+		width: 20%;
+	}
+
+	.fancybox__nav .carousel__button.is-prev{
+		padding-left: 10px;
+	}
+
+	.fancybox__nav .carousel__button.is-next{
+		padding-right: 10px;
+	}
+
 }

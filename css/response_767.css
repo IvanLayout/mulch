@@ -568,7 +568,12 @@
     {
         font-size: 13px;
 
-        display: block;
+        display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		min-height: 62px;
 
         padding: 9px 20px;
     }
@@ -618,6 +623,8 @@
     .header-submenu__sub-item ul li a
     {
         padding: 0;
+		display: block;
+		min-height: 1px;
     }
 
 
