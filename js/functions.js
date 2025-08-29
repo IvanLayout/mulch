@@ -203,6 +203,10 @@ $(() => {
 					if ( $(this).attr('data-modal-big') ) {
 						$('body').removeClass('_big-modal')
 					}
+
+					$('.modal').find('video').each(function () {
+						this.pause()
+					})
 				},
 			},
 		})

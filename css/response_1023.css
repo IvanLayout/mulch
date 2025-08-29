@@ -3354,15 +3354,9 @@
     }
 
 
-    .modal-point__bg
-    {
-        padding-bottom: 40px;
-    }
-
-    .modal-point__map
-    {
-        height: 569px;
-    }
+	.modal-point__coll{
+		padding-left: 30px;
+	}
 
     .transport-company__table-info
     {

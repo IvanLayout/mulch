@@ -4786,7 +4786,8 @@
     .modal-point__coll
     {
         width: 100%;
-        padding-top: 0;
+        padding: 0;
+		height: auto;
     }
 
     .modal-point__title

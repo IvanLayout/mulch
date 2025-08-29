@@ -2961,7 +2961,7 @@
 
     .modal-point__items
     {
-        height: 403px;
+        height: calc(100vh - 258px);
         margin-top: 20px;
     }
 

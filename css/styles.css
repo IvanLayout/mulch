@@ -16092,7 +16092,7 @@ input[type=radio]:checked + .radio-delivery__wrap
 
     width: 100%;
     height: 100%;
-    padding: 16px;
+    padding: 0;
 
     pointer-events: none;
 
@@ -16115,12 +16115,12 @@ input[type=radio]:checked + .radio-delivery__wrap
 {
     position: relative;
 
-    width: 994px;
-    max-width: 100%;
+    width: 100%;
+	min-height: 100%;
     margin: auto;
-    padding: 59px 40px 52px;
+    /* padding: 59px 40px 52px; */
 
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background: #FFF;
 }
 
@@ -16184,7 +16184,7 @@ input[type=radio]:checked + .radio-delivery__wrap
 .modal-point__coll
 {
     width: calc(44.96% - 30px);
-    padding-top: 22px;
+    padding: 82px 0 32px 40px;
 }
 
 .modal-point__title
@@ -16211,7 +16211,7 @@ input[type=radio]:checked + .radio-delivery__wrap
     overflow: hidden;
     overflow-y: auto;
 
-    height: 454px;
+    height: calc(100vh - 262px);
     margin-top: 16px;
 }
 
@@ -16348,7 +16348,7 @@ input[type=radio]:checked + .point__wrap .point__btn span + span
 
 .modal-point__map
 {
-    height: 624px;
+    height: 100vh;
 }
 
 .modal-point__save
@@ -19820,7 +19820,7 @@ input[type=radio]:checked + .radio-dot__dot
 
 .modal.modal-add
 {
-    width: 1920px;
+    width: 100%;
     padding: 0;
 
     border-radius: 0;
@@ -20346,6 +20346,15 @@ input[type=radio]:checked + .radio-dot__dot
 
     max-width: 100%;
     max-height: 100%;
+}
+
+.modal-images__img video
+{
+	width: 100%;
+    max-height: 100%;
+    aspect-ratio: 2 / 1.3;
+    display: block;
+    object-fit: cover;
 }
 
 .modal-images__info
@@ -21082,8 +21091,8 @@ input[type=radio]:checked + .radio-dot__dot
 
 .modal-add__map
 {
-    height: 900px;
-    min-height: 100%;
+    height: 100vh;
+	min-height: 100%;
 }
 
 .delivery-price

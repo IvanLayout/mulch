@@ -1280,6 +1280,19 @@ $(() => {
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
 			},
+			on: {
+				slideChange: function () {
+					$('.swiper-slide video').each(function () {
+						this.pause();
+					});
+
+					var activeSlide = this.slides[this.activeIndex];
+					var video = $(activeSlide).find('video').get(0);
+					if (video) {
+						video.play();
+					}
+				}
+			}
 		})
 	}
 
