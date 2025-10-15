@@ -8643,17 +8643,6 @@ html.with-fancybox{
 	grid-column: span 3;
 }
 
-/* .gallery-grid__item._small
-{
-    grid-column: span 2;
-}
-
-.gallery-grid__item._big
-{
-    grid-column: span 3;
-    grid-row: span 2;
-} */
-
 .gallery-grid__item a
 {
     position: relative;
@@ -8667,10 +8656,10 @@ html.with-fancybox{
     border-radius: 10px;
 }
 
-/* .gallery-grid__item._small a
+.gallery-grid__item:nth-child(6n + 1) a
 {
-    padding-bottom: 100%;
-} */
+	padding-bottom: 151.28%;
+}
 
 .gallery-grid__item:nth-child(6n + 2) a,
 .gallery-grid__item:nth-child(6n + 3) a,
