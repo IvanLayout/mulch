@@ -517,17 +517,33 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .gallery-grid__item
-    {
-        grid-column: span 1;
-    }
+	.gallery-grid__item,
+	.gallery-grid__item:nth-child(6n + 1),
+	.gallery-grid__item:nth-child(6n + 2),
+	.gallery-grid__item:nth-child(6n + 3),
+	.gallery-grid__item:nth-child(6n + 4),
+	.gallery-grid__item:nth-child(6n + 5),
+	.gallery-grid__item:nth-child(6n + 6) {
+		grid-column: span 1;
+		grid-row: auto;
+	}
 
-    .gallery-grid__item:nth-child(n + 4)
+	.gallery-grid__item:nth-child(3n + 1) {
+		grid-column: 1 / -1;
+	}
+
+    /* .gallery-grid__item
+    {
+        grid-column: span 1; 
+		grid-row: auto;
+    } */
+
+    /* .gallery-grid__item:nth-child(n + 4)
     {
         display: none;
-    }
+    } */
 
-    .gallery-grid__item._small
+    /* .gallery-grid__item._small
     {
         grid-column: span 1;
     }
@@ -536,19 +552,30 @@
     {
         grid-column: span 2;
         grid-row: span 1;
-    }
+    } */
+	
+	  /* каждый нечётный (1-й, 4-й, 7-й...) — занимает всю строку */
+	/* .gallery-grid__item:nth-child(3n + 1) 
+	{
+		grid-column: 1 / -1;
+		grid-row: auto;
+	} */
 
     .gallery-grid__item a
     {
         padding-bottom: 138%;
     }
 
-    .gallery-grid__item._small a
+    /* .gallery-grid__item._small a, */
+	.gallery-grid__item:nth-child(6n + 2) a,
+	.gallery-grid__item:nth-child(6n + 3) a,
+	.gallery-grid__item:nth-child(6n + 4) a 
     {
         padding-bottom: 138%;
     }
 
-    .gallery-grid__item._big a
+    /* .gallery-grid__item._big a, */
+	.gallery-grid__item:nth-child(3n + 1) a
     {
         padding-bottom: 100.9%;
     }

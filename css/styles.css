@@ -8618,9 +8618,32 @@ html.with-fancybox{
 .gallery-grid__item
 {
     grid-column: span 3;
+	grid-row: auto;
 }
 
-.gallery-grid__item._small
+/* каждый 6n+1 элемент — большой (1, 7, 13, 19...) */
+.gallery-grid__item:nth-child(6n + 1) 
+{
+	grid-column: span 3;
+	grid-row: span 2;
+}
+
+/* каждый 6n+2, 6n+3, 6n+4 — маленькие */
+.gallery-grid__item:nth-child(6n + 2),
+.gallery-grid__item:nth-child(6n + 3),
+.gallery-grid__item:nth-child(6n + 4) 
+{
+	grid-column: span 2;
+}
+
+/* 6n+5 и 6n+6 — обычные */
+.gallery-grid__item:nth-child(6n + 5),
+.gallery-grid__item:nth-child(6n + 6) 
+{
+	grid-column: span 3;
+}
+
+/* .gallery-grid__item._small
 {
     grid-column: span 2;
 }
@@ -8629,7 +8652,7 @@ html.with-fancybox{
 {
     grid-column: span 3;
     grid-row: span 2;
-}
+} */
 
 .gallery-grid__item a
 {
@@ -8644,9 +8667,16 @@ html.with-fancybox{
     border-radius: 10px;
 }
 
-.gallery-grid__item._small a
+/* .gallery-grid__item._small a
 {
     padding-bottom: 100%;
+} */
+
+.gallery-grid__item:nth-child(6n + 2) a,
+.gallery-grid__item:nth-child(6n + 3) a,
+.gallery-grid__item:nth-child(6n + 4) a 
+{
+	padding-bottom: 100%;
 }
 
 .gallery-grid__item a::before
