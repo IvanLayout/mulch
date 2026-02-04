@@ -18045,6 +18045,8 @@ input[type=radio]:checked + .radio-dot__dot
 .faq-page__coll
 {
     width: 296px;
+    position: sticky;
+    top: 10px;
 }
 
 .open-page-list{
@@ -18212,7 +18214,7 @@ input[type=radio]:checked + .radio-dot__dot
 .faq-page__list
 {
     position: sticky;
-    top: 0;
+    top: 10px;
 }
 
 .faq-page__list-item + .faq-page__list-item
